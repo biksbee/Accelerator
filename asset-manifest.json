@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.467e554b.css",
-    "main.js": "/Accelerator/static/js/main.80b5658e.js",
+    "main.css": "/Accelerator/static/css/main.ba37e53b.css",
+    "main.js": "/Accelerator/static/js/main.70fb0aed.js",
     "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
     "static/media/startProjects.png": "/Accelerator/static/media/startProjects.ca1ad11d3215433f2dda.png",
     "static/media/getSiteCopy.png": "/Accelerator/static/media/getSiteCopy.3bd825f4ba6e57af4b03.png",
@@ -10,6 +10,7 @@
     "static/media/SarkisDabrinyn.png": "/Accelerator/static/media/SarkisDabrinyn.fa48a4f9573c04cea706.png",
     "static/media/SuisseIntl-Bold.otf": "/Accelerator/static/media/SuisseIntl-Bold.24fe64545382e1378933.otf",
     "static/media/SuisseIntl-SemiBold.otf": "/Accelerator/static/media/SuisseIntl-SemiBold.bc8a07fd3d909616d31a.otf",
+    "static/media/SuisseIntl-Regular.otf": "/Accelerator/static/media/SuisseIntl-Regular.b248914e0a53493d03f0.otf",
     "static/media/StanislavShakirov.png": "/Accelerator/static/media/StanislavShakirov.73eaed63d691d28e8866.png",
     "static/media/tracking.png": "/Accelerator/static/media/tracking.c93eeae75b6bc1ce7169.png",
     "static/media/OlgaNemirovskaya.png": "/Accelerator/static/media/OlgaNemirovskaya.bbe41861c498a38c5b85.png",
@@ -65,15 +66,15 @@
     "static/media/wrapPrivacy.svg": "/Accelerator/static/media/wrapPrivacy.4eca9432c89ea65c3e41fe7b22ff3f17.svg",
     "static/media/NetworkingLine.svg": "/Accelerator/static/media/NetworkingLine.f99914ae542d30d40e6080ed1f62a069.svg",
     "static/media/wrapAccess.svg": "/Accelerator/static/media/wrapAccess.f98b4bb02ff35fc9e43091743328b0a6.svg",
-    "static/media/OrangeArrow.svg": "/Accelerator/static/media/OrangeArrow.c2fc76293a11fa4cd73372246e390b6f.svg",
+    "static/media/closePop.svg": "/Accelerator/static/media/closePop.d7e7a0306a3e1f7aea98da79556e7ecb.svg",
+    "static/media/OrangeArrow.svg": "/Accelerator/static/media/OrangeArrow.c2fc76293a11fa4cd733.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "static/media/closePop.svg": "/Accelerator/static/media/closePop.1d8d5f5b7a3e5c671783099045610602.svg",
-    "main.467e554b.css.map": "/Accelerator/static/css/main.467e554b.css.map",
-    "main.80b5658e.js.map": "/Accelerator/static/js/main.80b5658e.js.map",
+    "main.ba37e53b.css.map": "/Accelerator/static/css/main.ba37e53b.css.map",
+    "main.70fb0aed.js.map": "/Accelerator/static/js/main.70fb0aed.js.map",
     "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.467e554b.css",
-    "static/js/main.80b5658e.js"
+    "static/css/main.ba37e53b.css",
+    "static/js/main.70fb0aed.js"
   ]
 }
