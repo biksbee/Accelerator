@@ -26,17 +26,17 @@ const Media = () => {
                         )}
                     >
                         <div className='flex justify-between xl:pb-0 pb-[30px]'>
-                            <a href='' className='hover:opacity-60 active:hover-60'>
+                            <a href='' className='hover:opacity-60 active:hover-60 duration-500'>
                                 <div className='iconMedia'>
                                     <img src={RBK} alt='RBK' />
                                 </div>
                             </a>
-                            <a href='' className='hover:opacity-60'>
+                            <a href='' className='hover:opacity-60 duration-500'>
                                 <div className='iconMedia'>
                                     <img src={KO} alt="KO" />
                                 </div>
                             </a>
-                            <a href='' className='hover:opacity-60'>
+                            <a href='' className='hover:opacity-60 duration-500'>
                                 <div className='iconMedia'>
                                     <img src={TheBell} alt="TheBell" />
                                 </div>    
@@ -44,12 +44,12 @@ const Media = () => {
                         </div>
                         <div className='xl:w-max w-full flex justify-center'>
                             <div className='flex xl:justify-center justify-between xl:w-max w-[50vw]'>
-                                <a href="" className='hover:opacity-60'>
+                                <a href="" className='hover:opacity-60 duration-500'>
                                     <div className='iconMedia'>
                                         <img src={VcRu} alt="VcRu" />
                                     </div>
                                 </a>
-                                <a href="" className='hover:opacity-60'>    
+                                <a href="" className='hover:opacity-60 duration-500'>    
                                     <div className='iconMedia'>
                                         <img src={RbRu} alt="RbRu" />
                                     </div>

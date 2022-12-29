@@ -11,6 +11,8 @@ module.exports = {
       ms: '900px',
       md: '768px',
       mds: '640px',
+      m: '415px',
+      s: '360px',
     }, 
     extend: {
       backgroundImage: {
@@ -67,10 +69,12 @@ module.exports = {
           media: 'rgba(66, 61, 87, 1)',
         },
         c_orange: {
+          blur: 'rgba(186, 102, 48, 1)',
           regular: 'rgba(244, 68, 13, 1)',
           hover: 'rgba(244, 68, 13, 0.9)',
           pressed: 'rgba(244, 68, 13, 0.5)',
           primary: 'rgba(248, 128, 37, 1)',
+          bright: 'rgba(229, 68, 18, 1)',
         },
         c_blue: {
           deepDark: 'rgba(46, 43, 89, 1)',
@@ -89,6 +93,7 @@ module.exports = {
         c_yellow: {
           light: 'rgba(230, 225, 214, 1)',
           regular: 'rgba(184, 154, 24, 1)',
+          dirty: 'rgba(173, 134, 44, 1)',
         },
         c_green: {
           regular: 'rgba(4, 255, 255, 1)',
@@ -99,10 +104,10 @@ module.exports = {
         hover: '2px 1px 20px rgba(99, 93, 96, 0.4)',
       },
       fontFamily: {
-        otf: ['otf'],
-        otfNormal: ['otfNormal'],
-        otfBold: ['otfBold'],
-        woff: ['woff2']
+        'otf-normal': ['otf-normal'],
+        'otf-book': ['otf-book'],
+        'otf-semiBold': ['otf-semiBold'],
+        'otf-bold': ['otf-bold'],
       }
     },
   },

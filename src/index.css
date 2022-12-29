@@ -7,19 +7,19 @@
         @apply border-[1px] border-[#f00]
     }
     .menuLi {
-        @apply text-c_gray-regular cursor-pointer not-italic font-semibold
+        @apply text-c_gray-regular cursor-pointer font-otf-semiBold not-italic
         ms:text-[14px] ms:leading-[14px]
         text-[26px] leading-[26px]
     }
     .buttonMenu {
-        @apply flex justify-center rounded-[6px]
+        @apply flex justify-center items-center rounded-[6px]
         bg-c_orange-regular hover:bg-c_orange-hover active:bg-c_orange-pressed
-        ms:w-[135px] ms:h-[37px] ms:pt-[10px]
-        w-[111px] h-[30px] pt-[7px]
+        ms:w-[135px] ms:h-[37px]
+        w-[111px] h-[30px]
         drop-shadow-default hover:drop-shadow-hover
     }
     .buttonText {
-        @apply text-c_gray-regular cursor-pointer font-otf not-italic font-semibold
+        @apply text-c_gray-regular cursor-pointer not-italic font-otf-semiBold
         ms:menuLi
     }
     .menuUl {
@@ -29,56 +29,53 @@
         ms:flex ms:justify-between ms:items-center ms:bg-none ms:relative ms:top-0 ms:text-left
     }
     .startPageText {
-        @apply font-otf not-italic font-semibold
+        @apply not-italic font-otf-semiBold
         md:text-[58px] md:leading-[55.68px]
         text-[26px] leading-[26px]
 
     }
     .startPageTheLoop {
-        @apply absolute xl:w-[1280px] md:w-[1024px] md:h-[773.78px] z-[1]
-        xl:top-[271px] xl:right-0
-        xs:top-[212px] xs:right-[100px]
-        md:top-[400px] right-[-31px]
-        bottom-0 w-[767px] h-[400px]
+        @apply absolute w-[1280px] h-full z-[1]
+        top-[-130px] left-0
         bg-center bg-no-repeat bg-contain
         bg-startPageTheLoop
     }
     .startProjects {
-        @apply absolute 
-        xs:w-[552px] xs:h-[842px] xs:bg-auto
-        md:w-[400px] md:h-[480px] bg-contain
-        w-[300px] h-[469px]
-        bg-bottom bg-no-repeat 
+        @apply absolute w-full h-full
+        xs:bg-auto bg-contain
+        bg-top bg-no-repeat 
         bottom-0 right-0
-        bg-startProjects
+        bg-startProjects startRadius
     }
     .trapezoidCorner {
         @apply absolute z-[2] bg-c_gray-trapezoid
-        trapezoid 
-        xs:top-[363.5px] xs:right-[471.8px] 
-        md:top-[545px] md:right-[320px] md:w-[80px] md:h-[80px]
-        top-[284px] right-[270px]  w-[30px] h-[30px]
+        trapezoid top-0 left-0 
+        md:w-[80px] md:h-[80px]
+        w-[30px] h-[30px]
     }
     .pageTitle {
-        @apply font-otf not-italic font-semibold
+        @apply not-italic font-otf-semiBold
         md:text-[60px] md:leading-[57.9px]
         text-[26px] leading-[25px]
     }
     .ourProjectsTheLoop {
-        @apply absolute xl:w-[1280px] xl:h-[395px]
+        @apply absolute 
+        xl:w-[1280px] xl:h-[395px]
+        
+        w-[602px] h-[176px]
         top-[50px] left-0
         bg-center bg-no-repeat bg-contain
         bg-ourProjectsTheLoop
     }
     .ourProjectStyleTitle {
-        @apply font-otf not-italic font-semibold text-c_blue-dark
+        @apply not-italic font-otf-semiBold text-c_blue-dark
         md:text-[45px] md:leading-[43px] md:p-0
         text-[21px] leading-[22px] pb-[10px]
     }
     .ourProjectStyleSubTitle {
-        @apply font-otf not-italic font-semibold text-c_blue-deepDark
+        @apply font-otf-semiBold not-italic  text-c_blue-deepDark
         md:text-[18px] md:leading-[21.6px] md:h-max
-        text-[15px] leading-[18px] w-[320px] h-[72px]
+        text-[15px] leading-[18px] xl:w-[500px] w-[320px] h-[72px]
     }
     .iconMedia {
         @apply flex justify-center items-center
@@ -90,7 +87,7 @@
         @apply absolute z-10
     }
     .worksTextStyle {
-        @apply font-otfNormal not-italic font-normal text-c_blue-deepDarkOp
+        @apply not-italic font-otf-book text-c_blue-deepDarkOp
         md:text-[18px] md:leading-[21.6px] md:h-max
         text-[15px] leading-[18px]
     }
@@ -103,28 +100,33 @@
         bg-moreAcceleratorLoop
     }
     .contactText {
-        @apply
-        ms:text-[50px] md:leading-[55px] ms:w-[870px] ms:pb-[75px]
+        @apply text-c_blue-dark font-otf-normal not-italic
+        md:text-[50px] md:leading-[55px] ms:w-[870px] ms:pb-[75px]
         text-[26px] leading-[31px]  w-[90vw] pb-[30px]
     }
     .contactLink {
-        @apply opacity-70 text-c_orange-regular pl-[5px]
-        hover:cursor-pointer hover:opacity-[1]
-        active:cursor-pointer   active:opacity-[1] 
+        @apply opacity-[1] text-c_orange-regular pl-[5px] duration-500
+        hover:cursor-pointer hover:opacity-70
+        active:cursor-pointer   active:opacity-70
+        border-b-[1px] border-b-[#D2DCFF] 
     }
 
 }    
 
 @font-face {
-    font-family: 'otf';
+    font-family: 'otf-semiBold';
     src: url("/public/fonts/otf/SuisseIntl-SemiBold.otf");
 }
 @font-face {
-    font-family: 'otfNormal';
+    font-family: 'otf-normal';
+    src: url("../public/fonts/otf/SuisseIntl-Regular.otf");
+}
+@font-face {
+    font-family: 'otf-book';
     src: url("../public/fonts/otf/SuisseIntl-Book.otf");
 }
 @font-face {
-    font-family: 'otfBold';
+    font-family: 'otf-bold';
     src: url("../public/fonts/otf/SuisseIntl-Bold.otf");
 }
 
@@ -137,7 +139,13 @@
             linear-gradient(181.04deg, #2E2B59 0.89%, #32476F 50.61%, #4B3882 93.94%), 
             linear-gradient(180.43deg, #2E2B59 37.77%, #3991B7 60.04%, #B97333 78.65%);
     }
+    .startRadius {
+        border-radius: 29px 0px 0px 0px;
+    }
     .photoRadius {
         border-radius: 10px 60px;
+    }
+    .cardRadius {
+        border-radius: 4px 25px;
     }
 }

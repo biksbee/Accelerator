@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import cn from 'classnames'
 import { Link } from "react-scroll"
 import LiHeaderModule from './modules/LiHeaderModule'
@@ -11,13 +11,31 @@ import close from '../assets/icon/close.svg'
 
 const Header = () => {
 
+    const [show, setShow] = useState(true)
     const [open, setOpen] = useState(false)
+
+    const showNav = () => {
+        const heightWindow = window.screen.height*0.9
+        const scrollCur = window.pageYOffset;
+        if(scrollCur > heightWindow)
+            setShow(true)
+        else    
+            setShow(false)
+        if(scrollCur < 100)
+            setShow(true)
+    }
+    window.addEventListener('scroll', showNav)
 
     const menuElements = ['Проекты', 'Как мы работаем', 'Команда', 'Контакты']
 
     return (
-        <div className={cn('w-full h-max fixed flex z-[10000] justify-center')}>
-            <div className='w-[1240px] h-[77px] px-[20px] flex justify-between items-center ms:rounded-[26px] bg-c_purple-header'>
+        <div id='header' className={cn(
+            'w-full h-max fixed flex z-[99] justify-center',
+            show ? 'ms:mt-[10px] duration-500' : 'opacity-0 duration-500'
+        )}>
+            <div className={cn(
+                'w-[1240px] h-[77px] px-[20px] flex justify-between items-center ms:rounded-[26px] bg-c_purple-header'
+            )}>
                 <div className=''>
                     <Link 
                         className='flex w-[108px] justify-between' 
@@ -44,7 +62,9 @@ const Header = () => {
                 >
                     {
                         menuElements.map((item, index) => (
-                            <LiHeaderModule key={index} item={item} index={index} openLi={open} setOpenLi={setOpen}/>
+                            <div key={index} className={'w-full flex justify-center'}>
+                                <LiHeaderModule item={item} index={index} openLi={open} setOpenLi={setOpen}/>
+                            </div>
                         ))
                     }
                     <div 
@@ -54,7 +74,7 @@ const Header = () => {
                         <li 
                             className={cn(
                                 'menuLi w-max h-[49px] ms:hidden flex items-center',
-                                'px-[10px] hover:bg-c_gray-light hover:rounded-[6px] hover:duration-300'
+                                'px-[15px] hover:bg-c_gray-light hover:rounded-[6px] hover:duration-500'
                             )}
                         >
                             Eng
@@ -80,7 +100,10 @@ const Header = () => {
                     </a>    
                 </ul>
                 <div className='flex'>
-                    <div className='ms:visible hidden mr-[40px] ms:flex items-center'>
+                    <div className={cn(
+                            'ms:visible hidden mr-[40px] ms:flex items-center',
+                            'px-[15px] hover:bg-c_gray-light hover:rounded-[6px] hover:duration-500'
+                        )}>
                         <div className='menuLi'>
                             Eng
                         </div>
@@ -93,7 +116,9 @@ const Header = () => {
                                     'buttonMenu'
                                 )}
                             >
-                                <div className={cn('cn buttonText text-[13px] leading-[13px]')}>
+                                <div className={cn(
+                                    'cn buttonText text-[13px] leading-[13px]'
+                                )}>
                                     Подать заявку
                                 </div>
                             </div>
