@@ -26,14 +26,13 @@ const StartPageNew = () => {
                             и свободы интернета
                         </div>
                 </div>
-                <div className="relative w-full flex cb justify-end items-end">
-                    <div className='absolute w-max h-max bottom-0'>
-                        <div className='relative xs:w-[552px] xs:h-[661px] md:w-[400px] md:h-[480px]'>
-                                <div className='trapezoidCorner'></div>
-                                <div className='startProjects'></div>
-                            </div>
+                <div className="absolute bottom-0 right-0">
+                    <div className='relative xl:w-[552px] xl:h-[661px] md:w-[475px] md:h-[590px] w-[252px] h-[302px]'>
+                        <div className='trapezoidCorner'></div>
+                        <div className='startProjects'></div>
                     </div>
-                </div>
+                    <div className='startPageTheLoop'></div>
+                </div>   
             </div>
         </div>
     )

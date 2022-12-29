@@ -36,22 +36,22 @@
     }
     .startPageTheLoop {
         @apply absolute w-[1280px] h-full z-[1]
-        top-[-130px] left-0
+        xl:top-[-130px] xl:right-[-50px]
+        md:top-[-80px] md:right-[-110px]
+        top-[-30px] right-[-360px]
         bg-center bg-no-repeat bg-contain
         bg-startPageTheLoop
     }
     .startProjects {
         @apply absolute w-full h-full
-        xs:bg-auto bg-contain
-        bg-top bg-no-repeat 
+        xl:bg-contain bg-cover bg-top bg-no-repeat 
         bottom-0 right-0
         bg-startProjects startRadius
     }
     .trapezoidCorner {
         @apply absolute z-[2] bg-c_gray-trapezoid
         trapezoid top-0 left-0 
-        md:w-[80px] md:h-[80px]
-        w-[30px] h-[30px]
+        w-[80px] h-[80px]
     }
     .pageTitle {
         @apply not-italic font-otf-semiBold
