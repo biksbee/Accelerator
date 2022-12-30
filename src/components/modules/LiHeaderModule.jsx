@@ -14,12 +14,13 @@ const LiHeaderModule = ({item, index, openLi, setOpenLi}) => {
             offset={50} 
             duration={500}
             className={cn(
-                'flex justify-center items-center h-[49px]',
+                'ms:w-full w-max flex justify-center items-center h-[49px]',
                 ' ms:px-[15px] ms:h-[37px] duration-300',
+                'hover:bg-c_gray-light hover:rounded-[6px] hover:duration-500'
             )}
         >
             <div
-                className='w-max flex h-full items-center ms:px-[3px] px-[10px] hover:bg-c_gray-light hover:rounded-[6px] hover:duration-300' 
+                className='w-max flex h-full items-center ms:px-[3px] px-[10px]' 
                 onClick={() => setOpenLi(!openLi)}     
             >
                 <li className='menuLi'>

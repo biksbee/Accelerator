@@ -9,14 +9,13 @@ const Chapter = ({i}) => {
         <div
             key={i.index}
             className={cn(
-                'border-t-[2px] border-t-c_blue-dark',
-                'w-full flex pt-[25px] ms:pb-[120px] pb-[60px] last:pb-0'
+                'ms:pb-[120px] pb-[60px] last:pb-0'
             )}
         >
-            <div className='w-full ms:flex justify-between'>
-                <div className='ms:flex'>
+            <div className='w-full ms:flex justify-between pt-[25px]'>
+                <div className='ms:flex xl:px-0 md:px-[40px] px-[15px]'>
                     <div className={cn(`w-[44px] h-[44px] ms:mr-[40px] ms:mb-0 mb-[30px]`)}>
-                        <img src={content.icon[i.index]} alt="" />
+                        <img src={content.icon[i.index]} alt="icon" />
                     </div>
                     <div>
                         <div className='relative flex'>
@@ -48,17 +47,17 @@ const Chapter = ({i}) => {
                     </div>
                 </div>        
                 <div>
-                    <div className='font-otfNormal not-italic font-normal text-c_red-regular text-[12px] leading-[14px] pb-[25px]'>
+                    <div className='ms:px-0 md:px-[40px] px-[15px] font-otf-book not-italic font-normal text-c_red-regular text-[12px] leading-[14px] pb-[25px]'>
                         Примеры
                     </div>
-                    <div className='xl:w-[396px] xs:w-[350px] ms:w-[266px] md:w-[90vw] ms:block md:flex hidden justify-between'>
+                    <div className='ms:px-0 md:px-[40px] px-[15px] xl:w-[396px] xs:w-[350px] ms:w-[266px] ms:block md:flex hidden justify-between'>
                         {
                             content.examples.ex.Title[i.index].map((item, index) => (
                                 <div key={index} className='pb-[25px] ms:w-full w-[250px]'>
-                                    <div key={index} className='font-otfBold not-italic font-bold text-[15px] leading-[18px] text-c_blue-deepDark pb-[10px]'>
+                                    <div key={index} className='font-otfBold not-italic font-otf-bold text-[15px] leading-[18px] text-c_blue-deepDark pb-[10px]'>
                                         {item}
                                     </div>
-                                    <div className='font-otfNormal not-italic text-[15px] leading-[18px] text-c_blue-deepDarkOp'>
+                                    <div className='font-otf-book not-italic text-[15px] leading-[18px] text-c_blue-deepDarkOp'>
                                         {content.examples.ex.exText[i.index][index]}
                                     </div>
                                 </div>    
@@ -68,15 +67,15 @@ const Chapter = ({i}) => {
                     <Swiper
                         slidesPerView={"auto"} 
                         spaceBetween={30}
-                        className="mx-0 md:hidden"
+                        className="mx-0 w-screen md:hidden"
                     >
                         {
                             content.examples.ex.Title[i.index].map((item, index) => (
-                                <SwiperSlide key={index} className='pb-[25px] w-[250px]'>
+                                <SwiperSlide key={index} className='pb-[25px] w-[250px] ms:px-0 md:px-[40px] px-[15px]'>
                                     <div key={index} className='font-otfBold not-italic font-bold text-[15px] leading-[18px] text-c_blue-deepDark pb-[10px]'>
                                         {item}
                                     </div>
-                                    <div className='font-otfNormal not-italic text-[15px] leading-[18px] text-c_blue-deepDarkOp'>
+                                    <div className='font-otf-book not-italic text-[15px] leading-[18px] text-c_blue-deepDarkOp'>
                                         {content.examples.ex.exText[i.index][index]}
                                     </div>
                                 </SwiperSlide>    
