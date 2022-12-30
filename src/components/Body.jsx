@@ -17,7 +17,7 @@ const Body = () => {
             <Media />
             <Works />
             <Demhack />
-            {/* <MoreAccelerator /> */}
+            <MoreAccelerator />
             {/* <House /> */}
             {/* <Team /> */}
             <Contacts />

@@ -93,10 +93,9 @@
     }
     .moreAcceleratorTheLoop {
         @apply absolute bg-center bg-no-repeat bg-contain 
-        xs:h-[312px] xs:w-[1200px]
-        md:h-[201px] md:w-[700px]
+        md:h-[312px] md:w-[1200px]
         h-[109px] w-[498px]
-        top-[20px] left-[-10px]
+        md:bottom-0 bottom-[95px] md:left-[-10px] left-[-173px]
         bg-moreAcceleratorLoop
     }
     .contactText {

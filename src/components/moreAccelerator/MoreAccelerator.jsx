@@ -7,8 +7,8 @@ const MoreAccelerator = () => {
 
     return (
         <div className="w-full flex justify-center bg-c_pink-regular">
-            <div className="relative xl:w-[1280px] w-[90vw] xl:pt-[204px] md:pt-[150px] pt-[90px] pb-[169px] ms:px-[40px] px-[15px] overflow-hidden">
-                <div className="pb-[53px]">
+            <div className="xl:pt-[204px] md:pt-[150px] pt-[90px] pb-[163px] overflow-hidden">
+                <div className="relative xl:w-[1280px] w-[90vw] pb-[53px] ms:px-[40px] px-[15px]">
                     <div className={cn(
                             "pageTitle text-c_red-deep"
                     )}>
@@ -25,6 +25,7 @@ const MoreAccelerator = () => {
                     <Swiper 
                         slidesPerView={"auto"} 
                         spaceBetween={80}
+                        className={'md:flex hidden ms:pl-[40px] pl-[15px]'}
                     >
                         {
                             content.title.map((item, index) => (
@@ -32,9 +33,9 @@ const MoreAccelerator = () => {
                                     <div className={cn(
                                         'md:text-[45px] md:leading-[48px] text-[22px] leading-[25px] pb-[30px]',
                                         'font-otf not-italic font-semibold',
-                                        index === 0 ? 'text-c_yellow-regular' 
-                                            : index === 1 ? 'text-c_orange-primary' 
-                                            : index === 2 ? 'text-c_orange-regular' 
+                                        index === 0 ? 'text-c_yellow-dirty' 
+                                            : index === 1 ? 'text-c_orange-blur' 
+                                            : index === 2 ? 'text-c_orange-bright' 
                                             : ''
                                     )}>
                                         {item}
@@ -57,27 +58,59 @@ const MoreAccelerator = () => {
 
                         }
                     </Swiper>
+                    <div className='md:hidden block w-[90vw]'>
+                        {
+                            content.title.map((item, index) => (
+                                <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep pt-[20px] mt-[30px] md:w-[488px]'>
+                                    <div className={cn(
+                                        'md:text-[45px] md:leading-[48px] text-[22px] leading-[25px] pb-[30px]',
+                                        'font-otf not-italic font-semibold',
+                                        index === 0 ? 'text-c_yellow-dirty' 
+                                            : index === 1 ? 'text-c_orange-blur' 
+                                            : index === 2 ? 'text-c_orange-bright' 
+                                            : ''
+                                    )}>
+                                        {item}
+                                    </div>
+                                    <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] text-c_red-deep'>
+                                        {content.context[index]}
+                                    </div>
+                                    {content.needed[index] !== '' ? 
+                                        <div className='pt-[20px] opacity-[0.5] md:text-[16px] md:leading-[20px] text-[13px] leading-[16px]'>
+                                            требования
+                                        </div>
+                                    : null}
+                                    <div className={cn(
+                                        'pt-[10px] md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] text-c_red-deep'
+                                    )}>
+                                        {content.needed[index]}
+                                    </div>
+                                </SwiperSlide>
+                            ))
+
+                        }
+                    </div>
                 </div>
-                <div className='text-center md:pt-[120px] text-c_red-deep'>
+                <div className='text-center md:pt-[140px] pt-[95px] text-c_red-deep'>
                     <div className='text-[110px] leading-[140px]'>
                         0₽
                     </div>
-                    <div className='flex justify-center'>
+                    <div className='flex justify-center pt-[9px]'>
                         <div className='text-[22px] leading-[26px] font-otfBold font-bold not-italic text-center  w-[169px]'>
                             Стоимость участия
                         </div>
                     </div>
-                    <div className='flex justify-center pt-[30px]'>
+                    <div className='flex justify-center pt-[30px] md:pb-[60px] pb-[40px]'>
                         <div className='w-[332px] md:text-[21px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal'>
                             Как для некоммерческих, так и для коммерческих проектов участие бесплатно.
                         </div>
                     </div>
                     <a href="https://pd.roskomsvoboda.org/privacyaccelerator/" target="_blank">
-                        <div className='flex justify-center pt-[62px]'>
+                        <div className='flex justify-center h-max'>
                             <div 
                                 className={cn(
                                     'bg-c_orange-regular hover:bg-c_orange-hover active:bg-c_orange-pressed flex justify-center items-center rounded-[6px]',
-                                    'w-[162px] h-[41px] mt-[43px]',
+                                    'w-[220px] h-[65px]',
                                     'drop-shadow-default hover:drop-shadow-hover'
                                 )}
                             >
