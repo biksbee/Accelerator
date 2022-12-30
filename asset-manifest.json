@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.a4efe316.css",
-    "main.js": "/Accelerator/static/js/main.e43d6d66.js",
+    "main.css": "/Accelerator/static/css/main.df217185.css",
+    "main.js": "/Accelerator/static/js/main.3ec1ee24.js",
     "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
     "static/media/startProjects.png": "/Accelerator/static/media/startProjects.ca1ad11d3215433f2dda.png",
     "static/media/getSiteCopy.png": "/Accelerator/static/media/getSiteCopy.3bd825f4ba6e57af4b03.png",
@@ -69,12 +69,12 @@
     "static/media/closePop.svg": "/Accelerator/static/media/closePop.d7e7a0306a3e1f7aea98da79556e7ecb.svg",
     "static/media/OrangeArrow.svg": "/Accelerator/static/media/OrangeArrow.c2fc76293a11fa4cd733.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "main.a4efe316.css.map": "/Accelerator/static/css/main.a4efe316.css.map",
-    "main.e43d6d66.js.map": "/Accelerator/static/js/main.e43d6d66.js.map",
+    "main.df217185.css.map": "/Accelerator/static/css/main.df217185.css.map",
+    "main.3ec1ee24.js.map": "/Accelerator/static/js/main.3ec1ee24.js.map",
     "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4efe316.css",
-    "static/js/main.e43d6d66.js"
+    "static/css/main.df217185.css",
+    "static/js/main.3ec1ee24.js"
   ]
 }
