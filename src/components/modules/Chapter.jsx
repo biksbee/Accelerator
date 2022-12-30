@@ -1,5 +1,5 @@
 import cn from 'classnames'
-import content from '../works/content'
+import content from '../3.works/content'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 
