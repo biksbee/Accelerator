@@ -5,16 +5,16 @@ const Demhack = () => {
     return (
         <div className="w-full flex justify-center bg-c_black-dark">
             <div className="xl:w-[1280px] w-[90vw] pt-[83px] pb-[111px] md:px-[40px] px-[15px]">
-                <div className="md:flex justify-between md:pb-[50px] pb-[25px]">
+                <div className="ms:flex justify-between">
                     <div className="md:w-[539px] w-[290px] md:h-[112px] h-[60px]">
                         <img src={demhack} alt="" />
                     </div>
-                    <div className='text-right'>
+                    <div className='ms:text-right ms:pb-0 pb-[25px]'>
                         <a href='' >
                             <div className='text-[24px] leading-[23px] text-c_gray-primary'>
                                 Хакатон
                             </div>
-                            <div className='text-[18px] leading-[25px] font-normal not-italic text-c_orange-regular'>
+                            <div className='w-max text-[18px] leading-[25px] font-otf-normal not-italic text-c_orange-link duration-500 hover:opacity-50 border-b-[1px] border-c_orange-link_op'>
                                 demhack.ru 🡽
                             </div>
                         </a>    
@@ -24,7 +24,7 @@ const Demhack = () => {
                     <div className='ms:flex justify-between'>
                         <div className='xl:w-[35vw] ms:w-[40vw] text-c_gray-regular md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otfNormal not-italic font-normal'>
                             <div className='pb-[20px]'>
-                                С 2020 года <a href="" className='text-white'>Privacy Accelerator</a> и Роскомсвобода проводят хакатон Demhack дважды в год.
+                                С 2020 года <a href="" className='text-c_gray-regular w-max border-b-[1px] border-b-c_gray-light hover:opacity-50 duration-500'>Privacy Accelerator</a> и Роскомсвобода проводят хакатон Demhack дважды в год.
                             </div>
                             <div>
                                 Цель хакатона — поддержка духа сообщества, создание площадки для взаимодействия и сотрудничества 

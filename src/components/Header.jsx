@@ -21,7 +21,7 @@ const Header = () => {
             setShow(true)
         else    
             setShow(false)
-        if(scrollCur < 100)
+        if(scrollCur < 200)
             setShow(true)
     }
     window.addEventListener('scroll', showNav)
@@ -31,7 +31,7 @@ const Header = () => {
     return (
         <div id='header' className={cn(
             'w-full h-max fixed flex z-[99] justify-center',
-            show ? 'ms:mt-[10px] duration-500' : 'opacity-0 duration-500'
+            show ? 'ms:mt-[10px] duration-500' : 'ms:opacity-0 duration-500'
         )}>
             <div className={cn(
                 'w-[1240px] h-[77px] px-[20px] flex justify-between items-center ms:rounded-[26px] bg-c_purple-header'
@@ -57,7 +57,8 @@ const Header = () => {
                 <ul 
                     className={cn(
                         'menuUl ms:top-0',
-                        open ? 'top-[74px]' : 'top-[-100vh]'
+                        open ? 'top-[74px]' : 'top-[-100vh]',
+                        show ? '' : ''
                     )}
                 >
                     {

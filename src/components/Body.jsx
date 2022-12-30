@@ -2,7 +2,7 @@ import StartPageNew from "./1.startPage/StartPageNew"
 import OurProjectsNew from "./ourProjects/OurProjectsNew"
 import Media from "./media/Media"
 import Works from "./3.works/Works"
-import Demhack from "./demhack/Demhack"
+import Demhack from "./4.demhack/Demhack"
 import MoreAccelerator from "./moreAccelerator/MoreAccelerator"
 import House from "./house/House"
 import Team from "./team/Team"
@@ -16,7 +16,7 @@ const Body = () => {
             <OurProjectsNew />
             <Media />
             <Works />
-            {/* <Demhack /> */}
+            <Demhack />
             {/* <MoreAccelerator /> */}
             {/* <House /> */}
             {/* <Team /> */}

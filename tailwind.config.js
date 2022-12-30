@@ -70,6 +70,8 @@ module.exports = {
         },
         c_orange: {
           blur: 'rgba(186, 102, 48, 1)',
+          link: 'rgba(222, 80, 36, 1)',
+          link_op: 'rgba(222, 63, 14, 0.3)',
           regular: 'rgba(244, 68, 13, 1)',
           hover: 'rgba(244, 68, 13, 0.9)',
           pressed: 'rgba(244, 68, 13, 0.5)',
