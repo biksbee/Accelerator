@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Accelerator/static/css/main.f6eb9594.css",
-    "main.js": "/Accelerator/static/js/main.62363012.js",
+    "main.js": "/Accelerator/static/js/main.4af294cc.js",
     "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
     "static/media/startProjects.png": "/Accelerator/static/media/startProjects.ca1ad11d3215433f2dda.png",
     "static/media/getSiteCopy.png": "/Accelerator/static/media/getSiteCopy.3bd825f4ba6e57af4b03.png",
@@ -70,11 +70,11 @@
     "static/media/OrangeArrow.svg": "/Accelerator/static/media/OrangeArrow.c2fc76293a11fa4cd733.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
     "main.f6eb9594.css.map": "/Accelerator/static/css/main.f6eb9594.css.map",
-    "main.62363012.js.map": "/Accelerator/static/js/main.62363012.js.map",
+    "main.4af294cc.js.map": "/Accelerator/static/js/main.4af294cc.js.map",
     "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f6eb9594.css",
-    "static/js/main.62363012.js"
+    "static/js/main.4af294cc.js"
   ]
 }
