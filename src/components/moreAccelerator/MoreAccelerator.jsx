@@ -21,7 +21,7 @@ const MoreAccelerator = () => {
                     </div>
                     <div className="moreAcceleratorTheLoop"></div>
                 </div>
-                <div className='md:pb-[127px] pb-[80px] border-b-[2px] border-b-c_red-deep'>
+                <div className='md:pb-[127px] pb-[80px]'>
                     <Swiper 
                         slidesPerView={"auto"} 
                         spaceBetween={80}
@@ -90,6 +90,9 @@ const MoreAccelerator = () => {
 
                         }
                     </div>
+                </div>
+                <div className='w-full flex justify-center ms:px-[40px] px-[15px]'>
+                    <div className='border-b-[2px] border-b-c_red-deep w-full'></div>
                 </div>
                 <div className='text-center md:pt-[140px] pt-[95px] text-c_red-deep'>
                     <div className='text-[110px] leading-[140px]'>
