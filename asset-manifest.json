@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.683920ba.css",
-    "main.js": "/Accelerator/static/js/main.61e3d5a0.js",
+    "main.css": "/Accelerator/static/css/main.19084209.css",
+    "main.js": "/Accelerator/static/js/main.abb11ec3.js",
     "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
     "static/media/startProjects.png": "/Accelerator/static/media/startProjects.ca1ad11d3215433f2dda.png",
     "static/media/getSiteCopy.png": "/Accelerator/static/media/getSiteCopy.3bd825f4ba6e57af4b03.png",
@@ -45,9 +45,9 @@
     "static/media/RBK.svg": "/Accelerator/static/media/RBK.1169b56fd9fc9d657310bf9524a90f1c.svg",
     "static/media/LegalTech.svg": "/Accelerator/static/media/LegalTech.b2425f1c79c0941713d0eb0d9de427ae.svg",
     "static/media/Privacy.svg": "/Accelerator/static/media/Privacy.0a4a56989050bab05d87fb2c7acf1803.svg",
+    "index.html": "/Accelerator/index.html",
     "static/media/MoreAccelerator.svg": "/Accelerator/static/media/MoreAccelerator.530300c417893bf3a9e1.svg",
     "static/media/TheLoopStartPage.svg": "/Accelerator/static/media/TheLoopStartPage.7443d73252caac24b46b.svg",
-    "index.html": "/Accelerator/index.html",
     "static/media/TheLoopOurProjects.svg": "/Accelerator/static/media/TheLoopOurProjects.a27b9ac10e7cee877750.svg",
     "static/media/WaveLine.svg": "/Accelerator/static/media/WaveLine.3d511717446071e9ff95eae7a615097e.svg",
     "static/media/WaveLineMini.svg": "/Accelerator/static/media/WaveLineMini.1f477c55cbf4a4b96f6233d0443389ca.svg",
@@ -69,12 +69,12 @@
     "static/media/closePop.svg": "/Accelerator/static/media/closePop.d7e7a0306a3e1f7aea98da79556e7ecb.svg",
     "static/media/OrangeArrow.svg": "/Accelerator/static/media/OrangeArrow.c2fc76293a11fa4cd733.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "main.683920ba.css.map": "/Accelerator/static/css/main.683920ba.css.map",
-    "main.61e3d5a0.js.map": "/Accelerator/static/js/main.61e3d5a0.js.map",
+    "main.19084209.css.map": "/Accelerator/static/css/main.19084209.css.map",
+    "main.abb11ec3.js.map": "/Accelerator/static/js/main.abb11ec3.js.map",
     "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.683920ba.css",
-    "static/js/main.61e3d5a0.js"
+    "static/css/main.19084209.css",
+    "static/js/main.abb11ec3.js"
   ]
 }
