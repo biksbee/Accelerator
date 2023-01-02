@@ -14,7 +14,7 @@ const Card = ({i, setFade, fade}) => {
                                 <div>
                                     <div className={cn(
                                          !fade ? 'filter grayscale' :  'filter-none',
-                                        'md:hidden block w-[150px] h-[150px] bg-repeat-round bg-center bg-contain mb-[20px]', 
+                                        'md:hidden block w-[150px] h-[150px] duration-500 bg-no-repeat bg-center bg-cover mb-[20px] cardRadius', 
                                         content.photo[i.index]
                                     )} />
                                 </div>
@@ -24,14 +24,14 @@ const Card = ({i, setFade, fade}) => {
                                     {i.item}
                                 </div>
                             </div>
-                            <div className='h-[144px] mb-[20px]'>
-                                <div className='text-c_gray-blur opacity-50 text-[16px] leading-[24px] md:w-[280px] w-[250px]'>
+                            <div className='mb-[20px] h-[144px]'>
+                                <div className='text-c_gray-blur opacity-50 text-[16px] leading-[24px] md:w-[280px]'>
                                     {content.description[i.index]}
                                 </div>
                             </div>
                             <div className={cn(
                                     !fade ? 'filter grayscale' :  'filter-none',
-                                    'relative md:w-[284px] md:h-[373px] md:block hidden bg-no-repeat bg-center bg-contain photoRadius', 
+                                    'relative md:w-[284px] md:h-[373px] md:block hidden duration-500 bg-no-repeat bg-center bg-contain photoRadius', 
                                     content.photo[i.index]
                                 )}> 
                             </div>

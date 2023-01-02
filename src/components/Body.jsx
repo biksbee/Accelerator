@@ -5,7 +5,7 @@ import Works from "./3.works/Works"
 import Demhack from "./4.demhack/Demhack"
 import MoreAccelerator from "./moreAccelerator/MoreAccelerator"
 import House from "./house/House"
-import Team from "./team/Team"
+import Team from "./8.team/Team"
 import Contacts from "./9.contact/Contacts"
 
 const Body = () => {
@@ -19,7 +19,7 @@ const Body = () => {
             <Demhack />
             <MoreAccelerator />
             {/* <House /> */}
-            {/* <Team /> */}
+            <Team />
             <Contacts />
         </div>
     )

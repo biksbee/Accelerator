@@ -1,11 +1,11 @@
 const content = {
     name: [
-        'Станислав Шакиров', 'Наталья Малышева', 'Daria Gorbacheva', 'Olga Nemirovskaya'
+        'Станислав Шакиров', 'Наталья Малышева', 'Дарья Горбачева', 'Olga Nemirovskaya'
     ],
     description: [
         'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы.',
         'Руководитель по связям с общественностью РосКомСвободы, журналист и экоактивист. Эксперт в области СМИ, коммуникаций и продвижения, организации общественных кампаний.',
-        'product and event manager. Expert in community building, researcher, civil and IT project manager with extensive experience working with non-profit organizations.',
+        'Координатор Privacy Accelerator. Опыт в области коммьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.',
         'Product manager Privacy accelerator. Эксперт в продуктовом подходе в продажах и маркетинге'
     ],
     photo: [

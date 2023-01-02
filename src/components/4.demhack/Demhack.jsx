@@ -6,7 +6,7 @@ const Demhack = () => {
         <div className="w-full flex justify-center bg-c_black-dark">
             <div className="xl:w-[1280px] w-[90vw] pt-[83px] pb-[111px] md:px-[40px] px-[15px]">
                 <div className="ms:flex justify-between">
-                    <div className="md:w-[539px] w-[290px] md:h-[112px] h-[60px]">
+                    <div className="md:w-[539px] s:w-[290px] md:h-[112px] h-[60px]">
                         <img src={demhack} alt="" />
                     </div>
                     <div className='ms:text-right ms:pb-0 pb-[25px]'>
@@ -46,10 +46,6 @@ const Demhack = () => {
                         </div>
                     </div>
                     <div className='flex justify-center pt-[51px]'>
-                        {/* <YouTube 
-                            
-                            videoId="fcpE89HuQ8Q" 
-                        /> */}
                         <iframe
                             className='xl:w-[1200px] w-[90vw] xl:h-[600px] ms:h-[500px] md:h-[400px] h-[300px]'
                             src="https://www.youtube.com/embed/fcpE89HuQ8Q"
