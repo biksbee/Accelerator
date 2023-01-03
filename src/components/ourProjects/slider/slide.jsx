@@ -31,11 +31,11 @@ const Slider = ({setShow, setActive, setOpen, send}) => {
                         'bg-c_blue-regular duration-500',
                         // 'xl:px-[calc((100vw-1280px)/2)] md:px-[40px] px-[15px]'
                     )}
-                    // onClick={() => setShow(true)}
+                    onClick={() => setShow(true)}
                 >
                     <div 
                         className="md:flex justify-between pt-[20px] pb-[26px] cursor-pointer"  
-                        // onClick={() => setOpen(true)}
+                        onClick={() => setOpen(true)}
                         onMouseEnter={() => setFade(true)}
                         onMouseLeave={() => setFade(false)} 
                     >
