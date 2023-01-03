@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.03557b38.css",
-    "main.js": "/Accelerator/static/js/main.0045bd77.js",
+    "main.css": "/Accelerator/static/css/main.22483d99.css",
+    "main.js": "/Accelerator/static/js/main.2e069b1f.js",
     "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
     "static/media/startProjects.png": "/Accelerator/static/media/startProjects.f3afff84bcd9ea7891d2.png",
     "static/media/tracking.png": "/Accelerator/static/media/tracking.72e5eb2299b17495f1ad.png",
@@ -10,17 +10,17 @@
     "static/media/helpFinance.png": "/Accelerator/static/media/helpFinance.c1bed0f2eecc1376ebd0.png",
     "static/media/StanislavShakirov.png": "/Accelerator/static/media/StanislavShakirov.505335b28e3ff427100b.png",
     "static/media/accessToTheMarket.png": "/Accelerator/static/media/accessToTheMarket.ccf94c006b4274c8eb7f.png",
+    "static/media/getSiteCopy.png": "/Accelerator/static/media/getSiteCopy.7af99ef88ffb236dc0c7.png",
     "static/media/OlgaNemirovskaya.png": "/Accelerator/static/media/OlgaNemirovskaya.84311344766a3b6b3bc3.png",
+    "static/media/amnezia.png": "/Accelerator/static/media/amnezia.f2b9fc5c25533fe216bf.png",
     "static/media/NataliyMalishova.png": "/Accelerator/static/media/NataliyMalishova.8f63c8dab5a62d96f40d.png",
     "static/media/lecture.png": "/Accelerator/static/media/lecture.08d7673e544e8b4dbb96.png",
     "static/media/DariaGorbacheva.png": "/Accelerator/static/media/DariaGorbacheva.8ee96296669b1ab39299.png",
-    "static/media/getSiteCopy.png": "/Accelerator/static/media/getSiteCopy.3bd825f4ba6e57af4b03.png",
     "static/media/SarkisDabrinyn.png": "/Accelerator/static/media/SarkisDabrinyn.fa48a4f9573c04cea706.png",
     "static/media/SuisseIntl-Bold.otf": "/Accelerator/static/media/SuisseIntl-Bold.24fe64545382e1378933.otf",
     "static/media/SuisseIntl-SemiBold.otf": "/Accelerator/static/media/SuisseIntl-SemiBold.bc8a07fd3d909616d31a.otf",
     "static/media/SuisseIntl-Regular.otf": "/Accelerator/static/media/SuisseIntl-Regular.b248914e0a53493d03f0.otf",
     "static/media/SuisseIntl-Book.otf": "/Accelerator/static/media/SuisseIntl-Book.30ad3a64be8c976d9a31.otf",
-    "static/media/amnezia.png": "/Accelerator/static/media/amnezia.5b03616c87df5ecff5f5.png",
     "static/media/Footer.svg": "/Accelerator/static/media/Footer.a40c7c1c156e82025b432eb097350d53.svg",
     "static/media/InformationCulture.svg": "/Accelerator/static/media/InformationCulture.5e1f7a5c520e5bea94ea6c4f81c95860.svg",
     "static/media/RussiaVenchur.svg": "/Accelerator/static/media/RussiaVenchur.d0ff8717d600a734cd27b853a32eb40d.svg",
@@ -69,12 +69,12 @@
     "static/media/OrangeArrow.svg": "/Accelerator/static/media/OrangeArrow.0092da3593a944046147.svg",
     "static/media/closePop.svg": "/Accelerator/static/media/closePop.d7e7a0306a3e1f7aea98da79556e7ecb.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "main.03557b38.css.map": "/Accelerator/static/css/main.03557b38.css.map",
-    "main.0045bd77.js.map": "/Accelerator/static/js/main.0045bd77.js.map",
+    "main.22483d99.css.map": "/Accelerator/static/css/main.22483d99.css.map",
+    "main.2e069b1f.js.map": "/Accelerator/static/js/main.2e069b1f.js.map",
     "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03557b38.css",
-    "static/js/main.0045bd77.js"
+    "static/css/main.22483d99.css",
+    "static/js/main.2e069b1f.js"
   ]
 }
