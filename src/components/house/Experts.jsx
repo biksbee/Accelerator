@@ -32,7 +32,7 @@ const Experts = () => {
                                     <div className={
                                         cn(
                                             // !fade ? 'filter grayscale' :  'filter-none',
-                                            'w-[286px] h-[373px] bg-no-repeat md:bg-cover bg-contain bg-center photoRadius',
+                                            'md:w-[286px] md:h-[373px] w-[150px] h-[150px] bg-no-repeat bg-cover bg-center photoRadius',
                                             content.photo[index]
                                         )
                                     } />

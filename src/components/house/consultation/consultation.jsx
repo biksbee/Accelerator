@@ -88,13 +88,13 @@ const Consultation = ({setOpen}) => {
                     ))}
                     <SwiperSlide>
                         <div 
-                        className='w-[273px] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'
-                        onMouseEnter={() => setBluer(true)}
-                        onMouseLeave={() => setBluer(false)}   
-                        onClick={() => setOpen(true)}  
+                            className='md:w-[367px] w-[273px] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'
+                            onMouseEnter={() => setBluer(true)}
+                            onMouseLeave={() => setBluer(false)}   
+                            onClick={() => setOpen(true)}  
                         >
-                            <div className='w-[184px]'>
-                                <div className='w-[184px] text-c_gray-regular pb-[30px] font-otf font-semibold text-[20px] leading-[20px]'>
+                            <div className='md:w-[282px] w-[184px]'>
+                                <div className='w-[184px] text-c_gray-regular pb-[30px] font-otf font-semibold md:text-[33.75px] md:leading-[33.75px] text-[20px] leading-[20px]'>
                                     Посмотреть всех экспертов
                                 </div>
                                 <div className='grid grid-cols-3 gap-x-[13px] gap-y-[11px]'>
@@ -105,7 +105,7 @@ const Consultation = ({setOpen}) => {
                                                     key={index}
                                                     className={
                                                         cn(
-                                                            `${item} w-[48px] h-[49px] bg-no-repeat bg-cover bg-center`,
+                                                            `${item} md:w-[85.43px] md:h-[85.43px] w-[48px] h-[49px] bg-no-repeat bg-cover bg-center`,
                                                             !bluer ? 'filter grayscale' :  'filter-none',
                                                         )} 
                                                 />

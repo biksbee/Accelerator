@@ -148,4 +148,7 @@
     .cardRadius {
         border-radius: 4px 25px;
     }
+    .customScroll::-webkit-scrollbar {
+        width: 0;
+      }
 }
