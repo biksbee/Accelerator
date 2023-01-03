@@ -48,11 +48,12 @@ const Slider = ({setShow, setActive, setOpen, send}) => {
                             //     height: max  
                             // }}
                             className={cn(
-                                "ourProjectStyleSubTitle",                         
+                                "ourProjectStyleSubTitle relative",                         
                             )}
 
                         >
                             {content.subTitle[index]}
+                            {index === 0 ? <div className='text-c_orange-regular absolute flex xl:bottom-[35px] xl:left-[90px] md:bottom-[15px] md:left-[90%] bottom-[46px] left-[75%]'>→</div> : null}
                         </div>
                     </div>
                     <div>
