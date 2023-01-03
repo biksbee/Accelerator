@@ -20,16 +20,16 @@ const Consultation = ({setOpen}) => {
 
     return (
         <div>
-            <div className='w-[316px] mb-[51px] relative'>
+            <div className='s:w-[386px] w-[80vw] mb-[51px] relative md:px-[40px] px-[15px]'>
                 <div className={cn(
-                    "text-c_gray-regular md:text-[45px] leading-[65px] text-[22px] md:leading-[42px]",
-                    "font-otf font-normal not-italic"
+                    "md:pb-[9px] pb-[6px] text-c_gray-regular md:text-[45px] md:leading-[65px] text-[22px] leading-[22px]",
+                    "font-otf font-otf-semiBold not-italic"
                 )}>
                     Консультации с экспертами
                 </div>
                 <div className='bg-curveLineConsultation h-[20px] bg-no-repeat'></div>
             </div>
-            <div className='ms:grid xl:grid-cols-3 hidden ms:grid-cols-2 xl:gap-[50px]'>
+            <div className='md:px-[40px] px-[15px] ms:grid xl:grid-cols-3 hidden ms:grid-cols-2 xl:gap-[50px]'>
                 {content.f_name.map((item, index) => (
                     <div key={index} className="h-full xl:mt-0 ms:mt-[30px] cursor-pointer border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
                         <CardExp key={index} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
@@ -42,7 +42,7 @@ const Consultation = ({setOpen}) => {
                     onClick={() => setOpen(true)}  
                 >
                     <div className='w-[282px]'>
-                        <div className='text-c_gray-regular w-[282px] font-otf font-semibold text-[33.75px] leading-[33.75px]'>
+                        <div className='text-c_gray-regular w-[282px] pb-[40px] font-otf font-semibold text-[33.75px] leading-[33.75px]'>
                             Посмотреть всех экспертов
                         </div>
                         <div className='grid grid-cols-3 gap-x-[13px] gap-y-[11px]'>
@@ -62,8 +62,8 @@ const Consultation = ({setOpen}) => {
                                         <div
                                             className={
                                                 cn(
-                                                    `${item} w-[85.43px] h-[85.43px] bg-no-repeat bg-cover bg-center`,
-                                                    'rotate-[-135deg]'
+                                                    `${item} w-[38px] h-[39px] bg-no-repeat bg-cover bg-center`,
+                                                    // 'rotate-[-135deg]'
                                                 
                                                 )} 
                                         />
@@ -79,7 +79,7 @@ const Consultation = ({setOpen}) => {
                 <Swiper
                     slidesPerView={"auto"} 
                     spaceBetween={30}
-                    className={'ms:hidden'}
+                    className={'ms:hidden md:px-[40px] px-[15px]'}
                 >
                     {content.f_name.map((item, index) => (
                         <SwiperSlide key={index} className="cursor-pointer border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
@@ -88,13 +88,13 @@ const Consultation = ({setOpen}) => {
                     ))}
                     <SwiperSlide>
                         <div 
-                        className='w-[367px] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'
+                        className='w-[273px] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'
                         onMouseEnter={() => setBluer(true)}
                         onMouseLeave={() => setBluer(false)}   
                         onClick={() => setOpen(true)}  
                         >
-                            <div className='w-[282px]'>
-                                <div className='text-c_gray-regular w-[282px] font-otf font-semibold text-[33.75px] leading-[33.75px]'>
+                            <div className='w-[184px]'>
+                                <div className='w-[184px] text-c_gray-regular pb-[30px] font-otf font-semibold text-[20px] leading-[20px]'>
                                     Посмотреть всех экспертов
                                 </div>
                                 <div className='grid grid-cols-3 gap-x-[13px] gap-y-[11px]'>
@@ -105,7 +105,7 @@ const Consultation = ({setOpen}) => {
                                                     key={index}
                                                     className={
                                                         cn(
-                                                            `${item} w-[85.43px] h-[85.43px] bg-no-repeat bg-cover bg-center`,
+                                                            `${item} w-[48px] h-[49px] bg-no-repeat bg-cover bg-center`,
                                                             !bluer ? 'filter grayscale' :  'filter-none',
                                                         )} 
                                                 />
@@ -114,8 +114,8 @@ const Consultation = ({setOpen}) => {
                                                 <div
                                                     className={
                                                         cn(
-                                                            `${item} w-[85.43px] h-[85.43px] bg-no-repeat bg-cover bg-center`,
-                                                            'rotate-[-135deg]'
+                                                            `${item} w-[38px] h-[39px] bg-no-repeat bg-cover bg-center`,
+                                                            // 'rotate-[-135deg]'
                                                         )} 
                                                 />
                                             </div>    

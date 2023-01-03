@@ -33,25 +33,37 @@ const Networking = () => {
             </div>
             <div className='mt-[70px]'>
                 <div className='flex justify-between md:mb-[51px]'>
-                    <div>
-                        <img src={RosComFreedom} alt="RosComFreedom" />
+                    <div className='hover:opacity-50 duration-500'>
+                        <a href={content.links[0]}>
+                            <img src={RosComFreedom} alt="RosComFreedom" />
+                        </a>    
                     </div>
-                    <div>
-                        <img src={Habr} alt="Habr" />
+                    <div className='hover:opacity-50 duration-500'>
+                        <a href={content.links[1]}>
+                            <img src={Habr} className='h-[90px]' alt="Habr" />
+                        </a>
                     </div>
-                    <div>
-                        <img src={QratorLabs} alt="QratorLabs" />
+                    <div className='hover:opacity-50 duration-500'>
+                        <a href={content.links[2]}>
+                            <img src={QratorLabs} alt="QratorLabs" />
+                        </a>
                     </div>
                 </div>
                 <div className='flex justify-between'>
-                    <div>
-                        <img src={Proton} alt="Proton" />
+                    <div className='hover:opacity-50 duration-500'>
+                        <a href={content.links[3]}>
+                            <img src={Proton} alt="Proton" />
+                        </a>
                     </div>
-                    <div>
-                        <img src={InformationCulture} alt="InformationCulture" />
+                    <div className='hover:opacity-50 duration-500'>
+                        <a href={content.links[4]}>
+                            <img src={InformationCulture} alt="InformationCulture" />
+                        </a>
                     </div>
-                    <div>
-                        <img src={RussiaVenchur} alt="RussiaVenchur" />
+                    <div className='hover:opacity-50 duration-500'>
+                        <a href={content.links[5]}>
+                            <img src={RussiaVenchur} alt="RussiaVenchur" />
+                        </a>
                     </div>
                 </div>
             </div>

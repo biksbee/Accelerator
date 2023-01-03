@@ -8,24 +8,26 @@ const MoreAccelerator = () => {
     return (
         <div className="w-full flex justify-center bg-c_pink-regular">
             <div className="xl:pt-[204px] md:pt-[150px] pt-[90px] pb-[163px] overflow-hidden">
-                <div className="relative xl:w-[1280px] w-[90vw] pb-[53px] ms:px-[40px] px-[15px]">
-                    <div className={cn(
-                            "pageTitle text-c_red-deep"
-                    )}>
-                        <div>
-                            Больше, чем
+                <div className='w-full flex xl:justify-center xl:px-0 ms:px-[40px] px-[15px]'>
+                    <div className="relative xl:w-[1280px] pb-[53px]">
+                        <div className={cn(
+                                "pageTitle text-c_red-deep"
+                        )}>
+                            <div>
+                                Больше, чем
+                            </div>
+                            <div>
+                                просто акселератор
+                            </div>
                         </div>
-                        <div>
-                            просто акселератор
-                        </div>
+                        <div className="moreAcceleratorTheLoop"></div>
                     </div>
-                    <div className="moreAcceleratorTheLoop"></div>
-                </div>
+                </div>    
                 <div className='md:pb-[127px] pb-[80px]'>
                     <Swiper 
                         slidesPerView={"auto"} 
                         spaceBetween={80}
-                        className={'md:flex hidden ms:pl-[40px] pl-[15px]'}
+                        className={'md:flex hidden w-[100vw] xl:px-[calc((100vw-1280px)/2)] ms:px-[40px] px-[15px]'}
                     >
                         {
                             content.title.map((item, index) => (
@@ -58,7 +60,7 @@ const MoreAccelerator = () => {
 
                         }
                     </Swiper>
-                    <div className='md:hidden block w-[90vw]'>
+                    <div className='md:hidden block w-[90vw] pl-[15px]'>
                         {
                             content.title.map((item, index) => (
                                 <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep pt-[20px] mt-[30px] md:w-[488px]'>

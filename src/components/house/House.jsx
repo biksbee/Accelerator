@@ -16,12 +16,14 @@ const House = () => {
 
     return (
         <div className="w-full flex justify-center gradientBackGround">
-            <div className="xl:w-[1280px] w-full md:py-[120px] py-[90px] md:pl-[40px] pl-[15px]">
-                <div className='w-full flex justify-center xl:py-[200px] py-[100px]'>
+            <div className="xl:w-[1280px] w-full md:py-[120px] py-[90px] ">
+                <div className='w-full flex justify-center xl:py-[200px] py-[100px] md:px-[40px] px-[15px]'>
                     <div className='startPageText text-c_gray-regular md:w-[700px] w-[330px]'>
                             <div className='w-full flex'>
                                 <div className='h-max'>Вот, что</div>
-                                <div className='md:mx-[20px] mx-[10px] md:w-[44px] w-[25px] md:h-[55px] h-[30px]'><img src={home} alt="home" /></div>
+                                <div className='relative md:mx-[20px] mx-[10px] md:w-[44px] w-[25px] md:h-[55px] h-[30px]'>
+                                    <img className='absolute top-[-7px]' src={home} alt="home" />
+                                </div>
                                 <div className='h-max'>может дать</div>
                             </div>    
                             <div className='w-full text-center'>вашему проекту</div>
@@ -30,7 +32,10 @@ const House = () => {
                 <div>
                     <Consultation setOpen={setOpen}/>
                 </div>
-                <div className='mt-[200px] pt-[30px] border-t-[2px] border-t-c_gray-regular xl:w-[1200px] w-[90vw]'>
+                <div className='w-full justify-center md:px-[40px] px-[15px]'>
+                    <div className='md:mt-[200px] mt-[100px] pt-[30px] border-t-[2px] border-t-c_gray-regular' />
+                </div>
+                <div className='xl:w-[1200px] w-full md:px-[40px] px-[15px]'>
                     <Networking />
                     <div className='xl:block flex justify-center w-full'>
                         <Steps />

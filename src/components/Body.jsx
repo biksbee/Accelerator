@@ -18,7 +18,7 @@ const Body = () => {
             <Works />
             <Demhack />
             <MoreAccelerator />
-            {/* <House /> */}
+            <House />
             <Team />
             <Contacts />
         </div>

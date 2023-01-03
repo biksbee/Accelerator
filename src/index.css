@@ -30,7 +30,7 @@
     }
     .startPageText {
         @apply not-italic font-otf-semiBold
-        md:text-[58px] md:leading-[55.68px]
+        md:text-[58px] md:leading-[55px]
         text-[26px] leading-[26px]
 
     }
@@ -38,7 +38,7 @@
         @apply absolute w-[1280px] h-full z-[1]
         xl:top-[-130px] xl:right-[-50px]
         md:top-[-80px] md:right-[-110px]
-        top-[-30px] right-[-360px]
+        top-[-30px] right-[-370px]
         bg-center bg-no-repeat bg-contain
         bg-startPageTheLoop
     }
@@ -107,7 +107,7 @@
         @apply opacity-[1] text-c_orange-regular pl-[5px] duration-500
         hover:cursor-pointer hover:opacity-70
         active:cursor-pointer   active:opacity-70
-        border-b-[1px] border-b-[#D2DCFF] 
+        border-b-[1px] border-b-[rgba(255,119,0,.3)] 
     }
 
 }    

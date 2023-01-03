@@ -6,7 +6,7 @@ import "swiper/css";
 const ChapterNew = ({i}) => {
 
     return (
-        <div className='w-full ms:flex justify-between'>
+        <div className='xl:w-[1280px] w-full ms:flex justify-between'>
             <div className='ms:flex pt-[25px] md:mx-[40px] mx-[15px]'>
                 <div className={cn(`w-[44px] h-[44px] ms:mr-[40px] ms:mb-0 mb-[30px]`)}>
                     <img src={content.icon[i.index]} alt="icon" />
@@ -31,7 +31,7 @@ const ChapterNew = ({i}) => {
                             <img src={content.style[i.index]} alt="" />
                         </div>
                     </div>    
-                    <div className='xl:w-[520px] xs:w-[390px] ms:w-[340px] w-[vw] pt-[30px]'>
+                    <div className='xl:w-[520px] xs:w-[390px] ms:w-[340px] w-[90vw] pt-[30px]'>
                         {content.text[i.index].map((item, index) => (
                             <div key={index} className='worksTextStyle pb-[30px]'>
                                 {item}
@@ -40,21 +40,23 @@ const ChapterNew = ({i}) => {
                     </div>
                 </div>
             </div>
-            <div>
-                <div className='md:mx-[40px] mx-[15px] font-otf-book not-italic font-normal text-c_red-regular text-[12px] leading-[14px] pb-[25px]'>
+            <div className='pt-[25px]'>
+                <div className='ms:pl-0 md:pl-[40px] pl-[15px] font-otf-book not-italic font-normal text-c_red-regular text-[12px] leading-[14px] pb-[25px]'>
                     Примеры
                 </div>
-                <div className='md:mx-[40px] mx-[15px] xl:w-[396px] xs:w-[350px] ms:w-[266px] w-full  ms:block md:flex hidden justify-between'>
+                <div className='ms:pl-0 md:pl-[40px] pl-[15px] xl:w-[396px] ms:w-[266px] w-full  ms:block md:flex hidden justify-between'>
                     {
                         content.examples.ex.Title[i.index].map((item, index) => (
-                            <div key={index} className='pb-[25px] ms:w-full w-[250px]'>
-                                <div key={index} className='not-italic font-otf-bold text-[15px] leading-[18px] text-c_blue-deepDark pb-[10px]'>
-                                    {item}
+                            <a href={content.link[i.index][index]} className='ms:pr-0 pr-[20px]'>
+                                <div key={index} className='pb-[25px] xl:w-[396px] ms:w-[300px]'>
+                                    <div key={index} className='not-italic font-otf-bold text-[15px] leading-[18px] text-c_blue-deepDark pb-[10px]'>
+                                        {item}
+                                    </div>
+                                    <div className='font-otf-book not-italic text-[15px] leading-[18px] text-c_blue-deepDarkOp'>
+                                        {content.examples.ex.exText[i.index][index]}
+                                    </div>
                                 </div>
-                                <div className='font-otf-book not-italic text-[15px] leading-[18px] text-c_blue-deepDarkOp'>
-                                    {content.examples.ex.exText[i.index][index]}
-                                </div>
-                            </div>    
+                            </a>           
                         ))
                     }
                 </div>
@@ -65,14 +67,16 @@ const ChapterNew = ({i}) => {
                 >
                     {
                         content.examples.ex.Title[i.index].map((item, index) => (
-                            <SwiperSlide key={index} className='pb-[25px] w-[250px] ms:px-0 md:px-[40px] px-[15px] mr-0'>
-                                <div key={index} className='font-otfBold not-italic font-bold text-[15px] leading-[18px] text-c_blue-deepDark pb-[10px]'>
-                                    {item}
-                                </div>
-                                <div className='font-otf-book not-italic text-[15px] leading-[18px] text-c_blue-deepDarkOp'>
-                                    {content.examples.ex.exText[i.index][index]}
-                                </div>
-                            </SwiperSlide>    
+                            <a href={content.link[i.index][index]} target="_blank">
+                                <SwiperSlide key={index} className='pb-[25px] w-[250px] ms:px-0 md:px-[40px] px-[15px] mr-0'>
+                                    <div key={index} className='font-otfBold not-italic font-bold text-[15px] leading-[18px] text-c_blue-deepDark pb-[10px]'>
+                                        {item}
+                                    </div>
+                                    <div className='font-otf-book not-italic text-[15px] leading-[18px] text-c_blue-deepDarkOp'>
+                                        {content.examples.ex.exText[i.index][index]}
+                                    </div>
+                                </SwiperSlide>
+                            </a>          
                         ))
                     }
                 </Swiper>

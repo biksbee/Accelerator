@@ -19,7 +19,16 @@ const CardExp = ({i, fade, setFade, send, maxHeight}) => {
                             onMouseEnter={() => setFade(true)}
                             onMouseLeave={() => setFade(false)} 
                         >
-                             <div className='pb-[10px]'>
+                            <div className=''>
+                                <div className={
+                                    cn(
+                                        !fade ? 'filter grayscale' :  'filter-none',
+                                        'w-[150px] h-[150px] mb-[20px] md:hidden duration-500 bg-no-repeat bg-cover bg-center cardRadius',
+                                        content.photo[i.index]
+                                    )
+                                } />
+                            </div>
+                            <div className='pb-[10px]'>
                                 <div className='text-c_gray-regular text-[20px] leading-[20px] '>
                                     {i.item}
                                 </div>
@@ -33,7 +42,7 @@ const CardExp = ({i, fade, setFade, send, maxHeight}) => {
                                 <div className={
                                     cn(
                                         !fade ? 'filter grayscale' :  'filter-none',
-                                        'md:w-[373px] h-[373px] bg-no-repeat bg-cover bg-center photoRadius',
+                                        'md:w-[373px] h-[373px] md:block hidden duration-500 bg-no-repeat bg-cover bg-center photoRadius',
                                         content.photo[i.index]
                                     )
                                 } />
