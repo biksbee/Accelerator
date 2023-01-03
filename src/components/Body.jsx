@@ -1,5 +1,5 @@
 import StartPageNew from "./1.startPage/StartPageNew"
-import OurProjectsNew from "./ourProjects/OurProjectsNew"
+import OurProjects from "./ourProjects/OurProjects"
 import Media from "./media/Media"
 import Works from "./3.works/Works"
 import Demhack from "./4.demhack/Demhack"
@@ -13,7 +13,7 @@ const Body = () => {
     return (
         <div>
             <StartPageNew />
-            <OurProjectsNew />
+            <OurProjects />
             <Media />
             <Works />
             <Demhack />

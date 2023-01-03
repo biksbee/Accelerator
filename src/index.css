@@ -59,11 +59,12 @@
         text-[26px] leading-[25px]
     }
     .ourProjectsTheLoop {
-        @apply absolute 
-        xl:w-[1280px] xl:h-[395px]
-        
+        @apply absolute
+        md:w-[1280px] md:h-[395px]
         w-[602px] h-[176px]
-        top-[50px] left-0
+        md:top-[-100px] xs:left-[-170px]
+        md:left-[-190px]
+        top-[-60px] left-[-130px]
         bg-center bg-no-repeat bg-contain
         bg-ourProjectsTheLoop
     }
@@ -74,8 +75,8 @@
     }
     .ourProjectStyleSubTitle {
         @apply font-otf-semiBold not-italic  text-c_blue-deepDark
-        md:text-[18px] md:leading-[21.6px] md:h-max
-        text-[15px] leading-[18px] xl:w-[500px] w-[320px] h-[72px]
+        md:text-[18px] md:leading-[21.6px]
+        text-[15px] leading-[18px] xl:w-[500px] w-[320px] h-[100px]
     }
     .iconMedia {
         @apply flex justify-center items-center

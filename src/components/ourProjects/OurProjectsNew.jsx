@@ -5,7 +5,7 @@ import content from './content'
 import PopUp from '../modules/popUp'
 import Projects from './Projects'
 
-const OurProjects = () => {
+const OurProjectsNew = () => {
 
     const [show, setShow] = useState(false)
     const [active, setActive] = useState(0)
@@ -18,18 +18,18 @@ const OurProjects = () => {
 
     return (
         <div id='ourProjects' className="w-full h-max flex justify-center overflow-hidden bg-c_blue-regular">
-            <div className="md:pt-[120px] pt-[90px]">
-                <div className=' w-full flex justify-center md:pl-[40px] pl-[15px]'>
-                    <div className='relative xl:w-[1280px] w-full'>
+            <div className="md:pt-[120px] pt-[90px] relative">
+                <div className='relative xl:w-[1280px] w-full flex justify-center xl:pl-0 md:pl-[40px] pl-[15px]'>
+                    <div className='flex'>
                         <div className="pageTitle text-c_blue-dark">
                             Наши проекты
                         </div>
-                        <div className="ourProjectsTheLoop"></div>
                     </div>
-                </div>    
-                <div className="w-[100vw] h-max md:pt-[222px] pt-[50px] pb-[100px]">
+                    <div className="ourProjectsTheLoop"></div>
+                </div>
+                <div className="w-full md:pt-[222px] pt-[50px] pb-[100px]">
                     <Slider setShow={setShow} setActive={setActive} setOpen={setOpen} send={getSend}/>
-                    <div className='flex items-end text-c_blue-dark pt-[30px] xl:pl-[calc((100vw-1280px)/2)] md:pl-[40px] pl-[15px]'>
+                    <div className='flex items-end text-c_blue-dark pt-[30px]'>
                         <div className='text-[50px] leading-[44px] font-otf-semiBold not-italic'>
                             {active+1}
                         </div>
@@ -49,4 +49,4 @@ const OurProjects = () => {
     )
 }
 
-export default OurProjects
+export default OurProjectsNew

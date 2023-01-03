@@ -47,8 +47,8 @@ const ChapterNew = ({i}) => {
                 <div className='ms:pl-0 md:pl-[40px] pl-[15px] xl:w-[396px] ms:w-[266px] w-full  ms:block md:flex hidden justify-between'>
                     {
                         content.examples.ex.Title[i.index].map((item, index) => (
-                            <a href={content.link[i.index][index]} className='ms:pr-0 pr-[20px]'>
-                                <div key={index} className='pb-[25px] xl:w-[396px] ms:w-[300px]'>
+                            <a key={index} href={content.link[i.index][index]} className='ms:pr-0 pr-[20px]'>
+                                <div  className='pb-[25px] xl:w-[396px] ms:w-[300px]'>
                                     <div key={index} className='not-italic font-otf-bold text-[15px] leading-[18px] text-c_blue-deepDark pb-[10px]'>
                                         {item}
                                     </div>
@@ -67,7 +67,7 @@ const ChapterNew = ({i}) => {
                 >
                     {
                         content.examples.ex.Title[i.index].map((item, index) => (
-                            <a href={content.link[i.index][index]} target="_blank">
+                            <a key={index} href={content.link[i.index][index]} target="_blank">
                                 <SwiperSlide key={index} className='pb-[25px] w-[250px] ms:px-0 md:px-[40px] px-[15px] mr-0'>
                                     <div key={index} className='font-otfBold not-italic font-bold text-[15px] leading-[18px] text-c_blue-deepDark pb-[10px]'>
                                         {item}
