@@ -9,7 +9,7 @@ const MoreAccelerator = () => {
         <div className="w-full flex justify-center bg-c_pink-regular">
             <div className="xl:pt-[204px] md:pt-[150px] pt-[90px] pb-[163px] overflow-hidden">
                 <div className='w-full flex xl:justify-center xl:px-0 ms:px-[40px] px-[15px]'>
-                    <div className="relative xl:w-[1280px] pb-[53px]">
+                    <div className="relative xl:w-[1280px] md:pb-[53px] pb-[10px]">
                         <div className={cn(
                                 "pageTitle text-c_red-deep"
                         )}>
@@ -31,9 +31,9 @@ const MoreAccelerator = () => {
                     >
                         {
                             content.title.map((item, index) => (
-                                <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep pt-[30px] md:w-[488px]'>
+                                <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep md:w-[488px]'>
                                     <div className={cn(
-                                        'md:text-[45px] md:leading-[48px] text-[22px] leading-[25px] pb-[30px]',
+                                        'md:text-[45px] md:leading-[48px] text-[22px] leading-[25px] py-[30px]',
                                         'font-otf not-italic font-semibold',
                                         index === 0 ? 'text-c_yellow-dirty' 
                                             : index === 1 ? 'text-c_orange-blur' 
@@ -97,11 +97,11 @@ const MoreAccelerator = () => {
                     <div className='border-b-[2px] border-b-c_red-deep w-full'></div>
                 </div>
                 <div className='text-center md:pt-[140px] pt-[95px] text-c_red-deep'>
-                    <div className='text-[110px] leading-[140px]'>
+                    <div className='text-[111px] leading-[111px] font-otf-light'>
                         0₽
                     </div>
                     <div className='flex justify-center pt-[9px]'>
-                        <div className='text-[22px] leading-[26px] font-otfBold font-bold not-italic text-center  w-[169px]'>
+                        <div className='text-[21px] leading-[26px] font-otfBold font-bold not-italic text-center md:w-[169px]'>
                             Стоимость участия
                         </div>
                     </div>
@@ -114,12 +114,12 @@ const MoreAccelerator = () => {
                         <div className='flex justify-center h-max'>
                             <div 
                                 className={cn(
-                                    'bg-c_orange-regular hover:bg-c_orange-hover active:bg-c_orange-pressed flex justify-center items-center rounded-[6px]',
+                                    'bg-c_orange-regular hover:bg-c_orange-hover active:bg-c_orange-pressed duration-500 flex justify-center items-center rounded-[6px]',
                                     'w-[220px] h-[65px]',
                                     'drop-shadow-default hover:drop-shadow-hover'
                                 )}
                             >
-                                <div className={cn('buttonText text-[18px] leading-[18px]')}>
+                                <div className={cn('text-c_gray-regular cursor-pointer not-italic font-otf-book text-[18px] leading-[18px]')}>
                                     Подать заявку
                                 </div>
                             </div>

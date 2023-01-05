@@ -8,12 +8,11 @@ import House from "./house/House"
 import Team from "./8.team/Team"
 import Contacts from "./9.contact/Contacts"
 
-import NotFound from "./notFound"
 
 const Body = () => {
 
     return (
-        <div>
+        <div className="overflow-hidden">
             <StartPageNew />
             <OurProjects />
             <Media />
@@ -23,7 +22,6 @@ const Body = () => {
             <House />
             <Team />
             <Contacts />
-            <NotFound />
         </div>
     )
 } 

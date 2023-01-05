@@ -16,12 +16,12 @@ const Networking = () => {
             <div className="ms:flex justify-between">
                 <div className="relative mb-[17px]">
                     <div className={cn(
-                        "text-c_gray-regular md:text-[45px] leading-[65px] text-[22px] md:leading-[42px]",
+                        "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
                         "font-otf font-normal not-italic"
                     )}>
                         {content.title}
                     </div>
-                    <div className="mt-[8px]">
+                    <div className="mt-[8px] md:w-[279px] w-[132px]">
                         <img src={networkingLine} alt="networkingLine" />
                     </div>
                 </div>

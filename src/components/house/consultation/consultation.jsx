@@ -22,16 +22,16 @@ const Consultation = ({setOpen}) => {
         <div>
             <div className='s:w-[386px] w-[80vw] mb-[51px] relative md:px-[40px] px-[15px]'>
                 <div className={cn(
-                    "md:pb-[9px] pb-[6px] text-c_gray-regular md:text-[45px] md:leading-[65px] text-[22px] leading-[22px]",
+                    "md:pb-[9px] pb-[6px] text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
                     "font-otf font-otf-semiBold not-italic"
                 )}>
                     Консультации с экспертами
                 </div>
                 <div className='bg-curveLineConsultation h-[20px] bg-no-repeat'></div>
             </div>
-            <div className='md:px-[40px] px-[15px] ms:grid xl:grid-cols-3 hidden ms:grid-cols-2 xl:gap-[50px]'>
+            <div className='md:px-[40px] px-[15px] ms:grid xl:grid-cols-3 hidden ms:grid-cols-2 md:gap-x-[21px] md:gap-y-[50px]'>
                 {content.f_name.map((item, index) => (
-                    <div key={index} className="h-full xl:mt-0 ms:mt-[30px] cursor-pointer border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
+                    <div key={index} className="h-full xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
                         <CardExp key={index} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
                     </div>
                 ))}
@@ -82,7 +82,7 @@ const Consultation = ({setOpen}) => {
                     className={'ms:hidden md:px-[40px] px-[15px]'}
                 >
                     {content.f_name.map((item, index) => (
-                        <SwiperSlide key={index} className="cursor-pointer border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
+                        <SwiperSlide key={index} className="border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
                                 <CardExp  i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
                         </SwiperSlide>
                     ))}

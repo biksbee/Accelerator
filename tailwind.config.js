@@ -62,7 +62,6 @@ module.exports = {
           trapezoid: 'rgba(252, 252, 252, 1)',
           primary: 'rgba(162, 161, 181, 1)',
           blur: 'rgba(216, 209, 241, 1)',
-
         },
         c_purple: {
           header: '#45344C',
@@ -70,10 +69,9 @@ module.exports = {
         },
         c_orange: {
           blur: 'rgba(186, 102, 48, 1)',
-          link: 'rgba(222, 80, 36, 1)',
           link_op: 'rgba(222, 63, 14, 0.3)',
           regular: 'rgba(244, 68, 13, 1)',
-          hover: 'rgba(244, 68, 13, 0.9)',
+          hover: 'rgba(245, 87, 37, 1)',
           pressed: 'rgba(244, 68, 13, 0.5)',
           primary: 'rgba(248, 128, 37, 1)',
           bright: 'rgba(229, 68, 18, 1)',
@@ -84,6 +82,7 @@ module.exports = {
           dark: 'rgba(23, 19, 71, 1)',
           moreDark: 'rgba(36, 19, 71, 1)',
           regular: 'rgba(155, 170, 221, 1)',
+          cont: '#171347'
         },
         c_red: {
           regular: 'rgba(125, 34, 6, 1)',
@@ -101,15 +100,12 @@ module.exports = {
           regular: 'rgba(4, 255, 255, 1)',
         }
       },
-      dropShadow: {
-        default: '2px 1px 4px rgba(99, 93, 96, 0.3)',
-        hover: '2px 1px 20px rgba(99, 93, 96, 0.4)',
-      },
       fontFamily: {
         'otf-normal': ['otf-normal'],
         'otf-book': ['otf-book'],
         'otf-semiBold': ['otf-semiBold'],
         'otf-bold': ['otf-bold'],
+        'otf-light': ['otf-light'],
       }
     },
   },

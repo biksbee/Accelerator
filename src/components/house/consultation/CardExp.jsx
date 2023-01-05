@@ -1,18 +1,10 @@
 import { useEffect, useState, useRef } from "react"
 import content from "./content"
 import cn from 'classnames'
-import HeightHook from "../../../hooks/heightHook"
 
-const CardExp = ({i, fade, setFade, send, maxHeight}) => {
+const CardExp = ({i, fade, setFade}) => {
 
     const refComponent = useRef();
-    const [arr, setArr] = useState([])
-
-    // useEffect(() => {
-    //     const h = refComponent.current.clientHeight
-    //     // setArr({h})
-    //     console.log(typeof h)
-    // }, [refComponent])
 
     return (
                         <div
@@ -29,12 +21,12 @@ const CardExp = ({i, fade, setFade, send, maxHeight}) => {
                                 } />
                             </div>
                             <div className='pb-[10px]'>
-                                <div className='text-c_gray-regular text-[20px] leading-[20px] '>
+                                <div className='text-c_gray-regular font-otf-semiBold text-[20px] leading-[20px] '>
                                     {i.item}
                                 </div>
                             </div>
-                            <div ref={refComponent} className={`mb-[20px] h-[144px]`}>
-                                <div className='text-c_gray-blur opacity-50 text-[16px] leading-[24px]'>
+                            <div ref={refComponent} className={`mb-[20px] ${i.index < 3 ? 'h-[144px]' : 'h-[120px]'}`}>
+                                <div className='text-c_gray-regular opacity-50 text-[16px] leading-[24px] font-otf-normal not-italic'>
                                     {content.description[i.index]}
                                 </div>
                             </div>

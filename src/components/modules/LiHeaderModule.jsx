@@ -20,7 +20,7 @@ const LiHeaderModule = ({item, index, openLi, setOpenLi}) => {
             )}
         >
             <div
-                className='w-max flex h-full items-center ms:px-[3px] px-[10px]' 
+                className='ms:w-max s:w-[330px] justify-center w-[80vw] flex h-full items-center ms:px-[3px] px-[10px]' 
                 onClick={() => setOpenLi(!openLi)}     
             >
                 <li className='menuLi'>

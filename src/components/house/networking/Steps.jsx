@@ -16,16 +16,16 @@ const Steps = () => {
 
     return (
         <div className='w-full'>
-                <div className='xl:flex block justify-between xl:pl-0 pl-[15px]'>
-                    <div className="xl:mb-0 mb-[70px] xl:w-[472px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
+                <div className='xs:flex block justify-between xl:pl-0 pl-[15px]'>
+                    <div className="xl:mb-0 mb-[70px] xl:w-[472px] xs:w-[400px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                         <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
                             <div className={cn(
-                                "text-c_gray-regular md:text-[45px] md:leading-[65px] text-[22px] leading-[22px]",
+                                "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
                                 "font-otf font-normal not-italic"
                             )}>
                                 {content.stepsTitle[0]}
                             </div>
-                            <div className="absolute md:h-max md:top-[25px] top-0 md:left-[-20px] left-[-10px]">
+                            <div className="absolute md:h-max md:top-[15px] top-0 md:left-[-20px] left-[-10px]">
                                 <img className='md:block hidden' src={parenthesis} alt="parenthesis" />
                                 <img className='md:hidden block' src={parenthesisMini} alt="parenthesis" />
                             </div>
@@ -37,13 +37,13 @@ const Steps = () => {
                         </div>
                         <div className={cn(
                             content.stepsPhoto[0],
-                            'bg-no-repeat bg-center bg-cover xl:w-[472px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                            'bg-no-repeat bg-center bg-cover xl:w-[472px] xs:w-[400px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
                         )} />
                     </div>
-                    <div className="xl:mb-0 mb-[70px] xl:w-[570px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
+                    <div className="xl:mb-0 mb-[70px] xl:w-[570px] xs:w-[500px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                         <div className="relative mb-[17px] md:w-[430px] s:w-[330px] w-[90vw]">
                             <div className={cn(
-                                "text-c_gray-regular md:text-[45px] md:leading-[65px] text-[22px] leading-[22px]",
+                                "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
                                 "font-otf font-normal not-italic"
                             )}>
                                 {content.stepsTitle[1]}
@@ -52,7 +52,7 @@ const Steps = () => {
                                 <img className='md:block hidden' src={cornerUp} alt="cornerUp" />
                                 <img className='md:hidden block' src={cornerUpMini} alt="cornerUp" />
                             </div>
-                            <div className="absolute md:bottom-0 bottom-[-10px] md:right-[78px] right-[150px]">
+                            <div className="absolute bottom-[-10px] md:right-[78px] right-[150px]">
                                 <img className='md:block hidden' src={cornerDown} alt="cornerDown" />
                                 <img className='md:hidden block' src={cornerDownMini} alt="cornerDown" />
                             </div>
@@ -64,15 +64,15 @@ const Steps = () => {
                         </div>
                         <div className={cn(
                             content.stepsPhoto[1],
-                            'bg-no-repeat bg-center bg-cover xl:w-[570px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                            'bg-no-repeat bg-center bg-cover xl:w-[570px] xs:w-[500px] w-[80vw] xl:h-[335px] xs:h-[265px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
                         )} />
                     </div>
                 </div>
-                <div className='xl:flex block justify-between xl:pl-0 pl-[15px]'>
-                    <div className="xl:mt-[100px] xl:mb-0 mb-[70px] xl:w-[472px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
+                <div className='xs:flex block justify-between xl:pl-0 pl-[15px]'>
+                    <div className="xl:mt-[100px] xl:mb-0 mb-[70px] xl:w-[472px] xs:w-[400px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                         <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
                             <div className={cn(
-                                "text-c_gray-regular md:text-[45px] md:leading-[65px] text-[22px] leading-[22px]",
+                                "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
                                 "font-otf font-normal not-italic"
                             )}>
                                 {content.stepsTitle[2]}
@@ -89,18 +89,18 @@ const Steps = () => {
                         </div>
                         <div className={cn(
                             content.stepsPhoto[2],
-                            'bg-no-repeat bg-center bg-cover xl:w-[472px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                            'bg-no-repeat bg-center bg-cover xl:w-[472px] xs:w-[400px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
                         )} />
                     </div>
-                    <div className="xl:mb-0 mb-[70px] xl:w-[570px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
+                    <div className="xl:mb-0 mb-[70px] xl:w-[570px] xs:w-[500px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                         <div className="relative mb-[17px] md:pb-[7px] md:w-[530px] s:w-[330px] w-[90vw]">
                             <div className={cn(
-                                "text-c_gray-regular md:text-[45px] leading-[65px] text-[22px] md:leading-[42px]",
+                                "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px] pb-[7px]",
                                 "font-otf font-normal not-italic"
                             )}>
                                 {content.stepsTitle[3]}
                             </div>
-                            <div className="mt-[7px] absolute md:bottom-[-10px] bottom-0">
+                            <div className="md:bottom-[-10px] bottom-0">
                                 <img className='md:block hidden' src={waveLine} alt="waveLine" />
                                 <img className='md:hidden' src={waveLineMini} alt="waveLine" />
                             </div>
@@ -112,7 +112,7 @@ const Steps = () => {
                         </div>
                         <div className={cn(
                             content.stepsPhoto[3],
-                            'bg-no-repeat bg-center bg-cover xl:w-[570px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                            'bg-no-repeat bg-center bg-cover xl:w-[570px] xs:w-[500px] w-[80vw] xl:h-[335px] xs:h-[265px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
                         )} />
                     </div>
                 </div>       

@@ -13,15 +13,16 @@ const Header = () => {
 
     const [show, setShow] = useState(true)
     const [open, setOpen] = useState(false)
+    
 
     const showNav = () => {
-        const heightWindow = window.screen.height*0.9
+        const heightWindow = window.screen.height+200
         const scrollCur = window.pageYOffset;
         if(scrollCur > heightWindow)
             setShow(true)
         else    
             setShow(false)
-        if(scrollCur < 200)
+        if(scrollCur == 0)
             setShow(true)
     }
     window.addEventListener('scroll', showNav)
@@ -31,14 +32,14 @@ const Header = () => {
     return (
         <div id='header' className={cn(
             'w-full h-max fixed flex z-[99] justify-center',
-            show ? 'ms:mt-[10px] duration-500' : 'ms:opacity-0 duration-500'
+            show ? 'ms:mt-[10px] duration-500' : 'ms:opacity-0 duration-200'
         )}>
             <div className={cn(
-                'w-[1240px] h-[77px] px-[20px] flex justify-between items-center ms:rounded-[26px] bg-c_purple-header'
+                'w-[1240px] ms:h-[77px] h-[50px] px-[20px] flex justify-between items-center ms:rounded-[26px] bg-c_purple-header ms:mx-[20px]'
             )}>
                 <div className=''>
                     <Link 
-                        className='flex w-[108px] justify-between' 
+                        className='flex w-[98px] justify-between' 
                         to="startPage" 
                         spy={true} 
                         smooth={true} 
@@ -57,7 +58,7 @@ const Header = () => {
                 <ul 
                     className={cn(
                         'menuUl ms:top-0',
-                        open ? 'top-[74px]' : 'top-[-100vh]',
+                        open ? 'top-[49px] opacity-[1] pt-[40px]' : 'top-[-100vh] ms:opacity-[1] opacity-0',
                         show ? '' : ''
                     )}
                 >
@@ -74,7 +75,7 @@ const Header = () => {
                     >
                         <li 
                             className={cn(
-                                'menuLi w-max h-[49px] ms:hidden flex items-center',
+                                'menuLi s:w-[330px] justify-center w-[80vw] h-[49px] ms:hidden flex items-center',
                                 'px-[15px] hover:bg-c_gray-light hover:rounded-[6px] hover:duration-500'
                             )}
                         >
@@ -88,9 +89,8 @@ const Header = () => {
                         >
                             <div 
                                 className={cn(
-                                    'bg-c_orange-regular hover:bg-c_orange-hover active:bg-c_orange-pressed flex justify-center items-center rounded-[6px]',
+                                    'bg-c_orange-regular hover:bg-c_orange-hover duration-300 active:bg-c_orange-pressed flex justify-center items-center rounded-[6px]',
                                     'w-[162px] h-[41px] mt-[43px]',
-                                    'drop-shadow-default hover:drop-shadow-hover'
                                 )}
                             >
                                 <div className={cn('buttonText text-[18px] leading-[18px]')}>
@@ -113,7 +113,7 @@ const Header = () => {
                         <a href="https://pd.roskomsvoboda.org/privacyaccelerator/" target="_blank">
                             <div 
                                 className={cn(
-                                    !open ? 'opacity-[1] duration-500' : 'ms:opacity-[1] opacity-0 duration-500',
+                                    !open ? 'opacity-[1] duration-300' : 'ms:opacity-[1] opacity-0 duration-300',
                                     'buttonMenu'
                                 )}
                             >

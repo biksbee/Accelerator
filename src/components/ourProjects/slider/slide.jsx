@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import content from "../content"
 import cn from 'classnames'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,8 +9,10 @@ const Slider = ({setShow, setActive, setOpen, send}) => {
 
     const [fade, setFade] = useState(false)
 
+    const refEl = useRef()
+
     const func = () => {
-        if(fade) return 0.9
+        if(fade) return 0.1
         else return 1 
     }
 
@@ -29,7 +31,6 @@ const Slider = ({setShow, setActive, setOpen, send}) => {
                         'border-t-[2px] border-t-c_blue-dark', 
                         'xl:w-[997px] md:w-[650px] w-[320px] #{!important}',
                         'bg-c_blue-regular duration-500',
-                        // 'xl:px-[calc((100vw-1280px)/2)] md:px-[40px] px-[15px]'
                     )}
                     onClick={() => setShow(true)}
                 >
@@ -44,9 +45,6 @@ const Slider = ({setShow, setActive, setOpen, send}) => {
                         </div>
                         <div 
                             id="subTitle" 
-                            // style={{
-                            //     height: max  
-                            // }}
                             className={cn(
                                 "ourProjectStyleSubTitle relative",                         
                             )}

@@ -16,14 +16,13 @@
         bg-c_orange-regular hover:bg-c_orange-hover active:bg-c_orange-pressed
         ms:w-[135px] ms:h-[37px]
         w-[111px] h-[30px]
-        drop-shadow-default hover:drop-shadow-hover
     }
     .buttonText {
         @apply text-c_gray-regular cursor-pointer not-italic font-otf-semiBold
         ms:menuLi
     }
     .menuUl {
-        @apply duration-500
+        @apply 
         ms:w-[416px] ms:h-[37px]
         w-full h-[100vh] absolute text-center bg-c_purple-header left-0
         ms:flex ms:justify-between ms:items-center ms:bg-none ms:relative ms:top-0 ms:text-left
@@ -36,7 +35,7 @@
     }
     .startPageTheLoop {
         @apply absolute w-[1280px] h-full z-[1]
-        xl:top-[-130px] xl:right-[-50px]
+        xl:top-[-70px] xl:right-[-30px]
         md:top-[-80px] md:right-[-110px]
         top-[-30px] right-[-370px]
         bg-center bg-no-repeat bg-contain
@@ -96,19 +95,19 @@
         @apply absolute bg-center bg-no-repeat bg-contain 
         md:h-[312px] md:w-[1200px]
         h-[109px] w-[498px]
-        md:bottom-0 bottom-[95px] md:left-[-10px] left-[-173px]
+        md:bottom-[5] bottom-[10px] md:left-[-50px] left-[-34px]
         bg-moreAcceleratorLoop
     }
     .contactText {
-        @apply text-c_blue-dark font-otf-normal not-italic
-        md:text-[50px] md:leading-[55px] ms:w-[870px] ms:pb-[75px]
+        @apply text-c_blue-cont font-otf-book not-italic
+        md:text-[50px] md:leading-[55px] ms:max-w-[870px] ms:pb-[75px]
         text-[26px] leading-[31px]  w-[90vw] pb-[30px]
     }
     .contactLink {
         @apply opacity-[1] text-c_orange-regular pl-[5px] duration-500
         hover:cursor-pointer hover:opacity-70
-        active:cursor-pointer   active:opacity-70
-        border-b-[1px] border-b-[rgba(255,119,0,.3)] 
+        active:cursor-pointer active:opacity-70
+        border-b-[1px] border-b-[#857a714d] 
     }
 
 }    
@@ -128,6 +127,10 @@
 @font-face {
     font-family: 'otf-bold';
     src: url("../public/fonts/otf/SuisseIntl-Bold.otf");
+}
+@font-face {
+    font-family: 'otf-light';
+    src: url("../public/fonts/otf/SuisseIntl-Light.otf");
 }
 
 @layer utilities{

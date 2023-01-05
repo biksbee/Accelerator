@@ -33,7 +33,7 @@ const Team = () => {
                         {content.name.map((item, index) => (
                             <SwiperSlide
                                 key={index}
-                                className='cursor-pointer border-t-c_gray-regular border-t-[2px] md:w-[284px] w-[273px] pt-[20px]'
+                                className='border-t-c_gray-regular border-t-[2px] md:w-[284px] w-[273px] pt-[20px]'
                             > 
                                 <Card i={{item, index}} fade={fade[index]} setFade={setFade[index]} />
                             </SwiperSlide>
