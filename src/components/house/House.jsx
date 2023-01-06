@@ -33,7 +33,7 @@ const House = () => {
                     <Consultation setOpen={setOpen}/>
                 </div>
                 <div className='w-full justify-center md:px-[40px] px-[15px]'>
-                    <div className='md:mt-[200px] mt-[100px] pt-[30px] border-t-[2px] border-t-c_gray-regular' />
+                    <div className='ms:mt-[200px] mt-[87px] pt-[30px] border-t-[2px] border-t-c_gray-regular' />
                 </div>
                 <div className='xl:w-[1200px] w-full md:px-[40px] px-[15px]'>
                     <Networking />
