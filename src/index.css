@@ -76,7 +76,7 @@
     .ourProjectStyleSubTitle {
         @apply font-otf-semiBold not-italic  text-c_blue-deepDark
         md:text-[18px] md:leading-[21.6px]
-        text-[15px] leading-[18px] xl:w-[500px] w-[320px] h-[100px]
+        text-[15px] leading-[18px] xl:w-[500px] w-[320px] md:h-[100px] h-[50px]
     }
     .iconMedia {
         @apply flex justify-center items-center
