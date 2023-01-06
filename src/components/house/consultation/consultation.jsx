@@ -78,7 +78,7 @@ const Consultation = ({setOpen}) => {
             <div>
                 <Swiper
                     slidesPerView={"auto"} 
-                    spaceBetween={30}
+                    spaceBetween={40}
                     className={'ms:hidden md:px-[40px] px-[15px]'}
                 >
                     {content.f_name.map((item, index) => (

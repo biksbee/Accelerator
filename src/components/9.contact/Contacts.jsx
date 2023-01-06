@@ -11,7 +11,7 @@ const Contacts = () => {
                     </div>
                 </div>
                 <div>
-                    <div className="border-t-[3px] border-t-c_blue-dark pt-[21px]">
+                    <div className="border-t-[3px] border-t-c_blue-dark pt-[12px] pb-[75px]">
                         <div className="contactText">
                             Подать заявку на вступление можно 
                             <a href="https://pd.roskomsvoboda.org/privacyaccelerator/" className="contactLink" target="_blank">
@@ -19,37 +19,32 @@ const Contacts = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="border-t-[3px] border-t-c_blue-dark pt-[21px]">
+                    <div className="border-t-[3px] border-t-c_blue-dark pt-[21px] pb-[75px]">
                         <div className="contactText">
-                            <div>Связаться с нами по всем</div>
-                            <div>остальным вопросам:</div>
+                            <div>Связаться с нами по всем остальным вопросам:</div>
                             <div className="m:flex">
                                 <div>
                                     <a href="mailto:team@privacyaccelerator.org" className="contactLink" target="_blank">
                                         почта,
                                     </a>
-                                </div>
-                                <div className="s:flex">
-                                    <div>
-                                        <a href="https://t.me/privacyaccelerator_team?domain" className="contactLink" target="_blank">
+                                    <a href="https://t.me/privacyaccelerator_team?domain" className="contactLink" target="_blank">
                                             Telegram,
                                         </a>
-                                    </div>
-                                    <div>        
+                                </div>
+                                <div className="s:flex">       
                                         <a href="" className="contactLink" target="_blank">
                                             Signal
-                                        </a>
-                                    </div>    
+                                        </a>   
                                 </div>    
                             </div>
                                                         
                         </div>
                     </div>
-                    <div className="border-t-[3px] border-t-c_blue-dark pt-[21px]">
+                    <div className="border-t-[3px] border-t-c_blue-dark pt-[14px]">
                         <div className="contactText pb-0">
                             <div>Следите за нами:</div>
                             <div className="m:flex">
-                                <a href="" className="contactLink" target="_blank">
+                                <a href="" className="contactLink md:text-[48px] text-[26px]" target="_blank">
                                     на Хабре,
                                 </a>
                                 <a href="" className="contactLink" target="_blank">

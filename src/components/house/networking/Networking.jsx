@@ -17,11 +17,11 @@ const Networking = () => {
                 <div className="relative mb-[17px]">
                     <div className={cn(
                         "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
-                        "font-otf font-normal not-italic"
+                        "font-otf-semiBold not-italic"
                     )}>
                         {content.title}
                     </div>
-                    <div className="mt-[8px] md:w-[279px] w-[132px]">
+                    <div className="md:mt-[8px] mt-[5px] md:w-[279px] w-[132px]">
                         <img src={networkingLine} alt="networkingLine" />
                     </div>
                 </div>
@@ -34,34 +34,34 @@ const Networking = () => {
             <div className='mt-[70px]'>
                 <div className='flex justify-between md:mb-[51px]'>
                     <div className='hover:opacity-50 duration-500'>
-                        <a href={content.links[0]}>
+                        <a href={content.links[0]} target="_blank">
                             <img src={RosComFreedom} alt="RosComFreedom" />
                         </a>    
                     </div>
-                    <div className='hover:opacity-50 duration-500'>
-                        <a href={content.links[1]}>
-                            <img src={Habr} className='h-[90px]' alt="Habr" />
+                    <div className='hover:opacity-50 duration-500 mx-[25px]'>
+                        <a href={content.links[1]} target="_blank">
+                            <img src={Habr} alt="Habr" />
                         </a>
                     </div>
                     <div className='hover:opacity-50 duration-500'>
-                        <a href={content.links[2]}>
+                        <a href={content.links[2]} target="_blank">
                             <img src={QratorLabs} alt="QratorLabs" />
                         </a>
                     </div>
                 </div>
                 <div className='flex justify-between'>
                     <div className='hover:opacity-50 duration-500'>
-                        <a href={content.links[3]}>
+                        <a href={content.links[3]} target="_blank">
                             <img src={Proton} alt="Proton" />
                         </a>
                     </div>
-                    <div className='hover:opacity-50 duration-500'>
-                        <a href={content.links[4]}>
+                    <div className='hover:opacity-50 duration-500 mx-[25px]'>
+                        <a href={content.links[4]} target="_blank">
                             <img src={InformationCulture} alt="InformationCulture" />
                         </a>
                     </div>
                     <div className='hover:opacity-50 duration-500'>
-                        <a href={content.links[5]}>
+                        <a href={content.links[5]} target="_blank">
                             <img src={RussiaVenchur} alt="RussiaVenchur" />
                         </a>
                     </div>

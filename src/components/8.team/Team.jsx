@@ -19,8 +19,8 @@ const Team = () => {
     return (
         <div id='team' className="w-full flex justify-center bg-c_blue-moreDark">
             <div className="xl:w-[1280px] w-full">
-                <div className="w-full flex ms:justify-center md:px-[40px] px-[15px] md:py-[160px] py-[70px]">
-                    <div className="startPageText ms:text-center text-c_gray-regular ms:w-[650px] w-[230px]">
+                <div className="w-full flex ms:justify-center md:px-[40px] px-[15px] md:py-[160px] py-0 pt-[90px] pb-[60px]">
+                    <div className="startPageText ms:text-center text-c_gray-blur ms:w-[650px] w-[230px]">
                         Команда Акселератора
                     </div>
                 </div>
