@@ -1,9 +1,9 @@
 import {useState} from 'react'
-import content from "../content"
+import content from "./content"
 import cn from 'classnames'
 
 
-const FadeEffect = ({i, fade, setFade, setOpen, func}) => {
+const FadeEffect = ({i, fade, setFade, setOpen}) => {
     return (
         <div>
             <div 
@@ -26,10 +26,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, func}) => {
                 </div>
             </div>
             <div 
-                className={ "bg-white rounded-[15px] duration-500" }
-                style = {{
-                    opacity: func()
-                }}    
+                className={ `${fade ? 'opacity-[0.9]' : 'opacity-[1]'} bg-white rounded-[15px] duration-500` }
             >
                 <div 
                     className={cn(

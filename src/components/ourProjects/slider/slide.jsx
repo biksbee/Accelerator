@@ -5,13 +5,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import FadeEffect from '../FadeEffect';
 
-const Slider = ({setShow, setActive, setOpen, fade, setFade}) => {
+const Slider = ({setShow, setActive, setOpen}) => {
 
+    const [fade0, setFade0] = useState(false)
+    const [fade1, setFade1] = useState(false)
 
-    const func = () => {
-        if(fade) return 0.9
-        else return 1 
-    }
+    const fade = [fade0, fade1]
+    const setFade = [setFade0, setFade1]
 
     return(
         <Swiper
@@ -31,7 +31,7 @@ const Slider = ({setShow, setActive, setOpen, fade, setFade}) => {
                     )}
                     onClick={() => setShow(true)}
                 >
-                    <FadeEffect func={func()} setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} />                   
+                    <FadeEffect setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} />                   
                 </SwiperSlide>
             ))}
         </Swiper>
