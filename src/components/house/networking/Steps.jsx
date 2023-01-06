@@ -16,7 +16,7 @@ const Steps = () => {
 
     return (
         <div className='w-full'>
-                <div className='xs:flex justify-center cb xl:pl-0 pl-[15px]'>
+                <div className='xs:flex justify-center xl:pl-0 pl-[15px]'>
                     <div className='mr-[50px]'>
                         <div className=''>
                             <div className="xl:mb-0 mb-[70px] xl:w-[472px] xs:w-[400px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
