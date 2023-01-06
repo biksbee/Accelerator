@@ -37,7 +37,8 @@
         @apply absolute w-[1280px] h-full z-[1]
         xl:top-[-70px] xl:right-[-30px]
         md:top-[-80px] md:right-[-110px]
-        top-[-30px] right-[-370px]
+        s:top-[-30px] s:right-[-370px] 
+        top-[-26px] right-[-480px]
         bg-center bg-no-repeat bg-contain
         bg-startPageTheLoop
     }
@@ -45,12 +46,12 @@
         @apply absolute w-full h-full
         xl:bg-contain bg-cover bg-top bg-no-repeat 
         bottom-0 right-0
-        bg-startProjects startRadius
+        bg-startProjects s:startRadius startRadiusS
     }
     .trapezoidCorner {
         @apply absolute z-[2] bg-c_gray-trapezoid
-        trapezoid top-0 left-0 
-        w-[80px] h-[80px]
+        trapezoid s:top-0 s:left-0 top-0 left-0 
+        s:w-[80px] s:h-[80px] w-[40px] h-[40px]
     }
     .pageTitle {
         @apply not-italic font-otf-semiBold
@@ -144,6 +145,9 @@
     }
     .startRadius {
         border-radius: 29px 0px 0px 0px;
+    }
+    .startRadiusS {
+        border-radius: 19px 0px 0px 0px;    
     }
     .photoRadius {
         border-radius: 10px 60px;

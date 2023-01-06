@@ -27,7 +27,7 @@ const StartPageNew = () => {
                         </div>
                 </div>
                 <div className="absolute bottom-0 right-0">
-                    <div className='relative xl:w-[552px] xl:h-[661px] md:w-[475px] md:h-[590px] w-[252px] h-[302px]'>
+                    <div className='relative xl:w-[552px] xl:h-[661px] md:w-[475px] md:h-[590px] s:w-[252px] s:h-[302px] w-[150px] h-[200px]'>
                         <div className='trapezoidCorner'></div>
                         <div className='startProjects'></div>
                     </div>
