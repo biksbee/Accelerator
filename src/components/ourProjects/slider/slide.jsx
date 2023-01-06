@@ -1,18 +1,15 @@
-import {useState, useEffect, useRef} from 'react'
+import {useState} from 'react'
 import content from "../content"
 import cn from 'classnames'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
+import FadeEffect from '../FadeEffect';
 
+const Slider = ({setShow, setActive, setOpen, fade, setFade}) => {
 
-const Slider = ({setShow, setActive, setOpen, send}) => {
-
-    const [fade, setFade] = useState(false)
-
-    const refEl = useRef()
 
     const func = () => {
-        if(fade) return 0.1
+        if(fade) return 0.9
         else return 1 
     }
 
@@ -34,42 +31,7 @@ const Slider = ({setShow, setActive, setOpen, send}) => {
                     )}
                     onClick={() => setShow(true)}
                 >
-                    <div 
-                        className="md:flex justify-between pt-[20px] pb-[26px] cursor-pointer"  
-                        onClick={() => setOpen(true)}
-                        onMouseEnter={() => setFade(true)}
-                        onMouseLeave={() => setFade(false)} 
-                    >
-                        <div className="ourProjectStyleTitle">
-                            {item}
-                        </div>
-                        <div 
-                            id="subTitle" 
-                            className={cn(
-                                "ourProjectStyleSubTitle relative",                         
-                            )}
-
-                        >
-                            {content.subTitle[index]}
-                            {index === 0 ? <div className='text-c_orange-regular absolute flex xl:bottom-[35px] xl:left-[90px] md:bottom-[15px] md:left-[90%] bottom-[46px] left-[75%]'>→</div> : null}
-                        </div>
-                    </div>
-                    <div>
-                        <div 
-                            className={ "bg-white rounded-[15px] duration-500" }
-                            style = {{
-                                opacity: func()
-                            }}    
-                        >
-                        <div 
-                            className={cn(
-                                content.slide[index],
-                                'w-full bg-center bg-contain bg-repeat-round',
-                                'xl:h-[510px] md:h-[332px] h-[162px]'
-                            )}
-                        />  
-                    </div>
-                    </div>                     
+                    <FadeEffect func={func()} setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} />                   
                 </SwiperSlide>
             ))}
         </Swiper>

@@ -60,7 +60,7 @@ const MoreAccelerator = () => {
 
                         }
                     </Swiper>
-                    <div className='md:hidden block w-[90vw] pl-[15px]'>
+                    <div className='md:hidden block w-[90vw] px-[15px]'>
                         {
                             content.title.map((item, index) => (
                                 <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep pt-[20px] mt-[30px] md:w-[488px]'>
