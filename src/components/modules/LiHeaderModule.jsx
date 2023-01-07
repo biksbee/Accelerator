@@ -11,7 +11,7 @@ const LiHeaderModule = ({item, index, openLi, setOpenLi}) => {
             to={href[index]} 
             spy={true} 
             smooth={true} 
-            offset={50} 
+            offset={0} 
             duration={500}
             className={cn(
                 'ms:w-full w-max flex justify-center items-center h-[49px]',
