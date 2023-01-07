@@ -58,7 +58,7 @@ const Header = () => {
                 <ul 
                     className={cn(
                         'menuUl ms:top-0',
-                        open ? 'top-[49px] opacity-[1] pt-[40px]' : 'top-[-100vh] ms:opacity-[1] opacity-0',
+                        open ? 'top-[49px] opacity-[1] ms:pt-0 pt-[40px]' : 'top-[-100vh] ms:opacity-[1] opacity-0',
                         show ? '' : ''
                     )}
                 >
