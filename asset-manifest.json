@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.4c21ceb4.css",
-    "main.js": "/Accelerator/static/js/main.342fd3b1.js",
+    "main.css": "/Accelerator/static/css/main.c9943947.css",
+    "main.js": "/Accelerator/static/js/main.be8891ec.js",
     "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
     "static/media/startProjects.png": "/Accelerator/static/media/startProjects.f3afff84bcd9ea7891d2.png",
     "static/media/tracking.png": "/Accelerator/static/media/tracking.72e5eb2299b17495f1ad.png",
@@ -23,8 +23,8 @@
     "static/media/SuisseIntl-Book.otf": "/Accelerator/static/media/SuisseIntl-Book.30ad3a64be8c976d9a31.otf",
     "static/media/amnezia.png": "/Accelerator/static/media/amnezia.319f31cdb4e333bd7411.png",
     "static/media/Footer.svg": "/Accelerator/static/media/Footer.a40c7c1c156e82025b432eb097350d53.svg",
-    "static/media/InformationCulture.svg": "/Accelerator/static/media/InformationCulture.5e1f7a5c520e5bea94ea6c4f81c95860.svg",
     "static/media/RussiaVenchur.svg": "/Accelerator/static/media/RussiaVenchur.d0ff8717d600a734cd27b853a32eb40d.svg",
+    "static/media/infocult.png": "/Accelerator/static/media/infocult.2624fee7eee30c4cda3f.png",
     "static/media/more4.png": "/Accelerator/static/media/more4.bb3446ebf13b10101d52.png",
     "static/media/RosComFreedom.svg": "/Accelerator/static/media/RosComFreedom.23220aaddaf88f389b0734e2672bf3d0.svg",
     "static/media/Deamhack.svg": "/Accelerator/static/media/Deamhack.2a6c771d1f648630d88abb91c4397dd4.svg",
@@ -69,13 +69,14 @@
     "static/media/wrapAccess.svg": "/Accelerator/static/media/wrapAccess.f98b4bb02ff35fc9e43091743328b0a6.svg",
     "static/media/OrangeArrow.svg": "/Accelerator/static/media/OrangeArrow.0092da3593a944046147.svg",
     "static/media/closePop.svg": "/Accelerator/static/media/closePop.d7e7a0306a3e1f7aea98da79556e7ecb.svg",
+    "static/media/closePopWhite.svg": "/Accelerator/static/media/closePopWhite.d916c148e860f4be1cce76913efae27c.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "main.4c21ceb4.css.map": "/Accelerator/static/css/main.4c21ceb4.css.map",
-    "main.342fd3b1.js.map": "/Accelerator/static/js/main.342fd3b1.js.map",
+    "main.c9943947.css.map": "/Accelerator/static/css/main.c9943947.css.map",
+    "main.be8891ec.js.map": "/Accelerator/static/js/main.be8891ec.js.map",
     "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c21ceb4.css",
-    "static/js/main.342fd3b1.js"
+    "static/css/main.c9943947.css",
+    "static/js/main.be8891ec.js"
   ]
 }
