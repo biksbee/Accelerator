@@ -7,7 +7,8 @@ const StartPageNew = () => {
                 'xl:w-[1280px] w-full relative overflow-hidden',
                 'md:pt-[177px] pt-[100px]'
             )}>
-                <div className='xl:w-[766px] xl:pl-[40px] xl:px-0 px-[15px]'>
+                <div className='relative xl:w-[766px] xl:pl-[40px] xl:px-0 px-[15px]'>
+                    <div className='absolute z-[100]'>
                         <div className='startPageText text-c_gray-regular'>
                             Помогаем запускать 
                         </div>
@@ -25,6 +26,7 @@ const StartPageNew = () => {
                         <div className='startPageText text-c_orange-regular xl:flex md:block flex'>
                             и свободы интернета
                         </div>
+                    </div>    
                 </div>
                 <div className="absolute bottom-0 right-0">
                     <div className='relative xl:w-[552px] xl:h-[661px] md:w-[475px] md:h-[590px] s:w-[252px] s:h-[302px] w-[150px] h-[200px]'>

@@ -70,7 +70,7 @@ const Header = () => {
                         ))
                     }
                     <div 
-                        className='w-full flex justify-center' 
+                        className='w-full flex justify-center cursor-pointer' 
                         onClick={() => setOpen(!open)}
                     >
                         <li 
@@ -102,7 +102,7 @@ const Header = () => {
                 </ul>
                 <div className='flex'>
                     <div className={cn(
-                            'ms:visible hidden mr-[40px] ms:flex items-center',
+                            'ms:visible hidden mr-[40px] ms:flex items-center cursor-pointer',
                             'px-[15px] hover:bg-c_gray-light hover:rounded-[6px] hover:duration-500'
                         )}>
                         <div className='menuLi'>

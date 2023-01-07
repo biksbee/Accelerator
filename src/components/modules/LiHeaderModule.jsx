@@ -15,7 +15,7 @@ const LiHeaderModule = ({item, index, openLi, setOpenLi}) => {
             duration={500}
             className={cn(
                 'ms:w-full w-max flex justify-center items-center h-[49px]',
-                ' ms:px-[15px] ms:h-[37px] duration-300',
+                ' ms:px-[15px] ms:h-[37px] duration-300 cursor-pointer',
                 'hover:bg-c_gray-light hover:rounded-[6px] hover:duration-500'
             )}
         >
