@@ -33,7 +33,7 @@ const Media = () => {
                             'w-[90vw] '
                         )}
                     >
-                        <div className='flex justify-between xl:pb-0 pb-[30px]'>
+                        <div className='flex justify-between xl:pb-0 mb-[40px]'>
                             <a href={links[0]} target="_blank" className='hover:opacity-60 active:hover-60 duration-500'>
                                 <div className='iconMedia'>
                                     <img src={RBK} alt='RBK' />
@@ -53,7 +53,7 @@ const Media = () => {
                         <div className='xl:w-max w-full flex justify-center'>
                             <div className='flex xl:justify-center justify-between xl:w-max w-[50vw]'>
                                 <a href={links[3]} target="_blank" className='hover:opacity-60 duration-500'>
-                                    <div className='iconMedia'>
+                                    <div className='iconMedia md:w-[158px] md:h-[59px]  w-[48px] h-[35px]'>
                                         <img src={VcRu} alt="VcRu" />
                                     </div>
                                 </a>
