@@ -36,7 +36,7 @@ const Consultation = ({setOpen}) => {
                     </div>
                 ))}
                 <div 
-                    className='xl:mt-0 ms:mt-[30px] w-[367px] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'
+                    className='cursor-pointer xl:mt-0 ms:mt-[30px] w-[367px] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'
                     onMouseEnter={() => setBluer(true)}
                     onMouseLeave={() => setBluer(false)}   
                     onClick={() => setOpen(true)}  
@@ -88,7 +88,7 @@ const Consultation = ({setOpen}) => {
                     ))}
                     <SwiperSlide>
                         <div 
-                            className='md:w-[367px] w-[273px] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'
+                            className='md:w-[367px] w-[273px] border-[2px] flex justify-center py-[40px] cursor-pointer border-c_gray-regular photoRadius'
                             onMouseEnter={() => setBluer(true)}
                             onMouseLeave={() => setBluer(false)}   
                             onClick={() => setOpen(true)}  
