@@ -43,7 +43,7 @@ const House = () => {
                 </div>
             </div>
             {open ? 
-                <PopUp setOpen={setOpen} background={back}>
+                <PopUp setOpen={setOpen} background={back} c={1}>
                     <Experts />
                 </PopUp>
                 : 

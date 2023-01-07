@@ -18,6 +18,15 @@ const Experts = () => {
                     {
                         content.name.map((item, index) => (
                             <div key={index} className="border-t-c_gray-regular border-t-[2px] pt-[20px] md:w-[286px] w-[80vw] md:pb-0 pb-[60px]">
+                                <div className=''>
+                                    <div className={
+                                        cn(
+                                            // !fade ? 'filter grayscale' :  'filter-none',
+                                            'w-[150px] h-[150px] mb-[20px] md:hidden duration-500 bg-no-repeat bg-cover bg-center cardRadius',
+                                            content.photo[index]
+                                        )
+                                    } />
+                                </div>
                                 <div className='pb-[10px]'>
                                     <div className='text-c_gray-regular text-[20px] leading-[20px] font-otf font-semibold not-italic'>
                                         {item}
@@ -32,7 +41,7 @@ const Experts = () => {
                                     <div className={
                                         cn(
                                             // !fade ? 'filter grayscale' :  'filter-none',
-                                            'md:w-[286px] md:h-[373px] w-[150px] h-[150px] bg-no-repeat bg-cover bg-center photoRadius',
+                                            'md:w-[286px] md:h-[373px] md:flex hidden w-[150px] h-[150px] bg-no-repeat bg-cover bg-center photoRadius',
                                             content.photo[index]
                                         )
                                     } />

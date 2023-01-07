@@ -1,8 +1,8 @@
 import {useState} from 'react'
 import close from "../../assets/icon/closePop.svg"
-import cn from 'classnames'
+import closeW from "../../assets/icon/closePopWhite.svg"
 
-const PopUp = ({setOpen, background, children}) => {
+const PopUp = ({setOpen, background, children, c}) => {
     
     const [fade, setFade] = useState(false)
 
@@ -10,10 +10,18 @@ const PopUp = ({setOpen, background, children}) => {
         <div className={`${background} fixed top-0 z-[100] w-screen h-screen flex justify-center`}>
             <div>
                 <div className="w-full flex justify-end items-center">
-                    <div className="absolute top-0 right-0 w-[60px] h-[60px] flex items-center justify-center" onClick={() => setOpen(false)} onMouseEnter={() => setFade(true)} onMouseLeave={() => setFade(false)}>
+                    <div className="absolute cursor-pointer top-0 right-0 w-[60px] h-[60px] flex items-center justify-center" onClick={() => setOpen(false)} onMouseEnter={() => setFade(true)} onMouseLeave={() => setFade(false)}>
                         <div 
                             className={`flex justify-center items-center ${!fade ? '' : 'scale-[.85]'} duration-500`}>
-                            <img className={!fade ? "flex" : 'flex filter grayscale'} src={close} alt="close" />
+                            {
+                            c === 0 ? 
+                                <img className={!fade ? "flex" : 'flex filter grayscale'} src={close} alt="close" /> 
+                            :
+                                c === 1 ?
+                                    <img className={!fade ? "flex" : 'flex filter grayscale'} src={closeW} alt="close" /> 
+                                :
+                                null
+                            }
                         </div>
                     </div>
                 </div>
