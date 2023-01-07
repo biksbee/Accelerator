@@ -31,7 +31,7 @@ const Networking = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-[70px]'>
+            <div className='ms:mt-[70px] mt-[40px]'>
                 <div className='flex justify-between md:mb-[51px] mb-[25px]'>
                     <div className='hover:opacity-50 duration-500'>
                         <a href={content.links[0]} target="_blank">

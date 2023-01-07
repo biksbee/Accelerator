@@ -42,7 +42,7 @@ const Consultation = ({setOpen}) => {
                     onClick={() => setOpen(true)}  
                 >
                     <div className='w-[282px]'>
-                        <div className='text-c_gray-regular w-[282px] pb-[40px] font-otf font-semibold text-[33.75px] leading-[33.75px]'>
+                        <div className='text-c_gray-regular w-[282px] pb-[40px] font-otf-semiBold text-[33.75px] leading-[33.75px]'>
                             Посмотреть всех экспертов
                         </div>
                         <div className='grid grid-cols-3 gap-x-[13px] gap-y-[11px]'>
@@ -53,7 +53,7 @@ const Consultation = ({setOpen}) => {
                                             key={index}
                                             className={
                                                 cn(
-                                                    `${item} w-[85.43px] h-[85.43px] bg-no-repeat bg-cover bg-center`,
+                                                    `${item} w-[85.43px] h-[85.43px] bg-no-repeat bg-cover bg-center photoCardRadius`,
                                                     !bluer ? 'filter grayscale' :  'filter-none',
                                                 )} 
                                         />
@@ -94,7 +94,7 @@ const Consultation = ({setOpen}) => {
                             onClick={() => setOpen(true)}  
                         >
                             <div className='md:w-[282px] w-[184px]'>
-                                <div className='w-[184px] text-c_gray-regular pb-[30px] font-otf font-semibold md:text-[33.75px] md:leading-[33.75px] text-[20px] leading-[20px]'>
+                                <div className='w-[184px] text-c_gray-regular pb-[30px] font-otf-semiBold md:text-[33.75px] md:leading-[33.75px] text-[20px] leading-[20px]'>
                                     Посмотреть всех экспертов
                                 </div>
                                 <div className='grid grid-cols-3 gap-x-[13px] gap-y-[11px]'>
@@ -105,7 +105,7 @@ const Consultation = ({setOpen}) => {
                                                     key={index}
                                                     className={
                                                         cn(
-                                                            `${item} md:w-[85.43px] md:h-[85.43px] w-[48px] h-[49px] bg-no-repeat bg-cover bg-center`,
+                                                            `${item} md:w-[85.43px] md:h-[85.43px] w-[48px] h-[49px] bg-no-repeat bg-cover bg-center photoCardRadius`,
                                                             !bluer ? 'filter grayscale' :  'filter-none',
                                                         )} 
                                                 />

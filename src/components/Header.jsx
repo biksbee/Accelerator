@@ -35,7 +35,7 @@ const Header = () => {
             show ? 'ms:mt-[10px] duration-500' : 'ms:opacity-0 duration-200'
         )}>
             <div className={cn(
-                'w-[1240px] ms:h-[77px] h-[50px] px-[20px] flex justify-between items-center ms:rounded-[26px] bg-c_purple-header ms:mx-[20px]'
+                'w-[1240px] ms:h-[77px] h-[50px] px-[15px] flex justify-between items-center ms:rounded-[26px] bg-c_purple-header ms:mx-[20px]'
             )}>
                 <div className=''>
                     <Link 

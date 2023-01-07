@@ -62,6 +62,7 @@ module.exports = {
           trapezoid: 'rgba(252, 252, 252, 1)',
           primary: 'rgba(162, 161, 181, 1)',
           blur: 'rgba(216, 209, 241, 1)',
+          demhack: 'rgba(209, 208, 218, 1)'
         },
         c_purple: {
           header: '#45344C',

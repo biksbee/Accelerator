@@ -21,7 +21,7 @@ const Media = () => {
     return (
         <div className="w-full flex justify-center bg-c_purple-media">
             <div className='xl:w-[1280px] w-full relative overflow-hidden md:py-[120px] py-[90px]'>
-                <div className='w-full flex justify-center xl:pb-[70px] pb-[40px]'>
+                <div className='w-full flex justify-center xl:pb-[70px] md:pb-[70px] pb-[40px]'>
                     <div className='startPageText text-c_gray-regular'>
                         Медиа о нас
                     </div>
@@ -30,7 +30,7 @@ const Media = () => {
                     <div 
                         className={cn(
                             'xl:w-[1280px] xl:px-[75px] xl:flex justify-center',
-                            'w-[90vw] '
+                            'md:w-[90vw] mds:w-[60vw] w-[90vw]'
                         )}
                     >
                         <div className='flex justify-between xl:pb-0 mb-[40px]'>
@@ -51,7 +51,7 @@ const Media = () => {
                             </a>                        
                         </div>
                         <div className='xl:w-max w-full flex justify-center'>
-                            <div className='flex xl:justify-center justify-between xl:w-max w-[50vw]'>
+                            <div className='flex xl:justify-center justify-between xl:w-max md:w-[50vw] mds:w-[40vw] w-[55vw]'>
                                 <a href={links[3]} target="_blank" className='hover:opacity-60 duration-500'>
                                     <div className='iconMedia md:w-[158px] md:h-[59px]  w-[48px] h-[35px]'>
                                         <img src={VcRu} alt="VcRu" />

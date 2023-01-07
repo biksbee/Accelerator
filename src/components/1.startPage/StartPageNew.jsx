@@ -8,7 +8,7 @@ const StartPageNew = () => {
                 'md:pt-[177px] pt-[100px]'
             )}>
                 <div className='relative xl:w-[766px] xl:pl-[40px] xl:px-0 px-[15px]'>
-                    <div className='absolute z-[100]'>
+                    <div className='absolute z-[50]'>
                         <div className='startPageText text-c_gray-regular'>
                             Помогаем запускать 
                         </div>
@@ -16,7 +16,7 @@ const StartPageNew = () => {
                             качественные продукты  
                         </div>
                         <div className='startPageText s:flex'>
-                            <div className='text-c_gray-regular mr-[16px]'>
+                            <div className='text-c_gray-regular md:mr-[16px] mr-[8px]'>
                                 в сфере
                             </div>
                             <div className='text-c_orange-regular'>

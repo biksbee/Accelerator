@@ -22,7 +22,7 @@ const Steps = () => {
                             <div className="xs:mb-[100px] mb-[70px] xl:w-[472px] xs:w-[400px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
-                                        "text-c_gray-regular md:text-[40px] md:leading-[45px] text-[22px] leading-[22px]",
+                                        "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
                                         "font-otf-semiBold font-normal not-italic"
                                     )}>
                                         {content.stepsTitle[0]}
@@ -83,7 +83,7 @@ const Steps = () => {
                                         <img className='md:block hidden' src={cornerUp} alt="cornerUp" />
                                         <img className='md:hidden block' src={cornerUpMini} alt="cornerUp" />
                                     </div>
-                                    <div className="absolute bottom-[-10px] md:right-[78px] right-[150px]">
+                                    <div className="absolute md:bottom-[-10px] bottom-[-5px] md:right-[50px] right-[140px]">
                                         <img className='md:block hidden' src={cornerDown} alt="cornerDown" />
                                         <img className='md:hidden block' src={cornerDownMini} alt="cornerDown" />
                                     </div>

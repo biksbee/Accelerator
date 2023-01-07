@@ -30,10 +30,10 @@ const OurProjects = () => {
                 <div className="w-[100vw] h-max md:pt-[222px] pt-[50px] pb-[100px]">
                     <Slider setShow={setShow} setActive={setActive} setOpen={setOpen} send={getSend}/>
                     <div className='flex items-end text-c_blue-dark pt-[30px] xl:pl-[calc((100vw-1280px)/2)] md:pl-[40px] pl-[15px]'>
-                        <div className='text-[50px] leading-[44px] font-otf-semiBold not-italic'>
+                        <div className='md:text-[50px] text-[20px] md:leading-[44px] font-otf-semiBold not-italic'>
                             {active+1}
                         </div>
-                        <div className='text-[20px] leading-[19px] font-otf-semiBold not-italic'>
+                        <div className='md:text-[20px] text-[13px] md:leading-[19px] font-otf-semiBold not-italic'>
                             /{content.title.length}
                         </div>
                     </div>

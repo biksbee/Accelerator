@@ -40,7 +40,7 @@ const Team = () => {
                         ))}
                     </Swiper>
                 </div>
-                <div className='text-c_gray-regular md:px-[40px] px-[15px] md:pb-[189px] pb-[90px]'>
+                <div className='text-c_gray-blur font-otf-book md:px-[40px] px-[15px] md:pb-[189px] pb-[90px]'>
                     <div className='md:text-[48px] md:leading-[67px] text-[22px] leading-[30px] pb-[10px]'>
                         В 2020 году
                     </div>

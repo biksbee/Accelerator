@@ -22,7 +22,7 @@ const Demhack = () => {
                 </div>
                 <div className='border-t-[2px] border-t-c_gray-line pt-[40px]'>
                     <div className='ms:columns-2 gap-[50px]'>
-                        <div className='xl:w-[35vw] ms:w-[40vw] text-c_gray-regular md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otfNormal not-italic font-normal'>
+                        <div className='xl:w-[35vw] ms:w-[40vw] text-c_gray-demhack md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otf-book not-italic'>
                             <div className='pb-[20px]'>
                                 Цель хакатона — поддержка духа сообщества, создание площадки для взаимодействия и сотрудничества специалистов из разных стран, возможность реализовать свои идеи для блага людей по всему миру и, защитить права на приватность и доступ к информации.
                             </div>     
@@ -30,7 +30,7 @@ const Demhack = () => {
                                 Мы собираем интересные идеи в формате заявок и задач на хакатон, а после хакатона поддерживаем команды, которые хотят продолжать работать над проектом. Основываясь на экспертных оценках и наблюдениях за работой команд на хакатоне, мы принимаем решение о продолжении работы с проектом в рамках акселератора.
                             </div>
                         </div>
-                        <div className='ms:pt-0 pt-[20px] xl:w-[35vw] ms:w-[40vw] text-c_gray-regular md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otfNormal not-italic font-normal'>
+                        <div className='ms:pt-0 pt-[20px] xl:w-[35vw] ms:w-[40vw] text-c_gray-regular md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otf-book not-italic'>
                             <div className='pb-[20px]'>    
                                 Таким образом мы выстраиваем цепочку создания и развития проектов в области свободы интернета и приватности от момента инициации идеи до выхода проекта на рынок.
                             </div>

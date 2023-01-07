@@ -5,12 +5,14 @@ import cn from 'classnames'
 
 const FadeEffect = ({i, fade, setFade, setOpen}) => {
     return (
-        <div>
+        <div
+            className='cursor-pointer'
+            onClick={() => setOpen(true)}
+            onMouseEnter={() => setFade(true)}
+            onMouseLeave={() => setFade(false)} 
+        >
             <div 
                 className="md:flex justify-between pt-[20px] pb-[26px] cursor-pointer"  
-                onClick={() => setOpen(true)}
-                onMouseEnter={() => setFade(true)}
-                onMouseLeave={() => setFade(false)} 
             >
                 <div className="ourProjectStyleTitle">
                     {i.item}
@@ -22,7 +24,15 @@ const FadeEffect = ({i, fade, setFade, setOpen}) => {
                     )}
                 >
                         {content.subTitle[i.index]}
-                        {i.index === 0 ? <div className='text-c_orange-regular absolute flex xl:bottom-[35px] xl:left-[90px] md:bottom-[15px] md:left-[90%] bottom-[-3px] left-[75%]'>→</div> : null}
+                        <div 
+                            className={cn(
+                                'text-c_orange-regular absolute flex ',
+                                i.index === 0 ? 
+                                    'xl:bottom-[35px] xl:left-[90px] md:bottom-[15px] md:left-[90%] bottom-[-3px] left-[75%]' 
+                                : i.index === 1 ?
+                                    'xl:bottom-[57px] xl:left-[70%] md:bottom-[15px] md:left-[25%] bottom-[-3px] left-[47%]'
+                                    : null
+                            )}>→</div>
                 </div>
             </div>
             <div 

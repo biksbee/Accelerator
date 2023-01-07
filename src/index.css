@@ -18,7 +18,7 @@
         w-[111px] h-[30px]
     }
     .buttonText {
-        @apply text-[rgba(255,255,255,0.9)] cursor-pointer not-italic font-otf-semiBold
+        @apply text-[rgba(255,255,255,0.9)] cursor-pointer not-italic font-otf-book
         ms:menuLi
     }
     .menuUl {
@@ -71,7 +71,7 @@
     .ourProjectStyleTitle {
         @apply not-italic font-otf-semiBold text-c_blue-dark
         md:text-[45px] md:leading-[43px] md:p-0
-        text-[21px] leading-[22px] pb-[10px]
+        text-[23px] leading-[23px] pb-[10px]
     }
     .ourProjectStyleSubTitle {
         @apply font-otf-semiBold not-italic  text-c_blue-deepDark
@@ -105,7 +105,7 @@
         text-[26px] leading-[31px]  w-[90vw] pb-[30px]
     }
     .contactLink {
-        @apply opacity-[1] text-c_orange-regular pl-[5px] duration-500
+        @apply opacity-[1] text-c_orange-regular duration-500
         hover:cursor-pointer hover:opacity-70
         active:cursor-pointer active:opacity-70
         border-b-[1px] border-b-[#857a714d] 
@@ -154,6 +154,9 @@
     }
     .cardRadius {
         border-radius: 4px 25px;
+    }
+    .photoCardRadius {
+        border-radius: 2px 14px;
     }
     .customScroll::-webkit-scrollbar {
         width: 0;
