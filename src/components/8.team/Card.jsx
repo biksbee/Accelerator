@@ -20,12 +20,12 @@ const Card = ({i, setFade, fade}) => {
                                 </div>
                             </div>
                             <div className='pb-[10px]'>
-                                <div className='text-c_gray-blur text-[20px] leading-[20px] '>
+                                <div className='text-c_gray-blur font-otf-semiBold text-[20px] leading-[20px] '>
                                     {i.item}
                                 </div>
                             </div>
                             <div className='mb-[20px] h-[144px]'>
-                                <div className='text-c_gray-blur opacity-50 text-[16px] leading-[24px] md:w-[280px]'>
+                                <div className='text-c_gray-blur opacity-50 font-otf-normal text-[16px] leading-[24px] md:w-[280px]'>
                                     {content.description[i.index]}
                                 </div>
                             </div>
