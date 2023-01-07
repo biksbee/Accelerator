@@ -4,7 +4,7 @@ const Demhack = () => {
 
     return (
         <div className="w-full flex justify-center bg-c_black-dark">
-            <div className="xl:w-[1280px] w-[90vw] pt-[83px] pb-[111px] md:px-[40px] px-[15px]">
+            <div className="xl:w-[1280px] w-[90vw] md:pt-[100px] pt-[70px] pb-[111px] md:px-[40px] px-[15px]">
                 <div className="ms:flex justify-between">
                     <div className="md:w-[539px] s:w-[290px] md:h-[112px] h-[60px]">
                         <img src={demhack} alt="" />
@@ -21,7 +21,7 @@ const Demhack = () => {
                     </div>
                 </div>
                 <div className='border-t-[2px] border-t-c_gray-line pt-[40px]'>
-                    <div className='ms:flex justify-between'>
+                    <div className='ms:columns-2 gap-[50px]'>
                         <div className='xl:w-[35vw] ms:w-[40vw] text-c_gray-regular md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otfNormal not-italic font-normal'>
                             <div className='pb-[20px]'>
                                 Цель хакатона — поддержка духа сообщества, создание площадки для взаимодействия и сотрудничества специалистов из разных стран, возможность реализовать свои идеи для блага людей по всему миру и, защитить права на приватность и доступ к информации.
