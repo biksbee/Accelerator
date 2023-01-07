@@ -6,13 +6,13 @@ import RosComFreedom from '../../../assets/icon/RosComFreedom.svg'
 import Habr from '../../../assets/icon/Habr.svg'
 import QratorLabs from '../../../assets/icon/QratorLabs.svg'
 import Proton from '../../../assets/icon/Proton.svg'
-import InformationCulture from '../../../assets/icon/InformationCulture.svg'
+import InformationCulture from '../../../assets/icon/infocult.png'
 import RussiaVenchur from '../../../assets/icon/RussiaVenchur.svg'
 
 const Networking = () => {
 
     return (
-        <div className='md:mb-[250px] mb-[150px]'> 
+        <div className='md:my-[200px] mb-[80px]'> 
             <div className="ms:flex justify-between">
                 <div className="relative mb-[17px]">
                     <div className={cn(
@@ -32,7 +32,7 @@ const Networking = () => {
                 </div>
             </div>
             <div className='mt-[70px]'>
-                <div className='flex justify-between md:mb-[51px]'>
+                <div className='flex justify-between md:mb-[51px] mb-[25px]'>
                     <div className='hover:opacity-50 duration-500'>
                         <a href={content.links[0]} target="_blank">
                             <img src={RosComFreedom} alt="RosComFreedom" />
@@ -49,15 +49,15 @@ const Networking = () => {
                         </a>
                     </div>
                 </div>
-                <div className='flex justify-between'>
+                <div className='flex justify-between mt-[25px]'>
                     <div className='hover:opacity-50 duration-500'>
                         <a href={content.links[3]} target="_blank">
                             <img src={Proton} alt="Proton" />
                         </a>
                     </div>
-                    <div className='hover:opacity-50 duration-500 mx-[25px]'>
+                    <div className='hover:opacity-50 duration-500 md:h-[90px] h-[35px] mx-[25px]'>
                         <a href={content.links[4]} target="_blank">
-                            <img src={InformationCulture} alt="InformationCulture" />
+                            <img src={InformationCulture} alt="InformationCulture" className='md:w-[286px] w-[260px]'/>
                         </a>
                     </div>
                     <div className='hover:opacity-50 duration-500'>
