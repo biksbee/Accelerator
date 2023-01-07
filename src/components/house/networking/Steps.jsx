@@ -19,11 +19,11 @@ const Steps = () => {
                 <div className='xs:flex justify-center xl:pl-0 pl-[15px]'>
                     <div className='mr-[50px]'>
                         <div className=''>
-                            <div className="xl:mb-0 mb-[70px] xl:w-[472px] xs:w-[400px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
+                            <div className="xs:mb-[100px] mb-[70px] xl:w-[472px] xs:w-[400px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
-                                        "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
-                                        "font-otf font-normal not-italic"
+                                        "text-c_gray-regular md:text-[40px] md:leading-[45px] text-[22px] leading-[22px]",
+                                        "font-otf-semiBold font-normal not-italic"
                                     )}>
                                         {content.stepsTitle[0]}
                                     </div>
@@ -33,7 +33,7 @@ const Steps = () => {
                                     </div>
                                 </div>
                                 <div className='mb-[31px]'>
-                                    <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-normal text-c_gray-regular'>
+                                    <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otf-book not-italic font-normal text-c_gray-regular'>
                                         {content.stepsDescription[0]}
                                     </div>
                                 </div>
@@ -48,7 +48,7 @@ const Steps = () => {
                                 <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
-                                        "font-otf font-normal not-italic"
+                                        "font-otf font-otf-semiBold not-italic"
                                     )}>
                                         {content.stepsTitle[2]}
                                     </div>
@@ -58,7 +58,7 @@ const Steps = () => {
                                     </div>
                                 </div>
                                 <div className='mb-[31px]'>
-                                    <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-normal text-c_gray-regular'>
+                                    <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-otf-book text-c_gray-regular'>
                                         {content.stepsDescription[2]}
                                     </div>
                                 </div>
@@ -69,13 +69,13 @@ const Steps = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div> 
                         <div className=''>
                             <div className="xl:mb-0 mb-[70px] xl:w-[570px] xs:w-[500px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] md:w-[430px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
-                                        "font-otf font-normal not-italic"
+                                        "font-otf font-otf-semiBold not-italic"
                                     )}>
                                         {content.stepsTitle[1]}
                                     </div>
@@ -89,7 +89,7 @@ const Steps = () => {
                                     </div>
                                 </div>
                                 <div className='mb-[31px]'>
-                                    <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-normal text-c_gray-regular'>
+                                    <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-otf-book text-c_gray-regular'>
                                         {content.stepsDescription[1]}
                                     </div>
                                 </div>
@@ -100,11 +100,11 @@ const Steps = () => {
                             </div>
                         </div>
                         <div className=''>
-                            <div className="xl:mb-0 mb-[70px] xl:w-[570px] xs:w-[500px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
+                            <div className="xs:mt-[100px] mt-[70px] xl:w-[570px] xs:w-[500px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] md:pb-[7px] md:w-[530px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px] pb-[7px]",
-                                        "font-otf font-normal not-italic"
+                                        "font-otf font-otf-semiBold not-italic"
                                     )}>
                                         {content.stepsTitle[3]}
                                     </div>
@@ -114,7 +114,7 @@ const Steps = () => {
                                     </div>
                                 </div>
                                 <div className='mb-[31px]'>
-                                    <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-normal text-c_gray-regular'>
+                                    <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-otf-book text-c_gray-regular'>
                                         {content.stepsDescription[3]}
                                     </div>
                                 </div>
