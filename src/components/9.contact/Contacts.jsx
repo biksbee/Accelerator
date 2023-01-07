@@ -25,11 +25,11 @@ const Contacts = () => {
                             <div className="m:flex">
                                 <div>
                                     <a href="mailto:team@privacyaccelerator.org" className="contactLink" target="_blank">
-                                        почта,
-                                    </a>
+                                        почта
+                                    </a>,
                                     <a href="https://t.me/privacyaccelerator_team?domain" className="contactLink" target="_blank">
-                                            Telegram,
-                                        </a>
+                                        Telegram
+                                    </a>,
                                 </div>
                                 <div className="s:flex">       
                                         <a href="" className="contactLink" target="_blank">
@@ -45,8 +45,8 @@ const Contacts = () => {
                             <div>Следите за нами:</div>
                             <div className="m:flex">
                                 <a href="" className="contactLink md:text-[48px] text-[26px]" target="_blank">
-                                    на Хабре,
-                                </a>
+                                    на Хабре
+                                </a>,
                                 <a href="" className="contactLink" target="_blank">
                                     <div>в Telegram-канале,</div>
                                 </a>
@@ -54,8 +54,8 @@ const Contacts = () => {
                             <div className="s:flex">
                                 <div>
                                     <a href="https://www.facebook.com/privacyaccelerator" className="contactLink" target="_blank">
-                                        Facebook,
-                                    </a>
+                                        Facebook
+                                    </a>,
                                 </div>
                                 <div>
                                     <a href="" className="contactLink" target="_blank">
