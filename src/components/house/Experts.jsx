@@ -1,11 +1,24 @@
+import {useState} from 'react'
 import cn from 'classnames'
 
-
+import PopUpExperts from './PopUpExperts'
 import content from "./consultation/content"
 
 
 
 const Experts = () => {
+
+    const [fade0, setFade0] = useState(false)
+    const [fade1, setFade1] = useState(false)
+    const [fade2, setFade2] = useState(false)
+    const [fade3, setFade3] = useState(false)
+    const [fade4, setFade4] = useState(false)    
+    const [fade5, setFade5] = useState(false)
+    const [fade6, setFade6] = useState(false)    
+
+    const fade = [fade0, fade1, fade2, fade3, fade4, fade5, fade6]
+    const setFade = [setFade0, setFade1, setFade2, setFade3, setFade4, setFade5, setFade6]
+
     return (
         <div className="xl:mt-[90px] mt-[40px] text-[#D2DCFF]">
             <div className="xl:pb-[60px] pb-[30px]">
@@ -17,36 +30,7 @@ const Experts = () => {
                 <div className="md:grid xl:grid-cols-3 md:grid-cols-2 gap-[35px] md:w-full w-max">
                     {
                         content.name.map((item, index) => (
-                            <div key={index} className="border-t-c_gray-regular border-t-[2px] pt-[20px] md:w-[286px] w-[80vw] md:pb-0 pb-[60px]">
-                                <div className=''>
-                                    <div className={
-                                        cn(
-                                            // !fade ? 'filter grayscale' :  'filter-none',
-                                            'w-[150px] h-[150px] mb-[20px] md:hidden duration-500 bg-no-repeat bg-cover bg-center cardRadius',
-                                            content.photo[index]
-                                        )
-                                    } />
-                                </div>
-                                <div className='pb-[10px]'>
-                                    <div className='text-c_gray-regular text-[20px] leading-[20px] font-otf font-semibold not-italic'>
-                                        {item}
-                                    </div>
-                                </div>
-                                <div className={`mb-[20px]`}>
-                                    <div className='text-c_gray-blur opacity-50 text-[16px] leading-[24px]'>
-                                        {content.allDescription[index]}
-                                    </div>
-                                </div>
-                                <div className=''>
-                                    <div className={
-                                        cn(
-                                            // !fade ? 'filter grayscale' :  'filter-none',
-                                            'md:w-[286px] md:h-[373px] md:flex hidden w-[150px] h-[150px] bg-no-repeat bg-cover bg-center photoRadius',
-                                            content.photo[index]
-                                        )
-                                    } />
-                                </div>
-                            </div>
+                            <PopUpExperts key={index} i={{index, item}} fade={fade[index]} setFade={setFade[index]} />         
                         ))
                     }
                 </div>

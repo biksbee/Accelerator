@@ -14,6 +14,8 @@ const House = () => {
 
     const [open, setOpen] = useState(false)
 
+    const [faded, setFaded] = useState()
+
     return (
         <div className="w-full flex justify-center gradientBackGround">
             <div className="xl:w-[1280px] w-full md:py-[120px] py-[90px] ">
