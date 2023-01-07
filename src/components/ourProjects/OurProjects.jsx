@@ -40,7 +40,7 @@ const OurProjects = () => {
                 </div>
             </div>
             {open ? 
-                <PopUp setOpen={setOpen} background={back}>
+                <PopUp setOpen={setOpen} background={back} c={0}>
                     <Projects />
                 </PopUp>
                  : 

@@ -22,7 +22,7 @@ const FadeEffect = ({i, fade, setFade, setOpen}) => {
                     )}
                 >
                         {content.subTitle[i.index]}
-                        {i.index === 0 ? <div className='text-c_orange-regular absolute flex xl:bottom-[35px] xl:left-[90px] md:bottom-[15px] md:left-[90%] bottom-[46px] left-[75%]'>→</div> : null}
+                        {i.index === 0 ? <div className='text-c_orange-regular absolute flex xl:bottom-[35px] xl:left-[90px] md:bottom-[15px] md:left-[90%] bottom-[-3px] left-[75%]'>→</div> : null}
                 </div>
             </div>
             <div 
