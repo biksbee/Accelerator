@@ -26,7 +26,7 @@ const Networking = () => {
                     </div>
                 </div>
                 <div className='md:w-[472px]'>
-                <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-normal text-c_gray-regular'>
+                <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otf-book not-italic text-c_gray-regular'>
                         {content.description}
                     </div>
                 </div>

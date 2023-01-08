@@ -3,7 +3,7 @@ const content = {
     description: "Обширные партнерские связи и нетворкинг с русскоязычными медиа и компаниями, а также  международными проектами и фондами.",
     links: [
         'https://roskomsvoboda.org/',
-        '',
+        'https://habr.com/',
         'https://qrator.net/ru/',
         'https://proton.me/',
         '',

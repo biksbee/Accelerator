@@ -48,8 +48,8 @@ const Contacts = () => {
                                     на Хабре
                                 </a>,
                                 <a href="" className="contactLink ml-[10px]" target="_blank">
-                                    <div>в Telegram-канале,</div>
-                                </a>
+                                    <div>в Telegram-канале</div>
+                                </a>,
                             </div>  
                             <div className="s:flex">
                                 <div>

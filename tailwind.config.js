@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     screens: {
       xl: '1280px',
+      xm: '1100px',
       xs: '1024px',
       ms: '900px',
       md: '768px',
@@ -52,6 +53,9 @@ module.exports = {
       },
       
       colors: {
+        c_white: {
+          button: 'rgba(255, 255, 255, 0.9)',
+        },
         c_black: {
           dark: 'rgba(20, 22, 26, 1)',
         },
@@ -85,6 +89,7 @@ module.exports = {
           regular: 'rgba(155, 170, 221, 1)',
           cont: '#171347',
           filterLayer: 'rgba(62, 64, 120, 0.25)',
+          popUp: 'rgba(69, 66, 108, 1)',
         },
         c_red: {
           regular: 'rgba(125, 34, 6, 1)',

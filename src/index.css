@@ -18,7 +18,7 @@
         w-[111px] h-[30px]
     }
     .buttonText {
-        @apply text-[rgba(255,255,255,0.9)] cursor-pointer not-italic font-otf-book
+        @apply text-c_white-button cursor-pointer not-italic font-otf-book
         ms:menuLi
     }
     .menuUl {

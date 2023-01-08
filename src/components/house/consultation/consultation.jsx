@@ -34,7 +34,7 @@ const Consultation = ({setOpen}) => {
             </div>
             <div className='md:px-[40px] px-[15px] ms:grid xl:grid-cols-3 hidden ms:grid-cols-2 md:gap-x-[21px] md:gap-y-[50px]'>
                 {content.f_name.map((item, index) => (
-                    <div key={index} className="h-full xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
+                    <div key={index} className=" h-max xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
                         <CardExp key={index} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
                     </div>
                 ))}
@@ -44,11 +44,11 @@ const Consultation = ({setOpen}) => {
                     onMouseLeave={() => setBluer(false)}   
                     onClick={() => setOpen(true)}  
                 >
-                    <div className='w-[282px]'>
+                    <div className='flex flex-col justify-between h-full w-[282px]'>
                         <div className='text-c_gray-regular w-[282px] pb-[40px] font-otf-semiBold text-[33.75px] leading-[33.75px]'>
                             Посмотреть всех экспертов
                         </div>
-                        <div className='grid grid-cols-3 gap-x-[13px] gap-y-[11px]'>
+                        <div className='h-max grid grid-cols-3 gap-x-[13px] gap-y-[11px]'>
                             {
                                 content.seeAll.map((item, index) => (
                                     index !== 11 ? 
@@ -99,10 +99,10 @@ const Consultation = ({setOpen}) => {
                             onClick={() => setOpen(true)}  
                         >
                             <div className='md:w-[282px] w-[184px]'>
-                                <div className='w-[184px] text-c_gray-regular pb-[30px] font-otf-semiBold md:text-[33.75px] md:leading-[33.75px] text-[20px] leading-[20px]'>
+                                <div className='w-[184px] text-c_gray-regular pb-[40px] font-otf-semiBold md:text-[33.75px] md:leading-[33.75px] text-[20px] leading-[20px]'>
                                     Посмотреть всех экспертов
                                 </div>
-                                <div className='grid grid-cols-3 gap-x-[13px] gap-y-[11px]'>
+                                <div className='grid grid-cols-3 gap-x-[13px] gap-y-[15px]'>
                                     {
                                         content.seeAll.map((item, index) => (
                                             index !== 11 ? 

@@ -23,7 +23,7 @@ const Slider = ({setShow, setActive, setOpen}) => {
             keyboard={true}
             mousewheel={true}
             // loop={true}
-            className="mx-0 xl:px-[calc((100vw-1280px)/2)] md:px-[40px] px-[15px]"
+            className="mx-0 xl:px-[calc((100vw-1280px)/2+40px)] md:px-[40px] px-[15px]"
             onSlideChange={(swiper) => setActive(swiper.activeIndex)}
         >
             {content.title.map((item, index) => (

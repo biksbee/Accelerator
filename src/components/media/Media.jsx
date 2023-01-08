@@ -12,7 +12,7 @@ const Media = () => {
 
     const links = [
         'https://www.rbc.ru/',
-        '',
+        'https://ko.ru/',
         'https://thebell.io/',
         'https://vc.ru/',
         'https://rb.ru/'
@@ -29,11 +29,12 @@ const Media = () => {
                 <div className='w-full flex justify-center'>
                     <div 
                         className={cn(
-                            'xl:w-[1280px] xl:px-[75px] xl:flex justify-center',
+                            '',
+                            'xl:w-[1280px] xl:px-[75px] xs:flex justify-center',
                             'md:w-[90vw] mds:w-[60vw] w-[90vw]'
                         )}
                     >
-                        <div className='flex justify-between xl:pb-0 mb-[40px]'>
+                        <div className='xs:w-[60%] flex justify-between xl:pb-0 xs:mb-0 mb-[40px]'>
                             <a href={links[0]} target="_blank" className='hover:opacity-60 active:hover-60 duration-500'>
                                 <div className='iconMedia'>
                                     <img src={RBK} alt='RBK' />
@@ -50,14 +51,14 @@ const Media = () => {
                                 </div>    
                             </a>                        
                         </div>
-                        <div className='xl:w-max w-full flex justify-center'>
+                        <div className='xl:w-max xs:w-[40%] w-full flex justify-center '>
                             <div className='flex xl:justify-center justify-between xl:w-max md:w-[50vw] mds:w-[40vw] w-[55vw]'>
-                                <a href={links[3]} target="_blank" className='hover:opacity-60 duration-500'>
+                                <a href={links[3]} target="_blank" className='w-[50%] flex justify-center hover:opacity-60 duration-500'>
                                     <div className='iconMedia md:w-[158px] md:h-[59px]  w-[48px] h-[35px]'>
                                         <img src={VcRu} alt="VcRu" />
                                     </div>
                                 </a>
-                                <a href={links[4]} target="_blank" className='hover:opacity-60 duration-500'>    
+                                <a href={links[4]} target="_blank" className='w-[50%] flex justify-center hover:opacity-60 duration-500'>    
                                     <div className='iconMedia'>
                                         <img src={RbRu} alt="RbRu" />
                                     </div>

@@ -27,12 +27,12 @@ const CardExp = ({i, fade, setFade}) => {
                                 </div>
                             </div>
                             <div className={`mb-[20px] ${i.index < 3 ? 'h-[144px]' : 'xl:h-[120px] h-[144px]'}`}>
-                                <div className='text-c_gray-regular opacity-50 text-[16px] leading-[24px] font-otf-normal not-italic'>
+                                <div className='text-[#D2DCFF] opacity-50 text-[16px] leading-[24px] font-otf-normal not-italic'>
                                     {content.description[i.index]}
                                 </div>
                             </div>
                             <div className='md:block hidden'>
-                                <div className='mb-[20px] relative flex w-max h-max '>
+                                <div className='relative flex w-max h-max '>
                                     <div className="absolute bg-c_blue-filterLayer w-full  z-[40] h-full duration-500 photoRadius" />
                                     <div className={
                                         cn(
