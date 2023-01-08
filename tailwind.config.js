@@ -62,7 +62,7 @@ module.exports = {
           trapezoid: 'rgba(252, 252, 252, 1)',
           primary: 'rgba(162, 161, 181, 1)',
           blur: 'rgba(216, 209, 241, 1)',
-          demhack: 'rgba(209, 208, 218, 1)'
+          demhack: 'rgba(209, 208, 218, 1)',
         },
         c_purple: {
           header: '#45344C',
@@ -84,7 +84,7 @@ module.exports = {
           moreDark: 'rgba(36, 19, 71, 1)',
           regular: 'rgba(155, 170, 221, 1)',
           cont: '#171347',
-          filterLayer: 'rgba(62, 64, 120, 0.25);'
+          filterLayer: 'rgba(62, 64, 120, 0.25)',
         },
         c_red: {
           regular: 'rgba(125, 34, 6, 1)',
