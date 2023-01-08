@@ -2,6 +2,9 @@ import cn from 'classnames'
 import content from '../3.works/content'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
+import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
+
+SwiperCore.use([Keyboard, Mousewheel]);
 
 const ChapterNew = ({i}) => {
 
@@ -64,6 +67,8 @@ const ChapterNew = ({i}) => {
                 <Swiper
                     slidesPerView={"auto"} 
                     spaceBetween={30}
+                    keyboard={true}
+                    mousewheel={true}
                     className="mx-0 w-screen md:hidden"
                 >
                     {

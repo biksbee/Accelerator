@@ -4,6 +4,9 @@ import cn from 'classnames'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import FadeEffect from '../FadeEffect';
+import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
+
+SwiperCore.use([Keyboard, Mousewheel]);
 
 const Slider = ({setShow, setActive, setOpen}) => {
 
@@ -17,6 +20,8 @@ const Slider = ({setShow, setActive, setOpen}) => {
         <Swiper
             slidesPerView={"auto"} 
             spaceBetween={30}
+            keyboard={true}
+            mousewheel={true}
             // loop={true}
             className="mx-0 xl:px-[calc((100vw-1280px)/2)] md:px-[40px] px-[15px]"
             onSlideChange={(swiper) => setActive(swiper.activeIndex)}

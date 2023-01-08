@@ -1,6 +1,9 @@
 import {useState} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
+import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
+
+SwiperCore.use([Keyboard, Mousewheel]);
 
 import Card from './Card';
 
@@ -28,6 +31,8 @@ const Team = () => {
                     <Swiper
                         slidesPerView={"auto"} 
                         spaceBetween={30}
+                        keyboard={true}
+                        mousewheel={true}
                         className='flex-column md:px-[40px] px-[15px]'
                     >
                         {content.name.map((item, index) => (

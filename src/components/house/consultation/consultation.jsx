@@ -4,6 +4,9 @@ import content from './content'
 import CardExp from './CardExp'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
+import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
+
+SwiperCore.use([Keyboard, Mousewheel]);
 
 
 const Consultation = ({setOpen}) => {
@@ -79,6 +82,8 @@ const Consultation = ({setOpen}) => {
                 <Swiper
                     slidesPerView={"auto"} 
                     spaceBetween={40}
+                    keyboard={true}
+                    mousewheel={true}
                     className={'ms:hidden md:px-[40px] px-[15px]'}
                 >
                     {content.f_name.map((item, index) => (

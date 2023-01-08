@@ -2,12 +2,15 @@ import cn from 'classnames'
 import content from './content';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
+import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
+
+SwiperCore.use([Keyboard, Mousewheel]); 
 
 const MoreAccelerator = () => {
 
     return (
         <div className="w-full flex bg-c_pink-regular">
-            <div className="w-full xl:pt-[204px] md:pt-[150px] pt-[90px] pb-[163px] overflow-hidden cb">
+            <div className="w-full xl:pt-[204px] md:pt-[150px] pt-[90px] pb-[163px] overflow-hidden">
                 <div className='w-full flex xl:justify-center xl:px-0 ms:px-[40px] px-[15px]'>
                     <div className="relative xl:w-[1280px] md:pb-[53px] pb-[10px]">
                         <div className={cn(
@@ -27,6 +30,8 @@ const MoreAccelerator = () => {
                     <Swiper 
                         slidesPerView={"auto"} 
                         spaceBetween={80}
+                        keyboard={true}
+                        mousewheel={true}
                         className={'md:flex hidden w-[100vw] xl:px-[calc((100vw-1280px)/2)] ms:px-[40px] px-[15px]'}
                     >
                         {
