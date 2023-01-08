@@ -50,7 +50,7 @@ const Team = () => {
                         В 2020 году
                     </div>
                     <div className='md:columns-2 gap-[50px]'>
-                        <div className='md:w-[45vw] md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] md:mr-[20px]'>
+                        <div className='xl:w-[575px] md:w-[45vw] md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] md:mr-[20px]'>
                             <div className='pb-[20px]'>
                                 был запущен акселератор для поддержки инициатив в сферах защиты приватности и анонимности, доступа к информации и свободы интернета. Мы работаем с русскоязычными проектами в разных странах.     
                             </div>
@@ -59,7 +59,7 @@ const Team = () => {
                                     Так например в 2022 году Россия переместилась с 15 места в мире по скачиванию VPN-сервисов на 2-е (с 2-3 млн до 12 млн. скачиваний).
                             </div>        
                         </div>
-                        <div className='md:w-[45vw] md:text-[22px] md:leading-[30px] text-[15px] leading-[21px]'>
+                        <div className='xl:w-[575px] md:w-[45vw] md:text-[22px] md:leading-[30px] text-[15px] leading-[21px]'>
                             <div className='pb-[20px]'>
                             В Privacy Accelerator мы стремимся решить эти проблемы, запуская большее количество качественных проектов в сфере приватности и свободы интернета, а также повышая значимость проблем защиты данных, развивая интерес к теме среди разработчиков и предпринимателей. 
                             </div>
