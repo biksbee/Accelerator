@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 
-SwiperCore.use([Keyboard, Mousewheel]);
-
 import Card from './Card';
 
 import content from './content';
+
+SwiperCore.use([Keyboard, Mousewheel]);
 
 const Team = () => {
 
