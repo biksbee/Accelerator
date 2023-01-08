@@ -12,7 +12,7 @@ const Card = ({i, setFade, fade}) => {
                         >
                             <div>
                                 <div className='relative flex w-max h-max mb-[20px]'>
-                                    <div className="absolute bg-c_blue-filter w-full z-[40] h-full duration-500 cardRadius" />
+                                    <div className="absolute bg-c_blue-filterLayer w-full z-[40] h-full duration-500 cardRadius" />
                                     <div className={cn(
                                          !fade ? 'filter grayscale' :  'filter-none',
                                         'md:hidden block w-[150px] h-[150px] duration-500 bg-no-repeat bg-center bg-cover cardRadius', 
@@ -31,7 +31,7 @@ const Card = ({i, setFade, fade}) => {
                                 </div>
                             </div>
                             <div className='relative flex w-max h-max '>
-                                <div className="absolute bg-c_blue-filter w-full z-[40] h-full duration-500 photoRadius" />
+                                <div className="absolute bg-c_blue-filterLayer w-full z-[40] h-full duration-500 photoRadius" />
                                 <div className={cn(
                                     !fade ? 'filter grayscale' :  'filter-none',
                                     'relative md:w-[284px] md:h-[373px] md:block hidden duration-500 bg-no-repeat bg-center bg-contain photoRadius', 
