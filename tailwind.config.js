@@ -83,7 +83,8 @@ module.exports = {
           dark: 'rgba(23, 19, 71, 1)',
           moreDark: 'rgba(36, 19, 71, 1)',
           regular: 'rgba(155, 170, 221, 1)',
-          cont: '#171347'
+          cont: '#171347',
+          filter: 'rgba(62, 64, 120, 0.25);'
         },
         c_red: {
           regular: 'rgba(125, 34, 6, 1)',

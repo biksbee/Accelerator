@@ -10,13 +10,16 @@ const PopUpExperts = ({i, fade, setFade}) => {
             onMouseLeave={() => setFade(false)}
         >    
                                 <div className=''>
-                                    <div className={
-                                        cn(
-                                            !fade ? 'filter grayscale' :  'filter-none',
-                                            'w-[150px] h-[150px] mb-[20px] md:hidden duration-500 bg-no-repeat bg-cover bg-center cardRadius',
-                                            content.photo[i.index]
-                                        )
-                                    } />
+                                    <div className='relative flex w-max h-max mb-[20px]'>
+                                        <div className="absolute bg-c_blue-filter w-full z-[40] h-full duration-500 cardRadius" />
+                                        <div className={
+                                            cn(
+                                                !fade ? 'filter grayscale' :  'filter-none',
+                                                'w-[150px] h-[150px] md:hidden duration-500 bg-no-repeat bg-cover bg-center cardRadius',
+                                                content.photo[i.index]
+                                            )
+                                        } />
+                                    </div>    
                                 </div>
                                 <div className='pb-[10px]'>
                                     <div className='text-c_gray-regular text-[20px] leading-[20px] font-otf font-semibold not-italic'>
@@ -29,13 +32,16 @@ const PopUpExperts = ({i, fade, setFade}) => {
                                     </div>
                                 </div>
                                 <div className=''>
-                                    <div className={
-                                        cn(
-                                            !fade ? 'filter grayscale' :  'filter-none',
-                                            'md:w-[286px] md:h-[373px] md:flex hidden w-[150px] h-[150px] bg-no-repeat bg-cover bg-center photoRadius',
-                                            content.photo[i.index]
-                                        )
-                                    } />
+                                    <div className='relative flex w-max h-max '>
+                                        <div className="absolute bg-c_blue-filter w-full z-[40] h-full duration-500 photoRadius" />        
+                                        <div className={
+                                            cn(
+                                                !fade ? 'filter grayscale' :  'filter-none',
+                                                'md:w-[286px] md:h-[373px] md:flex hidden w-[150px] h-[150px] bg-no-repeat bg-cover bg-center photoRadius',
+                                                content.photo[i.index]
+                                            )
+                                        } />
+                                    </div>    
                                 </div>
         </div>
     )

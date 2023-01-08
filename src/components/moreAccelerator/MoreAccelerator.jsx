@@ -6,8 +6,8 @@ import "swiper/css";
 const MoreAccelerator = () => {
 
     return (
-        <div className="w-full flex justify-center bg-c_pink-regular">
-            <div className="xl:pt-[204px] md:pt-[150px] pt-[90px] pb-[163px] overflow-hidden">
+        <div className="w-full flex bg-c_pink-regular">
+            <div className="w-full xl:pt-[204px] md:pt-[150px] pt-[90px] pb-[163px] overflow-hidden cb">
                 <div className='w-full flex xl:justify-center xl:px-0 ms:px-[40px] px-[15px]'>
                     <div className="relative xl:w-[1280px] md:pb-[53px] pb-[10px]">
                         <div className={cn(
@@ -60,12 +60,12 @@ const MoreAccelerator = () => {
 
                         }
                     </Swiper>
-                    <div className='md:hidden block w-[90vw] px-[15px]'>
+                    <div className='md:hidden block w-full px-[15px]'>
                         {
                             content.title.map((item, index) => (
-                                <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep pt-[20px] mt-[30px] md:w-[488px]'>
+                                <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep pt-[30px] mt-[50px] md:w-[488px]'>
                                     <div className={cn(
-                                        'md:text-[45px] md:leading-[48px] text-[22px] leading-[25px] pb-[30px]',
+                                        'md:text-[45px] md:leading-[48px] text-[22px] leading-[25px] pb-[20px]',
                                         'font-otf-semiBold not-italic',
                                         index === 0 ? 'text-c_yellow-dirty' 
                                             : index === 1 ? 'text-c_orange-blur' 

@@ -11,10 +11,11 @@ const Card = ({i, setFade, fade}) => {
                             onMouseLeave={() => setFade(false)} 
                         >
                             <div>
-                                <div>
+                                <div className='relative flex w-max h-max mb-[20px]'>
+                                    <div className="absolute bg-c_blue-filter w-full z-[40] h-full duration-500 cardRadius" />
                                     <div className={cn(
                                          !fade ? 'filter grayscale' :  'filter-none',
-                                        'md:hidden block w-[150px] h-[150px] duration-500 bg-no-repeat bg-center bg-cover mb-[20px] cardRadius', 
+                                        'md:hidden block w-[150px] h-[150px] duration-500 bg-no-repeat bg-center bg-cover cardRadius', 
                                         content.photo[i.index]
                                     )} />
                                 </div>
@@ -29,12 +30,15 @@ const Card = ({i, setFade, fade}) => {
                                     {content.description[i.index]}
                                 </div>
                             </div>
-                            <div className={cn(
+                            <div className='relative flex w-max h-max '>
+                                <div className="absolute bg-c_blue-filter w-full z-[40] h-full duration-500 photoRadius" />
+                                <div className={cn(
                                     !fade ? 'filter grayscale' :  'filter-none',
                                     'relative md:w-[284px] md:h-[373px] md:block hidden duration-500 bg-no-repeat bg-center bg-contain photoRadius', 
                                     content.photo[i.index]
                                 )}> 
-                            </div>
+                                </div>
+                            </div>    
                         </div>
     )
 }

@@ -37,10 +37,13 @@ const Steps = () => {
                                         {content.stepsDescription[0]}
                                     </div>
                                 </div>
-                                <div className={cn(
-                                    content.stepsPhoto[0],
-                                    'bg-no-repeat bg-center bg-cover xl:w-[472px] xs:w-[400px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
-                                )} />
+                                <div className='mb-[20px] relative flex w-max h-max '>
+                                    <div className="absolute bg-c_blue-filter w-full  z-[40] h-full duration-500 cardRadius" />
+                                    <div className={cn(
+                                        content.stepsPhoto[0],
+                                        'bg-no-repeat bg-center bg-cover xl:w-[472px] xs:w-[400px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                                    )} />
+                                </div>    
                             </div>
                         </div>
                         <div className=''>
@@ -62,10 +65,13 @@ const Steps = () => {
                                         {content.stepsDescription[2]}
                                     </div>
                                 </div>
-                                <div className={cn(
-                                    content.stepsPhoto[2],
-                                    'bg-no-repeat bg-center bg-cover xl:w-[472px] xs:w-[400px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
-                                )} />
+                                <div className='mb-[20px] relative flex w-max h-max '>
+                                    <div className="absolute bg-c_blue-filter w-full  z-[40] h-full duration-500 cardRadius" />
+                                    <div className={cn(
+                                        content.stepsPhoto[2],
+                                        'bg-no-repeat bg-center bg-cover xl:w-[472px] xs:w-[400px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                                    )} />
+                                </div>    
                             </div>
                         </div>
                     </div>
@@ -93,10 +99,13 @@ const Steps = () => {
                                         {content.stepsDescription[1]}
                                     </div>
                                 </div>
-                                <div className={cn(
-                                    content.stepsPhoto[1],
-                                    'bg-no-repeat bg-center bg-cover xl:w-[570px] xs:w-[500px] w-[80vw] xl:h-[335px] xs:h-[265px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
-                                )} />
+                                <div className='mb-[20px] relative flex w-max h-max '>
+                                    <div className="absolute bg-c_blue-filter w-full  z-[40] h-full duration-500 cardRadius" />
+                                    <div className={cn(
+                                        content.stepsPhoto[1],
+                                        'bg-no-repeat bg-center bg-cover xl:w-[570px] xs:w-[500px] w-[80vw] xl:h-[335px] xs:h-[265px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                                    )} />
+                                </div>    
                             </div>
                         </div>
                         <div className=''>
@@ -118,10 +127,13 @@ const Steps = () => {
                                         {content.stepsDescription[3]}
                                     </div>
                                 </div>
-                                <div className={cn(
-                                    content.stepsPhoto[3],
-                                    'bg-no-repeat bg-center bg-cover xl:w-[570px] xs:w-[500px] w-[80vw] xl:h-[335px] xs:h-[265px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
-                                )} />
+                                <div className='relative flex w-max h-max '>
+                                    <div className="absolute bg-c_blue-filter w-full  z-[40] h-full duration-500 cardRadius" />
+                                    <div className={cn(
+                                        content.stepsPhoto[3],
+                                        'bg-no-repeat bg-center bg-cover xl:w-[570px] xs:w-[500px] w-[80vw] xl:h-[335px] xs:h-[265px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                                    )} />
+                                </div>    
                             </div>
                         </div>
                     </div>    

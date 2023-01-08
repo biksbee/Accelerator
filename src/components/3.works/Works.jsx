@@ -17,7 +17,7 @@ const Works = () => {
                     <div>
                         {
                             content.title.map((item, index) => (
-                                <div key={index} className="w-[90vw] pt-[25px] xl:pb-[144px] pb-[90px]">
+                                <div key={index} className="w-[90vw] pt-[25px] xl:pb-[144px] pb-[45px] last:pb-[90px]">
                                     <div className="w-[90vw] md:mx-[40px] mx-[15px] border-t-[2px] border-t-c_blue-dark xl:pt-[25px]" />
                                     <ChapterNew i={{item, index}} />
                                 </div>

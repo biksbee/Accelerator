@@ -4,7 +4,7 @@ const Demhack = () => {
 
     return (
         <div className="w-full flex justify-center bg-c_black-dark">
-            <div className="xl:w-[1280px] w-[90vw] md:pt-[100px] pt-[70px] pb-[111px] md:px-[40px] px-[15px]">
+            <div className="xl:w-[1280px] w-full md:pt-[100px] pt-[70px] pb-[111px] md:px-[40px] px-[15px]">
                 <div className="ms:flex justify-between">
                     <div className="md:w-[539px] s:w-[290px] md:h-[112px] h-[60px]">
                         <img src={demhack} alt="" />
