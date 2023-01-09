@@ -6,6 +6,7 @@ const CardExp = ({i, fade, setFade}) => {
 
     return (
                         <div
+                            className=""
                             onMouseEnter={() => setFade(true)}
                             onMouseLeave={() => setFade(false)} 
                         >
@@ -26,7 +27,7 @@ const CardExp = ({i, fade, setFade}) => {
                                     {i.item}
                                 </div>
                             </div>
-                            <div className={`mb-[20px] ${i.index < 3 ? 'h-[144px]' : 'xl:h-[120px] h-[144px]'}`}>
+                            <div className={`mb-[20px] ${i.index < 3 ? 'xl:h-[144px] ms:h-[180px] h-[144px]' : 'xl:h-[120px] ms:h-[160px] h-[144px]'}`}>
                                 <div className='text-[#D2DCFF] opacity-50 text-[16px] leading-[24px] font-otf-normal not-italic'>
                                     {content.description[i.index]}
                                 </div>
@@ -37,7 +38,7 @@ const CardExp = ({i, fade, setFade}) => {
                                     <div className={
                                         cn(
                                             !fade ? 'filter grayscale' :  'filter-none',
-                                            'md:w-[373px] h-[373px] md:block hidden duration-500 bg-no-repeat bg-cover bg-center photoRadius',
+                                            'xl:w-[373px] ms:w-[273px] xl:h-[373px] ms:h-[273px] w-[373px] h-[373px] md:block hidden duration-500 bg-no-repeat bg-cover bg-center photoRadius',
                                             content.photo[i.index]
                                         )
                                     } />

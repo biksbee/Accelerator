@@ -21,7 +21,7 @@ const Slider = ({setShow, setActive, setOpen}) => {
             slidesPerView={"auto"} 
             spaceBetween={30}
             keyboard={true}
-            mousewheel={true}
+            // //mousewheel={true}
             // loop={true}
             className="mx-0 xl:px-[calc((100vw-1280px)/2+40px)] md:px-[40px] px-[15px]"
             onSlideChange={(swiper) => setActive(swiper.activeIndex)}

@@ -32,23 +32,23 @@ const Consultation = ({setOpen}) => {
                 </div>
                 <div className='bg-curveLineConsultation h-[20px] bg-no-repeat'></div>
             </div>
-            <div className='md:px-[40px] px-[15px] ms:grid xl:grid-cols-3 hidden ms:grid-cols-2 md:gap-x-[21px] md:gap-y-[50px]'>
+            <div className='md:px-[40px] px-[15px] ms:grid ms:grid-cols-3 hidden md:gap-x-[21px] md:gap-y-[50px]'>
                 {content.f_name.map((item, index) => (
-                    <div key={index} className=" h-max xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
+                    <div key={index} className=" h-max xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] xl:w-[373px] w-[273px] pt-[20px]">
                         <CardExp key={index} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
                     </div>
                 ))}
                 <div 
-                    className='cursor-pointer xl:mt-0 ms:mt-[30px] w-[367px] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'
+                    className='cursor-pointer xl:mt-0 ms:mt-[30px] xl:w-[367px] ms:w-[293px] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'
                     onMouseEnter={() => setBluer(true)}
                     onMouseLeave={() => setBluer(false)}   
                     onClick={() => setOpen(true)}  
                 >
-                    <div className='flex flex-col justify-between h-full w-[282px]'>
-                        <div className='text-c_gray-regular w-[282px] pb-[40px] font-otf-semiBold text-[33.75px] leading-[33.75px]'>
+                    <div className='flex flex-col justify-between h-full w-[302px]'>
+                        <div className='text-c_gray-regular xl:ml-0 ml-[20px] w-[282px] pb-[40px] font-otf-semiBold xl:text-[33.75px] text-[26px] xl:leading-[33.75px] leading-[26px]'>
                             Посмотреть всех экспертов
                         </div>
-                        <div className='h-max grid grid-cols-3 gap-x-[13px] gap-y-[11px]'>
+                        <div className='h-max grid justify-center xl:ml-0 ml-[20px] grid-cols-3 xl:gap-x-[13px] xl:gap-y-[11px] gap-[13px]'>
                             {
                                 content.seeAll.map((item, index) => (
                                     index !== 11 ? 
@@ -56,12 +56,12 @@ const Consultation = ({setOpen}) => {
                                             key={index}
                                             className={
                                                 cn(
-                                                    `${item} w-[85.43px] h-[85.43px] bg-no-repeat bg-cover bg-center photoCardRadius`,
+                                                    `${item} xl:w-[85.43px] xl:h-[85.43px] w-[65px] h-[65px] bg-no-repeat bg-cover bg-center photoCardRadius`,
                                                     !bluer ? 'filter grayscale' :  'filter-none',
                                                 )} 
                                         />
                                     :
-                                    <div key={index} className='flex justify-end items-end'>
+                                    <div key={index} className='flex justify-end items-end xl:w-[85.43px] xl:h-[85.43px] w-[65px] h-[65px]'>
                                         <div
                                             className={
                                                 cn(
@@ -83,7 +83,7 @@ const Consultation = ({setOpen}) => {
                     slidesPerView={"auto"} 
                     spaceBetween={40}
                     keyboard={true}
-                    mousewheel={true}
+                    //mousewheel={true}
                     className={'ms:hidden md:px-[40px] px-[15px]'}
                 >
                     {content.f_name.map((item, index) => (

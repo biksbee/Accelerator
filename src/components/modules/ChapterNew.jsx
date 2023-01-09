@@ -68,7 +68,7 @@ const ChapterNew = ({i}) => {
                     slidesPerView={"auto"} 
                     spaceBetween={30}
                     keyboard={true}
-                    mousewheel={true}
+                    //mousewheel={true}
                     className="mx-0 w-screen md:hidden"
                 >
                     {

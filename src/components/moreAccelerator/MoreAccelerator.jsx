@@ -31,7 +31,7 @@ const MoreAccelerator = () => {
                         slidesPerView={"auto"} 
                         spaceBetween={80}
                         keyboard={true}
-                        mousewheel={true}
+                        //mousewheel={true}
                         className={'md:flex hidden w-[100vw] xl:px-[calc((100vw-1280px)/2)] ms:px-[40px] px-[15px]'}
                     >
                         {

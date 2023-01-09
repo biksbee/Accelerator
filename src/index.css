@@ -158,7 +158,7 @@
     .photoCardRadius {
         border-radius: 2px 14px;
     }
-    .customScroll::-webkit-scrollbar {
-        width: 0;
-      }
+    .customTouch {
+        -webkit-overflow-scrolling: touch;
+    }
 }

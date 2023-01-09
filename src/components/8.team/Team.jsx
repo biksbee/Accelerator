@@ -32,7 +32,7 @@ const Team = () => {
                         slidesPerView={"auto"} 
                         spaceBetween={30}
                         keyboard={true}
-                        mousewheel={true}
+                        //mousewheel={true}
                         className='flex-column md:px-[40px] px-[15px]'
                     >
                         {content.name.map((item, index) => (
