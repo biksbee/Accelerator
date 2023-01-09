@@ -16,10 +16,10 @@ const Steps = () => {
 
     return (
         <div className='w-full'>
-                <div className='xm:flex justify-between xl:pl-0 pl-[15px]'>
+                <div className='xs:flex justify-between xl:pl-0 pl-[15px]'>
                     <div className='mr-[50px]'>
                         <div className=''>
-                            <div className="xm:mb-[100px] mb-[70px] xl:w-[472px] xm:w-[452px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
+                            <div className="xm:mb-[100px] mb-[70px] xl:w-[472px] xs:w-[40vw] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
@@ -41,13 +41,13 @@ const Steps = () => {
                                     <div className="absolute bg-c_blue-filterLayer w-full  z-[40] h-full duration-500 rounded-[10px]" />
                                     <div className={cn(
                                         content.stepsPhoto[0],
-                                        'bg-no-repeat bg-center bg-cover xl:w-[472px] xm:w-[452px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                                        'bg-no-repeat bg-center bg-cover xl:w-[472px] xs:w-[40vw] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
                                     )} />
                                 </div>    
                             </div>
                         </div>
                         <div className=''>
-                            <div className="xl:mt-[50px] xl:mb-0 mb-[70px] xl:w-[472px] xm:w-[442px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
+                            <div className="xl:mt-[50px] xl:mb-0 mb-[70px] xl:w-[472px] xs:w-[40vw] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
@@ -69,7 +69,7 @@ const Steps = () => {
                                     <div className="absolute bg-c_blue-filterLayer w-full  z-[40] h-full duration-500 rounded-[10px]" />
                                     <div className={cn(
                                         content.stepsPhoto[2],
-                                        'bg-no-repeat bg-center bg-cover xl:w-[472px] xm:w-[452px] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                                        'bg-no-repeat bg-center bg-cover xl:w-[472px] xs:w-[40vw] w-[80vw] xl:h-[335px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
                                     )} />
                                 </div>    
                             </div>
@@ -77,7 +77,7 @@ const Steps = () => {
                     </div>
                     <div> 
                         <div className=''>
-                            <div className="xl:mb-0 mb-[70px] xl:w-[570px] xm:w-[452px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
+                            <div className="xl:mb-0 mb-[70px] xl:w-[570px] xs:w-[48vw] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] md:w-[430px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
@@ -103,13 +103,13 @@ const Steps = () => {
                                     <div className="absolute bg-c_blue-filterLayer w-full  z-[40] h-full duration-500 rounded-[10px]" />
                                     <div className={cn(
                                         content.stepsPhoto[1],
-                                        'bg-no-repeat bg-center bg-cover xl:w-[570px] xm:w-[452px] w-[80vw] xl:h-[335px] xm:h-[265px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                                        'bg-no-repeat bg-center bg-cover xl:w-[570px] xs:w-[48vw] w-[80vw] xl:h-[335px] xs:h-[265px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
                                     )} />
                                 </div>    
                             </div>
                         </div>
                         <div className=''>
-                            <div className="xm:mt-[100px] mt-[70px] xl:w-[570px] xm:w-[452px] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
+                            <div className="xm:mt-[100px] mt-[70px] xl:w-[570px] xs:w-[48vw] w-[80vw] border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] md:pb-[7px] md:w-[530px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px] pb-[7px]",
@@ -131,7 +131,7 @@ const Steps = () => {
                                     <div className="absolute bg-c_blue-filterLayer w-full  z-[40] h-full duration-500 rounded-[10px]" />
                                     <div className={cn(
                                         content.stepsPhoto[3],
-                                        'bg-no-repeat bg-center bg-cover xl:w-[570px] xm:w-[452px] w-[80vw] xl:h-[335px] xm:h-[265px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
+                                        'bg-no-repeat bg-center bg-cover xl:w-[570px] xs:w-[48vw] w-[80vw] xl:h-[335px] xs:h-[265px] md:h-[450px] mds:h-[300px] h-[200px] rounded-[10px]',
                                     )} />
                                 </div>    
                             </div>
