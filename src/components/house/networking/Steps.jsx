@@ -23,7 +23,7 @@ const Steps = () => {
                                 <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
-                                        "font-otf-semiBold font-normal not-italic"
+                                        "font-otf-semiBold not-italic"
                                     )}>
                                         {content.stepsTitle[0]}
                                     </div>

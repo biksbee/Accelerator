@@ -5,7 +5,17 @@ import wrapPrivacy from '../assets/icon/wrapPrivacy.svg'
 import wrapAccess from '../assets/icon/wrapAccess.svg'
 import wrapLegalTech from '../assets/icon/wrapLegalTech.svg'
 
-const workContent = {
+export const startPage = {
+    title: [
+        'Помогаем запускать',
+        'качественные продукты',
+        'в сфере',
+        'приватности',
+        'и свободы интернета',
+    ]
+}
+
+export const workContent = {
     title: [
         ['Приватность'],
         ['Доступ', 'к информации'],
@@ -68,4 +78,8 @@ const workContent = {
     ]
 }
 
-export default workContent
+export const deamhack = {
+    hackathon: 'Хакатон',
+    href: 'demhack.ru 🡽',
+    
+}

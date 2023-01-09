@@ -1,4 +1,6 @@
 import cn from 'classnames'
+import { startPage } from '../content'
+
 const StartPageNew = () => {
 
     return(
@@ -10,21 +12,21 @@ const StartPageNew = () => {
                 <div className='relative xl:w-[766px] xl:pl-[40px] xl:px-0 px-[15px]'>
                     <div className='absolute z-[50]'>
                         <div className='startPageText text-c_gray-regular'>
-                            Помогаем запускать 
+                            {startPage.title[0]} 
                         </div>
                         <div className='startPageText text-c_gray-regular flex'>
-                            качественные продукты  
+                            {startPage.title[1]}  
                         </div>
                         <div className='startPageText s:flex'>
                             <div className='text-c_gray-regular md:mr-[16px] mr-[8px]'>
-                                в сфере
+                                {startPage.title[2]}
                             </div>
                             <div className='text-c_orange-regular'>
-                                приватности
+                                {startPage.title[3]}
                             </div>
                         </div>
                         <div className='startPageText text-c_orange-regular xl:flex md:block flex'>
-                            и свободы интернета
+                            {startPage.title[4]}
                         </div>
                     </div>    
                 </div>

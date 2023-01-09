@@ -35,7 +35,7 @@ const Demhack = () => {
                                 Таким образом мы выстраиваем цепочку создания и развития проектов в области свободы интернета и приватности от момента инициации идеи до выхода проекта на рынок.
                             </div>
                             <div>
-                                С 2020 года <a href="" className='text-c_gray-regular w-max border-b-[1px] border-b-c_gray-light hover:opacity-50 duration-500'>Privacy Accelerator</a> и Роскомсвобода проводят хакатон Demhack дважды в год.
+                                С 2020 года Privacy Accelerator и <a href="https://roskomsvoboda.org/" className='text-c_gray-regular w-max border-b-[1px] border-b-c_gray-light hover:opacity-50 duration-500'>Роскомсвобода</a> проводят хакатон Demhack дважды в год.
                             </div>
                         </div>
                     </div>
