@@ -1,7 +1,6 @@
-import Chapter from "../modules/Chapter"
 import ChapterNew from "../modules/ChapterNew"
-import content from "./content"
-
+// import content from "./content"
+import content from '../content'
 
 const Works = () => {
 

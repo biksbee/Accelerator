@@ -38,7 +38,7 @@ const CardExp = ({i, fade, setFade}) => {
                                     <div className={
                                         cn(
                                             !fade ? 'filter grayscale' :  'filter-none',
-                                            'xl:w-[373px] xs:w-[273px] xl:h-[373px] xs:h-[273px] w-[373px] h-[373px] md:block hidden duration-500 bg-no-repeat bg-cover bg-center photoRadius',
+                                            'xl:w-[373px] xs:w-[28vw] xl:h-[373px] xs:h-[333px] w-[373px] h-[373px] md:block hidden duration-500 bg-no-repeat bg-cover bg-center photoRadius',
                                             content.photo[i.index]
                                         )
                                     } />

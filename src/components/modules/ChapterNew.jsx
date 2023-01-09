@@ -1,5 +1,6 @@
 import cn from 'classnames'
-import content from '../3.works/content'
+import content from '../content'
+// import content from '../3.works/content'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
@@ -27,9 +28,9 @@ const ChapterNew = ({i}) => {
                         <div 
                             className={cn(
                                 `wrapperLine`,
-                                i.index === 0 ? 'md:h-[117px] md:w-[328px] h-[66px] w-[171px] md:top-[-40px] top-[-22px] md:left-[-15px] left-[-7px]' 
-                                    : i.index === 1 ? 'md:h-[136px] md:w-[369px] h-[71px] w-[189px] md:top-[-15px] top-[-10px] md:left-[-20px] left-[-15px]' 
-                                    : i.index === 2 ? 'md:h-[112px] md:w-[256px] h-[63px] w-[142px] md:top-[-40px] top-[-22px] left-[-15px]' : '',
+                                i.index === 0 ? 'md:h-[117px] md:w-[328px] h-[66px] w-[171px] md:top-[-50px] top-[-22px] md:left-[-15px] left-[-7px]' 
+                                    : i.index === 1 ? 'md:h-[136px] md:w-[369px] h-[71px] w-[189px] md:top-[-20px] top-[-10px] md:left-[-20px] left-[-15px]' 
+                                    : i.index === 2 ? 'md:h-[112px] md:w-[256px] h-[63px] w-[142px] md:top-[-45px] top-[-22px] left-[-15px]' : '',
                             )} 
                         >
                             <img src={content.style[i.index]} alt="" />
