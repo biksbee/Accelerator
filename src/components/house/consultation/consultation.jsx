@@ -32,7 +32,7 @@ const Consultation = ({setOpen}) => {
                 </div>
                 <div className='bg-curveLineConsultation h-[20px] bg-no-repeat'></div>
             </div>
-            <div className='md:px-[40px] px-[15px] ms:grid ms:grid-cols-3 hidden md:gap-x-[21px] md:gap-y-[50px]'>
+            <div className='md:px-[40px] px-[15px] xs:grid ms:grid-cols-3 hidden md:gap-x-[21px] md:gap-y-[50px]'>
                 {content.f_name.map((item, index) => (
                     <div key={index} className=" h-max xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] xl:w-[373px] w-[273px] pt-[20px]">
                         <CardExp key={index} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
@@ -84,7 +84,7 @@ const Consultation = ({setOpen}) => {
                     spaceBetween={40}
                     keyboard={true}
                     //mousewheel={true}
-                    className={'ms:hidden md:px-[40px] px-[15px]'}
+                    className={'xs:hidden md:px-[40px] px-[15px]'}
                 >
                     {content.f_name.map((item, index) => (
                         <SwiperSlide key={index} className="border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
