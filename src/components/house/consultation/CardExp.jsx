@@ -27,7 +27,7 @@ const CardExp = ({i, fade, setFade}) => {
                                     {i.item}
                                 </div>
                             </div>
-                            <div className={`mb-[20px] ${i.index < 3 ? 'xl:h-[144px] ms:h-[190px] h-[144px]' : 'xl:h-[120px] ms:h-[160px] h-[144px]'}`}>
+                            <div className={`mb-[20px] ${i.index < 3 ? 'xl:h-[144px] xs:h-[190px] h-[144px]' : 'xl:h-[120px] xs:h-[160px] h-[144px]'}`}>
                                 <div className='text-[#D2DCFF] opacity-50 text-[16px] leading-[24px] font-otf-normal not-italic'>
                                     {content.description[i.index]}
                                 </div>

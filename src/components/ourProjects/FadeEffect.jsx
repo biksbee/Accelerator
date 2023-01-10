@@ -1,9 +1,18 @@
 import {useState} from 'react'
-import content from "./content"
+import { ourProjects } from '../content'
 import cn from 'classnames'
 import { Link } from "react-scroll"
 
-const FadeEffect = ({i, fade, setFade, setOpen}) => {    
+const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {    
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return ourProjects.ru
+        else if(lan === 'ru') 
+            return ourProjects.eng
+    }
+    const content = chooseLan(lang)
+
     return (
         <Link 
             to={`${i.item}${i.index}`}

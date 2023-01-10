@@ -1,4 +1,5 @@
 import cn from 'classnames'
+import { moreAccelerator } from '../content';
 import content from './content';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
@@ -6,7 +7,15 @@ import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 
 SwiperCore.use([Keyboard, Mousewheel]); 
 
-const MoreAccelerator = () => {
+const MoreAccelerator = ({lang, setLang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return moreAccelerator.ru
+        else if(lan === 'ru') 
+            return moreAccelerator.eng
+    }
+    const content = chooseLan(lang)
 
     return (
         <div className="w-full flex bg-c_pink-regular">
@@ -17,10 +26,10 @@ const MoreAccelerator = () => {
                                 "pageTitle text-c_red-deep"
                         )}>
                             <div>
-                                Больше, чем
+                                {content.mainTitle[0]}
                             </div>
                             <div>
-                                просто акселератор
+                               {content.mainTitle[1]}
                             </div>
                         </div>
                         <div className="moreAcceleratorTheLoop"></div>
@@ -52,7 +61,7 @@ const MoreAccelerator = () => {
                                     </div>
                                     {content.needed[index] !== '' ? 
                                         <div className='pt-[20px] opacity-[0.5] md:text-[16px] md:leading-[20px] text-[13px] leading-[16px] uppercase font-otf-book'>
-                                            требования
+                                            {content.requirements}
                                         </div>
                                     : null}
                                     <div className={cn(
@@ -84,7 +93,7 @@ const MoreAccelerator = () => {
                                     </div>
                                     {content.needed[index] !== '' ? 
                                         <div className='pt-[20px] opacity-[0.5] md:text-[16px] md:leading-[20px] text-[13px] leading-[16px] uppercase font-otf-semiBold'>
-                                            требования
+                                            {content.requirements}
                                         </div>
                                     : null}
                                     <div className={cn(

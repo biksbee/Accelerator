@@ -1,4 +1,3 @@
-
 import cn from 'classnames'
 
 import RBK from '../../assets/icon/RBK.svg'
@@ -6,9 +5,18 @@ import KO from '../../assets/icon/KO.svg'
 import TheBell from '../../assets/icon/TheBell.svg'
 import VcRu from '../../assets/icon/VcRu.svg'
 import RbRu from '../../assets/icon/RbRu.svg'
+import { media } from '../content'
 
 
-const Media = () => {
+const Media = ({lang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return media.ru
+        else if(lan === 'ru') 
+            return media.eng
+    }
+    const content = chooseLan(lang)
 
     const links = [
         'https://www.rbc.ru/',
@@ -23,7 +31,7 @@ const Media = () => {
             <div className='xl:w-[1280px] w-full relative overflow-hidden md:py-[120px] py-[90px]'>
                 <div className='w-full flex justify-center xl:pb-[70px] md:pb-[70px] pb-[40px]'>
                     <div className='startPageText text-c_gray-regular'>
-                        Медиа о нас
+                        {content.title}
                     </div>
                 </div>
                 <div className='w-full flex justify-center'>

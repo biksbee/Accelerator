@@ -1,7 +1,16 @@
 import cn from 'classnames'
 import { startPage } from '../content'
 
-const StartPageNew = () => {
+const StartPageNew = ({lang, setLang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return startPage.ru
+        else if(lan === 'ru') 
+            return startPage.eng
+    }
+    const content = chooseLan(lang)
+
 
     return(
         <div id='startPage' className='w-full flex justify-center md:h-[1024px] h-[90vh] bg-c_purple-header'>
@@ -12,21 +21,21 @@ const StartPageNew = () => {
                 <div className='relative xl:w-[766px] xl:pl-[40px] xl:px-0 px-[15px]'>
                     <div className='absolute z-[50]'>
                         <div className='startPageText text-c_gray-regular'>
-                            {startPage.title[0]} 
+                            {content.title[0]} 
                         </div>
                         <div className='startPageText text-c_gray-regular flex'>
-                            {startPage.title[1]}  
+                            {content.title[1]}  
                         </div>
                         <div className='startPageText s:flex'>
                             <div className='text-c_gray-regular md:mr-[16px] mr-[8px]'>
-                                {startPage.title[2]}
+                                {content.title[2]}
                             </div>
                             <div className='text-c_orange-regular'>
-                                {startPage.title[3]}
+                                {content.title[3]}
                             </div>
                         </div>
                         <div className='startPageText text-c_orange-regular xl:flex md:block flex'>
-                            {startPage.title[4]}
+                            {content.title[4]}
                         </div>
                     </div>    
                 </div>

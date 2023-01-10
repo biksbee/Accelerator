@@ -1,6 +1,15 @@
+import { deamhack } from '../content'
 import demhack from '../../assets/icon/Deamhack.svg'
 
-const Demhack = () => {
+const Demhack = ({lang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return deamhack.ru
+        else if(lan === 'ru') 
+            return deamhack.eng
+    }
+    const content = chooseLan(lang)
 
     return (
         <div className="w-full flex justify-center bg-c_black-dark">
@@ -11,11 +20,11 @@ const Demhack = () => {
                     </div>
                     <div className='ms:text-right ms:pb-0 pb-[25px]'>
                         <div className='md:text-[24px] text-[15px] md:leading-[23px] leading-[14px] text-c_gray-primary'>
-                            Хакатон
+                            {content.hackathon}           
                         </div>
                         <a href='' >
                             <div className='w-max md:text-[18px] text-[15px] md:leading-[25px] leading-[21px] font-otf-normal not-italic text-c_orange-regular duration-500 hover:text-c_orange-hover border-b-[1px] border-c_orange-link_op'>
-                                demhack.ru 🡽
+                                {content.href}
                             </div>
                         </a>    
                     </div>
@@ -24,18 +33,18 @@ const Demhack = () => {
                     <div className='ms:columns-2 gap-[50px]'>
                         <div className='xl:w-[35vw] ms:w-[40vw] text-c_gray-demhack md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otf-book not-italic'>
                             <div className='pb-[20px]'>
-                                Цель хакатона — поддержка духа сообщества, создание площадки для взаимодействия и сотрудничества специалистов из разных стран, возможность реализовать свои идеи для блага людей по всему миру и, защитить права на приватность и доступ к информации.
+                                {content.text[0]}
                             </div>     
                             <div>
-                                Мы собираем интересные идеи в формате заявок и задач на хакатон, а после хакатона поддерживаем команды, которые хотят продолжать работать над проектом. Основываясь на экспертных оценках и наблюдениях за работой команд на хакатоне, мы принимаем решение о продолжении работы с проектом в рамках акселератора.
+                                {content.text[1]}
                             </div>
                         </div>
                         <div className='ms:pt-0 pt-[20px] xl:w-[35vw] ms:w-[40vw] text-c_gray-demhack md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otf-book not-italic'>
                             <div className='pb-[20px]'>    
-                                Таким образом мы выстраиваем цепочку создания и развития проектов в области свободы интернета и приватности от момента инициации идеи до выхода проекта на рынок.
+                                {content.text[2]}
                             </div>
                             <div>
-                                С 2020 года Privacy Accelerator и <a href="https://roskomsvoboda.org/" className='text-c_gray-regular w-max border-b-[1px] border-b-c_gray-light hover:opacity-50 duration-500'>Роскомсвобода</a> проводят хакатон Demhack дважды в год.
+                                {content.text[3]}<a href="https://roskomsvoboda.org/" className='text-c_gray-regular w-max border-b-[1px] border-b-c_gray-light hover:opacity-50 duration-500'>{content.text[4]}</a> {content.text[5]}
                             </div>
                         </div>
                     </div>

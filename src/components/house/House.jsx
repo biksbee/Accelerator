@@ -1,6 +1,7 @@
 import {useState} from 'react'
 
 import home from '../../assets/icon/House.svg'
+import { house } from '../content'
 
 import Consultation from './consultation/consultation'
 import Networking from './networking/Networking'
@@ -10,7 +11,15 @@ import Experts from './Experts'
 
 const back ='bg-[#404864]'
 //
-const House = () => {
+const House = ({lang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return house.ru
+        else if(lan === 'ru') 
+            return house.eng
+    }
+    const content = chooseLan(lang)
 
     const [open, setOpen] = useState(false)
 
@@ -22,17 +31,17 @@ const House = () => {
                 <div className='w-full flex justify-center xl:py-[200px] py-[100px] md:px-[40px] px-[15px]'>
                     <div className='startPageText text-c_gray-regular md:w-[700px] w-[330px]'>
                             <div className='w-full flex'>
-                                <div className='h-max'>Вот, что</div>
+                                <div className='h-max'>{content.mainTitle[0]}</div>
                                 <div className='relative md:mx-[20px] mx-[10px] md:w-[44px] w-[25px] md:h-[55px] h-[30px]'>
                                     <img className='absolute top-[-7px]' src={home} alt="home" />
                                 </div>
-                                <div className='h-max'>может дать</div>
+                                <div className='h-max'>{content.mainTitle[1]}</div>
                             </div>    
-                            <div className='w-full text-center'>вашему проекту</div>
+                            <div className='w-full text-center'>{content.mainTitle[2]}</div>
                     </div>
                 </div>
                 <div>
-                    <Consultation setOpen={setOpen}/>
+                    <Consultation setOpen={setOpen} lang={lang}/>
                 </div>
                 <div className='w-full justify-center md:px-[40px] px-[15px]'>
                     <div className='ms:mt-[200px] mt-[87px] pt-[30px] border-t-[2px] border-t-c_gray-regular' />

@@ -9,11 +9,17 @@ import home from '../assets/icon/House.svg'
 import burgerMenu from '../assets/icon/BurgerMenu.svg'
 import close from '../assets/icon/close.svg'
 
-const Header = () => {
+const Header = ({lan, setLan}) => {
 
     const [show, setShow] = useState(true)
     const [open, setOpen] = useState(false)
     
+    const changeLan = () => {
+        if(lan === "ru")
+            setLan("eng")
+        else if(lan === "eng")
+            setLan("ru")
+    }
 
     const showNav = () => {
         const heightWindow = window.screen.height+200
@@ -74,12 +80,13 @@ const Header = () => {
                         onClick={() => setOpen(!open)}
                     >
                         <li 
+                            onClick={changeLan}
                             className={cn(
                                 'menuLi s:w-[330px] justify-center w-[80vw] h-[49px] ms:hidden flex items-center',
                                 'px-[15px] hover:bg-c_gray-light hover:rounded-[6px] hover:duration-500'
                             )}
                         >
-                            Eng
+                            {lan}
                         </li>
                     </div>
                     <a href="https://pd.roskomsvoboda.org/privacyaccelerator/" target="_blank">
@@ -101,12 +108,12 @@ const Header = () => {
                     </a>    
                 </ul>
                 <div className='flex'>
-                    <div className={cn(
+                    <div onClick={changeLan} className={cn(
                             'ms:visible hidden mr-[40px] ms:flex items-center cursor-pointer',
                             'px-[15px] hover:bg-c_gray-light hover:rounded-[6px] hover:duration-500'
                         )}>
-                        <div className='menuLi'>
-                            Eng
+                        <div className='menuLi w-[25px] flex justify-center'>
+                            {lan}
                         </div>
                     </div>
                     <div>

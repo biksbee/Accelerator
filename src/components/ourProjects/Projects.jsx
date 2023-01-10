@@ -1,11 +1,20 @@
 import cn from 'classnames'
-import content from "./content"
+import { ourProjects } from "../content"
 
 
-const Projects = () => {
+const Projects = ({lang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return ourProjects.ru
+        else if(lan === 'ru') 
+            return ourProjects.eng
+    }
+    const content = chooseLan(lang)
+
     return (
         <div className="pt-[50px] xl:w-[1000px] w-[90vw]">
-            {content.title.map((item, index) => (
+            {ourProjects.title.map((item, index) => (
                 <div 
                     key={index}
                     className="mds:pb-[150px] pb-[50px] text-c_blue-deepDark"

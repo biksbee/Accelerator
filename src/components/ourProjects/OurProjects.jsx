@@ -1,11 +1,19 @@
 import {useState} from 'react'
 import Slider from "./slider/slide"
-import content from './content'
+import { ourProjects } from '../content'
 
 import PopUp from '../modules/popUp'
 import Projects from './Projects'
 
-const OurProjects = () => {
+const OurProjects = ({lang, setLang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return ourProjects.ru
+        else if(lan === 'ru') 
+            return ourProjects.eng
+    }
+    const content = chooseLan(lang)
 
     const [show, setShow] = useState(false)
     const [active, setActive] = useState(0)
@@ -22,13 +30,13 @@ const OurProjects = () => {
                 <div className=' w-full flex justify-center'>
                     <div className='relative xl:w-[1280px] w-full md:pl-[40px] pl-[15px]'>
                         <div className="pageTitle text-c_blue-dark">
-                            Наши проекты
+                            {content.mainTitle}
                         </div>
                         <div className="ourProjectsTheLoop"></div>
                     </div>
                 </div>    
                 <div className="w-[100vw] h-max md:pt-[222px] pt-[50px] pb-[100px]">
-                    <Slider setShow={setShow} setActive={setActive} setOpen={setOpen} send={getSend}/>
+                    <Slider setShow={setShow} setActive={setActive} setOpen={setOpen} send={getSend} lang={lang}/>
                     <div className='w-full flex justify-center text-c_blue-dark pt-[30px]'>
                         <div className='xl:w-[1200px] w-full flex items-end xl:pl-0 md:pl-[40px] pl-[15px]'>
                             <div className='md:text-[50px] text-[20px] md:leading-[44px] leading-[18px] font-otf-semiBold not-italic'>
@@ -43,7 +51,7 @@ const OurProjects = () => {
             </div>
             {open ? 
                 <PopUp setOpen={setOpen} background={back} c={0}>
-                    <Projects />
+                    <Projects lang={lang} />
                 </PopUp>
                  : 
             null}

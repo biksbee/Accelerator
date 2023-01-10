@@ -9,19 +9,20 @@ import Team from "./8.team/Team"
 import Contacts from "./9.contact/Contacts"
 
 
-const Body = () => {
+const Body = ({lang, setLang}) => {
+
 
     return (
         <div className="overflow-hidden">
-            <StartPageNew />
-            <OurProjects />
-            <Media />
-            <Works />
-            <Demhack />
-            <MoreAccelerator />
-            <House />
-            <Team />
-            <Contacts />
+            <StartPageNew lang={lang} setLang={setLang}/>
+            <OurProjects lang={lang} setLang={setLang} />
+            <Media lang={lang} setLang={setLang} />
+            <Works lang={lang} setLang={setLang} />
+            <Demhack lang={lang} setLang={setLang} />
+            <MoreAccelerator lang={lang} setLang={setLang} />
+            <House lang={lang} setLang={setLang} />
+            <Team lang={lang} setLang={setLang} />
+            <Contacts lang={lang} setLang={setLang} />
         </div>
     )
 } 

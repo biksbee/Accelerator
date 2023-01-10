@@ -1,14 +1,22 @@
 import {useState} from 'react'
-import content from "../content"
 import cn from 'classnames'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import FadeEffect from '../FadeEffect';
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
+import { ourProjects } from '../../content';
 
 SwiperCore.use([Keyboard, Mousewheel]);
 
-const Slider = ({setShow, setActive, setOpen}) => {
+const Slider = ({setShow, setActive, setOpen, lang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return ourProjects.ru
+        else if(lan === 'ru') 
+            return ourProjects.eng
+    }
+    const content = chooseLan(lang)
 
     const [fade0, setFade0] = useState(false)
     const [fade1, setFade1] = useState(false)
@@ -36,7 +44,7 @@ const Slider = ({setShow, setActive, setOpen}) => {
                     )}
                     onClick={() => setShow(true)}
                 >
-                    <FadeEffect setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} />                   
+                    <FadeEffect lang={lang} setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} />                   
                 </SwiperSlide>
             ))}
         </Swiper>
