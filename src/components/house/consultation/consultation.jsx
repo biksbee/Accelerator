@@ -56,10 +56,10 @@ const Consultation = ({setOpen, lang}) => {
                     onClick={() => setOpen(true)}  
                 >
                     <div className='flex flex-col justify-between h-full w-[302px]'>
-                        <div className='text-c_gray-regular xl:ml-0 ml-[20px] w-[282px] pb-[40px] font-otf-semiBold xl:text-[33.75px] text-[26px] xl:leading-[33.75px] leading-[26px]'>
+                        <div className='text-c_gray-regular xl:ml-0 ml-[20px] w-[282px] pb-[40px] font-otf-semiBold xl:text-[33.75px] text-[29px] xl:leading-[33.75px] leading-[29px]'>
                             {content.show}
                         </div>
-                        <div className='h-max grid justify-center xl:ml-0 ml-[20px] grid-cols-3 xl:gap-x-[13px] xl:gap-y-[11px] gap-[13px]'>
+                        <div className='h-max grid justify-center xl:ml-0 ml-[20px] grid-cols-3 xl:gap-x-[13px] xl:gap-y-[11px] gap-[20px]'>
                             {
                                 content.seeAll.map((item, index) => (
                                     index !== 11 ? 
@@ -67,7 +67,7 @@ const Consultation = ({setOpen, lang}) => {
                                             key={index}
                                             className={
                                                 cn(
-                                                    `${item} xl:w-[85.43px] xl:h-[85.43px] w-[75px] h-[70px] bg-no-repeat bg-cover bg-center photoCardRadius`,
+                                                    `${item} xl:w-[85.43px] xl:h-[85.43px] xs:w-[75px] xs:h-[75px] bg-no-repeat bg-cover bg-center photoCardRadius`,
                                                     !bluer ? 'filter grayscale' :  'filter-none',
                                                 )} 
                                         />

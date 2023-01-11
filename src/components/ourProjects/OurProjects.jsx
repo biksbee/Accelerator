@@ -5,6 +5,8 @@ import { ourProjects } from '../content'
 import PopUp from '../modules/popUp'
 import Projects from './Projects'
 
+import Next from '../modules/Next'
+
 const OurProjects = ({lang, setLang}) => {
 
     const chooseLan = (lan) => {
@@ -26,7 +28,7 @@ const OurProjects = ({lang, setLang}) => {
 
     return (
         <div id='ourProjects' className="w-full h-max flex justify-center overflow-hidden bg-c_blue-regular">
-            <div className="md:pt-[120px] pt-[90px]">
+            <div className="cb md:pt-[120px] pt-[90px]">
                 <div className=' w-full flex justify-center'>
                     <div className='relative xl:w-[1280px] w-full md:pl-[40px] pl-[15px]'>
                         <div className="pageTitle text-c_blue-dark">

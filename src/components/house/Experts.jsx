@@ -28,7 +28,7 @@ const Experts = ({lang}) => {
     return (
         <div className="xl:mt-[90px] mt-[40px] text-[#D2DCFF]">
             <div className="xl:pb-[60px] pb-[30px]">
-                <div className="xl:w-[900px] xl:text-[60px] text-[30px] xl:leading-[60px] leading-[30px] font-bold not-italic">
+                <div className="xl:w-[900px] xl:text-[60px] text-[30px] xl:leading-[60px] leading-[30px] font-otf-bold not-italic">
                     {content.popUpTitle}<br/> Privacy Accelerator
                 </div>
             </div>

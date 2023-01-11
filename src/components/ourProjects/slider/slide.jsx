@@ -1,14 +1,17 @@
 import {useState} from 'react'
 import cn from 'classnames'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import "swiper/css";
 import FadeEffect from '../FadeEffect';
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 import { ourProjects } from '../../content';
 
+import Next from '../../modules/Next';
+
 SwiperCore.use([Keyboard, Mousewheel]);
 
 const Slider = ({setShow, setActive, setOpen, lang}) => {
+    const swiper = useSwiper();
 
     const chooseLan = (lan) => {
         if(lan === 'eng')
@@ -25,29 +28,33 @@ const Slider = ({setShow, setActive, setOpen, lang}) => {
     const setFade = [setFade0, setFade1]
 
     return(
-        <Swiper
-            slidesPerView={"auto"} 
-            spaceBetween={30}
-            keyboard={true}
-            // //mousewheel={true}
-            // loop={true}
-            className="mx-0 xl:px-[calc((100vw-1280px)/2+40px)] md:px-[40px] px-[15px]"
-            onSlideChange={(swiper) => setActive(swiper.activeIndex)}
-        >
-            {content.title.map((item, index) => (
-                <SwiperSlide 
-                    key={index}
-                    className={cn(
-                        'border-t-[2px] border-t-c_blue-dark', 
-                        'xl:w-[997px] md:w-[650px] w-[320px] #{!important}',
-                        'bg-c_blue-regular duration-500',
-                    )}
-                    onClick={() => setShow(true)}
-                >
-                    <FadeEffect lang={lang} setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} />                   
-                </SwiperSlide>
-            ))}
-        </Swiper>
+        <div>
+            <Next direction={"left"} onClickHandler={swiper.slidePrev()} />
+            <Swiper
+                slidesPerView={"auto"} 
+                spaceBetween={30}
+                keyboard={true}
+                
+                // //mousewheel={true}
+                className="mx-0 xl:px-[calc((100vw-1280px)/2+40px)] md:px-[40px] px-[15px]"
+                onSlideChange={(swiper) => setActive(swiper.activeIndex)}
+            >
+                {content.title.map((item, index) => (
+                    <SwiperSlide 
+                        key={index}
+                        className={cn(
+                            'border-t-[2px] border-t-c_blue-dark', 
+                            'xl:w-[997px] md:w-[650px] w-[320px] #{!important}',
+                            'bg-c_blue-regular duration-500',
+                        )}
+                        onClick={() => setShow(true)}
+                    >
+                        <FadeEffect lang={lang} setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} />                   
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+            {/* <Next direction={"right"} onClickHandler={swiper.slideNext()} /> */}
+        </div>
     )
 }
 

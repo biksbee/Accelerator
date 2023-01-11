@@ -13,7 +13,7 @@ const PopUpExperts = ({i, fade, setFade, lang}) => {
 
     return (
         <div 
-            className="border-t-c_gray-regular border-t-[2px] pt-[20px] md:w-[286px] w-[80vw] md:pb-0 pb-[60px]"
+            className="border-t-c_gray-regular border-t-[2px] pt-[20px] md:w-[286px] w-[80vw] md:pb-0 pb-[60px] md:last:mb-[80px] last:mb-[40px]"
             onMouseEnter={() => setFade(true)}
             onMouseLeave={() => setFade(false)}
         >    
@@ -35,7 +35,7 @@ const PopUpExperts = ({i, fade, setFade, lang}) => {
                                     </div>
                                 </div>
                                 <div className={`mb-[20px]`}>
-                                    <div className='text-c_gray-blur opacity-50 text-[16px] leading-[24px]'>
+                                    <div className='text-c_gray-blur opacity-50 text-[16px] leading-[24px] font-otf-normal'>
                                         {content.experts[i.index].allDescription}
                                     </div>
                                 </div>

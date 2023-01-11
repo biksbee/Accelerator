@@ -27,11 +27,11 @@ const Projects = ({lang}) => {
                             'xl:h-[510px] xs:h-[480px] ms:h-[450px] m:h-[332px] h-[168px] mds:mb-[30px]'
                         )}
                     />  
-                    <div className="ourProjectStyleTitle mb-[30px] text-c_blue-dark font-otf-semiBold">
+                    <div className="ourProjectStyleTitle my-[30px] text-c_blue-dark font-otf-semiBold">
                         {item}
                     </div>
                     <div className="flex xl:flex-row flex-col-reverse justify-between">
-                        <div className='xl:w-[590px] xl:text-[22px] xl:leading-[33px] text-[16px] leading-[27px] font-otf-book text-c_blue-deepDark'>
+                        <div className='xl:w-[590px] xl:text-[22px] xl:leading-[33px] text-[15px] leading-[18px] font-otf-book text-c_blue-deepDark'>
                             <div className='mb-[20px]'>
                                 {content.description[index][0]}
                             </div>
@@ -39,20 +39,20 @@ const Projects = ({lang}) => {
                                 {content.description[index][1]}
                             </div>
                         </div>
-                        <div className='xl:block mds:flex xl::mt-[100px] xl:ml-[20px] pb-[50px] text-c_blue-deepDark'>
+                        <div className='xl:block mds:flex xl::mt-[100px] xl:ml-[20px] pb-[50px]'>
                             <div className='xl:mb-[40px] xl:mr-0 mr-[50px] mds:mb-0 mb-[30px]'>
-                                <div className='text-[75px] leading-[75px] font-otf-light mb-[5px]'>
+                                <div className='md:text-[75px] text-[28px] md:leading-[75px] leading-[28px] font-otf-light text-c_blue-deepDark mb-[5px]'>
                                     {content.rightColumns[index][0]}
                                 </div>
-                                <div className='text-c_blue-popUp text-[16px] leading[24px] w-[285px] font-otf-book'>
+                                <div className='text-c_blue-popUp md:text-[16px] text-[13px] md:leading[24px] leading-[16px] w-[285px] font-otf-book'>
                                     {content.rightColumns[index][1]}
                                 </div>
                             </div>
                             <div>
-                                <div className='text-[75px] leading-[75px] font-otf-light mb-[5px]'>
+                                <div className='md:text-[75px] text-[28px] md:leading-[75px] leading-[28px] font-otf-light text-c_blue-deepDark mb-[5px]'>
                                     {content.rightColumns[index][2]}
                                 </div>
-                                <div className='text-c_blue-popUp text-[16px] leading[24px] w-[285px] font-otf-book'>
+                                <div className='text-c_blue-popUp md:text-[16px] text-[13px] md:leading[24px] leading-[16px] w-[285px] font-otf-book'>
                                     {content.rightColumns[index][3]}
                                 </div>
                             </div>
