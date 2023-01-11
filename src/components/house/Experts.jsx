@@ -1,11 +1,18 @@
 import {useState} from 'react'
 import cn from 'classnames'
-//
 import PopUpExperts from './PopUpExperts'
-import content from "./consultation/content"
+import { house } from '../content'
 
 
-const Experts = () => {
+const Experts = ({lang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return house.ru
+        else if(lan === 'ru') 
+            return house.eng
+    }
+    const content = chooseLan(lang)
 
     const [fade0, setFade0] = useState(false)
     const [fade1, setFade1] = useState(false)
@@ -22,14 +29,14 @@ const Experts = () => {
         <div className="xl:mt-[90px] mt-[40px] text-[#D2DCFF]">
             <div className="xl:pb-[60px] pb-[30px]">
                 <div className="xl:w-[900px] xl:text-[60px] text-[30px] xl:leading-[60px] leading-[30px] font-bold not-italic">
-                    Эксперты<br/> Privacy Accelerator
+                    {content.popUpTitle}<br/> Privacy Accelerator
                 </div>
             </div>
             <div className="flex justify-center">
                 <div className="md:grid xl:grid-cols-3 md:grid-cols-2 gap-[35px] md:w-full w-max">
                     {
-                        content.name.map((item, index) => (
-                            <PopUpExperts key={index} i={{index, item}} fade={fade[index]} setFade={setFade[index]} />         
+                        content.f_name.map((item, index) => (
+                            <PopUpExperts key={index} lang={lang} i={{index, item}} fade={fade[index]} setFade={setFade[index]} />         
                         ))
                     }
                 </div>

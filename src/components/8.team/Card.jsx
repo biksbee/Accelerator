@@ -1,8 +1,16 @@
 import cn from 'classnames'
-import content from './content';
+import { team } from '../content';
 import "swiper/css";
 
-const Card = ({i, setFade, fade}) => {
+const Card = ({i, setFade, fade, lang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return team.ru
+        else if(lan === 'ru') 
+            return team.eng
+    }
+    const content = chooseLan(lang)
 
 
     return (
@@ -22,7 +30,7 @@ const Card = ({i, setFade, fade}) => {
                             </div>
                             <div className='pb-[10px]'>
                                 <div className='text-c_gray-blur font-otf-semiBold text-[20px] leading-[20px] '>
-                                    {i.item}
+                                    {content.name[i.index]}
                                 </div>
                             </div>
                             <div className='mb-[20px] h-[144px]'>

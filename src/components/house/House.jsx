@@ -47,15 +47,15 @@ const House = ({lang}) => {
                     <div className='ms:mt-[200px] mt-[87px] pt-[30px] border-t-[2px] border-t-c_gray-regular' />
                 </div>
                 <div className='xl:w-[1200px] w-full md:px-[40px] px-[15px]'>
-                    <Networking />
+                    <Networking  lang={lang}/>
                     <div className='xl:block flex justify-center w-full'>
-                        <Steps />
+                        <Steps lang={lang}/>
                     </div>
                 </div>
             </div>
             {open ? 
                 <PopUp setOpen={setOpen} background={back} c={1}>
-                    <Experts />
+                    <Experts lang={lang}/>
                 </PopUp>
                 : 
             null}

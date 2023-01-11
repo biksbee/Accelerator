@@ -14,7 +14,7 @@ const Projects = ({lang}) => {
 
     return (
         <div className="pt-[50px] xl:w-[1000px] w-[90vw]">
-            {ourProjects.title.map((item, index) => (
+            {content.title.map((item, index) => (
                 <div 
                     key={index}
                     className="mds:pb-[150px] pb-[50px] text-c_blue-deepDark"

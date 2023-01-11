@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import cn from 'classnames'
-import content from './content'
+import { house } from '../../content';
 import CardExp from './CardExp'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
@@ -9,7 +9,16 @@ import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 SwiperCore.use([Keyboard, Mousewheel]);
 
 
-const Consultation = ({setOpen}) => {
+const Consultation = ({setOpen, lang}) => {
+
+    const chooseLan = (lan) => {
+        if(lan === 'eng')
+            return house.ru
+        else if(lan === 'ru') 
+            return house.eng
+    }
+    const content = chooseLan(lang)
+
 
     const [bluer, setBluer] = useState(false)
     const [fade0, setFade0] = useState(false)
@@ -28,7 +37,7 @@ const Consultation = ({setOpen}) => {
                     "md:pb-[9px] pb-[6px] text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
                     "font-otf font-otf-semiBold not-italic"
                 )}>
-                    Консультации с экспертами
+                    {content.consultation}
                 </div>
                 <div className='bg-curveLineConsultation h-[20px] bg-no-repeat'></div>
             </div>
@@ -36,7 +45,7 @@ const Consultation = ({setOpen}) => {
                 {content.f_name.map((item, index) => (
                     index < 5 ? 
                         <div key={index} className=" h-max xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] xl:w-[373px] w-[28vw] pt-[20px]">
-                            <CardExp key={index} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
+                            <CardExp key={index} lang={lang} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
                         </div>
                     : null    
                 ))}
@@ -48,7 +57,7 @@ const Consultation = ({setOpen}) => {
                 >
                     <div className='flex flex-col justify-between h-full w-[302px]'>
                         <div className='text-c_gray-regular xl:ml-0 ml-[20px] w-[282px] pb-[40px] font-otf-semiBold xl:text-[33.75px] text-[26px] xl:leading-[33.75px] leading-[26px]'>
-                            Посмотреть всех экспертов
+                            {content.show}
                         </div>
                         <div className='h-max grid justify-center xl:ml-0 ml-[20px] grid-cols-3 xl:gap-x-[13px] xl:gap-y-[11px] gap-[13px]'>
                             {
@@ -91,7 +100,7 @@ const Consultation = ({setOpen}) => {
                     {content.f_name.map((item, index) => (
                         index < 5 ? 
                             <SwiperSlide key={index} className="border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
-                                <CardExp  i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
+                                <CardExp  i={{item, index}} fade={fade[index]} setFade={setFade[index]} lang={lang} />
                             </SwiperSlide>
                         : null
                     ))}
@@ -104,7 +113,7 @@ const Consultation = ({setOpen}) => {
                         >
                             <div className='md:w-[282px] w-[184px]'>
                                 <div className='w-[184px] text-c_gray-regular pb-[40px] font-otf-semiBold md:text-[33.75px] md:leading-[33.75px] text-[20px] leading-[20px]'>
-                                    Посмотреть всех экспертов
+                                    {content.show}
                                 </div>
                                 <div className='grid grid-cols-3 gap-x-[13px] gap-y-[15px]'>
                                     {

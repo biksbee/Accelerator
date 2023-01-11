@@ -1,7 +1,7 @@
 const content = {
-    title: "Нетворкинг",
-    description: "Обширные партнерские связи и нетворкинг с русскоязычными медиа и компаниями, а также  международными проектами и фондами.",
-    links: [
+    networking: "Нетворкинг",
+    networkingDescription: "Обширные партнерские связи и нетворкинг с русскоязычными медиа и компаниями, а также  международными проектами и фондами.",
+    networkingLinks: [
         'https://roskomsvoboda.org/',
         'https://habr.com/',
         'https://qrator.net/ru/',
@@ -9,19 +9,19 @@ const content = {
         '',
         'https://rusven.com/',
     ],
-    stepsTitle: [
+    networkingStepsTitle: [
         "Помощь с финансированием",
         "Выход на рынок",
         "Трекинг",
         "Лекции и воркшопы",
     ],
-    stepsDescription: [
+    networkingStepsDescription: [
         "Бизнес-ангелы, венчурные и некоммерческие фонды.",
         "Аудитория для Customer Development, первые последователи, масштабирование",
         "Целеполагание, четкий road map, развитие навыков, опыт и инструменты, чтобы бежать быстрее и эффективнее",
         "Практические занятия и материалы о Product Management, Customer Development, Fundraising",
     ],
-    stepsPhoto: [
+    networkingStepsPhoto: [
         'bg-helpFinance',
         'bg-accessToTheMarket',
         'bg-tracking',
