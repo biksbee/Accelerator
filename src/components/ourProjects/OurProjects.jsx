@@ -28,7 +28,7 @@ const OurProjects = ({lang, setLang}) => {
 
     return (
         <div id='ourProjects' className="w-full h-max flex justify-center overflow-hidden bg-c_blue-regular">
-            <div className="cb md:pt-[120px] pt-[90px]">
+            <div className="md:pt-[120px] pt-[90px]">
                 <div className=' w-full flex justify-center'>
                     <div className='relative xl:w-[1280px] w-full md:pl-[40px] pl-[15px]'>
                         <div className="pageTitle text-c_blue-dark">
@@ -38,7 +38,7 @@ const OurProjects = ({lang, setLang}) => {
                     </div>
                 </div>    
                 <div className="w-[100vw] h-max md:pt-[222px] pt-[50px] pb-[100px]">
-                    <Slider setShow={setShow} setActive={setActive} setOpen={setOpen} send={getSend} lang={lang}/>
+                    <Slider setShow={setShow} setActive={setActive} active={active} setOpen={setOpen} send={getSend} lang={lang}/>
                     <div className='w-full flex justify-center text-c_blue-dark pt-[30px]'>
                         <div className='xl:w-[1200px] w-full flex items-end xl:pl-0 md:pl-[40px] pl-[15px]'>
                             <div className='md:text-[50px] text-[20px] md:leading-[44px] leading-[18px] font-otf-semiBold not-italic'>

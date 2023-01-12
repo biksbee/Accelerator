@@ -1,11 +1,15 @@
+import { useState, useRef } from 'react'
 import cn from 'classnames'
-import { moreAccelerator } from '../content';
-import content from './content';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 
+import { moreAccelerator } from '../content';
+import Next from '../modules/Next';
+
 SwiperCore.use([Keyboard, Mousewheel]); 
+
 
 const MoreAccelerator = ({lang, setLang}) => {
 
@@ -16,6 +20,10 @@ const MoreAccelerator = ({lang, setLang}) => {
             return moreAccelerator.eng
     }
     const content = chooseLan(lang)
+
+    const [active, setActive] = useState(0)
+
+    const swiperRef = useRef(null)
 
     return (
         <div className="w-full flex bg-c_pink-regular">
@@ -35,12 +43,30 @@ const MoreAccelerator = ({lang, setLang}) => {
                         <div className="moreAcceleratorTheLoop"></div>
                     </div>
                 </div>    
-                <div className='md:pb-[127px] pb-[80px]'>
-                    <Swiper 
+                <div className='relative md:pb-[127px] pb-[80px]'>
+                { active !== 0 ? 
+                    <div className='xs:flex hidden absolute z-[10] top-[50%] left-0'>
+                        <Next 
+                            direction={"left"} 
+                            onClickHandler={() => swiperRef.current.swiper.slidePrev()}
+                        />
+                    </div>
+                : null}
+                { active !== 1 ? 
+                    <div className='xs:flex hidden absolute z-[10] top-[50%] right-0'>
+                        <Next 
+                            direction={"right"}
+                            onClickHandler={() => swiperRef.current.swiper.slideNext()}
+                        />
+                    </div>
+                : null} 
+                    <Swiper
+                        ref={swiperRef} 
                         slidesPerView={"auto"} 
                         spaceBetween={80}
                         keyboard={true}
                         //mousewheel={true}
+                        onSlideChange={(swiper) => setActive(swiper.activeIndex)}
                         className={'md:flex hidden w-[100vw] xl:px-[calc((100vw-1280px)/2)] ms:px-[40px] px-[15px]'}
                     >
                         {

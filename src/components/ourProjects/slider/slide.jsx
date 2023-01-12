@@ -1,17 +1,18 @@
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 import cn from 'classnames'
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import "swiper/css";
-import FadeEffect from '../FadeEffect';
-import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
-import { ourProjects } from '../../content';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import SwiperCore, { Navigation,Keyboard, Mousewheel } from "swiper/core";
+
+import { ourProjects } from '../../content';
+import FadeEffect from '../FadeEffect';
 import Next from '../../modules/Next';
 
-SwiperCore.use([Keyboard, Mousewheel]);
+SwiperCore.use([Keyboard, Mousewheel, Navigation]);
 
-const Slider = ({setShow, setActive, setOpen, lang}) => {
-    const swiper = useSwiper();
+
+const Slider = ({setShow, active, setActive, setOpen, lang}) => {
 
     const chooseLan = (lan) => {
         if(lan === 'eng')
@@ -20,21 +21,37 @@ const Slider = ({setShow, setActive, setOpen, lang}) => {
             return ourProjects.eng
     }
     const content = chooseLan(lang)
-
+    
     const [fade0, setFade0] = useState(false)
-    const [fade1, setFade1] = useState(false)
-
+    const [fade1, setFade1] = useState(false)    
     const fade = [fade0, fade1]
     const setFade = [setFade0, setFade1]
-
+    
+    const swiperRef = useRef(null)
+    
     return(
-        <div>
-            <Next direction={"left"} onClickHandler={swiper.slidePrev()} />
+        <div className='relative'>
+            { active !== 0 ? 
+                <div className='ms:flex hidden absolute z-[10] top-[50%] left-0'>
+                    <Next 
+                        direction={"left"} 
+                        onClickHandler={() => swiperRef.current.swiper.slidePrev()}
+                    />
+                </div>
+            : null}
+            { active !== content.title.length-1 ? 
+                <div className='ms:flex hidden absolute z-[10] top-[50%] right-0'>
+                    <Next 
+                        direction={"right"}
+                        onClickHandler={() => swiperRef.current.swiper.slideNext()}
+                    />
+                </div>
+            : null}    
             <Swiper
+                ref={swiperRef}
                 slidesPerView={"auto"} 
                 spaceBetween={30}
                 keyboard={true}
-                
                 // //mousewheel={true}
                 className="mx-0 xl:px-[calc((100vw-1280px)/2+40px)] md:px-[40px] px-[15px]"
                 onSlideChange={(swiper) => setActive(swiper.activeIndex)}
@@ -53,7 +70,6 @@ const Slider = ({setShow, setActive, setOpen, lang}) => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            {/* <Next direction={"right"} onClickHandler={swiper.slideNext()} /> */}
         </div>
     )
 }

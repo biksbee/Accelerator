@@ -1,10 +1,13 @@
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 import cn from 'classnames'
-import { house } from '../../content';
-import CardExp from './CardExp'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
+
+import { house } from '../../content';
+import Next from '../../modules/Next';
+import CardExp from './CardExp'
 
 SwiperCore.use([Keyboard, Mousewheel]);
 
@@ -29,6 +32,9 @@ const Consultation = ({setOpen, lang}) => {
 
     const fade = [fade0, fade1, fade2, fade3, fade4]
     const setFade = [setFade0, setFade1, setFade2, setFade3, setFade4]
+
+    const [active, setActive] = useState(0)
+    const swiperRef = useRef(null)
 
     return (
         <div>
@@ -59,7 +65,7 @@ const Consultation = ({setOpen, lang}) => {
                         <div className='text-c_gray-regular xl:ml-0 ml-[20px] w-[282px] pb-[40px] font-otf-semiBold xl:text-[33.75px] text-[29px] xl:leading-[33.75px] leading-[29px]'>
                             {content.show}
                         </div>
-                        <div className='h-max grid justify-center xl:ml-0 ml-[20px] grid-cols-3 xl:gap-x-[13px] xl:gap-y-[11px] gap-[20px]'>
+                        <div className=' grid justify-center xl:ml-0 ml-[20px] grid-cols-3 xl:gap-x-[13px] xl:gap-y-[11px] gap-x-[15px] gap-y-[25px]'>
                             {
                                 content.seeAll.map((item, index) => (
                                     index !== 11 ? 
@@ -67,7 +73,7 @@ const Consultation = ({setOpen, lang}) => {
                                             key={index}
                                             className={
                                                 cn(
-                                                    `${item} xl:w-[85.43px] xl:h-[85.43px] xs:w-[75px] xs:h-[75px] bg-no-repeat bg-cover bg-center photoCardRadius`,
+                                                    `${item} xl:w-[85.43px] xl:h-[85.43px] xs:w-[65px] xs:h-[65px] bg-no-repeat bg-cover bg-center photoCardRadius`,
                                                     !bluer ? 'filter grayscale' :  'filter-none',
                                                 )} 
                                         />
@@ -89,12 +95,29 @@ const Consultation = ({setOpen, lang}) => {
                     </div>    
                 </div>
             </div>
-            <div>
+            <div className='relative'>
+                { active !== 0 ? 
+                    <div className='ms:flex hidden absolute z-[10] top-[50%] left-0'>
+                        <Next 
+                            direction={"left"} 
+                            onClickHandler={() => swiperRef.current.swiper.slidePrev()}
+                        />
+                    </div>
+                : null}
+                { active <= 3 ? 
+                    <div className='ms:flex hidden absolute z-[10] top-[50%] right-0'>
+                        <Next 
+                            direction={"right"}
+                            onClickHandler={() => swiperRef.current.swiper.slideNext()}
+                        />
+                    </div>
+                : null}
                 <Swiper
+                    ref={swiperRef}
                     slidesPerView={"auto"} 
                     spaceBetween={40}
                     keyboard={true}
-                    //mousewheel={true}
+                    onSlideChange={(swiper) => setActive(swiper.activeIndex)}
                     className={'xs:hidden md:px-[40px] px-[15px]'}
                 >
                     {content.f_name.map((item, index) => (
