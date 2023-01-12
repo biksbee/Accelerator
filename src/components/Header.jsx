@@ -15,10 +15,10 @@ const Header = ({lan, setLan}) => {
     const [open, setOpen] = useState(false)
     
     const changeLan = () => {
-        if(lan === "ru")
+        if(lan === "рус")
             setLan("eng")
         else if(lan === "eng")
-            setLan("ru")
+            setLan("рус")
     }
 
     const showNav = () => {

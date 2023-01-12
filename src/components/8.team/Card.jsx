@@ -7,7 +7,7 @@ const Card = ({i, setFade, fade, lang}) => {
     const chooseLan = (lan) => {
         if(lan === 'eng')
             return team.ru
-        else if(lan === 'ru') 
+        else if(lan === 'рус') 
             return team.eng
     }
     const content = chooseLan(lang)

@@ -16,7 +16,7 @@ const MoreAccelerator = ({lang, setLang}) => {
     const chooseLan = (lan) => {
         if(lan === 'eng')
             return moreAccelerator.ru
-        else if(lan === 'ru') 
+        else if(lan === 'рус') 
             return moreAccelerator.eng
     }
     const content = chooseLan(lang)

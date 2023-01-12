@@ -6,7 +6,7 @@ const Demhack = ({lang}) => {
     const chooseLan = (lan) => {
         if(lan === 'eng')
             return deamhack.ru
-        else if(lan === 'ru') 
+        else if(lan === 'рус') 
             return deamhack.eng
     }
     const content = chooseLan(lang)

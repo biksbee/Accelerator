@@ -5,7 +5,7 @@ const Contacts = ({lang}) => {
     const chooseLan = (lan) => {
         if(lan === 'eng')
             return contact.ru
-        else if(lan === 'ru') 
+        else if(lan === 'рус') 
             return contact.eng
     }
     const content = chooseLan(lang)   

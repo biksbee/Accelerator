@@ -11,7 +11,7 @@ const ChapterNew = ({i, lang}) => {
     const chooseLan = (lan) => {
         if(lan === 'eng')
             return workContent.ru
-        else if(lan === 'ru') 
+        else if(lan === 'рус') 
             return workContent.eng
     }
     const content = chooseLan(lang)

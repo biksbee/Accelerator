@@ -6,7 +6,7 @@ const StartPageNew = ({lang, setLang}) => {
     const chooseLan = (lan) => {
         if(lan === 'eng')
             return startPage.ru
-        else if(lan === 'ru') 
+        else if(lan === 'рус') 
             return startPage.eng
     }
     const content = chooseLan(lang)

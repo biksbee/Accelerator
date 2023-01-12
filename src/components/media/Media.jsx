@@ -13,7 +13,7 @@ const Media = ({lang}) => {
     const chooseLan = (lan) => {
         if(lan === 'eng')
             return media.ru
-        else if(lan === 'ru') 
+        else if(lan === 'рус') 
             return media.eng
     }
     const content = chooseLan(lang)

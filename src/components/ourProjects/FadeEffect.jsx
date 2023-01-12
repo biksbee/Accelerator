@@ -8,7 +8,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
     const chooseLan = (lan) => {
         if(lan === 'eng')
             return ourProjects.ru
-        else if(lan === 'ru') 
+        else if(lan === 'рус') 
             return ourProjects.eng
     }
     const content = chooseLan(lang)
