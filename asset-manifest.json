@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.7fd4b502.css",
-    "main.js": "/Accelerator/static/js/main.d2d72482.js",
+    "main.css": "/Accelerator/static/css/main.6f7dd9cd.css",
+    "main.js": "/Accelerator/static/js/main.b997afed.js",
     "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
-    "static/media/startProjects.png": "/Accelerator/static/media/startProjects.f3afff84bcd9ea7891d2.png",
-    "static/media/tracking.png": "/Accelerator/static/media/tracking.72e5eb2299b17495f1ad.png",
     "static/media/ArtemIgnatenko.png": "/Accelerator/static/media/ArtemIgnatenko.04878f49390a0ffc583e.png",
     "static/media/IvanMikhailov.png": "/Accelerator/static/media/IvanMikhailov.fc9e693d80180be317f7.png",
-    "static/media/helpFinance.png": "/Accelerator/static/media/helpFinance.c1bed0f2eecc1376ebd0.png",
+    "static/media/tracking.png": "/Accelerator/static/media/tracking.3d7580aa7f850d3532c8.png",
     "static/media/StanislavShakirov.png": "/Accelerator/static/media/StanislavShakirov.505335b28e3ff427100b.png",
-    "static/media/accessToTheMarket.png": "/Accelerator/static/media/accessToTheMarket.ccf94c006b4274c8eb7f.png",
     "static/media/OlgaNemirovskaya.png": "/Accelerator/static/media/OlgaNemirovskaya.84311344766a3b6b3bc3.png",
+    "static/media/helpFinance.png": "/Accelerator/static/media/helpFinance.7ee3ba705dbfbf40cf1d.png",
     "static/media/NataliyMalishova.png": "/Accelerator/static/media/NataliyMalishova.8f63c8dab5a62d96f40d.png",
-    "static/media/lecture.png": "/Accelerator/static/media/lecture.08d7673e544e8b4dbb96.png",
+    "static/media/startProjects.png": "/Accelerator/static/media/startProjects.a5e9bba99d88f1833aa7.png",
     "static/media/DariaGorbacheva.png": "/Accelerator/static/media/DariaGorbacheva.8ee96296669b1ab39299.png",
+    "static/media/accessToTheMarket.png": "/Accelerator/static/media/accessToTheMarket.098f3603bd8bbd106777.png",
+    "static/media/lecture.png": "/Accelerator/static/media/lecture.ff5f7e91373b39894e27.png",
     "static/media/SarkisDabrinyn.png": "/Accelerator/static/media/SarkisDabrinyn.fa48a4f9573c04cea706.png",
     "static/media/SuisseIntl-Bold.otf": "/Accelerator/static/media/SuisseIntl-Bold.24fe64545382e1378933.otf",
     "static/media/SuisseIntl-SemiBold.otf": "/Accelerator/static/media/SuisseIntl-SemiBold.bc8a07fd3d909616d31a.otf",
@@ -21,8 +21,11 @@
     "static/media/SuisseIntl-Light.otf": "/Accelerator/static/media/SuisseIntl-Light.6c8371cb596fb9d35b56.otf",
     "static/media/getSiteCopy.png": "/Accelerator/static/media/getSiteCopy.6724d8d962a95910dae0.png",
     "static/media/SuisseIntl-Book.otf": "/Accelerator/static/media/SuisseIntl-Book.30ad3a64be8c976d9a31.otf",
+    "static/media/eppie.png": "/Accelerator/static/media/eppie.1100d25e286c713f3abc.png",
+    "static/media/SelfPrivacy.png": "/Accelerator/static/media/SelfPrivacy.9dc0d40c21a7aa49addd.png",
     "static/media/amnezia.png": "/Accelerator/static/media/amnezia.319f31cdb4e333bd7411.png",
     "static/media/Footer.svg": "/Accelerator/static/media/Footer.a40c7c1c156e82025b432eb097350d53.svg",
+    "static/media/securno.png": "/Accelerator/static/media/securno.fffd5d78075a81d11023.png",
     "static/media/RussiaVenchur.svg": "/Accelerator/static/media/RussiaVenchur.d0ff8717d600a734cd27b853a32eb40d.svg",
     "static/media/infocult.png": "/Accelerator/static/media/infocult.2624fee7eee30c4cda3f.png",
     "static/media/more4.png": "/Accelerator/static/media/more4.bb3446ebf13b10101d52.png",
@@ -73,12 +76,12 @@
     "static/media/turnRight.svg": "/Accelerator/static/media/turnRight.2191525b4e5edaa3d548b82d98d7c585.svg",
     "static/media/closePopWhite.svg": "/Accelerator/static/media/closePopWhite.d916c148e860f4be1cce76913efae27c.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "main.7fd4b502.css.map": "/Accelerator/static/css/main.7fd4b502.css.map",
-    "main.d2d72482.js.map": "/Accelerator/static/js/main.d2d72482.js.map",
+    "main.6f7dd9cd.css.map": "/Accelerator/static/css/main.6f7dd9cd.css.map",
+    "main.b997afed.js.map": "/Accelerator/static/js/main.b997afed.js.map",
     "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fd4b502.css",
-    "static/js/main.d2d72482.js"
+    "static/css/main.6f7dd9cd.css",
+    "static/js/main.b997afed.js"
   ]
 }
