@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import { ourProjects } from '../content'
 import cn from 'classnames'
 import { Link } from "react-scroll"
@@ -12,6 +12,12 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
             return ourProjects.eng
     }
     const content = chooseLan(lang)
+
+    useEffect(() => {
+        let a = content.subTitle[i.index]
+        a.reverse()
+        console.log(a)
+    }, [])
 
     return (
         <Link 
@@ -36,19 +42,20 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
                     <div 
                         id="subTitle" 
                         className={cn(
-                            "ourProjectStyleSubTitle relative",                         
+                            "ourProjectStyleSubTitle relative", 
+                            // find ? 'text-c_orange-regular ' : ''                         
                         )}
                     >
                             {content.subTitle[i.index]}
-                            <div 
-                                className={cn(
-                                    'text-c_orange-regular absolute flex ',
-                                    i.index === 0 ? 
-                                        'xl:bottom-[35px] xl:left-[90px] md:bottom-[15px] md:left-[90%] bottom-[-3px] left-[75%]' 
-                                    : i.index === 1 ?
-                                        'xl:bottom-[57px] xl:left-[70%] md:bottom-[15px] md:left-[25%] bottom-[-3px] left-[47%]'
-                                        : null
-                                )}>→</div>
+
+                            {/* // <span 
+                            //     className={cn(
+                            //         'text-c_orange-regular flex ',
+                            //         // 'absolute xl:bottom-[35px] xl:left-[90px] md:bottom-[15px] md:left-[90%] bottom-[-3px] left-[75%]' 
+                            //     )}
+                            // >
+                            //     →
+                            // </span> */}
                     </div>
                 </div>
                 <div 

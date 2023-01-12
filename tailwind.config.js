@@ -26,7 +26,10 @@ module.exports = {
 
         'slideAmnezia': "url(./assets/image/amnezia.png)",
         'slideGetSiteCopy': "url(./assets/image/getSiteCopy.png)",
-        
+        'slideSelfPrivacy': "url(./assets/image/SelfPrivacy.png)",
+        'slideEppie': "url(./assets/image/eppie.png)",
+        'slideSecurno': "url(./assets/image/securno.png)",
+                
 
         "StanislavShakirov": "url(./assets/image/StanislavShakirov.png)",
         'NataliyMalishova': "url(./assets/image/NataliyMalishova.png)",
