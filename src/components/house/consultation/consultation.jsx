@@ -97,7 +97,7 @@ const Consultation = ({setOpen, lang}) => {
             </div>
             <div className='relative'>
                 { active !== 0 ? 
-                    <div className='ms:flex hidden absolute z-[10] top-[50%] left-0'>
+                    <div className='xl:hidden ms:flex hidden absolute z-[10] top-[50%] left-0'>
                         <Next 
                             direction={"left"} 
                             onClickHandler={() => swiperRef.current.swiper.slidePrev()}
@@ -105,7 +105,7 @@ const Consultation = ({setOpen, lang}) => {
                     </div>
                 : null}
                 { active <= 3 ? 
-                    <div className='ms:flex hidden absolute z-[10] top-[50%] right-0'>
+                    <div className='xl:hidden ms:flex hidden absolute z-[10] top-[50%] right-0'>
                         <Next 
                             direction={"right"}
                             onClickHandler={() => swiperRef.current.swiper.slideNext()}
