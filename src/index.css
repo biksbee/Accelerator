@@ -161,4 +161,9 @@
     .customTouch {
         -webkit-overflow-scrolling: touch;
     }
+    .last_letter::after {
+        content: "→" ;
+        color: rgba(244, 68, 13, 1);
+        padding-left: 20px;
+    }
 }

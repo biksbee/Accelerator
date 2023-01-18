@@ -23,9 +23,12 @@ const Slider = ({setShow, active, setActive, setOpen, lang}) => {
     const content = chooseLan(lang)
     
     const [fade0, setFade0] = useState(false)
-    const [fade1, setFade1] = useState(false)    
-    const fade = [fade0, fade1]
-    const setFade = [setFade0, setFade1]
+    const [fade1, setFade1] = useState(false)
+    const [fade2, setFade2] = useState(false)
+    const [fade3, setFade3] = useState(false)
+    const [fade4, setFade4] = useState(false)    
+    const fade = [fade0, fade1, fade2, fade3, fade4]
+    const setFade = [setFade0, setFade1, setFade2, setFade3, setFade4]
     
     const swiperRef = useRef(null)
     
