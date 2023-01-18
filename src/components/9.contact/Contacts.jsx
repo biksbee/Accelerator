@@ -56,7 +56,8 @@ const Contacts = ({lang}) => {
                                     {content.value[4]}
                                 </a>,
                                 <a href={content.links.telegramChanel} className="contactLink ml-[10px]" target="_blank">
-                                    <div>{content.value[5]}</div>
+                                    <div className="m:hidden"></div>
+                                    {content.value[5]}
                                 </a>,
                             </div>  
                             <div className="s:flex">
