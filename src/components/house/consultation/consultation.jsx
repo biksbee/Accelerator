@@ -48,7 +48,7 @@ const Consultation = ({setOpen, lang}) => {
                 <div className='bg-curveLineConsultation h-[20px] bg-no-repeat'></div>
             </div>
             <div className='md:px-[40px] px-[15px] xs:grid ms:grid-cols-3 hidden md:gap-x-[21px] md:gap-y-[50px]'>
-                {content.f_name.map((item, index) => (
+                {content.experts.map((item, index) => (
                     index < 5 ? 
                         <div key={index} className=" h-max xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] xl:w-[373px] w-[28vw] pt-[20px]">
                             <CardExp key={index} lang={lang} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
@@ -97,7 +97,7 @@ const Consultation = ({setOpen, lang}) => {
             </div>
             <div className='relative'>
                 { active !== 0 ? 
-                    <div className='xl:hidden ms:flex hidden absolute z-[10] top-[50%] left-0'>
+                    <div className='xs:hidden md:flex hidden absolute z-[10] top-[50%] left-0'>
                         <Next 
                             direction={"left"} 
                             onClickHandler={() => swiperRef.current.swiper.slidePrev()}
@@ -105,7 +105,7 @@ const Consultation = ({setOpen, lang}) => {
                     </div>
                 : null}
                 { active <= 3 ? 
-                    <div className='xl:hidden ms:flex hidden absolute z-[10] top-[50%] right-0'>
+                    <div className='xs:hidden md:flex hidden absolute z-[10] top-[50%] right-0'>
                         <Next 
                             direction={"right"}
                             onClickHandler={() => swiperRef.current.swiper.slideNext()}
@@ -120,7 +120,7 @@ const Consultation = ({setOpen, lang}) => {
                     onSlideChange={(swiper) => setActive(swiper.activeIndex)}
                     className={'xs:hidden md:px-[40px] px-[15px]'}
                 >
-                    {content.f_name.map((item, index) => (
+                    {content.experts.map((item, index) => (
                         index < 5 ? 
                             <SwiperSlide key={index} className="border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
                                 <CardExp  i={{item, index}} fade={fade[index]} setFade={setFade[index]} lang={lang} />

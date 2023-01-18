@@ -35,7 +35,7 @@ const Experts = ({lang}) => {
             <div className="flex justify-center">
                 <div className="md:grid xl:grid-cols-3 md:grid-cols-2 gap-[35px] md:w-full w-max">
                     {
-                        content.f_name.map((item, index) => (
+                        content.experts.map((item, index) => (
                             <PopUpExperts key={index} lang={lang} i={{index, item}} fade={fade[index]} setFade={setFade[index]} />         
                         ))
                     }

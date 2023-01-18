@@ -14,9 +14,10 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
     const content = chooseLan(lang)
 
     useEffect(() => {
-        let a = content.subTitle[i.index]
-        a.reverse()
-        console.log(a)
+        
+        // let a = content.description[i.index].split(' ')
+        // for(let i in a) 
+            // console.log(i)
     }, [])
 
     return (
@@ -43,10 +44,10 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
                         id="subTitle" 
                         className={cn(
                             "ourProjectStyleSubTitle relative", 
-                            // find ? 'text-c_orange-regular ' : ''                         
+                            // content.subTitle[i.index].split('....') === '→'  ? 'text-c_orange-regular ' : ''                         
                         )}
                     >
-                            {content.subTitle[i.index]}
+                            {/* {content.subTitle[i.index]} */}
 
                             {/* // <span 
                             //     className={cn(

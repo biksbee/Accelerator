@@ -1,10 +1,11 @@
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 import { team } from '../content';
 
 import Card from './Card';
+import Next from '../modules/Next';
 
 SwiperCore.use([Keyboard, Mousewheel]);
 
@@ -17,6 +18,9 @@ const Team = ({lang}) => {
             return team.eng
     }
     const content = chooseLan(lang)
+
+    const [active, setActive] = useState(0)
+    const swiperRef = useRef(null)
 
     const [fade0, setFade0] = useState(false)
     const [fade1, setFade1] = useState(false)
@@ -34,8 +38,25 @@ const Team = ({lang}) => {
                         {content.mainTitle}
                     </div>
                 </div>
-                <div className='md:pb-[80px] pb-[50px]'>
+                <div className='relative md:pb-[80px] pb-[50px]'>
+                    {/* { active !== 0 ? 
+                        <div className='md:flex hidden absolute z-[10] top-[50%] left-0'>
+                            <Next 
+                                direction={"left"} 
+                                onClickHandler={() => swiperRef.current.swiper.slidePrev()}
+                            />
+                        </div>
+                    : null}
+                    { active !== 1 ? 
+                        <div className='md:flex hidden absolute z-[10] top-[50%] right-0'>
+                            <Next 
+                                direction={"right"}
+                                onClickHandler={() => swiperRef.current.swiper.slideNext()}
+                            />
+                        </div>
+                    : null} */}
                     <Swiper
+                        ref={swiperRef}
                         slidesPerView={"auto"} 
                         spaceBetween={30}
                         keyboard={true}

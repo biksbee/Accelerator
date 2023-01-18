@@ -34,7 +34,7 @@ const PopUpExperts = ({i, fade, setFade, lang}) => {
                                         {content.experts[i.index].name}
                                     </div>
                                 </div>
-                                <div className={`mb-[20px]`}>
+                                <div className={`mb-[20px] md:h-[192px]`}>
                                     <div className='text-c_gray-blur opacity-50 text-[16px] leading-[24px] font-otf-normal'>
                                         {content.experts[i.index].allDescription}
                                     </div>

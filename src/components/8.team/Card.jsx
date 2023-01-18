@@ -42,7 +42,7 @@ const Card = ({i, setFade, fade, lang}) => {
                                 <div className="absolute bg-c_blue-filterLayer w-full z-[40] h-full duration-500 photoRadius" />
                                 <div className={cn(
                                     !fade ? 'filter grayscale' :  'filter-none',
-                                    'relative md:w-[284px] md:h-[373px] md:block hidden duration-500 bg-no-repeat bg-center bg-contain photoRadius', 
+                                    'relative md:w-[284px] md:h-[373px] md:block hidden duration-500 bg-no-repeat bg-center bg-cover photoRadius', 
                                     content.photo[i.index]
                                 )}> 
                                 </div>

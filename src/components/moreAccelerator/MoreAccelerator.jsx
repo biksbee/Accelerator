@@ -45,7 +45,7 @@ const MoreAccelerator = ({lang, setLang}) => {
                 </div>    
                 <div className='relative md:pb-[127px] pb-[80px]'>
                 { active !== 0 ? 
-                    <div className='xs:flex hidden absolute z-[10] top-[50%] left-0'>
+                    <div className='md:flex hidden absolute z-[10] top-[50%] left-0'>
                         <Next 
                             direction={"left"} 
                             onClickHandler={() => swiperRef.current.swiper.slidePrev()}
@@ -53,7 +53,7 @@ const MoreAccelerator = ({lang, setLang}) => {
                     </div>
                 : null}
                 { active !== 1 ? 
-                    <div className='xs:flex hidden absolute z-[10] top-[50%] right-0'>
+                    <div className='md:flex hidden absolute z-[10] top-[50%] right-0'>
                         <Next 
                             direction={"right"}
                             onClickHandler={() => swiperRef.current.swiper.slideNext()}

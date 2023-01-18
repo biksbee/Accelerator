@@ -32,7 +32,7 @@ const Slider = ({setShow, active, setActive, setOpen, lang}) => {
     return(
         <div className='relative'>
             { active !== 0 ? 
-                <div className='ms:flex hidden absolute z-[10] top-[50%] left-0'>
+                <div className='md:flex hidden absolute z-[10] top-[50%] left-0'>
                     <Next 
                         direction={"left"} 
                         onClickHandler={() => swiperRef.current.swiper.slidePrev()}
@@ -40,7 +40,7 @@ const Slider = ({setShow, active, setActive, setOpen, lang}) => {
                 </div>
             : null}
             { active !== content.title.length-1 ? 
-                <div className='ms:flex hidden absolute z-[10] top-[50%] right-0'>
+                <div className='md:flex hidden absolute z-[10] top-[50%] right-0'>
                     <Next 
                         direction={"right"}
                         onClickHandler={() => swiperRef.current.swiper.slideNext()}

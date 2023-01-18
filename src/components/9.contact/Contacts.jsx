@@ -11,7 +11,7 @@ const Contacts = ({lang}) => {
     const content = chooseLan(lang)   
 
     return (
-        <div id="cont" className="w-full flex justify-center bg-c_gray-regular">
+        <div id="cont" className="w-full flex justify-center bg-c_blue-footer">
             <div className="xl:w-[1280px] w-full md:pt-[85px] pt-[90px] md:pb-[127px] pb-[90px] md:px-[40px] px-[15px]">
                 <div className="md:pb-[98px] pb-[75px]">
                     <div className="startPageText text-c_blue-dark">
