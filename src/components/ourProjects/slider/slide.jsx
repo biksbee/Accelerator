@@ -61,7 +61,7 @@ const Slider = ({setShow, active, setActive, setOpen, lang}) => {
                         key={index}
                         className={cn(
                             'border-t-[2px] border-t-c_blue-dark', 
-                            'xl:w-[997px] md:w-[650px] w-[320px] #{!important}',
+                            'xs:w-[977px] md:w-[650px] w-[320px] #{!important}',
                             'bg-c_blue-regular duration-500',
                         )}
                         onClick={() => setShow(true)}

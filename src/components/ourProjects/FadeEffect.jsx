@@ -66,7 +66,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
                         className={cn(
                             content.slide[i.index],
                             'w-full bg-center bg-contain bg-repeat-round rounded-[15px]',
-                            'xl:h-[510px] md:h-[332px] h-[162px]'
+                            'xs:h-[510px] md:h-[332px] h-[162px]'
                         )}
                     />  
                 </div>

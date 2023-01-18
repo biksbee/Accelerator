@@ -40,7 +40,7 @@ const Team = ({lang}) => {
                 </div>
                 <div className='relative md:pb-[80px] pb-[50px]'>
                     {/* { active !== 0 ? 
-                        <div className='md:flex hidden absolute z-[10] top-[50%] left-0'>
+                        <div className='ms:hidden md:flex hidden absolute z-[10] top-[50%] left-0'>
                             <Next 
                                 direction={"left"} 
                                 onClickHandler={() => swiperRef.current.swiper.slidePrev()}
@@ -48,7 +48,7 @@ const Team = ({lang}) => {
                         </div>
                     : null}
                     { active !== 1 ? 
-                        <div className='md:flex hidden absolute z-[10] top-[50%] right-0'>
+                        <div className='ms:hidden md:flex hidden absolute z-[10] top-[50%] right-0'>
                             <Next 
                                 direction={"right"}
                                 onClickHandler={() => swiperRef.current.swiper.slideNext()}
@@ -60,6 +60,7 @@ const Team = ({lang}) => {
                         slidesPerView={"auto"} 
                         spaceBetween={30}
                         keyboard={true}
+                        onSlideChange={(swiper) => setActive(swiper.activeIndex)}
                         className='flex-column md:px-[40px] px-[15px]'
                     >
                         {content.name.map((item, index) => (

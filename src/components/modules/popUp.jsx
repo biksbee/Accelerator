@@ -10,7 +10,7 @@ const PopUp = ({setOpen, background, children, c}) => {
         <div className={`${background} fixed top-0 z-[100] w-screen h-screen flex justify-center`}>
             <div>
                 <div className="w-full flex justify-end items-center">
-                    <div className={`${background} absolute cursor-pointer top-0 right-0 w-[60px] h-[60px] flex items-center justify-center`} onClick={() => setOpen(false)} onMouseEnter={() => setFade(true)} onMouseLeave={() => setFade(false)}>
+                    <div className={`${background} absolute cursor-pointer top-0 right-0 w-[60px] md:h-[60px] h-[53px] flex items-center justify-center`} onClick={() => setOpen(false)} onMouseEnter={() => setFade(true)} onMouseLeave={() => setFade(false)}>
                         <div 
                             className={`flex justify-center items-center ${!fade ? '' : 'scale-[.85]'} duration-500`}>
                             {
@@ -25,7 +25,7 @@ const PopUp = ({setOpen, background, children, c}) => {
                         </div>
                     </div>
                 </div>
-                <div className="xl:px-[140px] px-[50px] h-full w-screen customScroll flex justify-center mb-[100px] overflow-y-scroll">
+                <div className="xl:px-[140px] md:px-[50px] px-[15px] h-full w-screen customScroll flex justify-center mb-[100px] overflow-y-scroll">
                     {children}
                 </div>
             </div>    

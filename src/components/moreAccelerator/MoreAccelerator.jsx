@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import cn from 'classnames'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -25,6 +25,10 @@ const MoreAccelerator = ({lang, setLang}) => {
 
     const swiperRef = useRef(null)
 
+    useEffect(() => {
+        console.log(active)
+    }, [active])
+
     return (
         <div className="w-full flex bg-c_pink-regular">
             <div className="w-full xl:pt-[204px] md:pt-[150px] pt-[90px] pb-[163px] overflow-hidden">
@@ -45,7 +49,7 @@ const MoreAccelerator = ({lang, setLang}) => {
                 </div>    
                 <div className='relative md:pb-[127px] pb-[80px]'>
                 { active !== 0 ? 
-                    <div className='md:flex hidden absolute z-[10] top-[50%] left-0'>
+                    <div className='ms:flex hidden absolute z-[10] top-[50%] left-0'>
                         <Next 
                             direction={"left"} 
                             onClickHandler={() => swiperRef.current.swiper.slidePrev()}
@@ -53,7 +57,7 @@ const MoreAccelerator = ({lang, setLang}) => {
                     </div>
                 : null}
                 { active !== 1 ? 
-                    <div className='md:flex hidden absolute z-[10] top-[50%] right-0'>
+                    <div className='ms:flex hidden absolute z-[10] top-[50%] right-0'>
                         <Next 
                             direction={"right"}
                             onClickHandler={() => swiperRef.current.swiper.slideNext()}
@@ -63,11 +67,11 @@ const MoreAccelerator = ({lang, setLang}) => {
                     <Swiper
                         ref={swiperRef} 
                         slidesPerView={"auto"} 
-                        spaceBetween={80}
+                        spaceBetween={60}
                         keyboard={true}
                         //mousewheel={true}
                         onSlideChange={(swiper) => setActive(swiper.activeIndex)}
-                        className={'md:flex hidden w-[100vw] xl:px-[calc((100vw-1280px)/2)] ms:px-[40px] px-[15px]'}
+                        className={'ms:flex hidden w-[100vw] xl:px-[calc((100vw-1280px)/2)] ms:px-[40px] px-[15px]'}
                     >
                         {
                             content.title.map((item, index) => (
@@ -100,10 +104,10 @@ const MoreAccelerator = ({lang, setLang}) => {
 
                         }
                     </Swiper>
-                    <div className='md:hidden block w-full px-[15px]'>
+                    <div className='ms:hidden block w-full px-[15px]'>
                         {
                             content.title.map((item, index) => (
-                                <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep pt-[30px] mt-[50px] md:w-[488px]'>
+                                <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep pt-[30px] mt-[50px] ms:w-[488px]'>
                                     <div className={cn(
                                         'md:text-[45px] md:leading-[48px] text-[22px] leading-[25px] pb-[20px]',
                                         'font-otf-semiBold not-italic',
