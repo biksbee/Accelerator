@@ -24,11 +24,7 @@ const MoreAccelerator = ({lang, setLang}) => {
     const [active, setActive] = useState(0)
 
     const swiperRef = useRef(null)
-
-    useEffect(() => {
-        console.log(active)
-    }, [active])
-
+    
     return (
         <div className="w-full flex bg-c_pink-regular">
             <div className="w-full xl:pt-[204px] md:pt-[150px] pt-[90px] pb-[163px] overflow-hidden">

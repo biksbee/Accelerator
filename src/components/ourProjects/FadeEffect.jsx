@@ -14,7 +14,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
     const content = chooseLan(lang)
 
     useEffect(() => {
-        
+        console.log(content.subTitle)
         // let a = content.description[i.index].split(' ')
         // for(let i in a) 
             // console.log(i)
@@ -47,16 +47,16 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
                             // content.subTitle[i.index].split('....') === '→'  ? 'text-c_orange-regular ' : ''                         
                         )}
                     >
-                            {/* {content.subTitle[i.index]} */}
+                            {content.subTitle[i.index]}
 
-                            {/* // <span 
-                            //     className={cn(
-                            //         'text-c_orange-regular flex ',
-                            //         // 'absolute xl:bottom-[35px] xl:left-[90px] md:bottom-[15px] md:left-[90%] bottom-[-3px] left-[75%]' 
-                            //     )}
-                            // >
-                            //     →
-                            // </span> */}
+                            {/* <span 
+                                className={cn(
+                                    'text-c_orange-regular flex ',
+                                    'absolute xl:bottom-[35px] xl:left-[90px] md:bottom-[15px] md:left-[90%] bottom-[-3px] left-[75%]' 
+                                )}
+                            >
+                                →
+                            </span> */}
                     </div>
                 </div>
                 <div 
