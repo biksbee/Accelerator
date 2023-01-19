@@ -33,7 +33,7 @@ const Slider = ({setShow, active, setActive, setOpen, lang}) => {
     const swiperRef = useRef(null)
     
     return(
-        <div className='relative'>
+        <div className='relative flex'>
             { active !== 0 ? 
                 <div className='md:flex hidden absolute z-[10] top-[50%] left-0'>
                     <Next 
@@ -56,14 +56,14 @@ const Slider = ({setShow, active, setActive, setOpen, lang}) => {
                 spaceBetween={30}
                 keyboard={true}
                 // //mousewheel={true}
-                className="mx-0 xl:px-[calc((100vw-1280px)/2+40px)] md:px-[40px] px-[15px]"
+                className="mx-0 xl:px-[calc((100vw-1280px)/2+40px)] md:px-[40px] px-[15px] flex"
                 onSlideChange={(swiper) => setActive(swiper.activeIndex)}
             >
                 {content.title.map((item, index) => (
                     <SwiperSlide 
                         key={index}
                         className={cn(
-                            'border-t-[2px] border-t-c_blue-dark', 
+                            'flex flex-col border-t-[2px] border-t-c_blue-dark', 
                             'xs:w-[977px] md:w-[650px] w-[320px] #{!important}',
                             'bg-c_blue-regular duration-500',
                         )}

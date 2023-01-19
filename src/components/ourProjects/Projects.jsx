@@ -17,10 +17,10 @@ const Projects = ({lang}) => {
             {content.title.map((item, index) => (
                 <div 
                     key={index}
+                    id={index === 4 ? 'hi' : null}
                     className="mds:pb-[150px] pb-[50px] text-c_blue-deepDark"
                 >
                     <div 
-                        id={`${item}${index}`}
                         className={cn(
                             content.slide[index],
                             'w-full bg-center ds:bg-cover bg-contain bg-no-repeat rounded-[15px]',

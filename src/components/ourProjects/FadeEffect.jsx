@@ -13,23 +13,14 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
     }
     const content = chooseLan(lang)
 
-    const [text, setText] = useState('')
-    const refEl = useRef(null)
-
-    // useEffect(() => {
-    //     setText(content.subTitle[i.index] + '...' + '→')
-    // }, [refEl])
-
     return (
-        <Link 
-            to={`${i.item}${i.index}`}
-            spy={true} 
-            smooth={true} 
-            offset={50} 
-            duration={500}
-        >
-            <div
-                className='cursor-pointer'
+            <Link
+                to={"hi"}
+                spy={true} 
+                smooth={true} 
+                offset={50} 
+                duration={500}
+                className='cursor-pointer w-full flex flex-col justify-between h-full'
                 onClick={() => setOpen(true)}
                 onMouseEnter={() => setFade(true)}
                 onMouseLeave={() => setFade(false)} 
@@ -41,10 +32,9 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
                         {i.item}
                     </div>
                     <div 
-                        ref={refEl}
                         id="subTitle" 
                         className={cn(
-                            "ourProjectStyleSubTitle relative last_letter",
+                            "ourProjectStyleSubTitle relative last_letter flex_features",
                         )}
                     >
                             {content.subTitle[i.index]}
@@ -61,8 +51,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
                         )}
                     />  
                 </div>
-            </div>
-        </Link>    
+            </Link>    
     )
 
 }

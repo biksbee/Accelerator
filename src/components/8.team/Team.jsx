@@ -38,7 +38,7 @@ const Team = ({lang}) => {
                         {content.mainTitle}
                     </div>
                 </div>
-                <div className='relative md:pb-[80px] pb-[50px]'>
+                <div className='relative md:pb-[80px] pb-[50px] flex'>
                     {/* { active !== 0 ? 
                         <div className='ms:hidden md:flex hidden absolute z-[10] top-[50%] left-0'>
                             <Next 
@@ -61,12 +61,12 @@ const Team = ({lang}) => {
                         spaceBetween={30}
                         keyboard={true}
                         onSlideChange={(swiper) => setActive(swiper.activeIndex)}
-                        className='flex-column md:px-[40px] px-[15px]'
+                        className='flex md:px-[40px] px-[15px] m-0'
                     >
                         {content.name.map((item, index) => (
                             <SwiperSlide
                                 key={index}
-                                className='border-t-c_gray-regular border-t-[2px] md:w-[284px] w-[273px] pt-[20px]'
+                                className='flex flex-col border-t-c_gray-regular border-t-[2px] md:w-[284px] w-[273px] pt-[20px]'
                             > 
                                 <Card i={{item, index}} lang={lang} fade={fade[index]} setFade={setFade[index]} />
                             </SwiperSlide>

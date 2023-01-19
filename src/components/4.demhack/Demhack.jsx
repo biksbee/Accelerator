@@ -31,7 +31,7 @@ const Demhack = ({lang}) => {
                 </div>
                 <div className='border-t-[2px] border-t-c_gray-line pt-[40px]'>
                     <div className='ms:columns-2 gap-[50px]'>
-                        <div className='xl:w-[35vw] ms:w-[40vw] text-c_gray-demhack md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otf-book not-italic'>
+                        <div className='xl:w-[580px] ms:w-[40vw] text-c_gray-demhack md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otf-book not-italic'>
                             <div className='pb-[20px]'>
                                 {content.text[0]}
                             </div>     
@@ -39,7 +39,7 @@ const Demhack = ({lang}) => {
                                 {content.text[1]}
                             </div>
                         </div>
-                        <div className='ms:pt-0 pt-[20px] xl:w-[35vw] ms:w-[40vw] text-c_gray-demhack md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otf-book not-italic'>
+                        <div className='ms:pt-0 pt-[20px] xl:w-[580px] ms:w-[40vw] text-c_gray-demhack md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otf-book not-italic'>
                             <div className='pb-[20px]'>    
                                 {content.text[2]}
                             </div>

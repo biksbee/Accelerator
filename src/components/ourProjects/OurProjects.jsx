@@ -1,13 +1,8 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Slider from "./slider/slide"
 import { ourProjects } from '../content'
 
-import PopUp from '../modules/popUp'
-import Projects from './Projects'
-
-import Next from '../modules/Next'
-
-const OurProjects = ({lang, setLang}) => {
+const OurProjects = ({lang, setLang, setGet}) => {
 
     const chooseLan = (lan) => {
         if(lan === 'eng')
@@ -20,7 +15,10 @@ const OurProjects = ({lang, setLang}) => {
     const [show, setShow] = useState(false)
     const [active, setActive] = useState(0)
     const [open, setOpen] = useState(false)
-    const back = 'bg-c_yellow-light'
+
+    useEffect(() => {
+        setGet(open)
+    }, [open])
 
     const getSend = (e) => {
         console.log(e)
@@ -51,12 +49,6 @@ const OurProjects = ({lang, setLang}) => {
                     </div>
                 </div>
             </div>
-            {open ? 
-                <PopUp setOpen={setOpen} background={back} c={0}>
-                    <Projects lang={lang} />
-                </PopUp>
-                 : 
-            null}
         </div>
     )
 }

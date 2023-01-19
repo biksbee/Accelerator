@@ -1,3 +1,4 @@
+import {useState, useEffect} from 'react'
 import StartPageNew from "./1.startPage/StartPageNew"
 import OurProjects from "./ourProjects/OurProjects"
 import Media from "./media/Media"
@@ -9,13 +10,19 @@ import Team from "./8.team/Team"
 import Contacts from "./9.contact/Contacts"
 
 
-const Body = ({lang, setLang}) => {
+const Body = ({lang, setLang, setOpen}) => {
 
+
+    const [get, setGet] = useState(false)
+
+    useEffect(() => {
+        setOpen(get)
+    }, [get])
 
     return (
         <div className="overflow-hidden">
             <StartPageNew lang={lang} setLang={setLang}/>
-            <OurProjects lang={lang} setLang={setLang} />
+            <OurProjects lang={lang} setLang={setLang} setGet={setGet}/>
             <Media lang={lang} setLang={setLang} />
             <Works lang={lang} setLang={setLang} />
             <Demhack lang={lang} setLang={setLang} />
