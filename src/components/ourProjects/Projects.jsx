@@ -1,8 +1,12 @@
 import cn from 'classnames'
 import { ourProjects } from "../content"
+import {useEffect, useRef} from 'react'
+import {Link} from 'react-scroll'
 
 
-const Projects = ({lang}) => {
+const Projects = ({lang, loc}) => {
+
+    const messagesEndRef = useRef(null)
 
     const chooseLan = (lan) => {
         if(lan === 'eng')
@@ -12,26 +16,38 @@ const Projects = ({lang}) => {
     }
     const content = chooseLan(lang)
 
+    //loc = ['Amnezia', 'Get site copy', 'Self Privacy', 'Eppie', 'Securno']
+    const scrollToBottom = () => {
+        // messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+    }
+    
+      useEffect(() => {
+        scrollToBottom()
+      }, [loc]);
+
+    
+
     return (
         <div className="pt-[50px] xs:w-[1000px] w-[90vw]">
             {content.title.map((item, index) => (
-                <div 
+                <div
                     key={index}
-                    id={index === 4 ? 'hi' : null}
+                    id={item} 
+                    ref={messagesEndRef}
                     className="mds:pb-[150px] pb-[50px] text-c_blue-deepDark"
                 >
                     <div 
                         className={cn(
                             content.slide[index],
                             'w-full bg-center ds:bg-cover bg-contain bg-no-repeat rounded-[15px]',
-                            'xs:h-[510px] ms:h-[450px] md:h-[400px] mds:h-[320px] ds:h-[270px] m:h-[202px] h-[128px] mds:mb-[30px]'
+                            'xs:h-[510px] ms:h-[450px] md:h-[400px] mds:h-[350px] ds:h-[300px] m:h-[202px] h-[158px] mds:mb-[30px]'
                         )}
                     />  
                     <div className="ourProjectStyleTitle my-[30px] text-c_blue-dark font-otf-semiBold">
                         {item}
                     </div>
                     <div className="flex xs:flex-row flex-col-reverse justify-between">
-                        <div className='xl:w-[590px] xl:text-[22px] xl:leading-[33px] text-[15px] leading-[18px] font-otf-book text-c_blue-deepDark'>
+                        <div className='xl:w-[590px] md:text-[22px] md:leading-[33px] text-[15px] leading-[18px] font-otf-book text-c_blue-deepDark'>
                             <div className='mb-[20px]'>
                                 {content.description[index][0]}
                             </div>

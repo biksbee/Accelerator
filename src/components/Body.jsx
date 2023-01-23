@@ -10,19 +10,21 @@ import Team from "./8.team/Team"
 import Contacts from "./9.contact/Contacts"
 
 
-const Body = ({lang, setLang, setOpen}) => {
+const Body = ({lang, setLang, setOpen, setLocation}) => {
 
 
     const [get, setGet] = useState(false)
+    const [loc, setLoc] = useState("")
 
     useEffect(() => {
         setOpen(get)
+        setLocation(loc)
     }, [get])
 
     return (
         <div className="overflow-hidden">
             <StartPageNew lang={lang} setLang={setLang}/>
-            <OurProjects lang={lang} setLang={setLang} setGet={setGet}/>
+            <OurProjects lang={lang} setLang={setLang} setGet={setGet} setLoc={setLoc}/>
             <Media lang={lang} setLang={setLang} />
             <Works lang={lang} setLang={setLang} />
             <Demhack lang={lang} setLang={setLang} />

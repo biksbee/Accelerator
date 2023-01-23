@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import Slider from "./slider/slide"
 import { ourProjects } from '../content'
 
-const OurProjects = ({lang, setLang, setGet}) => {
+const OurProjects = ({lang, setLang, setGet, setLoc}) => {
 
     const chooseLan = (lan) => {
         if(lan === 'eng')
@@ -15,9 +15,12 @@ const OurProjects = ({lang, setLang, setGet}) => {
     const [show, setShow] = useState(false)
     const [active, setActive] = useState(0)
     const [open, setOpen] = useState(false)
+    const [location, setLocation] = useState("")
 
     useEffect(() => {
         setGet(open)
+        setLoc(location)
+        
     }, [open])
 
     const getSend = (e) => {
@@ -36,7 +39,7 @@ const OurProjects = ({lang, setLang, setGet}) => {
                     </div>
                 </div>    
                 <div className="w-[100vw] h-max md:pt-[222px] pt-[50px] pb-[100px]">
-                    <Slider setShow={setShow} setActive={setActive} active={active} setOpen={setOpen} send={getSend} lang={lang}/>
+                    <Slider setShow={setShow} setActive={setActive} active={active} setOpen={setOpen} send={getSend} lang={lang} setLocation={setLocation}/>
                     <div className='w-full flex justify-center text-c_blue-dark pt-[30px]'>
                         <div className='xl:w-[1200px] w-full flex items-end xl:pl-0 md:pl-[40px] pl-[15px]'>
                             <div className='md:text-[50px] text-[20px] md:leading-[44px] leading-[18px] font-otf-semiBold not-italic'>

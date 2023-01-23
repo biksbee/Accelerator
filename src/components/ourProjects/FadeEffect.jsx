@@ -1,9 +1,8 @@
 import {useEffect, useState, useRef} from 'react'
 import { ourProjects } from '../content'
 import cn from 'classnames'
-import { Link } from "react-scroll"
 
-const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {    
+const FadeEffect = ({i, fade, setFade, setOpen, lang, setLocation}) => {    
 
     const chooseLan = (lan) => {
         if(lan === 'eng')
@@ -13,15 +12,22 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
     }
     const content = chooseLan(lang)
 
+    const href = ['Amnezia', 'Get site copy', 'Self Privacy', 'Eppie', 'Securno']
+
+    const openFunc = () => {
+        setOpen(true)
+        setLocation(href[i.index])
+    }
+
     return (
-            <Link
-                to={"hi"}
-                spy={true} 
-                smooth={true} 
-                offset={50} 
-                duration={500}
+            <div
+                // to={i.index === 0 ? "qwerty" : href[i.index]}
+                // spy={true} 
+                // smooth={true} 
+                // offset={1000} 
+                // duration={500}
                 className='cursor-pointer w-full flex flex-col justify-between h-full'
-                onClick={() => setOpen(true)}
+                onClick={openFunc}
                 onMouseEnter={() => setFade(true)}
                 onMouseLeave={() => setFade(false)} 
             >
@@ -51,7 +57,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang}) => {
                         )}
                     />  
                 </div>
-            </Link>    
+            </div>    
     )
 
 }

@@ -1,4 +1,4 @@
-import {useState, useRef} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import cn from 'classnames'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,7 +12,7 @@ import Next from '../../modules/Next';
 SwiperCore.use([Keyboard, Mousewheel, Navigation]);
 
 
-const Slider = ({setShow, active, setActive, setOpen, lang}) => {
+const Slider = ({setShow, active, setActive, setOpen, lang, setLocation}) => {
 
     const chooseLan = (lan) => {
         if(lan === 'eng')
@@ -21,7 +21,7 @@ const Slider = ({setShow, active, setActive, setOpen, lang}) => {
             return ourProjects.eng
     }
     const content = chooseLan(lang)
-    
+
     const [fade0, setFade0] = useState(false)
     const [fade1, setFade1] = useState(false)
     const [fade2, setFade2] = useState(false)
@@ -69,7 +69,7 @@ const Slider = ({setShow, active, setActive, setOpen, lang}) => {
                         )}
                         onClick={() => setShow(true)}
                     >
-                        <FadeEffect lang={lang} setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} />                   
+                        <FadeEffect lang={lang} setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} setLocation={setLocation} />                   
                     </SwiperSlide>
                 ))}
             </Swiper>
