@@ -85,7 +85,7 @@ const Team = ({lang}) => {
                         </div>
                         <div className='xl:w-[575px] md:w-[45vw] md:text-[22px] md:leading-[30px] text-[15px] leading-[21px]'>
                             <div className='pb-[20px]'>
-                                {content.about[2]}<a className='border-b-[rgba(216,209,241,0.1)] border-b-[1px] duration-500 hover:border-b-[rgba(216,209,241,0.5)]' href={content.href}>{content.about[3]}</a>
+                                {content.about[2]}<a className='md:ml-[7px] ml-[3px] border-b-[rgba(216,209,241,0.1)] border-b-[1px] duration-500 hover:border-b-[rgba(216,209,241,0.5)]' href={content.href}>{content.about[3]}</a>
                             </div>
                         </div>
                     </div>
