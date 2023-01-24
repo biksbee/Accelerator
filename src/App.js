@@ -16,6 +16,16 @@ const App = () => {
 
   return (
     <div className="App">
+        <Helmet>
+          <title>Accelerator</title>
+          <meta name="description" content="App Description" />
+          <meta name="theme-color" content="#ff0000" />
+          <meta  name="description" content="Помогаем запускать качественные продукты в сфере приватности и свободы интернета" />
+          <meta property="og:title" content="Accelerator" />
+          <meta  property="og:description" content="Помогаем запускать качественные продукты в сфере приватности и свободы интернета" />
+          <meta property="og:image" content="%PUBLIC_URL%/OGIMG.jpg"></meta>
+          
+        </Helmet>
       { !open ?  
         <div>
           <Header lan={lang} setLan={setLang}/>
@@ -28,15 +38,6 @@ const App = () => {
       }  
       <Footer />
     </div>
-    // <div className="App">
-    //   <Helmet>
-    //     <title>App bugaga</title>
-    //     <meta name="description" content="App Description" />
-    //     <meta name="theme-color" content="#ff0000" />
-    //     <meta property="og:title" content="BUGAGA" />
-    //     <meta property="og:image" content="%PUBLIC_URL%/OGIMG.jpg"></meta>
-    //   </Helmet>
-    // </div>
   );
 }
 
