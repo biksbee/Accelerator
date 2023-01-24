@@ -1,8 +1,6 @@
 import cn from 'classnames'
 import { ourProjects } from "../content"
 import {useEffect, useState, useRef, createRef} from 'react'
-// import {Link} from 'react-scroll'
-import { Link } from 'react-router-dom';
 
 
 const Projects = ({lang, loc}) => {
