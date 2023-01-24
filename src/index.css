@@ -102,8 +102,8 @@
     }
     .contactText {
         @apply text-c_blue-cont font-otf-book not-italic
-        md:text-[50px] md:leading-[55px] ms:max-w-[870px] ms:pb-[75px]
-        text-[26px] leading-[31px]  w-[90vw] pb-[30px]
+        md:text-[50px] md:leading-[53px] ms:max-w-[870px] ms:pb-[75px]
+        text-[23px] leading-[31px]  w-[90vw] pb-[30px]
     }
     .contactLink {
         @apply opacity-[1] text-c_orange-regular duration-500

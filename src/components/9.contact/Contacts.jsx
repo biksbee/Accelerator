@@ -22,7 +22,7 @@ const Contacts = ({lang}) => {
                     <div className="border-t-[3px] border-t-c_blue-dark pt-[12px]">
                         <div className="contactText">
                             {content.blocks[0]}
-                            <a href={content.links.here} className="contactLink ml-[10px]" target="_blank">
+                            <a href={content.links.here} className="contactLink md:ml-[10px] ml-[7px]" target="_blank">
                                 {content.value[0]}
                             </a>
                         </div>
@@ -30,7 +30,7 @@ const Contacts = ({lang}) => {
                     <div className="border-t-[3px] border-t-c_blue-dark pt-[21px]">
                         <div className="contactText">
                             <div>{content.blocks[1]}</div>
-                            <div className="m:flex">
+                            <div className="xss:flex">
                                 <div>
                                     <a href={content.links.mail} className="contactLink" target="_blank">
                                         {content.value[1]}
@@ -39,8 +39,8 @@ const Contacts = ({lang}) => {
                                         {content.value[2]}
                                     </a>,
                                 </div>
-                                <div className="s:flex">       
-                                        <a href={content.links.signal} className="contactLink m:ml-[10px]" target="_blank">
+                                <div className="xss:flex ">       
+                                        <a href={content.links.signal} className="contactLink xss:ml-[10px]" target="_blank">
                                             {content.value[3]}
                                         </a>   
                                 </div>    
@@ -51,8 +51,8 @@ const Contacts = ({lang}) => {
                     <div className="border-t-[3px] border-t-c_blue-dark pt-[14px]">
                         <div className="contactText pb-0">
                             <div>{content.blocks[2]}</div>
-                            <div className="m:flex">
-                                <a href={content.links.habr} className="contactLink md:text-[48px] text-[26px]" target="_blank">
+                            <div className="sq:flex">
+                                <a href={content.links.habr} className="contactLink md:text-[48px] text-[23px]" target="_blank">
                                     {content.value[4]}
                                 </a>,
                                 <a href={content.links.telegramChanel} className="contactLink ml-[10px]" target="_blank">
@@ -60,7 +60,7 @@ const Contacts = ({lang}) => {
                                     {content.value[5]}
                                 </a>,
                             </div>  
-                            <div className="s:flex">
+                            <div className="flex">
                                 <div>
                                     <a href={content.links.facebook} className="contactLink" target="_blank">
                                         {content.value[6]}

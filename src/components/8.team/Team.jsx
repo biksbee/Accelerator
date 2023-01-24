@@ -58,7 +58,7 @@ const Team = ({lang}) => {
                     <Swiper
                         ref={swiperRef}
                         slidesPerView={"auto"} 
-                        spaceBetween={30}
+                        spaceBetween={40}
                         keyboard={true}
                         onSlideChange={(swiper) => setActive(swiper.activeIndex)}
                         className='flex md:px-[40px] px-[15px] m-0'
@@ -66,7 +66,7 @@ const Team = ({lang}) => {
                         {content.name.map((item, index) => (
                             <SwiperSlide
                                 key={index}
-                                className='flex flex-col border-t-c_gray-regular border-t-[2px] md:w-[284px] w-[273px] pt-[20px]'
+                                className='flex flex-col border-t-c_gray-regular border-t-[2px] xl:w-[373px] md:w-[28vw] w-[270px] pt-[20px]'
                             > 
                                 <Card i={{item, index}} lang={lang} fade={fade[index]} setFade={setFade[index]} />
                             </SwiperSlide>
@@ -85,7 +85,7 @@ const Team = ({lang}) => {
                         </div>
                         <div className='xl:w-[575px] md:w-[45vw] md:text-[22px] md:leading-[30px] text-[15px] leading-[21px]'>
                             <div className='pb-[20px]'>
-                                {content.about[2]} 
+                                {content.about[2]}<a className='border-b-[rgba(216,209,241,0.1)] border-b-[1px] duration-500 hover:border-b-[rgba(216,209,241,0.5)]' href={content.href}>{content.about[3]}</a>
                             </div>
                         </div>
                     </div>

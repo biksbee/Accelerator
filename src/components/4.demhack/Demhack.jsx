@@ -44,7 +44,7 @@ const Demhack = ({lang}) => {
                                 {content.text[2]}
                             </div>
                             <div>
-                                {content.text[3]}<a href="https://roskomsvoboda.org/" className='text-c_gray-regular w-max border-b-[1px] border-b-c_gray-light hover:opacity-50 duration-500'>{content.text[4]}</a> {content.text[5]}
+                                {content.text[3]}<a href="https://roskomsvoboda.org/" className='w-max border-b-[1px] border-b-c_gray-light hover:opacity-50 duration-500'>{content.text[4]}</a> {content.text[5]}
                             </div>
                         </div>
                     </div>

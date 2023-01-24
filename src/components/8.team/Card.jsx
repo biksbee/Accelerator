@@ -17,7 +17,7 @@ const Card = ({i, setFade, fade, lang}) => {
                         <div
                             onMouseEnter={() => setFade(true)}
                             onMouseLeave={() => setFade(false)} 
-                            className='flex flex-col h-full justify-between'
+                            className='flex flex-col h-full md:justify-between'
                         >
                             <div className='md:hidden flex'>
                                 <div className='md:hidden relative flex w-max h-max mb-[20px]'>
@@ -29,26 +29,27 @@ const Card = ({i, setFade, fade, lang}) => {
                                     )} />
                                 </div>
                             </div>
-                            <div className=' flex_features'>
+                            <div className='md:flex_features'>
                                 <div className='pb-[10px]'>
                                     <div className='text-c_gray-blur font-otf-semiBold text-[20px] leading-[20px] '>
                                         {content.name[i.index]}
                                     </div>
                                 </div>
                                 <div className='mb-[20px]'>
-                                    <div className='text-c_gray-blur opacity-50 font-otf-normal text-[16px] leading-[20px] md:w-[280px]'>
+                                    <div className='text-c_gray-blur opacity-50 font-otf-normal text-[16px] leading-[20px]'>
                                         {content.description[i.index]}
                                     </div>
                                 </div>
                             </div>    
                             <div className='relative flex w-max h-max '>
                                 <div className="absolute bg-c_blue-filterLayer w-full z-[40] h-full duration-500 photoRadius" />
-                                <div className={cn(
-                                    !fade ? 'filter grayscale' :  'filter-none',
-                                    'relative md:w-[284px] md:h-[373px] md:block hidden duration-500 bg-no-repeat bg-center bg-cover photoRadius', 
-                                    content.photo[i.index]
-                                )}> 
-                                </div>
+                                <div className={
+                                        cn(
+                                            !fade ? 'filter grayscale' :  'filter-none',
+                                            'xl:w-[373px] md:w-[28vw] xs:h-[373px] md:h-[253px] w-[373px] h-[373px] md:block hidden duration-500 bg-no-repeat bg-cover bg-center photoRadius',
+                                            content.photo[i.index]
+                                        )
+                                } />
                             </div>    
                         </div>
     )
