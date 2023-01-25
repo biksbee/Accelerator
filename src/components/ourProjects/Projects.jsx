@@ -11,6 +11,7 @@ const Projects = ({lang, loc}) => {
     const messagesEndRef3 = useRef(null)
     const messagesEndRef4 = useRef(null)
 
+
     const chooseLan = (lan) => {
         if(lan === 'eng')
             return ourProjects.ru
@@ -30,7 +31,6 @@ const Projects = ({lang, loc}) => {
             messagesEndRef3.current?.scrollIntoView({ behavior: "smooth" })
         else if(loc === messagesEndRef4.current.id)
             messagesEndRef4.current?.scrollIntoView({ behavior: "smooth" })
-        
     }, [loc]);
 
     
