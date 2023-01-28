@@ -4,10 +4,10 @@ import demhack from '../../assets/icon/Deamhack.svg'
 const Demhack = ({lang}) => {
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return deamhack.ru
         else if(lan === 'рус') 
-            return deamhack.eng
+            return deamhack.en
     }
     const content = chooseLan(lang)
 

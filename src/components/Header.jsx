@@ -1,7 +1,11 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import cn from 'classnames'
 import { Link } from "react-scroll"
 import LiHeaderModule from './modules/LiHeaderModule'
+import i18n from '../i18n/i18n'
+import { useTranslation, Trans } from 'react-i18next'
+import { menu } from './content'
+
 
 import logo from '../assets/icon/PrivacyAcceleratorLogo.svg'
 import logoPrivacyAccelerator from '../assets/icon/LogoPrivacyAccelerator.svg'
@@ -9,17 +13,32 @@ import home from '../assets/icon/House.svg'
 import burgerMenu from '../assets/icon/BurgerMenu.svg'
 import close from '../assets/icon/close.svg'
 
+
 const Header = ({lan, setLan}) => {
+    const { t, i18n } = useTranslation()
 
     const [show, setShow] = useState(true)
     const [open, setOpen] = useState(false)
+    const [language, setLanguage] = useState(lan)
     
     const changeLan = () => {
-        if(lan === "рус")
-            setLan("eng")
-        else if(lan === "eng")
+        if(lan === "рус"){
+            setLan("en")
+            setLanguage('en')
+        } else if(lan === "en"){
             setLan("рус")
+            setLanguage('ru')
+        }    
+        i18n.changeLanguage(language)    
     }
+
+    const chooseLan = (lan) => {
+        if(lan === 'en')
+            return menu.ru
+        else if(lan === 'рус') 
+            return menu.en
+    }
+    const content = chooseLan(lan)
 
     const showNav = () => {
         const heightWindow = window.screen.height+200
@@ -69,7 +88,7 @@ const Header = ({lan, setLan}) => {
                     )}
                 >
                     {
-                        menuElements.map((item, index) => (
+                        content.li.map((item, index) => (
                             <div key={index} className={'w-full flex justify-center'}>
                                 <LiHeaderModule item={item} index={index} openLi={open} setOpenLi={setOpen}/>
                             </div>
@@ -101,7 +120,7 @@ const Header = ({lan, setLan}) => {
                                 )}
                             >
                                 <div className={cn('buttonText text-[18px] leading-[18px]')}>
-                                    Подать заявку
+                                    {t('button')}
                                 </div>
                             </div>
                         </div>
@@ -127,7 +146,7 @@ const Header = ({lan, setLan}) => {
                                 <div className={cn(
                                     'cn buttonText text-[13px] leading-[13px]'
                                 )}>
-                                    Подать заявку
+                                    {t('button')}
                                 </div>
                             </div>
                         </a>    

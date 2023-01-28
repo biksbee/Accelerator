@@ -3,10 +3,10 @@ import { contact } from "../content"
 const Contacts = ({lang}) => {
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return contact.ru
         else if(lan === 'рус') 
-            return contact.eng
+            return contact.en
     }
     const content = chooseLan(lang)   
 

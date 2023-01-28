@@ -4,10 +4,10 @@ import { startPage } from '../content'
 const StartPageNew = ({lang, setLang}) => {
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return startPage.ru
         else if(lan === 'рус') 
-            return startPage.eng
+            return startPage.en
     }
     const content = chooseLan(lang)
 

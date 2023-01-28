@@ -15,10 +15,10 @@ SwiperCore.use([Keyboard, Mousewheel]);
 const Consultation = ({setOpen, lang}) => {
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return house.ru
         else if(lan === 'рус') 
-            return house.eng
+            return house.en
     }
     const content = chooseLan(lang)
 

@@ -15,10 +15,10 @@ SwiperCore.use([Keyboard, Mousewheel, Navigation]);
 const Slider = ({setShow, active, setActive, setOpen, lang, setLocation}) => {
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return ourProjects.ru
         else if(lan === 'рус') 
-            return ourProjects.eng
+            return ourProjects.en
     }
     const content = chooseLan(lang)
 
@@ -42,7 +42,7 @@ const Slider = ({setShow, active, setActive, setOpen, lang, setLocation}) => {
                     />
                 </div>
             : null}
-            { active !== content.title.length-1 ? 
+            { active !== content.title.lenth-1 ? 
                 <div className='md:flex hidden absolute z-[10] top-[50%] right-0'>
                     <Next 
                         direction={"right"}

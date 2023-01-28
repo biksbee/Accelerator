@@ -11,10 +11,10 @@ import { media } from '../content'
 const Media = ({lang}) => {
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return media.ru
         else if(lan === 'рус') 
-            return media.eng
+            return media.en
     }
     const content = chooseLan(lang)
 

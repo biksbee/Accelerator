@@ -9,10 +9,10 @@ SwiperCore.use([Keyboard, Mousewheel]);
 const ChapterNew = ({i, lang}) => {
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return workContent.ru
         else if(lan === 'рус') 
-            return workContent.eng
+            return workContent.en
     }
     const content = chooseLan(lang)
 

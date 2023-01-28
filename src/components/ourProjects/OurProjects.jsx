@@ -5,10 +5,10 @@ import { ourProjects } from '../content'
 const OurProjects = ({lang, setLang, setGet, setLoc}) => {
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return ourProjects.ru
         else if(lan === 'рус') 
-            return ourProjects.eng
+            return ourProjects.en
     }
     const content = chooseLan(lang)
 
@@ -46,7 +46,7 @@ const OurProjects = ({lang, setLang, setGet, setLoc}) => {
                                 {active+1}
                             </div>
                             <div className='md:text-[20px] text-[13px] md:leading-[20px] leading-[13px] font-otf-semiBold not-italic'>
-                                /{content.title.length}
+                                /{content.title.lenth}
                             </div>
                         </div>    
                     </div>

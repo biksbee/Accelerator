@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import cn from 'classnames'
+import { useTranslation, Trans } from 'react-i18next'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
@@ -8,16 +9,18 @@ import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 import { moreAccelerator } from '../content';
 import Next from '../modules/Next';
 
+
 SwiperCore.use([Keyboard, Mousewheel]); 
 
 
 const MoreAccelerator = ({lang, setLang}) => {
+    const { t, i18n } = useTranslation()
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return moreAccelerator.ru
         else if(lan === 'рус') 
-            return moreAccelerator.eng
+            return moreAccelerator.en
     }
     const content = chooseLan(lang)
 
@@ -160,7 +163,7 @@ const MoreAccelerator = ({lang, setLang}) => {
                                 )}
                             >
                                 <div className={cn('text-[rgba(255,255,255,0.9)] cursor-pointer not-italic font-otf-semiBold md:text-[23px] text-[16px] md:leading-[23px] leading-[16px]')}>
-                                    Подать заявку
+                                    {t('button')}
                                 </div>
                             </div>
                         </div>

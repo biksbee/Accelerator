@@ -5,10 +5,10 @@ import cn from 'classnames'
 const FadeEffect = ({i, fade, setFade, setOpen, lang, setLocation}) => {    
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return ourProjects.ru
         else if(lan === 'рус') 
-            return ourProjects.eng
+            return ourProjects.en
     }
     const content = chooseLan(lang)
 

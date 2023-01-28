@@ -12,10 +12,10 @@ SwiperCore.use([Keyboard, Mousewheel]);
 const Team = ({lang}) => {
 
     const chooseLan = (lan) => {
-        if(lan === 'eng')
+        if(lan === 'en')
             return team.ru
         else if(lan === 'рус') 
-            return team.eng
+            return team.en
     }
     const content = chooseLan(lang)
 
