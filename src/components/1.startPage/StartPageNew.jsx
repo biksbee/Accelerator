@@ -5,7 +5,7 @@ const StartPageNew = () => {
     const { t } = useTranslation()
 
     return(
-        <div id='startPage' className='w-full flex justify-center md:h-[1024px] h-[90vh] bg-c_purple-header'>
+        <div id='startPage' className='w-full flex justify-center md:h-[1024px] h-[640px] bg-c_purple-header'>
             <div className={cn(
                 'xl:w-[1280px] w-full relative overflow-hidden',
                 'md:pt-[177px] pt-[100px]'

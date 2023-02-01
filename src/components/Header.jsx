@@ -24,9 +24,9 @@ const Header = () => {
     }, [])
 
     const changeLan = () => {
-        if(i18n.use(LanguageDetector).language === 'en')
+        if(i18n.use(LanguageDetector).language.split('-')[0] === 'en')
             i18n.changeLanguage('ru')
-        else if(i18n.use(LanguageDetector).language === 'ru')
+        else if(i18n.use(LanguageDetector).language.split('-')[0] === 'ru')
             i18n.changeLanguage('en')
     }
 
