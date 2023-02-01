@@ -6,21 +6,16 @@ import "swiper/css";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 
 import { house } from '../../content';
+import { useTranslation} from 'react-i18next'
 import Next from '../../modules/Next';
 import CardExp from './CardExp'
 
 SwiperCore.use([Keyboard, Mousewheel]);
 
 
-const Consultation = ({setOpen, lang}) => {
-
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return house.ru
-        else if(lan === 'рус') 
-            return house.en
-    }
-    const content = chooseLan(lang)
+const Consultation = ({setOpen}) => {
+    const { t } = useTranslation()
+    const content = house.ru
 
 
     const [bluer, setBluer] = useState(false)
@@ -43,15 +38,15 @@ const Consultation = ({setOpen, lang}) => {
                     "md:pb-[9px] pb-[6px] text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
                     "font-otf font-otf-semiBold not-italic"
                 )}>
-                    {content.consultation}
+                    {t('house.consultation')}
                 </div>
                 <div className='bg-curveLineConsultation h-[20px] bg-no-repeat'></div>
             </div>
             <div className='md:px-[40px] px-[15px] xs:grid ms:grid-cols-3 hidden md:gap-x-[21px] md:gap-y-[50px]'>
-                {content.experts.map((item, index) => (
+                {[0, 1, 2, 3, 4, 5].map((item, index) => (
                     index < 5 ? 
                         <div key={index} className=" h-max xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] xl:w-[373px] w-[28vw] pt-[20px]">
-                            <CardExp key={index} lang={lang} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
+                            <CardExp key={index} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
                         </div>
                     : null    
                 ))}
@@ -63,7 +58,7 @@ const Consultation = ({setOpen, lang}) => {
                 >
                     <div className='flex flex-col justify-between h-full w-[302px]'>
                         <div className='text-c_gray-regular xl:ml-0 ml-[20px] w-[282px] pb-[40px] font-otf-semiBold xl:text-[33.75px] text-[29px] xl:leading-[33.75px] leading-[29px]'>
-                            {content.show}
+                            {t('house.show')}
                         </div>
                         <div className=' grid justify-center xl:ml-0 ml-[20px] grid-cols-3 xl:gap-x-[13px] xl:gap-y-[11px] gap-x-[15px] gap-y-[25px]'>
                             {
@@ -120,10 +115,10 @@ const Consultation = ({setOpen, lang}) => {
                     onSlideChange={(swiper) => setActive(swiper.activeIndex)}
                     className={'xs:hidden md:px-[40px] px-[15px]'}
                 >
-                    {content.experts.map((item, index) => (
+                    {[0, 1, 2, 3, 4, 5].map((item, index) => (
                         index < 5 ? 
                             <SwiperSlide key={index} className="border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
-                                <CardExp  i={{item, index}} fade={fade[index]} setFade={setFade[index]} lang={lang} />
+                                <CardExp  i={{item, index}} fade={fade[index]} setFade={setFade[index]} />
                             </SwiperSlide>
                         : null
                     ))}
@@ -136,7 +131,7 @@ const Consultation = ({setOpen, lang}) => {
                         >
                             <div className='md:w-[282px] w-[184px]'>
                                 <div className='w-[184px] text-c_gray-regular pb-[40px] font-otf-semiBold md:text-[33.75px] md:leading-[33.75px] text-[20px] leading-[20px]'>
-                                    {content.show}
+                                    {t('house.show')}
                                 </div>
                                 <div className='grid grid-cols-3 gap-x-[13px] gap-y-[15px]'>
                                     {

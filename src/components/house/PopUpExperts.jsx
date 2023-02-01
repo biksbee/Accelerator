@@ -1,15 +1,10 @@
 import cn from 'classnames'
 import { house } from '../content'
-//
-const PopUpExperts = ({i, fade, setFade, lang}) => {
+import { useTranslation} from 'react-i18next'
 
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return house.ru
-        else if(lan === 'рус') 
-            return house.en
-    }
-    const content = chooseLan(lang)
+const PopUpExperts = ({i, fade, setFade, lang}) => {
+    const { t } = useTranslation()
+    const content = house.ru
 
     return (
         <div 
@@ -24,7 +19,7 @@ const PopUpExperts = ({i, fade, setFade, lang}) => {
                                             cn(
                                                 !fade ? 'filter grayscale' :  'filter-none',
                                                 'w-[150px] h-[150px]duration-500 bg-no-repeat bg-cover bg-center cardRadius',
-                                                content.experts[i.index].photo
+                                                t(`house.experts.${i.index}.photo`)
                                             )
                                         } />
                                     </div>    
@@ -32,12 +27,12 @@ const PopUpExperts = ({i, fade, setFade, lang}) => {
                                 <div className='md:flex_features'>
                                     <div className='pb-[10px]'>
                                         <div className='text-c_gray-regular text-[20px] leading-[20px] font-otf font-semibold not-italic'>
-                                            {content.experts[i.index].name}
+                                            {t(`house.experts.${i.index}.name`)}
                                         </div>
                                     </div>
                                     <div className={`mb-[20px]`}>
                                         <div className='text-c_gray-blur opacity-50 text-[16px] leading-[24px] font-otf-normal'>
-                                            {content.experts[i.index].allDescription}
+                                        {t(`house.experts.${i.index}.allDescription`)}
                                         </div>
                                     </div>
                                 </div>
@@ -48,7 +43,7 @@ const PopUpExperts = ({i, fade, setFade, lang}) => {
                                             cn(
                                                 !fade ? 'filter grayscale' :  'filter-none',
                                                 'md:w-[286px] md:h-[373px] md:flex hidden w-[150px] h-[150px] bg-no-repeat bg-cover bg-center photoRadius',
-                                                content.experts[i.index].photo
+                                                t(`house.experts.${i.index}.photo`)
                                             )
                                         } />
                                     </div>    

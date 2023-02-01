@@ -1,15 +1,10 @@
 import { deamhack } from '../content'
 import demhack from '../../assets/icon/Deamhack.svg'
+import { useTranslation} from 'react-i18next'
 
-const Demhack = ({lang}) => {
+const Demhack = () => {
+    const { t } = useTranslation()
 
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return deamhack.ru
-        else if(lan === 'рус') 
-            return deamhack.en
-    }
-    const content = chooseLan(lang)
 
     return (
         <div className="w-full flex justify-center bg-c_black-dark">
@@ -20,11 +15,11 @@ const Demhack = ({lang}) => {
                     </div>
                     <div className='ms:text-right ms:pb-0 pb-[25px]'>
                         <div className='md:text-[24px] text-[15px] md:leading-[23px] leading-[14px] text-c_gray-primary'>
-                            {content.hackathon}           
+                            {t('deamhack.hackathon')}           
                         </div>
                         <a href='' >
                             <div className='w-max md:text-[18px] text-[15px] md:leading-[25px] leading-[21px] font-otf-normal not-italic text-c_orange-regular duration-500 hover:text-c_orange-hover border-b-[1px] border-c_orange-link_op'>
-                                {content.href}
+                                {t('deamhack.href')}
                             </div>
                         </a>    
                     </div>
@@ -33,18 +28,18 @@ const Demhack = ({lang}) => {
                     <div className='ms:columns-2 gap-[50px]'>
                         <div className='xl:w-[580px] ms:w-[40vw] text-c_gray-demhack md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otf-book not-italic'>
                             <div className='pb-[20px]'>
-                                {content.text[0]}
+                                {t('deamhack.text').split('* ')[0]}
                             </div>     
                             <div>
-                                {content.text[1]}
+                                {t('deamhack.text').split('* ')[1]}
                             </div>
                         </div>
                         <div className='ms:pt-0 pt-[20px] xl:w-[580px] ms:w-[40vw] text-c_gray-demhack md:text-[18px] md:leading-[25px] text-[15px] leading-[21px] font-otf-book not-italic'>
                             <div className='pb-[20px]'>    
-                                {content.text[2]}
+                                {t('deamhack.text').split('* ')[2]}
                             </div>
                             <div>
-                                {content.text[3]}<a href="https://roskomsvoboda.org/" className='w-max border-b-[1px] border-b-c_gray-light hover:opacity-50 duration-500'>{content.text[4]}</a> {content.text[5]}
+                                {t('deamhack.text').split('* ')[3]}<a href="https://roskomsvoboda.org/" className='w-max border-b-[1px] border-b-c_gray-light hover:opacity-50 duration-500'>{t('deamhack.text').split('* ')[4]}</a>{t('deamhack.text').split('* ')[5]}
                             </div>
                         </div>
                     </div>

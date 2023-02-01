@@ -10,7 +10,7 @@ import Team from "./8.team/Team"
 import Contacts from "./9.contact/Contacts"
 
 
-const Body = ({lang, setLang, setOpen, setLocation}) => {
+const Body = ({setOpen, setLocation}) => {
 
 
     const [get, setGet] = useState(false)
@@ -23,15 +23,15 @@ const Body = ({lang, setLang, setOpen, setLocation}) => {
 
     return (
         <div className="overflow-hidden">
-            <StartPageNew lang={lang} setLang={setLang}/>
-            <OurProjects lang={lang} setLang={setLang} setGet={setGet} setLoc={setLoc}/>
-            <Media lang={lang} setLang={setLang} />
-            <Works lang={lang} setLang={setLang} />
-            <Demhack lang={lang} setLang={setLang} />
-            <MoreAccelerator lang={lang} setLang={setLang} />
-            <House lang={lang} setLang={setLang} />
-            <Team lang={lang} setLang={setLang} />
-            <Contacts lang={lang} setLang={setLang} />
+            <StartPageNew />
+            <OurProjects setGet={setGet} setLoc={setLoc}/>
+            <Media />
+            <Works />
+            <Demhack />
+            <MoreAccelerator />
+            <House />
+            <Team />
+            <Contacts />
         </div>
     )
 } 

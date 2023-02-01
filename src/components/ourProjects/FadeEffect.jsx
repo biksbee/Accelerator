@@ -1,16 +1,12 @@
 import {useEffect, useState, useRef} from 'react'
 import { ourProjects } from '../content'
 import cn from 'classnames'
+import { useTranslation} from 'react-i18next'
 
-const FadeEffect = ({i, fade, setFade, setOpen, lang, setLocation}) => {    
 
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return ourProjects.ru
-        else if(lan === 'рус') 
-            return ourProjects.en
-    }
-    const content = chooseLan(lang)
+const FadeEffect = ({i, fade, setFade, setOpen, setLocation}) => {    
+    const { t } = useTranslation()
+    const content = ourProjects.ru
 
     const href = ['Amnezia', 'Get site copy', 'Self Privacy', 'Eppie', 'Securno']
 
@@ -43,7 +39,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang, setLocation}) => {
                             "ourProjectStyleSubTitle relative last_letter flex_features",
                         )}
                     >
-                            {content.subTitle[i.index]}
+                            {t(`ourProjects.subTitle.${i.index}`)}
                     </div>
                 </div>
                 <div 
@@ -51,7 +47,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, lang, setLocation}) => {
                 >
                     <div 
                         className={cn(
-                            content.slide[i.index],
+                            t(`ourProjects.slide.${i.index}`),
                             'w-full bg-center bg-contain bg-repeat-round rounded-[15px]',
                             'xs:h-[510px] md:h-[332px] h-[162px]'
                         )}

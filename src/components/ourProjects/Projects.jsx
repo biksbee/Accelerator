@@ -1,10 +1,10 @@
 import cn from 'classnames'
 import { ourProjects } from "../content"
 import {useEffect, useState, useRef, createRef} from 'react'
+import { useTranslation} from 'react-i18next'
 
-
-const Projects = ({lang, loc}) => {
-
+const Projects = ({loc}) => {
+    const { t } = useTranslation()
     const messagesEndRef0 = useRef(null)
     const messagesEndRef1 = useRef(null)
     const messagesEndRef2 = useRef(null)
@@ -12,13 +12,7 @@ const Projects = ({lang, loc}) => {
     const messagesEndRef4 = useRef(null)
 
 
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return ourProjects.ru
-        else if(lan === 'рус') 
-            return ourProjects.en
-    }
-    const content = chooseLan(lang)
+    const content = ourProjects.ru
     
     useEffect(() => {
         if(loc === messagesEndRef0.current.id)
@@ -37,7 +31,7 @@ const Projects = ({lang, loc}) => {
 
     return (
         <div className="pt-[50px] xs:w-[1000px] w-[90vw]">
-            {content.title.map((item, index) => (
+            {t('ourProjects.title').split(', ').map((item, index) => (
                 <div
                     key={index}
                     id={item} 
@@ -46,7 +40,7 @@ const Projects = ({lang, loc}) => {
                 >
                     <div 
                         className={cn(
-                            content.slide[index],
+                            t(`ourProjects.slide.${index}`),
                             'w-full bg-center ds:bg-cover bg-contain bg-no-repeat rounded-[15px]',
                             'xs:h-[510px] ms:h-[450px] md:h-[400px] mds:h-[350px] ds:h-[300px] m:h-[202px] h-[158px] mds:mb-[30px]'
                         )}
@@ -57,38 +51,38 @@ const Projects = ({lang, loc}) => {
                     <div className="flex xs:flex-row flex-col-reverse justify-between">
                         <div className={cn(
                             'md:text-[22px] md:leading-[33px] text-[15px] leading-[18px] font-otf-book text-c_blue-deepDark',
-                            content.rightColumns[index][0] !== undefined || content.rightColumns[index][1] !== undefined ? 'xl:w-[590px]' : ''                              
+                            t(`ourProjects.rightColumns.${index}.0`) !== '' || t(`ourProjects.rightColumns.${index}.1`) !== '' ? 'xl:w-[590px]' : ''                              
                         )}>
                             <div className='mb-[20px]'>
-                                {content.description[index][0]}
+                                {t(`ourProjects.description.${index}.0`)}
                             </div>
                             <div>
-                                {content.description[index][1]}
+                                {t(`ourProjects.description.${index}.1`)}
                             </div>
                         </div>
                         {
-                            content.rightColumns[index][0] !== undefined || 
-                            content.rightColumns[index][1] !== undefined || 
-                            content.rightColumns[index][2] !== undefined ||
-                            content.rightColumns[index][3] !== undefined ? 
+                            t(`ourProjects.rightColumns.${index}.0`) !== '' || 
+                            t(`ourProjects.rightColumns.${index}.1`) !== '' || 
+                            t(`ourProjects.rightColumns.${index}.2`) !== '' ||
+                            t(`ourProjects.rightColumns.${index}.3`) !== '' ? 
                                 <div className={cn(
                                     'xs:block  flex xs:ml-[40px]',
-                                    content.rightColumns[index][0] !== undefined || content.rightColumns[index][1] !== undefined ? 'xs:pb-0 pb-[30px]' : null
+                                    t(`ourProjects.rightColumns.${index}.0`) !== '' || t(`ourProjects.rightColumns.${index}.1`) !== '' ? 'xs:pb-0 pb-[30px]' : null
                                 )}>
                                     <div className=' xs:mb-[40px] xs:mr-0 mr-[30px] mds:mb-0 mb-[30px]'>
                                         <div className='md:text-[75px] text-[28px] md:leading-[75px] leading-[28px] font-otf-light text-c_blue-deepDark mb-[5px]'>
-                                            {content.rightColumns[index][0]}
+                                            {t(`ourProjects.rightColumns.${index}.0`) !== '' ? t(`ourProjects.rightColumns.${index}.0`) : null}
                                         </div>
                                         <div className='text-c_blue-popUp md:text-[16px] text-[13px] md:leading-[24px] leading-[16px] md:w-[285px] w-[41vw] font-otf-book'>
-                                            {content.rightColumns[index][1]}
+                                        {t(`ourProjects.rightColumns.${index}.1`) !== '' ? t(`ourProjects.rightColumns.${index}.1`) : null}
                                         </div>
                                     </div>
                                     <div>
                                         <div className='md:text-[75px] text-[28px] md:leading-[75px] leading-[28px] font-otf-light text-c_blue-deepDark mb-[5px]'>
-                                            {content.rightColumns[index][2]}
+                                        {t(`ourProjects.rightColumns.${index}.2`) !== '' ? t(`ourProjects.rightColumns.${index}.2`) : null}
                                         </div>
                                         <div className='text-c_blue-popUp md:text-[16px] text-[13px] md:leading-[24px] leading-[16px] md:w-[285px] w-[41vw] font-otf-book'>
-                                            {content.rightColumns[index][3]}
+                                        {t(`ourProjects.rightColumns.${index}.3`) !== '' ? t(`ourProjects.rightColumns.${index}.3`) : null}
                                         </div>
                                     </div>
                                 </div>

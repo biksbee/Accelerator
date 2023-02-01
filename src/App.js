@@ -11,14 +11,6 @@ import Projects from './components/ourProjects/Projects';
 
 const App = () => {
   
-  const [q, setQ] = useState(i18n.use(LanguageDetector).language.split('-')[0])
-  
-  useEffect(() => {
-    console.log(q)
-  }, [])
-
-
-  const [lang, setLang] = useState('en')
   const [open, setOpen] = useState(false)
   const [loc, setLoc] = useState("")
   const back = 'bg-c_yellow-light'
@@ -31,12 +23,12 @@ const App = () => {
         </Helmet>
       { !open ?  
         <div>
-          <Header lan={lang} setLan={setLang}/>
-          <Body lang={lang} setLang={setLang} setOpen={setOpen} setLocation={setLoc}/>
+          <Header />
+          <Body setOpen={setOpen} setLocation={setLoc}/>
         </div>
         : 
         <PopUp setOpen={setOpen} background={back} c={0}>
-          <Projects lang={lang} loc={loc}/>
+          <Projects loc={loc}/>
         </PopUp>
       }  
       <Footer />

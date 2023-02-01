@@ -1,5 +1,6 @@
 import cn from 'classnames'
 import { house } from '../../content'
+import { useTranslation} from 'react-i18next'
 
 import networkingLine from '../../../assets/icon/NetworkingLine.svg'
 import RosComFreedom from '../../../assets/icon/RosComFreedom.svg'
@@ -9,15 +10,10 @@ import Proton from '../../../assets/icon/Proton.svg'
 import InformationCulture from '../../../assets/icon/infocult.png'
 import RussiaVenchur from '../../../assets/icon/RussiaVenchur.svg'
 
-const Networking = ({lang}) => {
 
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return house.ru
-        else if(lan === 'рус') 
-            return house.en
-    }
-    const content = chooseLan(lang)
+const Networking = () => {
+    const { t } = useTranslation()
+    const content = house.ru
 
 
     return (
@@ -28,7 +24,7 @@ const Networking = ({lang}) => {
                         "text-c_gray-regular md:text-[45px] md:leading-[45px] text-[22px] leading-[22px]",
                         "font-otf-semiBold not-italic"
                     )}>
-                        {content.networking}
+                        {t('house.networking')}
                     </div>
                     <div className="md:mt-[8px] mt-[5px] md:w-[279px] w-[132px]">
                         <img src={networkingLine} alt="networkingLine" />
@@ -36,7 +32,7 @@ const Networking = ({lang}) => {
                 </div>
                 <div className='md:w-[472px]'>
                 <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otf-book not-italic text-c_gray-regular'>
-                        {content.networkingDescription}
+                        {t('house.networkingDescription')}
                     </div>
                 </div>
             </div>

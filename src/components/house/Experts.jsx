@@ -2,17 +2,11 @@ import {useState} from 'react'
 import cn from 'classnames'
 import PopUpExperts from './PopUpExperts'
 import { house } from '../content'
+import { useTranslation} from 'react-i18next'
 
-
-const Experts = ({lang}) => {
-
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return house.ru
-        else if(lan === 'рус') 
-            return house.en
-    }
-    const content = chooseLan(lang)
+const Experts = () => {
+    const { t } = useTranslation()
+    const content = house.ru
 
     const [fade0, setFade0] = useState(false)
     const [fade1, setFade1] = useState(false)
@@ -35,14 +29,14 @@ const Experts = ({lang}) => {
         <div className="xl:mt-[90px] mt-[40px] text-[#D2DCFF]">
             <div className="xl:pb-[60px] pb-[30px]">
                 <div className="xl:w-[900px] xl:text-[60px] text-[30px] xl:leading-[60px] leading-[30px] font-otf-bold not-italic">
-                    {content.popUpTitle}<br/> Privacy Accelerator
+                    {t('house.popUpTitle')}<br/> Privacy Accelerator
                 </div>
             </div>
             <div className="flex justify-center">
                 <div className="md:grid xl:grid-cols-3 md:grid-cols-2 gap-[35px] md:w-full w-max">
                     {
-                        content.experts.map((item, index) => (
-                            <PopUpExperts key={index} lang={lang} i={{index, item}} fade={fade[index]} setFade={setFade[index]} />         
+                        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item, index) => (
+                            <PopUpExperts key={index} i={{index, item}} fade={fade[index]} setFade={setFade[index]} />         
                         ))
                     }
                 </div>

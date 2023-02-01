@@ -8,19 +8,14 @@ import SwiperCore, { Navigation,Keyboard, Mousewheel } from "swiper/core";
 import { ourProjects } from '../../content';
 import FadeEffect from '../FadeEffect';
 import Next from '../../modules/Next';
+import { useTranslation} from 'react-i18next'
 
 SwiperCore.use([Keyboard, Mousewheel, Navigation]);
 
 
-const Slider = ({setShow, active, setActive, setOpen, lang, setLocation}) => {
-
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return ourProjects.ru
-        else if(lan === 'рус') 
-            return ourProjects.en
-    }
-    const content = chooseLan(lang)
+const Slider = ({setShow, active, setActive, setOpen, setLocation}) => {
+    const { t } = useTranslation()
+    const content = ourProjects.ru
 
     const [fade0, setFade0] = useState(false)
     const [fade1, setFade1] = useState(false)
@@ -59,7 +54,7 @@ const Slider = ({setShow, active, setActive, setOpen, lang, setLocation}) => {
                 className="mx-0 xl:px-[calc((100vw-1280px)/2+40px)] md:px-[40px] px-[15px] flex"
                 onSlideChange={(swiper) => setActive(swiper.activeIndex)}
             >
-                {content.title.map((item, index) => (
+                {t('ourProjects.title').split(', ').map((item, index) => (
                     <SwiperSlide 
                         key={index}
                         className={cn(
@@ -69,7 +64,7 @@ const Slider = ({setShow, active, setActive, setOpen, lang, setLocation}) => {
                         )}
                         onClick={() => setShow(true)}
                     >
-                        <FadeEffect lang={lang} setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} setLocation={setLocation} />                   
+                        <FadeEffect setOpen={setOpen} i={{item, index}} fade={fade[index]} setFade={setFade[index]} setLocation={setLocation} />                   
                     </SwiperSlide>
                 ))}
             </Swiper>

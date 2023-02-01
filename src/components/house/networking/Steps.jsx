@@ -1,5 +1,6 @@
 import cn from 'classnames'
 import { house } from '../../content'
+import { useTranslation} from 'react-i18next'
 
 import parenthesis from '../../../assets/icon/Parenthesis.svg'
 import cornerUp from '../../../assets/icon/CornerUp.svg'
@@ -12,15 +13,9 @@ import cornerDownMini from '../../../assets/icon/CornerDownMini.svg'
 import checkMarkMini from '../../../assets/icon/CheckMarkMini.svg'
 import waveLineMini from '../../../assets/icon/WaveLineMini.svg'
 
-const Steps = ({lang}) => {
-
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return house.ru
-        else if(lan === 'рус') 
-            return house.en
-    }
-    const content = chooseLan(lang)
+const Steps = () => {
+    const { t } = useTranslation()
+    const content = house.ru
 
 
     return (
@@ -34,7 +29,7 @@ const Steps = ({lang}) => {
                                         "text-c_gray-regular md:text-[45px] md:leading-[43px] text-[22px] leading-[22px]",
                                         "font-otf-semiBold not-italic"
                                     )}>
-                                        {content.networkingStepsTitle[0]}
+                                        {t('house.networkingStepsTitle1')}
                                     </div>
                                     <div className="absolute md:h-max md:top-[15px] top-0 md:left-[-20px] left-[-10px]">
                                         <img className='md:block hidden' src={parenthesis} alt="parenthesis" />
@@ -43,7 +38,7 @@ const Steps = ({lang}) => {
                                 </div>
                                 <div className='mb-[31px]'>
                                     <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otf-book not-italic font-normal text-c_gray-regular'>
-                                        {content.networkingStepsDescription[0]}
+                                        {t('house.networkingStepsDescription1')}
                                     </div>
                                 </div>
                                 <div className='mb-[20px] relative flex w-max h-max '>
@@ -62,7 +57,7 @@ const Steps = ({lang}) => {
                                         "text-c_gray-regular md:text-[45px] md:leading-[43px] text-[22px] leading-[22px]",
                                         "font-otf font-otf-semiBold not-italic"
                                     )}>
-                                        {content.networkingStepsTitle[2]}
+                                        {t('house.networkingStepsTitle3')}
                                     </div>
                                     <div className="absolute md:top-[20px] top-0 md:right-[120px] right-[200px]">
                                         <img className='md:block hidden' src={checkMark} alt="checkMark" />
@@ -71,7 +66,7 @@ const Steps = ({lang}) => {
                                 </div>
                                 <div className='mb-[31px]'>
                                     <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-otf-book text-c_gray-regular'>
-                                        {content.networkingStepsDescription[2]}
+                                        {t('house.networkingStepsDescription3')}
                                     </div>
                                 </div>
                                 <div className='mb-[20px] relative flex w-max h-max '>
@@ -92,7 +87,7 @@ const Steps = ({lang}) => {
                                         "text-c_gray-regular md:text-[45px] md:leading-[43px] text-[22px] leading-[22px]",
                                         "font-otf font-otf-semiBold not-italic"
                                     )}>
-                                        {content.networkingStepsTitle[1]}
+                                        {t('house.networkingStepsTitle2')}
                                     </div>
                                     <div className="absolute md:top-[-10px] top-[-10px] md:left-[-15px] left-[-10px]">
                                         <img className='md:block hidden' src={cornerUp} alt="cornerUp" />
@@ -105,7 +100,7 @@ const Steps = ({lang}) => {
                                 </div>
                                 <div className='mb-[31px]'>
                                     <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-otf-book text-c_gray-regular'>
-                                        {content.networkingStepsDescription[1]}
+                                        {t('house.networkingStepsDescription2')}
                                     </div>
                                 </div>
                                 <div className='mb-[20px] relative flex w-max h-max '>
@@ -124,7 +119,7 @@ const Steps = ({lang}) => {
                                         "text-c_gray-regular md:text-[45px] md:leading-[43px] text-[22px] leading-[22px] pb-[7px]",
                                         "font-otf font-otf-semiBold not-italic"
                                     )}>
-                                        {content.networkingStepsTitle[3]}
+                                        {t('house.networkingStepsTitle4')}
                                     </div>
                                     <div className="md:bottom-[-10px] bottom-0">
                                         <img className='md:block hidden' src={waveLine} alt="waveLine" />
@@ -133,7 +128,7 @@ const Steps = ({lang}) => {
                                 </div>
                                 <div className='mb-[31px]'>
                                     <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-otf-book text-c_gray-regular'>
-                                        {content.networkingStepsDescription[3]}
+                                        {t('house.networkingStepsDescription4')}
                                     </div>
                                 </div>
                                 <div className='relative flex w-max h-max '>

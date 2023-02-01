@@ -5,18 +5,11 @@ import KO from '../../assets/icon/KO.svg'
 import TheBell from '../../assets/icon/TheBell.svg'
 import VcRu from '../../assets/icon/VcRu.svg'
 import RbRu from '../../assets/icon/RbRu.svg'
-import { media } from '../content'
 
+import { useTranslation} from 'react-i18next'
 
-const Media = ({lang}) => {
-
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return media.ru
-        else if(lan === 'рус') 
-            return media.en
-    }
-    const content = chooseLan(lang)
+const Media = () => {
+    const { t } = useTranslation()
 
     const links = [
         'https://www.rbc.ru/',
@@ -31,7 +24,7 @@ const Media = ({lang}) => {
             <div className='xl:w-[1280px] w-full relative overflow-hidden md:py-[120px] py-[90px]'>
                 <div className='w-full flex justify-center xl:pb-[70px] md:pb-[70px] pb-[40px]'>
                     <div className='startPageText text-c_gray-regular'>
-                        {content.title}
+                        {t('media.title')}
                     </div>
                 </div>
                 <div className='w-full flex justify-center'>

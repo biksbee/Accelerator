@@ -1,16 +1,13 @@
 import cn from 'classnames'
 import { team } from '../content';
 import "swiper/css";
+import { useTranslation} from 'react-i18next'
 
-const Card = ({i, setFade, fade, lang}) => {
 
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return team.ru
-        else if(lan === 'рус') 
-            return team.en
-    }
-    const content = chooseLan(lang)
+const Card = ({i, setFade, fade}) => {
+    const { t } = useTranslation()
+
+    const content = team
 
 
     return (
@@ -32,12 +29,12 @@ const Card = ({i, setFade, fade, lang}) => {
                             <div className='md:flex_features'>
                                 <div className='pb-[10px]'>
                                     <div className='text-c_gray-blur font-otf-semiBold text-[20px] leading-[20px] '>
-                                        {content.name[i.index]}
+                                        {t('team.name').split(', ')[i.index]}
                                     </div>
                                 </div>
                                 <div className='mb-[20px]'>
                                     <div className='text-c_gray-blur opacity-50 font-otf-normal text-[16px] leading-[20px]'>
-                                        {content.description[i.index]}
+                                        {t('team.description').split('* ')[i.index]}
                                     </div>
                                 </div>
                             </div>    

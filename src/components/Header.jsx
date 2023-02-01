@@ -3,8 +3,8 @@ import cn from 'classnames'
 import { Link } from "react-scroll"
 import LiHeaderModule from './modules/LiHeaderModule'
 import i18n from '../i18n/i18n'
-import { useTranslation, Trans } from 'react-i18next'
-import { menu } from './content'
+import { useTranslation} from 'react-i18next'
+import LanguageDetector from 'i18next-browser-languagedetector'
 
 
 import logo from '../assets/icon/PrivacyAcceleratorLogo.svg'
@@ -14,31 +14,21 @@ import burgerMenu from '../assets/icon/BurgerMenu.svg'
 import close from '../assets/icon/close.svg'
 
 
-const Header = ({lan, setLan}) => {
+const Header = () => {
     const { t, i18n } = useTranslation()
 
     const [show, setShow] = useState(true)
     const [open, setOpen] = useState(false)
-    const [language, setLanguage] = useState(lan)
-    
-    const changeLan = () => {
-        if(lan === "рус"){
-            setLan("en")
-            setLanguage('en')
-        } else if(lan === "en"){
-            setLan("рус")
-            setLanguage('ru')
-        }    
-        i18n.changeLanguage(language)    
-    }
 
-    const chooseLan = (lan) => {
-        if(lan === 'en')
-            return menu.ru
-        else if(lan === 'рус') 
-            return menu.en
+    useEffect(() => {
+    }, [])
+
+    const changeLan = () => {
+        if(i18n.use(LanguageDetector).language === 'en')
+            i18n.changeLanguage('ru')
+        else if(i18n.use(LanguageDetector).language === 'ru')
+            i18n.changeLanguage('en')
     }
-    const content = chooseLan(lan)
 
     const showNav = () => {
         const heightWindow = window.screen.height+200
@@ -51,8 +41,6 @@ const Header = ({lan, setLan}) => {
             setShow(true)
     }
     window.addEventListener('scroll', showNav)
-
-    const menuElements = ['Проекты', 'Как мы работаем', 'Команда', 'Контакты']
 
     return (
         <div id='header' className={cn(
@@ -88,7 +76,7 @@ const Header = ({lan, setLan}) => {
                     )}
                 >
                     {
-                        content.li.map((item, index) => (
+                        t('li').split(', ').map((item, index) => (
                             <div key={index} className={'w-full flex justify-center'}>
                                 <LiHeaderModule item={item} index={index} openLi={open} setOpenLi={setOpen}/>
                             </div>
@@ -105,7 +93,7 @@ const Header = ({lan, setLan}) => {
                                 'px-[15px] hover:bg-c_gray-light hover:rounded-[6px] hover:duration-500'
                             )}
                         >
-                            {lan}
+                            {t('lan')}
                         </li>
                     </div>
                     <a href="https://pd.roskomsvoboda.org/privacyaccelerator/" target="_blank">
@@ -132,7 +120,7 @@ const Header = ({lan, setLan}) => {
                             'px-[15px] hover:bg-c_gray-light hover:rounded-[6px] hover:duration-500'
                         )}>
                         <div className='menuLi w-[25px] flex justify-center'>
-                            {lan}
+                            {t('lan')}
                         </div>
                     </div>
                     <div>
