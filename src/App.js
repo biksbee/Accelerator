@@ -21,16 +21,16 @@ const App = () => {
         <Helmet>
           
         </Helmet>
-      { !open ?  
-        <div>
+      {/* { !open ?   */}
+         {/* <div> */}
           <Header />
           <Body setOpen={setOpen} setLocation={setLoc}/>
-        </div>
-        : 
-        <PopUp setOpen={setOpen} background={back} c={0}>
-          <Projects loc={loc}/>
-        </PopUp>
-      }  
+        {/* </div> */}
+        {/* :  */}
+         {/* <PopUp setOpen={setOpen} background={back} c={0}> */}
+          {/* <Projects loc={loc}/> */}
+        {/* </PopUp> */}
+       {/* }   */}
       <Footer />
     </div>
   );

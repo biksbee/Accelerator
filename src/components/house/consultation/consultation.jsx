@@ -51,6 +51,7 @@ const Consultation = ({setOpen}) => {
                     : null    
                 ))}
                 <div 
+                    id={'allExperts1'}
                     className='cursor-pointer xl:mt-0 ms:mt-[30px] xl:w-[367px] ms:w-[28vw] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'
                     onMouseEnter={() => setBluer(true)}
                     onMouseLeave={() => setBluer(false)}   
@@ -124,6 +125,7 @@ const Consultation = ({setOpen}) => {
                     ))}
                     <SwiperSlide>
                         <div 
+                            id={'allExperts2'}
                             className='md:w-[367px] w-[273px] border-[2px] flex justify-center py-[40px] cursor-pointer border-c_gray-regular photoRadius'
                             onMouseEnter={() => setBluer(true)}
                             onMouseLeave={() => setBluer(false)}   

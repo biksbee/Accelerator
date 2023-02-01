@@ -2,6 +2,10 @@ import {useState, useEffect} from 'react'
 import Slider from "./slider/slide"
 import { ourProjects } from '../content'
 import { useTranslation} from 'react-i18next'
+import PopUp from '../modules/popUp'
+import Projects from './Projects'
+
+const back = 'bg-c_yellow-light'
 
 const OurProjects = ({setGet, setLoc}) => {
     const { t } = useTranslation()
@@ -47,6 +51,14 @@ const OurProjects = ({setGet, setLoc}) => {
                     </div>
                 </div>
             </div>
+            {
+                open ? 
+                    <PopUp setOpen={setOpen} background={back} c={0}>
+                        <Projects loc={location}/>
+                    </PopUp>
+                :
+                null    
+            }
         </div>
     )
 }
