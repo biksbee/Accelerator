@@ -9,7 +9,9 @@ import QratorLabs from '../../../assets/icon/QratorLabs.svg'
 import Proton from '../../../assets/icon/Proton.svg'
 import InformationCulture from '../../../assets/icon/infocult.png'
 import RussiaVenchur from '../../../assets/icon/RussiaVenchur.svg'
-
+import CyberLaw from '../../../assets/icon/Cyberlaw.svg'
+import Tor from '../../../assets/icon/tor.svg'
+import Lantern from '../../../assets/icon/lantern.svg'
 
 const Networking = () => {
     const { t } = useTranslation()
@@ -37,7 +39,7 @@ const Networking = () => {
                 </div>
             </div>
             <div className='ms:mt-[70px] mt-[40px]'>
-                <div className='flex justify-between md:mb-[51px] mb-[25px]'>
+                <div className='flex justify-between mb-[25px]'>
                     <div className='hover:opacity-50 duration-500'>
                         <a href={content.networkingLinks[0]} target="_blank">
                             <img src={RosComFreedom} alt="RosComFreedom" />
@@ -54,7 +56,7 @@ const Networking = () => {
                         </a>
                     </div>
                 </div>
-                <div className='flex justify-between mt-[25px]'>
+                <div className='flex justify-between py-[25px]'>
                     <div className='hover:opacity-50 duration-500'>
                         <a href={content.networkingLinks[3]} target="_blank">
                             <img src={Proton} alt="Proton" />
@@ -67,7 +69,24 @@ const Networking = () => {
                     </div>
                     <div className='hover:opacity-50 duration-500'>
                         <a href={content.networkingLinks[5]} target="_blank">
-                            <img src={RussiaVenchur} alt="RussiaVenchur" />
+                            <img src={RussiaVenchur} alt="RussiaVenchur" className='ms:pr-[75px]' />
+                        </a>
+                    </div>
+                </div>
+                <div className='flex justify-between mt-[25px]'>
+                    <div className='hover:opacity-50 duration-500'>
+                        <a href={content.networkingLinks[3]} target="_blank">
+                            <img src={CyberLaw} alt="Proton" />
+                        </a>
+                    </div>
+                    <div className='hover:opacity-50 duration-500 mx-[25px]'>
+                        <a href={content.networkingLinks[4]} target="_blank">
+                            <img src={Tor} alt="InformationCulture" />
+                        </a>
+                    </div>
+                    <div className='hover:opacity-50 duration-500'>
+                        <a href={content.networkingLinks[5]} target="_blank">
+                            <img src={Lantern} alt="RussiaVenchur" />
                         </a>
                     </div>
                 </div>
