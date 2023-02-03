@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.86774766.css",
-    "main.js": "/Accelerator/static/js/main.8e2f1c26.js",
+    "main.css": "/Accelerator/static/css/main.75d87292.css",
+    "main.js": "/Accelerator/static/js/main.c88b290b.js",
     "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
     "static/media/Дарбинян Саркис.jpg": "/Accelerator/static/media/Дарбинян Саркис.870dd4462c6a42d7c12d.jpg",
     "static/media/tracking.png": "/Accelerator/static/media/tracking.3d7580aa7f850d3532c8.png",
@@ -32,7 +32,7 @@
     "static/media/amnezia.png": "/Accelerator/static/media/amnezia.319f31cdb4e333bd7411.png",
     "static/media/Footer.svg": "/Accelerator/static/media/Footer.a40c7c1c156e82025b432eb097350d53.svg",
     "static/media/securno.png": "/Accelerator/static/media/securno.fffd5d78075a81d11023.png",
-    "static/media/RussiaVenchur.svg": "/Accelerator/static/media/RussiaVenchur.d0ff8717d600a734cd27b853a32eb40d.svg",
+    "static/media/RussiaVenchur.svg": "/Accelerator/static/media/RussiaVenchur.c2dc43ac4e3df3d58da03955f5ad17f9.svg",
     "static/media/infocult.png": "/Accelerator/static/media/infocult.2624fee7eee30c4cda3f.png",
     "static/media/Cyberlaw.svg": "/Accelerator/static/media/Cyberlaw.e485ec7334e4f6596228bdb541566eae.svg",
     "static/media/RosComFreedom.svg": "/Accelerator/static/media/RosComFreedom.23220aaddaf88f389b0734e2672bf3d0.svg",
@@ -46,7 +46,7 @@
     "static/media/Habr.svg": "/Accelerator/static/media/Habr.6727fe765200e751b9a1e6adf4088456.svg",
     "static/media/tor.svg": "/Accelerator/static/media/tor.4b194c27f9bd75331fddd6463e3a5b5a.svg",
     "static/media/KO.svg": "/Accelerator/static/media/KO.038e46f429b8e7ed95444ef3c8db6d1d.svg",
-    "static/media/Proton.svg": "/Accelerator/static/media/Proton.b70a370eabcb2453ca0b2ca9b646a4fa.svg",
+    "static/media/Proton.svg": "/Accelerator/static/media/Proton.7fdbe9ca582eca03ea98bc9a06c0fe36.svg",
     "static/media/Access.svg": "/Accelerator/static/media/Access.d2728e199cdde3e1cf3f24b51262b685.svg",
     "index.html": "/Accelerator/index.html",
     "static/media/TheBell.svg": "/Accelerator/static/media/TheBell.b8058d86283873fdfd024bb750cbbe1b.svg",
@@ -79,12 +79,12 @@
     "static/media/turnRight.svg": "/Accelerator/static/media/turnRight.2191525b4e5edaa3d548b82d98d7c585.svg",
     "static/media/closePopWhite.svg": "/Accelerator/static/media/closePopWhite.d916c148e860f4be1cce76913efae27c.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "main.86774766.css.map": "/Accelerator/static/css/main.86774766.css.map",
-    "main.8e2f1c26.js.map": "/Accelerator/static/js/main.8e2f1c26.js.map",
+    "main.75d87292.css.map": "/Accelerator/static/css/main.75d87292.css.map",
+    "main.c88b290b.js.map": "/Accelerator/static/js/main.c88b290b.js.map",
     "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86774766.css",
-    "static/js/main.8e2f1c26.js"
+    "static/css/main.75d87292.css",
+    "static/js/main.c88b290b.js"
   ]
 }
