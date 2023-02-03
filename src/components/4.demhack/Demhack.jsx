@@ -17,7 +17,7 @@ const Demhack = () => {
                         <div className='md:text-[24px] text-[15px] md:leading-[23px] leading-[14px] text-c_gray-primary'>
                             {t('deamhack.hackathon')}           
                         </div>
-                        <a href='' >
+                        <a href='https://Demhack.ru' target={"_blank"} >
                             <div className='w-max md:text-[18px] text-[15px] md:leading-[25px] leading-[21px] font-otf-normal not-italic text-c_orange-regular duration-500 hover:text-c_orange-hover border-b-[1px] border-c_orange-link_op'>
                                 {t('deamhack.href')}
                             </div>
