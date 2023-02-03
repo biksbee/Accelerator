@@ -52,8 +52,11 @@ export const house = {
             'https://habr.com/',
             'https://qrator.net/ru/',
             'https://proton.me/',
-            '',
+            'https://www.infoculture.ru/',
             'https://rusven.com/',
+            'https://cyberlaw.center/',
+            'https://www.torproject.org/',
+            'https://lantern.io/ru'
         ],
         networkingStepsPhoto: [
             'bg-helpFinance',

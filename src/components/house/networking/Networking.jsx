@@ -16,7 +16,7 @@ import Lantern from '../../../assets/icon/lantern.svg'
 const Networking = () => {
     const { t } = useTranslation()
     const content = house.ru
-
+    const icon = [RosComFreedom, Habr, QratorLabs, Proton, InformationCulture, RussiaVenchur, CyberLaw, Tor, Lantern]
 
     return (
         <div className='md:my-[200px] mb-[80px]'> 
@@ -39,7 +39,18 @@ const Networking = () => {
                 </div>
             </div>
             <div className='ms:mt-[70px] mt-[40px]'>
-                <div className='flex justify-between mb-[25px]'>
+                <div className='grid grid-cols-3 gap-[10px]'>
+                    {
+                        content.networkingLinks.map((item, index) => (
+                            <div key={index} className={`flex justify-center items-center hover:opacity-50 duration-500 ${index === 4 ? 'md:h-[90px] h-[35px]' : null}`}>
+                                <a href={item} target="_blank">
+                                    <img src={icon[index]} alt={`${icon[index]}`} className={`${index === 4 ? 'md:w-[286px] w-[260px]' : null}`} />
+                                </a>    
+                            </div>        
+                        ))
+                    }
+                </div>
+                {/* <div className='flex justify-between mb-[25px]'>
                     <div className='hover:opacity-50 duration-500'>
                         <a href={content.networkingLinks[0]} target="_blank">
                             <img src={RosComFreedom} alt="RosComFreedom" />
@@ -69,28 +80,28 @@ const Networking = () => {
                     </div>
                     <div className='hover:opacity-50 duration-500'>
                         <a href={content.networkingLinks[5]} target="_blank">
-                            <img src={RussiaVenchur} alt="RussiaVenchur" className='ms:pr-[75px]' />
+                            <img src={RussiaVenchur} alt="RussiaVenchur"/>
                         </a>
                     </div>
                 </div>
                 <div className='flex justify-between mt-[25px]'>
                     <div className='hover:opacity-50 duration-500'>
-                        <a href={content.networkingLinks[3]} target="_blank">
-                            <img src={CyberLaw} alt="Proton" />
+                        <a href={content.networkingLinks[6]} target="_blank">
+                            <img src={CyberLaw} alt="CyberLaw" />
                         </a>
                     </div>
                     <div className='hover:opacity-50 duration-500 mx-[25px]'>
-                        <a href={content.networkingLinks[4]} target="_blank">
-                            <img src={Tor} alt="InformationCulture" />
+                        <a href={content.networkingLinks[7]} target="_blank">
+                            <img src={Tor} alt="Tor" />
                         </a>
                     </div>
                     <div className='hover:opacity-50 duration-500'>
-                        <a href={content.networkingLinks[5]} target="_blank">
-                            <img src={Lantern} alt="RussiaVenchur" />
+                        <a href={content.networkingLinks[8]} target="_blank">
+                            <img src={Lantern} alt="Lantern" />
                         </a>
                     </div>
-                </div>
-            </div>
+                </div> */}
+            </div> 
         </div>
     )
 }

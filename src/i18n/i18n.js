@@ -278,10 +278,10 @@ i18n
                   mail: "mailto:team@privacyaccelerator.org",
                   telegram: "https://t.me/privacyaccelerator_team?domain",
                   signal: "",
-                  habr: "https://habr.com/",
-                  telegramChanel: "",
-                  facebook: "https://www.facebook.com/privacyaccelerator",
-                  linkedIn: "",
+                  habr: "https://habr.com/en/company/privacyaccelerator/profile/",
+                  telegramChanel: "https://t.me/privacyaccelerator",
+                  facebook: "https://facebook.com/privacyaccelerator",
+                  linkedIn: "https://www.linkedin.com/company/privacyaccelerator/about/",
                 }
 
             },
