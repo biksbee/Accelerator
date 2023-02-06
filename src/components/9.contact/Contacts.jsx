@@ -32,7 +32,7 @@ const Contacts = () => {
                                     </a>,
                                     <a href={t('contact.telegram')} className="contactLink ml-[10px]" target="_blank">
                                         {t('contact.value').split(', ')[2]}
-                                    </a>,
+                                    </a>
                                 </div>
                                 {/* <div className="xss:flex ">       
                                         <a href={t('contact.signal')} className="contactLink xss:ml-[10px]" target="_blank">

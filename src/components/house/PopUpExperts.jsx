@@ -2,7 +2,7 @@ import cn from 'classnames'
 import { house } from '../content'
 import { useTranslation} from 'react-i18next'
 
-const PopUpExperts = ({i, fade, setFade, lang}) => {
+const PopUpExperts = ({i, fade, setFade}) => {
     const { t } = useTranslation()
     const content = house.ru
 
@@ -18,7 +18,7 @@ const PopUpExperts = ({i, fade, setFade, lang}) => {
                                         <div className={
                                             cn(
                                                 !fade ? 'filter grayscale' :  'filter-none',
-                                                'w-[150px] h-[150px]duration-500 bg-no-repeat bg-cover bg-center cardRadius',
+                                                'w-[150px] h-[150px] duration-500 bg-no-repeat bg-cover bg-center cardRadius',
                                                 t(`house.experts.${i.index}.photo`)
                                             )
                                         } />
