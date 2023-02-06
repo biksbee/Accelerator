@@ -37,7 +37,7 @@ const Slider = ({setShow, active, setActive, setOpen, setLocation}) => {
                     />
                 </div>
             : null}
-            { active !== content.title.lenth-1 ? 
+            { active !== content.title.length-1 ? 
                 <div className='md:flex hidden absolute z-[10] top-[50%] right-0'>
                     <Next 
                         direction={"right"}
