@@ -116,7 +116,7 @@ const Consultation = ({setOpen}) => {
                     onSlideChange={(swiper) => setActive(swiper.activeIndex)}
                     className={'xs:hidden md:px-[40px] px-[15px]'}
                 >
-                    {[0, 1, 2, 3, 4, 5].map((item, index) => (
+                    {[0, 1, 2, 3, 4].map((item, index) => (
                         index < 5 ? 
                             <SwiperSlide key={index} className="border-t-c_gray-regular border-t-[2px] md:w-[373px] w-[273px] pt-[20px]">
                                 <CardExp  i={{item, index}} fade={fade[index]} setFade={setFade[index]} />

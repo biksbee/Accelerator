@@ -24,12 +24,12 @@ const CardExp = ({i, fade, setFade}) => {
                                         } />
                                 </div>    
                             </div>
-                            <div className='pb-[10px]'>
+                            <div className='pb-[10px] flex_features'>
                                 <div className='text-c_gray-regular font-otf-semiBold text-[20px] leading-[20px] '>
                                     {t(`house.experts.${i.index}.name`)}
                                 </div>
                             </div>
-                            <div className={`md:mb-[20px] ${i.index < 3 ? 'xl:h-[144px] xs:h-[190px] h-[160px]' : 'xs:h-[100px] h-[160px]'}`}>
+                            <div className={`md:mb-[20px] ${i.index < 3 ? 'xl:h-[144px] xs:h-[190px] h-[190px]' : 'xs:h-[100px] h-[190px]'}`}>
                                 <div className='text-[#D2DCFF] opacity-50 text-[16px] leading-[24px] font-otf-normal not-italic'>
                                     {t(`house.experts.${i.index}.description`)}
                                 </div>
