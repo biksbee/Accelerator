@@ -44,7 +44,7 @@ const Networking = () => {
                         content.networkingLinks.map((item, index) => (
                             <div key={index} className={`flex justify-center items-center hover:opacity-50 duration-500 ${index === 4 ? 'md:h-[90px]' : null}`}>
                                 <a href={item} target="_blank">
-                                    <img src={icon[index]} alt={`${icon[index]}`} className={`${index === 4 ? 'md:w-[286px] w-[260px]' : null}`} />
+                                    <img src={icon[index]} alt={`${icon[index]}`} className={`${index === 4 ? 'md:w-[286px] w-[260px]' : index === 5 ? 'ds:w-[120px] w-[64px]' : null}`} />
                                 </a>    
                             </div>        
                         ))
