@@ -39,10 +39,10 @@ const Networking = () => {
                 </div>
             </div>
             <div className='ms:mt-[70px] mt-[40px]'>
-                <div className='grid grid-cols-3 gap-[10px]'>
+                <div className='grid grid-cols-3 gap-[25px]'>
                     {
                         content.networkingLinks.map((item, index) => (
-                            <div key={index} className={`flex justify-center items-center hover:opacity-50 duration-500 ${index === 4 ? 'md:h-[90px] h-[35px]' : null}`}>
+                            <div key={index} className={`flex justify-center items-center hover:opacity-50 duration-500 ${index === 4 ? 'md:h-[90px]' : null}`}>
                                 <a href={item} target="_blank">
                                     <img src={icon[index]} alt={`${icon[index]}`} className={`${index === 4 ? 'md:w-[286px] w-[260px]' : null}`} />
                                 </a>    
