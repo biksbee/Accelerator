@@ -22,7 +22,7 @@ const House = () => {
         <div className="w-full flex justify-center gradientBackGround">
             <div className="xl:w-[1280px] w-full md:py-[120px] py-[90px] ">
                 <div className='w-full flex justify-center xl:py-[200px] py-[100px] md:px-[40px] px-[15px]'>
-                    <div className='startPageText text-c_gray-regular md:w-[645px] w-[330px]'>
+                    <div className='startPageText text-c_gray-regular md:w-[645px] w-[296px]'>
                             <div className='w-full flex'>
                                 <div className='h-max'>{t('house.mainTitle').split('* ')[0]}</div>
                                 <div className='relative md:mx-[20px] mx-[10px] md:w-[44px] w-[25px] md:h-[55px] h-[30px]'>

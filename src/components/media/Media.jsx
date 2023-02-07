@@ -3,7 +3,7 @@ import cn from 'classnames'
 import RBK from '../../assets/icon/RBK.svg'
 import KO from '../../assets/icon/KO.svg'
 import TheBell from '../../assets/icon/TheBell.svg'
-import VcRu from '../../assets/icon/VcRu.svg'
+import VcRu from '../../assets/icon/VC.svg'
 import RbRu from '../../assets/icon/RbRu.svg'
 
 import { useTranslation} from 'react-i18next'
@@ -42,7 +42,7 @@ const Media = () => {
                                 </div>
                             </a>
                             <a href={links[1]} target="_blank" className='hover:opacity-60 duration-500'>
-                                <div className='iconMedia'>
+                                <div className='iconMedia md:w-[158px] md:h-[65px]  w-[48px] h-[35px]'>
                                     <img src={KO} alt="KO" />
                                 </div>
                             </a>
@@ -55,7 +55,7 @@ const Media = () => {
                         <div className='xl:w-max xs:w-[40%] w-full flex justify-center '>
                             <div className='flex xl:justify-center justify-between xl:w-max md:w-[50vw] mds:w-[40vw] w-[55vw]'>
                                 <a href={links[3]} target="_blank" className='w-[50%] flex justify-center hover:opacity-60 duration-500'>
-                                    <div className='iconMedia md:w-[158px] md:h-[59px]  w-[48px] h-[35px]'>
+                                    <div className='iconMedia md:w-[158px] md:h-[65px]  w-[48px] h-[35px]'>
                                         <img src={VcRu} alt="VcRu" />
                                     </div>
                                 </a>

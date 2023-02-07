@@ -33,7 +33,7 @@ const Card = ({i, setFade, fade}) => {
                                     </div>
                                 </div>
                                 <div className='mb-[20px]'>
-                                    <div className='text-c_gray-blur opacity-50 font-otf-normal text-[16px] leading-[20px]'>
+                                    <div className='text-c_gray-blur opacity-50 font-otf-normal text-[16px] leading-[24px]'>
                                         {t('team.description').split('* ')[i.index]}
                                     </div>
                                 </div>

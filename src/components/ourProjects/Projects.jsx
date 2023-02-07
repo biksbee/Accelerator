@@ -16,32 +16,34 @@ const Projects = ({loc}) => {
     
     useEffect(() => {
         if(loc === messagesEndRef0.current.id)
-            messagesEndRef0.current?.scrollIntoView({ behavior: "smooth" })
+            messagesEndRef0.current?.scrollIntoView({})
         else if(loc === messagesEndRef1.current.id)
-            messagesEndRef1.current?.scrollIntoView({ behavior: "smooth" })
+            messagesEndRef1.current?.scrollIntoView({})
         else if(loc === messagesEndRef2.current.id)
-            messagesEndRef2.current?.scrollIntoView({ behavior: "smooth" })
+            messagesEndRef2.current?.scrollIntoView({})
         else if(loc === messagesEndRef3.current.id)
-            messagesEndRef3.current?.scrollIntoView({ behavior: "smooth" })
+            messagesEndRef3.current?.scrollIntoView({})
         else if(loc === messagesEndRef4.current.id)
-            messagesEndRef4.current?.scrollIntoView({ behavior: "smooth" })
+            messagesEndRef4.current?.scrollIntoView({inline: "nearest"})
     }, [loc]);
 
     
 
     return (
-        <div className="pt-[50px] xs:w-[1000px] w-[90vw]">
+        <div 
+            
+            className="pt-[30px] xs:w-[1000px] w-[90vw]">
             {t('ourProjects.title').split(', ').map((item, index) => (
                 <div
                     key={index}
                     id={item} 
                     ref={index === 0 ? messagesEndRef0 : index === 1 ? messagesEndRef1 : index === 2 ? messagesEndRef2 : index === 3 ? messagesEndRef3 : index === 4 ? messagesEndRef4 : null}
-                    className="mds:pb-[150px] pb-[50px] text-c_blue-deepDark"
+                    className="pt-[20px] mds:pb-[120px] pb-[30px] last:mds:pb-[150px] last:pb-[50px] text-c_blue-deepDark"
                 >
                     <div 
                         className={cn(
                             t(`ourProjects.slide.${index}`),
-                            'w-full bg-center ds:bg-cover bg-contain bg-no-repeat rounded-[15px]',
+                            'w-full bg-center bg-cover bg-no-repeat rounded-[15px]',
                             'xs:h-[510px] ms:h-[450px] md:h-[400px] mds:h-[350px] ds:h-[300px] m:h-[202px] h-[158px] mds:mb-[30px]'
                         )}
                     />  

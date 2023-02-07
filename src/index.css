@@ -82,7 +82,7 @@
     .iconMedia {
         @apply flex justify-center items-center
         xl:mx-[35px]
-        md:w-[158px] md:h-[59px] 
+        md:w-[158px] md:h-[65px] 
         w-[84px] h-[31px]
     }
     .wrapperLine {
