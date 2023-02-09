@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react'
 import Slider from "./slider/slide"
-import { ourProjects } from '../content'
 import { useTranslation} from 'react-i18next'
 import PopUp from '../modules/popUp'
 import Projects from './Projects'
@@ -9,7 +8,6 @@ const back = 'bg-c_yellow-light'
 
 const OurProjects = ({setGet, setLoc}) => {
     const { t } = useTranslation()
-    const content = ourProjects.ru
 
     const [show, setShow] = useState(false)
     const [active, setActive] = useState(0)
@@ -45,7 +43,7 @@ const OurProjects = ({setGet, setLoc}) => {
                                 {active+1}
                             </div>
                             <div className='md:text-[20px] text-[13px] md:leading-[20px] leading-[13px] font-otf-semiBold not-italic'>
-                                /{content.title.length}
+                                /{t('ourProjects.projects.length')}
                             </div>
                         </div>    
                     </div>

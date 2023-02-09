@@ -15,7 +15,7 @@ import waveLineMini from '../../../assets/icon/WaveLineMini.svg'
 
 const Steps = () => {
     const { t } = useTranslation()
-    const content = house.ru
+    const content = house
 
 
     return (

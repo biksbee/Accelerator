@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 
+import Converter from '../../hooks/Converter';
 import Next from '../modules/Next';
 
 
@@ -28,10 +29,10 @@ const MoreAccelerator = () => {
                                 "pageTitle text-c_red-deep"
                         )}>
                             <div>
-                                {t('moreAccelerator.mainTitle').split('* ')[0]}
+                                {t(`moreAccelerator.mainTitle.${0}`)}
                             </div>
                             <div>
-                                {t('moreAccelerator.mainTitle').split('* ')[1]}
+                                {t(`moreAccelerator.mainTitle.${1}`)}
                             </div>
                         </div>
                         <div className="moreAcceleratorTheLoop"></div>
@@ -59,12 +60,11 @@ const MoreAccelerator = () => {
                         slidesPerView={"auto"} 
                         spaceBetween={60}
                         keyboard={true}
-                        //mousewheel={true}
                         onSlideChange={(swiper) => setActive(swiper.activeIndex)}
                         className={'ms:flex hidden w-[100vw] xl:px-[calc((100vw-1280px)/2)] ms:px-[40px] px-[15px]'}
                     >
                         {
-                            t('moreAccelerator.title').split(', ').map((item, index) => (
+                            Converter(t('moreAccelerator.projects.length')).map((item, index) => (
                                 <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep md:w-[488px]'>
                                     <div className={cn(
                                         'md:text-[45px] md:leading-[48px] text-[22px] leading-[25px] py-[30px]',
@@ -74,10 +74,10 @@ const MoreAccelerator = () => {
                                             : index === 2 ? 'text-c_orange-bright' 
                                             : ''
                                     )}>
-                                        {item}
+                                        {t(`moreAccelerator.projects.${index}.title`)}
                                     </div>
                                     <div className='md:text-[22px] md:leading-[30px] font-otf-book text-[15px] leading-[21px] text-c_red-deep'>
-                                        {t('moreAccelerator.context').split('* ')[index]}
+                                        {t(`moreAccelerator.projects.${index}.context`)}
                                     </div>
                                     {t('moreAccelerator.needed').split('* ')[index] !== '' ? 
                                         <div className='pt-[20px] opacity-[0.5] md:text-[16px] md:leading-[20px] text-[13px] leading-[16px] uppercase font-otf-book'>
@@ -87,7 +87,7 @@ const MoreAccelerator = () => {
                                     <div className={cn(
                                         'pt-[10px] md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] text-c_red-deep font-otf-book'
                                     )}>
-                                        {t('moreAccelerator.needed').split('* ')[index]}
+                                        {t(`moreAccelerator.projects.${index}.needed`)}
                                     </div>
                                 </SwiperSlide>
                             ))

@@ -3,6 +3,7 @@ import cn from 'classnames'
 import PopUpExperts from './PopUpExperts'
 import { house } from '../content'
 import { useTranslation} from 'react-i18next'
+import Converter from '../../hooks/Converter'
 
 const Experts = () => {
     const { t } = useTranslation()
@@ -35,7 +36,7 @@ const Experts = () => {
             <div className="flex justify-center">
                 <div className="md:grid xl:grid-cols-3 md:grid-cols-2 gap-[35px] md:w-full w-max">
                     {
-                        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item, index) => (
+                        Converter(t('house.experts.length')).map((item, index) => (
                             <PopUpExperts key={index} i={{index, item}} fade={fade[index]} setFade={setFade[index]} />         
                         ))
                     }

@@ -27,14 +27,14 @@ module.exports = {
         'moreAcceleratorLoop': "url(./assets/icon/MoreAccelerator.svg)",
         'curveLineConsultation': "url(./assets/icon/CurveLineConsultation.svg)",
         'orangeArrow': "url(./assets/icon/OrangeArrow.svg)",
-
+        //projects
         'slideAmnezia': "url(./assets/image/amnezia.png)",
         'slideGetSiteCopy': "url(./assets/image/getSiteCopy.png)",
         'slideSelfPrivacy': "url(./assets/image/SelfPrivacy.png)",
         'slideEppie': "url(./assets/image/eppie.png)",
         'slideSecurno': "url(./assets/image/securno.png)",
                 
-
+        //experts
         "StanislavShakirov": "url(./assets/image/Шакиров Станислав.jpg)",
         'NataliyMalishova': "url(./assets/image/Наталья Малышева.jpg)",
         'DariaGorbacheva': "url(./assets/image/Дарья Горбачева.jpg)",
@@ -49,6 +49,7 @@ module.exports = {
         'PleninDaniil': "url(./assets/image/Пленин Даниил.jpg)",
         'BegtinIvan': "url(./assets/image/Бегтин Иван.jpg)",
 
+        //networking part2
         'helpFinance': "url(./assets/image/helpFinance.png)",
         'accessToTheMarket': "url(./assets/image/accessToTheMarket.png)",
         'tracking': "url(./assets/image/tracking.png)",

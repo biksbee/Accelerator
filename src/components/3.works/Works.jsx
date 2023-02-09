@@ -5,9 +5,6 @@ import { useTranslation} from 'react-i18next'
 const Works = ({lang}) => {
     const { t } = useTranslation()
 
-    const content = workContent.ru
-
-    const title = [t('workContent.title.0'), t('workContent.title.1'), t('workContent.title.2')]
     return (
         <div id="work" className="w-full flex justify-center bg-c_gray-regular">
             <div className="xl:w-[1280px] w-full relative overflow-hidden">
@@ -19,7 +16,7 @@ const Works = ({lang}) => {
                     </div>
                     <div>
                         {
-                            title.map((item, index) => (
+                            workContent.icon.map((item, index) => (
                                 <div key={index} className="w-[90vw] pt-[25px] xl:pb-[144px] pb-[45px] last:pb-[90px]">
                                     <div className="w-[90vw] md:mx-[40px] mx-[15px] border-t-[2px] border-t-c_blue-dark xl:pt-[25px]" />
                                     <ChapterNew i={{item, index}} lang={lang} />

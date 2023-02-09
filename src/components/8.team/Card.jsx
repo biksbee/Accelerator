@@ -29,12 +29,12 @@ const Card = ({i, setFade, fade}) => {
                             <div className='md:flex_features'>
                                 <div className='pb-[10px]'>
                                     <div className='text-c_gray-blur font-otf-semiBold text-[20px] leading-[20px] '>
-                                        {t('team.name').split(', ')[i.index]}
+                                        {t(`team.experts.${i.index}.name`)}
                                     </div>
                                 </div>
                                 <div className='mb-[20px]'>
                                     <div className='text-c_gray-blur opacity-50 font-otf-normal text-[16px] leading-[24px]'>
-                                        {t('team.description').split('* ')[i.index]}
+                                        {t(`team.experts.${i.index}.description`)}
                                     </div>
                                 </div>
                             </div>    

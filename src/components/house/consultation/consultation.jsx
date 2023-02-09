@@ -9,13 +9,14 @@ import { house } from '../../content';
 import { useTranslation} from 'react-i18next'
 import Next from '../../modules/Next';
 import CardExp from './CardExp'
+import Converter from '../../../hooks/Converter';
 
 SwiperCore.use([Keyboard, Mousewheel]);
 
 
 const Consultation = ({setOpen}) => {
     const { t } = useTranslation()
-    const content = house.ru
+    const content = house
 
 
     const [bluer, setBluer] = useState(false)
@@ -43,13 +44,15 @@ const Consultation = ({setOpen}) => {
                 <div className='bg-curveLineConsultation h-[20px] bg-no-repeat'></div>
             </div>
             <div className='md:px-[40px] px-[15px] xs:grid ms:grid-cols-3 hidden md:gap-x-[21px] md:gap-y-[50px]'>
-                {[0, 1, 2, 3, 4, 5].map((item, index) => (
-                    index < 5 ? 
-                        <div key={index} className=" h-max xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] xl:w-[373px] w-[28vw] pt-[20px]">
-                            <CardExp key={index} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
-                        </div>
-                    : null    
-                ))}
+                {
+                    Converter(t('house.experts.length')).map((item, index) => (
+                        index < 5 ? 
+                            <div key={index} className=" h-max xl:mt-0 ms:mt-[30px] border-t-c_gray-regular border-t-[2px] xl:w-[373px] w-[28vw] pt-[20px]">
+                                <CardExp key={index} i={{item, index}} fade={fade[index]} setFade={setFade[index]}/>
+                            </div>
+                        : null    
+                    ))
+                }
                 <div 
                     id={'allExperts1'}
                     className='cursor-pointer xl:mt-0 ms:mt-[30px] xl:w-[367px] ms:w-[28vw] border-[2px] flex justify-center py-[40px] border-c_gray-regular photoRadius'

@@ -8,6 +8,7 @@ import SwiperCore, { Navigation,Keyboard, Mousewheel } from "swiper/core";
 import { ourProjects } from '../../content';
 import FadeEffect from '../FadeEffect';
 import Next from '../../modules/Next';
+import Converter from '../../../hooks/Converter';
 import { useTranslation} from 'react-i18next'
 
 SwiperCore.use([Keyboard, Mousewheel, Navigation]);
@@ -15,7 +16,7 @@ SwiperCore.use([Keyboard, Mousewheel, Navigation]);
 
 const Slider = ({setShow, active, setActive, setOpen, setLocation}) => {
     const { t } = useTranslation()
-    const content = ourProjects.ru
+    const content = ourProjects
 
     const [fade0, setFade0] = useState(false)
     const [fade1, setFade1] = useState(false)
@@ -37,7 +38,7 @@ const Slider = ({setShow, active, setActive, setOpen, setLocation}) => {
                     />
                 </div>
             : null}
-            { active !== content.title.length-1 ? 
+            { active !== t('ourProjects.projects.length')-1 ? 
                 <div className='md:flex hidden absolute z-[10] top-[50%] right-0'>
                     <Next 
                         direction={"right"}
@@ -54,7 +55,7 @@ const Slider = ({setShow, active, setActive, setOpen, setLocation}) => {
                 className="mx-0 xl:px-[calc((100vw-1280px)/2+40px)] md:px-[40px] px-[15px] flex"
                 onSlideChange={(swiper) => setActive(swiper.activeIndex)}
             >
-                {t('ourProjects.title').split(', ').map((item, index) => (
+                {Converter(t('ourProjects.projects.length')).map((item, index) => (
                     <SwiperSlide 
                         key={index}
                         className={cn(

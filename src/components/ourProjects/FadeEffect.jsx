@@ -6,7 +6,7 @@ import { useTranslation} from 'react-i18next'
 
 const FadeEffect = ({i, fade, setFade, setOpen, setLocation}) => {    
     const { t } = useTranslation()
-    const content = ourProjects.ru
+    const content = ourProjects
 
     const href = ['Amnezia', 'Get site copy', 'Self Privacy', 'Eppie', 'Securno']
 
@@ -17,11 +17,6 @@ const FadeEffect = ({i, fade, setFade, setOpen, setLocation}) => {
 
     return (
             <div
-                // to={i.index === 0 ? "qwerty" : href[i.index]}
-                // spy={true} 
-                // smooth={true} 
-                // offset={1000} 
-                // duration={500}
                 className='cursor-pointer w-full flex flex-col justify-between h-full'
                 onClick={openFunc}
                 onMouseEnter={() => setFade(true)}
@@ -31,7 +26,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, setLocation}) => {
                     className="md:flex justify-between pt-[20px] pb-[26px] cursor-pointer"  
                 >
                     <div className="ourProjectStyleTitle">
-                        {i.item}
+                        {t(`ourProjects.projects.${i.index}.title`)}
                     </div>
                     <div 
                         id="subTitle" 
@@ -39,7 +34,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, setLocation}) => {
                             "ourProjectStyleSubTitle relative last_letter flex_features",
                         )}
                     >
-                            {t(`ourProjects.subTitle.${i.index}`)}
+                            {t(`ourProjects.projects.${i.index}.subtitle`)}
                     </div>
                 </div>
                 <div 
@@ -47,7 +42,7 @@ const FadeEffect = ({i, fade, setFade, setOpen, setLocation}) => {
                 >
                     <div 
                         className={cn(
-                            t(`ourProjects.slide.${i.index}`),
+                            content.slide[i.index],
                             'w-full bg-center bg-contain bg-repeat-round rounded-[15px]',
                             'xs:h-[510px] md:h-[332px] h-[162px]'
                         )}
