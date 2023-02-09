@@ -28,7 +28,9 @@ const Projects = ({loc}) => {
             messagesEndRef4.current?.scrollIntoView({inline: "nearest"})
     }, [loc]);
 
-    
+    useEffect(() => {
+        console.log(t(`ourProjects.projects.0.rightColumns.block0.1`))
+    }, [])
 
     return (
         <div className="pt-[30px] xs:w-[1000px] w-[90vw]">
@@ -50,56 +52,46 @@ const Projects = ({loc}) => {
                         {t(`ourProjects.projects.${index}.title`)}
                     </div>
                     <div className="flex xs:flex-row flex-col-reverse justify-between">
-                        <div className={cn(
-                            'md:text-[22px] md:leading-[33px] text-[15px] leading-[18px] font-otf-book text-c_blue-deepDark',
-                            t(`ourProjects.rightColumns.${index}.0`) !== '' || t(`ourProjects.rightColumns.${index}.1`) !== '' ? 'xl:w-[590px]' : ''                              
-                        )}>
+                        <div className={cn('md:text-[22px] md:leading-[33px] text-[15px] leading-[18px] font-otf-book text-c_blue-deepDark')}>
                             {
-                                Converter(t(`ourProjects.projects.${index}.description.length`)).map((item, index) => (
-                                    <div key={index}></div>
+                                Converter(t(`ourProjects.projects.${index}.description.length`)).map((item, i) => (
+                                    <div 
+                                        key={i} 
+                                        className={cn(
+                                            'first:mb-[20px] flex xs:flex-row w-full justify-between flex-col-reverse',
+                                            t(`ourProjects.projects.${index}.rightColumns.length`) === 0 ? '' : 
+                                                t(`ourProjects.projects.${index}.rightColumns.length`) >= 1 ? '' : ''
+                                        )}
+                                    >
+                                        {t(`ourProjects.projects.${index}.description.${i}`)}
+                                        {i === 0 ?   
+                                            t(`ourProjects.projects.${index}.rightColumns.length`) !== 0 ? 
+                                                <div className={cn(
+                                                    'flex flex-wrap xs:flex-col xs:ml-[40px]',
+                                                    t(`ourProjects.projects.${index}.rightColumns.length`) !== 0 ? 
+                                                        'xs:pb-0 pb-[30px]' : null
+                                                )}>
+                                                    {
+                                                        Converter(t(`ourProjects.projects.${index}.rightColumns.length`)).map((item, i) => (
+                                                            <div className='first:xs:mb-[40px] first:xs:mr-0 first:mr-[30px] first:mds:mb-0 first:mb-[30px]'>
+                                                                <div className='md:text-[75px] text-[28px] md:leading-[75px] leading-[28px] font-otf-light text-c_blue-deepDark mb-[5px]'>
+                                                                    {t(`ourProjects.projects.${index}.rightColumns.block${i}.0`)}
+                                                                </div>
+                                                                <div className='text-c_blue-popUp md:text-[16px] text-[13px] md:leading-[24px] leading-[16px] md:w-[285px] w-[41vw] font-otf-book'>
+                                                                    {t(`ourProjects.projects.${index}.rightColumns.block${i}.1`)}
+                                                                </div>
+                                                            </div>        
+                                                        ))
+                                                    }
+                                                </div>
+                                            : null    
+                                        : null}
+                                    </div>
                                 ))
                             }
-                            <div className='mb-[20px]'>
-                                {t(`ourProjects.description.${index}.0`)}
-                            </div>
-                            <div>
-                                {t(`ourProjects.description.${index}.1`)}
-                            </div>
                         </div>
-                        {
-                            t(`ourProjects.rightColumns.${index}.0`) !== '' || 
-                            t(`ourProjects.rightColumns.${index}.1`) !== '' || 
-                            t(`ourProjects.rightColumns.${index}.2`) !== '' ||
-                            t(`ourProjects.rightColumns.${index}.3`) !== '' ? 
-                                <div className={cn(
-                                    'xs:block  flex xs:ml-[40px]',
-                                    t(`ourProjects.rightColumns.${index}.0`) !== '' || t(`ourProjects.rightColumns.${index}.1`) !== '' ? 
-                                        'xs:pb-0 pb-[30px]' : null
-                                )}>
-                                    <div className=' xs:mb-[40px] xs:mr-0 mr-[30px] mds:mb-0 mb-[30px]'>
-                                        <div className='md:text-[75px] text-[28px] md:leading-[75px] leading-[28px] font-otf-light text-c_blue-deepDark mb-[5px]'>
-                                            {t(`ourProjects.rightColumns.${index}.0`) !== '' ? t(`ourProjects.rightColumns.${index}.0`) : null}
-                                        </div>
-                                        <div className='text-c_blue-popUp md:text-[16px] text-[13px] md:leading-[24px] leading-[16px] md:w-[285px] w-[41vw] font-otf-book'>
-                                            {t(`ourProjects.rightColumns.${index}.1`) !== '' ? t(`ourProjects.rightColumns.${index}.1`) : null}
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='md:text-[75px] text-[28px] md:leading-[75px] leading-[28px] font-otf-light text-c_blue-deepDark mb-[5px]'>
-                                            {t(`ourProjects.rightColumns.${index}.2`) !== '' ? t(`ourProjects.rightColumns.${index}.2`) : null}
-                                        </div>
-                                        <div className='text-c_blue-popUp md:text-[16px] text-[13px] md:leading-[24px] leading-[16px] md:w-[285px] w-[41vw] font-otf-book'>
-                                            {t(`ourProjects.rightColumns.${index}.3`) !== '' ? t(`ourProjects.rightColumns.${index}.3`) : null}
-                                        </div>
-                                    </div>
-                                </div>
-                            :
-                            null    
-                        }
                     </div>
-                    <div className='mt-[40px] border-b-[4px] border-b-[#171347] w-[100px]'>
-                        
-                    </div>
+                    <div className='mt-[40px] border-b-[4px] border-b-[#171347] w-[100px]' />
                 </div>
             ))}
         </div>
