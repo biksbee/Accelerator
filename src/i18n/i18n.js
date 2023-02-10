@@ -667,14 +667,17 @@ i18n
                     0: {
                       name: 'Stanislav Shakirov', 
                       description: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы.',
+                      photo: 'bg-StanislavShakirov'
                     },
                     1: {
                       name: 'Natalia Malysheva', 
                       description: 'Руководитель по связям с общественностью РосКомСвободы, журналист и экоактивист. Эксперт в области СМИ, коммуникаций и продвижения, организации общественных кампаний.',
+                      photo: 'bg-NataliyMalishova'
                     },
                     2: {
                       name: 'Daria Gorbacheva', 
                       description: 'Координатор Privacy Accelerator. Опыт в области коммьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.',
+                      photo: 'bg-DariaGorbacheva'
                     },
                     length: 3
                   },
