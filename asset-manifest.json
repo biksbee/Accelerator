@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Accelerator/static/css/main.97e9c06d.css",
-    "main.js": "/Accelerator/static/js/main.e037e5e0.js",
+    "main.js": "/Accelerator/static/js/main.a9f5f9e5.js",
     "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
     "static/media/Дарбинян Саркис.jpg": "/Accelerator/static/media/Дарбинян Саркис.870dd4462c6a42d7c12d.jpg",
     "static/media/tracking.png": "/Accelerator/static/media/tracking.3d7580aa7f850d3532c8.png",
@@ -81,11 +81,11 @@
     "static/media/closePopWhite.svg": "/Accelerator/static/media/closePopWhite.d916c148e860f4be1cce76913efae27c.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
     "main.97e9c06d.css.map": "/Accelerator/static/css/main.97e9c06d.css.map",
-    "main.e037e5e0.js.map": "/Accelerator/static/js/main.e037e5e0.js.map",
+    "main.a9f5f9e5.js.map": "/Accelerator/static/js/main.a9f5f9e5.js.map",
     "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.97e9c06d.css",
-    "static/js/main.e037e5e0.js"
+    "static/js/main.a9f5f9e5.js"
   ]
 }
