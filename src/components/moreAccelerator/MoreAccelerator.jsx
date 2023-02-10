@@ -96,7 +96,7 @@ const MoreAccelerator = () => {
                     </Swiper>
                     <div className='ms:hidden block w-full px-[15px]'>
                         {
-                            t('moreAccelerator.title').split(', ').map((item, index) => (
+                            Converter(t('moreAccelerator.projects.length')).map((item, index) => (
                                 <SwiperSlide key={index} className='border-t-[2px] border-t-c_red-deep pt-[30px] mt-[50px] ms:w-[488px]'>
                                     <div className={cn(
                                         'md:text-[45px] md:leading-[48px] text-[22px] leading-[25px] pb-[20px]',
@@ -106,10 +106,10 @@ const MoreAccelerator = () => {
                                             : index === 2 ? 'text-c_orange-bright' 
                                             : ''
                                     )}>
-                                        {item}
+                                        {t(`moreAccelerator.projects.${index}.title`)}
                                     </div>
                                     <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otf-book text-c_red-deep'>
-                                        {t('moreAccelerator.context').split('* ')[index]}
+                                        {t(`moreAccelerator.projects.${index}.context`)}
                                     </div>
                                     {t('moreAccelerator.needed').split('* ')[index] !== '' ? 
                                         <div className='pt-[20px] opacity-[0.5] md:text-[16px] md:leading-[20px] text-[13px] leading-[16px] uppercase font-otf-semiBold'>
@@ -119,7 +119,7 @@ const MoreAccelerator = () => {
                                     <div className={cn(
                                         'pt-[10px] md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otf-book text-c_red-deep'
                                     )}>
-                                        {t('moreAccelerator.needed').split('* ')[index]}
+                                        {t(`moreAccelerator.projects.${index}.needed`)}
                                     </div>
                                 </SwiperSlide>
                             ))

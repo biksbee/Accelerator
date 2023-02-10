@@ -139,7 +139,7 @@ const Header = () => {
                             </div>
                         </a>    
                     </div>
-                    <div className='ms:hidden ml-[20px]' onClick={() => setOpen(!open)}>
+                    <div className='ms:hidden ml-[20px] cursor-pointer' onClick={() => setOpen(!open)}>
                         <div className='w-[35px] h-[35px]'>
                             <img src={!open ? burgerMenu : close} alt="menuIcon" />
                         </div>    
