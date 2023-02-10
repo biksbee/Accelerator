@@ -1,5 +1,6 @@
 import { deamhackHak } from '../content'
 import demhack from '../../assets/icon/Deamhack.svg'
+import arrow from '../../assets/icon/deamhackArrow.svg'
 import { useTranslation} from 'react-i18next'
 
 const Demhack = () => {
@@ -18,8 +19,9 @@ const Demhack = () => {
                             {t('deamhack.hackathon')}           
                         </div>
                         <a href={content.deamhackRu} target={"_blank"} >
-                            <div className='w-max md:text-[18px] text-[15px] md:leading-[25px] leading-[21px] font-otf-normal not-italic text-c_orange-regular duration-500 hover:text-c_orange-hover border-b-[1px] border-c_orange-link_op'>
+                            <div className='w-max flex md:text-[18px] text-[15px] md:leading-[25px] leading-[21px] font-otf-normal not-italic text-c_orange-regular duration-500 hover:text-c_orange-hover border-b-[1px] border-c_orange-link_op'>
                                 {t('deamhack.href')}
+                                <img src={arrow} className='ml-[10px]' />
                             </div>
                         </a>    
                     </div>
