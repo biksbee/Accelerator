@@ -8,11 +8,10 @@ const FadeEffect = ({i, fade, setFade, setOpen, setLocation}) => {
     const { t } = useTranslation()
     const content = ourProjects
 
-    const href = ['Amnezia', 'Get site copy', 'Self Privacy', 'Eppie', 'Securno']
-
     const openFunc = () => {
         setOpen(true)
-        setLocation(href[i.index])
+        setLocation(t(`ourProjects.projects.${i.index}.title`))
+        // setLocation(href[i.index])
     }
 
     return (

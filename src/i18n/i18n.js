@@ -325,15 +325,18 @@ i18n
                   experts: {
                     0: {
                       name: 'Станислав Шакиров',
-                      description: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы.'
+                      description: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы.',
+                      photo: 'bg-StanislavShakirov'
                     },
                     1: {
                       name: 'Наталья Малышева',
-                      description: 'Руководитель по связям с общественностью РосКомСвободы, журналист и экоактивист. Эксперт в области СМИ, коммуникаций и продвижения, организации общественных кампаний. '
+                      description: 'Руководитель по связям с общественностью РосКомСвободы, журналист и экоактивист. Эксперт в области СМИ, коммуникаций и продвижения, организации общественных кампаний. ',
+                      photo: 'bg-NataliyMalishova'
                     },
                     2: {
                       name: 'Дарья Горбачева',
-                      description: 'Координатор Privacy Accelerator. Опыт в области коммьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.'
+                      description: 'Координатор Privacy Accelerator. Опыт в области коммьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.',
+                      photo: 'bg-DariaGorbacheva'
                     },
                     length: 3
                   },
@@ -451,13 +454,6 @@ i18n
                       },
                     },
                     length: 5
-                  },
-                  slide: {
-                    0: 'bg-slideAmnezia',
-                    1: 'bg-slideGetSiteCopy',
-                    2: 'bg-slideSelfPrivacy',
-                    3: 'bg-slideEppie',
-                    4: 'bg-slideSecurno',
                   },
                 },
                 media: {

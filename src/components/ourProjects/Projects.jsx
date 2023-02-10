@@ -12,9 +12,8 @@ const Projects = ({loc}) => {
     const messagesEndRef3 = useRef(null)
     const messagesEndRef4 = useRef(null)
 
+    const content = ourProjects
 
-    const content = ourProjects.ru
-    
     useEffect(() => {
         if(loc === messagesEndRef0.current.id)
             messagesEndRef0.current?.scrollIntoView({})
@@ -28,10 +27,6 @@ const Projects = ({loc}) => {
             messagesEndRef4.current?.scrollIntoView({inline: "nearest"})
     }, [loc]);
 
-    useEffect(() => {
-        console.log(t(`ourProjects.projects.0.rightColumns.block0.1`))
-    }, [])
-
     return (
         <div className="pt-[30px] xs:w-[1000px] w-[90vw]">
             {Converter(t('ourProjects.projects.length')).map((item, index) => (
@@ -43,7 +38,7 @@ const Projects = ({loc}) => {
                 >
                     <div 
                         className={cn(
-                            t(`ourProjects.slide.${index}`),
+                            content.slide[index],
                             'w-full bg-center bg-cover bg-no-repeat rounded-[15px]',
                             'xs:h-[510px] ms:h-[450px] md:h-[400px] mds:h-[350px] ds:h-[300px] m:h-[202px] h-[158px] mds:mb-[30px]'
                         )}

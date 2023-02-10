@@ -1,13 +1,10 @@
 import cn from 'classnames'
-import { team } from '../content';
 import "swiper/css";
 import { useTranslation} from 'react-i18next'
 
 
 const Card = ({i, setFade, fade}) => {
     const { t } = useTranslation()
-
-    const content = team
 
 
     return (
@@ -22,7 +19,7 @@ const Card = ({i, setFade, fade}) => {
                                     <div className={cn(
                                          !fade ? 'filter grayscale' :  'filter-none',
                                         'w-[150px] h-[150px] duration-500 bg-no-repeat bg-center bg-cover cardRadius', 
-                                        content.photo[i.index]
+                                        t(`team.experts.${i.index}.photo`)
                                     )} />
                                 </div>
                             </div>
@@ -44,7 +41,7 @@ const Card = ({i, setFade, fade}) => {
                                         cn(
                                             !fade ? 'filter grayscale' :  'filter-none',
                                             'xl:w-[373px] md:w-[28vw] xs:h-[373px] md:h-[253px] w-[373px] h-[373px] md:block hidden duration-500 bg-no-repeat bg-cover bg-center photoRadius',
-                                            content.photo[i.index]
+                                            t(`team.experts.${i.index}.photo`)
                                         )
                                 } />
                             </div>    

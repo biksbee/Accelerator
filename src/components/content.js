@@ -5,6 +5,7 @@ import wrapPrivacy from '../assets/icon/wrapPrivacy.svg'
 import wrapAccess from '../assets/icon/wrapAccess.svg'
 import wrapLegalTech from '../assets/icon/wrapLegalTech.svg'
 
+//партнеры
 import RosComFreedom from '../assets/icon/RosComFreedom.svg'
 import Habr from '../assets/icon/Habr.svg'
 import QratorLabs from '../assets/icon/QratorLabs.svg'
@@ -17,19 +18,18 @@ import Lantern from '../assets/icon/lantern.svg'
 
 
 export const ourProjects = {
-    slide: [
-        `bg-slideAmnezia`, 
-        `bg-slideGetSiteCopy`, 
-        `bg-slideSelfPrivacy`, 
-        `bg-slideEppie`, 
-        `bg-slideSecurno`
-    ],
+    slide: {
+        0: `bg-slideAmnezia`, 
+        1: `bg-slideGetSiteCopy`, 
+        2: `bg-slideSelfPrivacy`, 
+        3: `bg-slideEppie`, 
+        4: `bg-slideSecurno`
+    },
 }
 
 export const workContent = {
         icon: [privacy, access, legalTech],
         style: [wrapPrivacy, wrapAccess, wrapLegalTech],
-        
         link: [
             [
                 `https://selfprivacy.org/`,
@@ -112,12 +112,4 @@ export const house = {
             `bg-tracking`,
             `bg-lecture`, 
         ],
-}
-
-export const team = {
-    photo: [
-        `bg-StanislavShakirov`,
-        `bg-NataliyMalishova`,
-        `bg-DariaGorbacheva`,
-    ],
 }
