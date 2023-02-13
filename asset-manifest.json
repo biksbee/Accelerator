@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.97e9c06d.css",
+    "main.css": "/Accelerator/static/css/main.cb2483bc.css",
     "main.js": "/Accelerator/static/js/main.a9f5f9e5.js",
     "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
-    "static/media/Дарбинян Саркис.jpg": "/Accelerator/static/media/Дарбинян Саркис.870dd4462c6a42d7c12d.jpg",
     "static/media/tracking.png": "/Accelerator/static/media/tracking.3d7580aa7f850d3532c8.png",
     "static/media/Шакиров Станислав.jpg": "/Accelerator/static/media/Шакиров Станислав.b28c081e9bf7783025bc.jpg",
     "static/media/helpFinance.png": "/Accelerator/static/media/helpFinance.7ee3ba705dbfbf40cf1d.png",
@@ -35,6 +34,7 @@
     "static/media/VC.svg": "/Accelerator/static/media/VC.e1e604971743953c64f91289f6035b30.svg",
     "static/media/RussiaVenchur.svg": "/Accelerator/static/media/RussiaVenchur.c2dc43ac4e3df3d58da03955f5ad17f9.svg",
     "static/media/KO.svg": "/Accelerator/static/media/KO.981acf5946969db3f5658471479f43b4.svg",
+    "static/media/Дарбинян Саркис.webp": "/Accelerator/static/media/Дарбинян Саркис.56dca89a6376d748c001.webp",
     "static/media/infocult.png": "/Accelerator/static/media/infocult.2624fee7eee30c4cda3f.png",
     "static/media/Cyberlaw.svg": "/Accelerator/static/media/Cyberlaw.e485ec7334e4f6596228bdb541566eae.svg",
     "static/media/RosComFreedom.svg": "/Accelerator/static/media/RosComFreedom.23220aaddaf88f389b0734e2672bf3d0.svg",
@@ -80,12 +80,12 @@
     "static/media/turnRight.svg": "/Accelerator/static/media/turnRight.2191525b4e5edaa3d548b82d98d7c585.svg",
     "static/media/closePopWhite.svg": "/Accelerator/static/media/closePopWhite.d916c148e860f4be1cce76913efae27c.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "main.97e9c06d.css.map": "/Accelerator/static/css/main.97e9c06d.css.map",
+    "main.cb2483bc.css.map": "/Accelerator/static/css/main.cb2483bc.css.map",
     "main.a9f5f9e5.js.map": "/Accelerator/static/js/main.a9f5f9e5.js.map",
     "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97e9c06d.css",
+    "static/css/main.cb2483bc.css",
     "static/js/main.a9f5f9e5.js"
   ]
 }
