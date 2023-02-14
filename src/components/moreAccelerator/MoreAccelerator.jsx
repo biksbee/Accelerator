@@ -1,16 +1,16 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import cn from 'classnames'
-import { useTranslation, Trans } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
+import SwiperCore, { Keyboard } from "swiper/core";
 
 import Converter from '../../hooks/Converter';
 import Next from '../modules/Next';
 
 
-SwiperCore.use([Keyboard, Mousewheel]); 
+SwiperCore.use([Keyboard]); 
 
 
 const MoreAccelerator = () => {

@@ -13,10 +13,7 @@ const back ='bg-[#404864]'
 
 const House = () => {
     const { t } = useTranslation()
-
     const [open, setOpen] = useState(false)
-
-    const [faded, setFaded] = useState()
 
     return (
         <div className="w-full flex justify-center gradientBackGround">

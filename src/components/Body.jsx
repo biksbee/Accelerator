@@ -1,4 +1,3 @@
-import {useState, useEffect} from 'react'
 import StartPageNew from "./1.startPage/StartPageNew"
 import OurProjects from "./ourProjects/OurProjects"
 import Media from "./media/Media"
@@ -10,21 +9,12 @@ import Team from "./8.team/Team"
 import Contacts from "./9.contact/Contacts"
 
 
-const Body = ({setOpen, setLocation}) => {
-
-
-    const [get, setGet] = useState(false)
-    const [loc, setLoc] = useState("")
-
-    useEffect(() => {
-        setOpen(get)
-        setLocation(loc)
-    }, [get])
+const Body = () => {
 
     return (
         <div className="overflow-hidden">
             <StartPageNew />
-            <OurProjects setGet={setGet} setLoc={setLoc}/>
+            <OurProjects />
             <Media />
             <Works />
             <Demhack />

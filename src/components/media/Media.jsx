@@ -30,7 +30,6 @@ const Media = () => {
                 <div className='w-full flex justify-center'>
                     <div 
                         className={cn(
-                            '',
                             'xl:w-[1280px] xl:px-[75px] xs:flex justify-center',
                             'md:w-[90vw] mds:w-[60vw] w-[90vw]'
                         )}

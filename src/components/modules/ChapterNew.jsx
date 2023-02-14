@@ -1,4 +1,3 @@
-import {useEffect} from 'react'
 import cn from 'classnames'
 import { workContent } from "../content"
 import { Swiper, SwiperSlide } from 'swiper/react';

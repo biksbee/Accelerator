@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import cn from 'classnames'
 import { house } from '../../content'
 import { useTranslation} from 'react-i18next'
@@ -9,10 +8,6 @@ import networkingLine from '../../../assets/icon/NetworkingLine.svg'
 const Networking = () => {
     const { t } = useTranslation()
     const content = house
-
-    useEffect(() => {
-        console.log(content.networking[0].networkingIcons)
-    }, [])
 
     return (
         <div className='md:my-[200px] mb-[80px]'> 

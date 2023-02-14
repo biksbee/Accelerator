@@ -1,11 +1,10 @@
-import {useState, useEffect, useRef} from 'react'
+import {useState, useRef} from 'react'
 import cn from 'classnames'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import SwiperCore, { Navigation,Keyboard, Mousewheel } from "swiper/core";
 
-import { ourProjects } from '../../content';
 import FadeEffect from '../FadeEffect';
 import Next from '../../modules/Next';
 import Converter from '../../../hooks/Converter';
@@ -16,7 +15,6 @@ SwiperCore.use([Keyboard, Mousewheel, Navigation]);
 
 const Slider = ({setShow, active, setActive, setOpen, setLocation}) => {
     const { t } = useTranslation()
-    const content = ourProjects
 
     const [fade0, setFade0] = useState(false)
     const [fade1, setFade1] = useState(false)
@@ -51,7 +49,6 @@ const Slider = ({setShow, active, setActive, setOpen, setLocation}) => {
                 slidesPerView={"auto"} 
                 spaceBetween={30}
                 keyboard={true}
-                // //mousewheel={true}
                 className="mx-0 xl:px-[calc((100vw-1280px)/2+40px)] md:px-[40px] px-[15px] flex"
                 onSlideChange={(swiper) => setActive(swiper.activeIndex)}
             >

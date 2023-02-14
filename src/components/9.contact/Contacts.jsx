@@ -1,4 +1,3 @@
-import { contact } from "../content"
 import { useTranslation} from 'react-i18next'
 
 const Contacts = () => {
@@ -34,11 +33,6 @@ const Contacts = () => {
                                         {t('contact.value').split(', ')[2]}
                                     </a>
                                 </div>
-                                {/* <div className="xss:flex ">       
-                                        <a href={t('contact.signal')} className="contactLink xss:ml-[10px]" target="_blank">
-                                            {t('contact.value').split(', ')[3]}
-                                        </a>   
-                                </div>     */}
                             </div>
                                                         
                         </div>

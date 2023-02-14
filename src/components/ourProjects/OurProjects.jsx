@@ -6,23 +6,13 @@ import Projects from './Projects'
 
 const back = 'bg-c_yellow-light'
 
-const OurProjects = ({setGet, setLoc}) => {
+const OurProjects = () => {
     const { t } = useTranslation()
 
     const [show, setShow] = useState(false)
     const [active, setActive] = useState(0)
     const [open, setOpen] = useState(false)
     const [location, setLocation] = useState("")
-
-    useEffect(() => {
-        setGet(open)
-        setLoc(location)
-        
-    }, [open])
-
-    const getSend = (e) => {
-        console.log(e)
-    }
 
     return (
         <div id='ourProjects' className="w-full h-max flex justify-center overflow-hidden bg-c_blue-regular">
@@ -36,7 +26,7 @@ const OurProjects = ({setGet, setLoc}) => {
                     </div>
                 </div>    
                 <div className="w-[100vw] h-max md:pt-[222px] pt-[50px] pb-[100px]">
-                    <Slider setShow={setShow} setActive={setActive} active={active} setOpen={setOpen} send={getSend} setLocation={setLocation}/>
+                    <Slider setShow={setShow} setActive={setActive} active={active} setOpen={setOpen} setLocation={setLocation}/>
                     <div className='w-full flex justify-center text-c_blue-dark pt-[30px]'>
                         <div className='xl:w-[1200px] w-full flex items-end xl:pl-0 md:pl-[40px] pl-[15px]'>
                             <div className='md:text-[50px] text-[20px] md:leading-[44px] leading-[18px] font-otf-semiBold not-italic'>

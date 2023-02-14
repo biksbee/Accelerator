@@ -1,4 +1,3 @@
-import {useEffect, useState, useRef} from 'react'
 import { ourProjects } from '../content'
 import cn from 'classnames'
 import { useTranslation} from 'react-i18next'
@@ -11,7 +10,6 @@ const FadeEffect = ({i, fade, setFade, setOpen, setLocation}) => {
     const openFunc = () => {
         setOpen(true)
         setLocation(t(`ourProjects.projects.${i.index}.title`))
-        // setLocation(href[i.index])
     }
 
     return (

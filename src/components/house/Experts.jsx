@@ -1,13 +1,10 @@
 import {useState} from 'react'
-import cn from 'classnames'
 import PopUpExperts from './PopUpExperts'
-import { house } from '../content'
 import { useTranslation} from 'react-i18next'
 import Converter from '../../hooks/Converter'
 
 const Experts = () => {
     const { t } = useTranslation()
-    const content = house.ru
 
     const [fade0, setFade0] = useState(false)
     const [fade1, setFade1] = useState(false)

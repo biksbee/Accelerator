@@ -1,20 +1,16 @@
-import {useState, useRef} from 'react'
+import {useState} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
 
 import Card from './Card';
-import Next from '../modules/Next';
 import { useTranslation} from 'react-i18next'
 import Converter from '../../hooks/Converter';
 
 SwiperCore.use([Keyboard, Mousewheel]);
 
-const Team = ({lang}) => {
+const Team = () => {
     const { t } = useTranslation()
-
-    const [active, setActive] = useState(0)
-    const swiperRef = useRef(null)
 
     const [fade0, setFade0] = useState(false)
     const [fade1, setFade1] = useState(false)
@@ -33,28 +29,10 @@ const Team = ({lang}) => {
                     </div>
                 </div>
                 <div className='relative md:pb-[80px] pb-[50px] flex'>
-                    {/* { active !== 0 ? 
-                        <div className='ms:hidden md:flex hidden absolute z-[10] top-[50%] left-0'>
-                            <Next 
-                                direction={"left"} 
-                                onClickHandler={() => swiperRef.current.swiper.slidePrev()}
-                            />
-                        </div>
-                    : null}
-                    { active !== 1 ? 
-                        <div className='ms:hidden md:flex hidden absolute z-[10] top-[50%] right-0'>
-                            <Next 
-                                direction={"right"}
-                                onClickHandler={() => swiperRef.current.swiper.slideNext()}
-                            />
-                        </div>
-                    : null} */}
                     <Swiper
-                        ref={swiperRef}
                         slidesPerView={"auto"} 
                         spaceBetween={40}
                         keyboard={true}
-                        onSlideChange={(swiper) => setActive(swiper.activeIndex)}
                         className='flex md:px-[40px] px-[15px] m-0'
                     >
                         {

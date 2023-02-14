@@ -22,7 +22,7 @@ const Steps = () => {
         <div className='w-full'>
                 <div className='xs:flex justify-between'>
                     <div className='xs:mr-[50px]'>
-                        <div className=''>
+                        <div>
                             <div className="xm:mb-[100px] mb-[70px] xl:w-[472px] xs:w-[40vw] w-full border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
@@ -50,7 +50,7 @@ const Steps = () => {
                                 </div>    
                             </div>
                         </div>
-                        <div className=''>
+                        <div>
                             <div className="xl:mt-[50px] xl:mb-0 mb-[70px] xl:w-[472px] xs:w-[40vw] w-full border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
@@ -80,7 +80,7 @@ const Steps = () => {
                         </div>
                     </div>
                     <div> 
-                        <div className=''>
+                        <div>
                             <div className="xl:mb-0 mb-[70px] xl:w-[570px] xs:w-[48vw] w-full border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] md:w-[430px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
@@ -112,7 +112,7 @@ const Steps = () => {
                                 </div>    
                             </div>
                         </div>
-                        <div className=''>
+                        <div>
                             <div className="xm:mt-[100px] mt-[70px] xl:w-[570px] xs:w-[48vw] w-full border-t-[2px] pt-[31px] border-t-c_gray-regular">
                                 <div className="relative mb-[17px] md:pb-[7px] md:w-[530px] s:w-[330px] w-[90vw]">
                                     <div className={cn(

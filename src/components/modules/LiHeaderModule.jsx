@@ -4,7 +4,6 @@ import cn from 'classnames'
 const LiHeaderModule = ({item, index, openLi, setOpenLi}) => {
 
     const href = ["ourProjects", "work", "team", "cont"]
-    // const href = ["about", "serv", "port", "cont"]
 
     return (
         <Link

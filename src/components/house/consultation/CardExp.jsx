@@ -1,4 +1,3 @@
-import {useState} from "react"
 import cn from 'classnames'
 import { useTranslation} from 'react-i18next'
 
@@ -8,11 +7,10 @@ const CardExp = ({i, fade, setFade}) => {
 
     return (
                         <div
-                            className=""
                             onMouseEnter={() => setFade(true)}
                             onMouseLeave={() => setFade(false)} 
                         >
-                            <div className=''>
+                            <div>
                                 <div className='mb-[20px] relative flex w-max h-max '>
                                     <div className="absolute filterLayer w-full  z-[40] h-full duration-500 cardRadius" />
                                         <div className={

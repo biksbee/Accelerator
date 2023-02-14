@@ -1,6 +1,6 @@
 import cn from 'classnames'
 import { ourProjects } from "../content"
-import {useEffect, useState, useRef, createRef} from 'react'
+import {useEffect, useRef} from 'react'
 import { useTranslation} from 'react-i18next'
 import Converter from '../../hooks/Converter'
 

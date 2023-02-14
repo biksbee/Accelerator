@@ -3,7 +3,7 @@ import cn from 'classnames'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import SwiperCore, { Keyboard, Mousewheel } from "swiper/core";
+import SwiperCore, { Keyboard } from "swiper/core";
 
 import { house } from '../../content';
 import { useTranslation} from 'react-i18next'
@@ -11,7 +11,7 @@ import Next from '../../modules/Next';
 import CardExp from './CardExp'
 import Converter from '../../../hooks/Converter';
 
-SwiperCore.use([Keyboard, Mousewheel]);
+SwiperCore.use([Keyboard]);
 
 
 const Consultation = ({setOpen}) => {
@@ -82,12 +82,9 @@ const Consultation = ({setOpen}) => {
                                             className={
                                                 cn(
                                                     `${item} w-[38px] h-[39px] bg-no-repeat bg-cover bg-center`,
-                                                    // 'rotate-[-135deg]'
-                                                
                                                 )} 
                                         />
                                     </div>    
-
                                 ))
                             }                            
                         </div>
@@ -156,11 +153,9 @@ const Consultation = ({setOpen}) => {
                                                     className={
                                                         cn(
                                                             `${item} w-[38px] h-[39px] bg-no-repeat bg-cover bg-center`,
-                                                            // 'rotate-[-135deg]'
                                                         )} 
                                                 />
                                             </div>    
-
                                         ))
                                     }                            
                                 </div>
