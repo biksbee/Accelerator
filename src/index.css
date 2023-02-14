@@ -117,22 +117,27 @@
 @font-face {
     font-family: 'otf-semiBold';
     src: url("/public/fonts/otf/SuisseIntl-SemiBold.otf");
+    font-display: swap;
 }
 @font-face {
     font-family: 'otf-normal';
     src: url("../public/fonts/otf/SuisseIntl-Regular.otf");
+    font-display: swap;
 }
 @font-face {
     font-family: 'otf-book';
     src: url("../public/fonts/otf/SuisseIntl-Book.otf");
+    font-display: swap;
 }
 @font-face {
     font-family: 'otf-bold';
     src: url("../public/fonts/otf/SuisseIntl-Bold.otf");
+    font-display: swap;
 }
 @font-face {
     font-family: 'otf-light';
     src: url("../public/fonts/otf/SuisseIntl-Light.otf");
+    font-display: swap;
 }
 
 @layer utilities{
