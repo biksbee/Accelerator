@@ -1,12 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import privacy from '../assets/icon/Privacy.svg'
-import access from '../assets/icon/Access.svg'
-import legalTech from '../assets/icon/LegalTech.svg'
-import wrapPrivacy from '../assets/icon/wrapPrivacy.svg'
-import wrapAccess from '../assets/icon/wrapAccess.svg'
-import wrapLegalTech from '../assets/icon/wrapLegalTech.svg'
 
 i18n
   // detect user language
