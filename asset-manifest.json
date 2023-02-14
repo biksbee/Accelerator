@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Accelerator/static/css/main.1b795e73.css",
-    "main.js": "/Accelerator/static/js/main.23dd4e20.js",
-    "static/js/496.cb406bf0.chunk.js": "/Accelerator/static/js/496.cb406bf0.chunk.js",
+    "main.js": "/Accelerator/static/js/main.8c30892b.js",
+    "static/js/496.7a3981d7.chunk.js": "/Accelerator/static/js/496.7a3981d7.chunk.js",
     "static/media/SuisseIntl-Bold.otf": "/Accelerator/static/media/SuisseIntl-Bold.24fe64545382e1378933.otf",
     "static/media/SuisseIntl-SemiBold.otf": "/Accelerator/static/media/SuisseIntl-SemiBold.bc8a07fd3d909616d31a.otf",
     "static/media/SuisseIntl-Regular.otf": "/Accelerator/static/media/SuisseIntl-Regular.b248914e0a53493d03f0.otf",
@@ -81,11 +81,11 @@
     "static/media/closePopWhite.svg": "/Accelerator/static/media/closePopWhite.d916c148e860f4be1cce76913efae27c.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
     "main.1b795e73.css.map": "/Accelerator/static/css/main.1b795e73.css.map",
-    "main.23dd4e20.js.map": "/Accelerator/static/js/main.23dd4e20.js.map",
-    "496.cb406bf0.chunk.js.map": "/Accelerator/static/js/496.cb406bf0.chunk.js.map"
+    "main.8c30892b.js.map": "/Accelerator/static/js/main.8c30892b.js.map",
+    "496.7a3981d7.chunk.js.map": "/Accelerator/static/js/496.7a3981d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b795e73.css",
-    "static/js/main.23dd4e20.js"
+    "static/js/main.8c30892b.js"
   ]
 }
