@@ -40,7 +40,7 @@ const Header = () => {
         if(scrollCur == 0)
             setShow(true)
     }
-    window.addEventListener('scroll', showNav)
+    window.addEventListener('scroll', showNav, {passive: true})
 
     return (
         <div id='header' className={cn(
