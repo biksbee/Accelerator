@@ -53,6 +53,8 @@ const Demhack = () => {
                         <iframe
                             className='xl:w-[1200px] w-[90vw] xl:h-[600px] ms:h-[500px] md:h-[400px] h-[300px]'
                             src={content.youtube}
+                            frameborder="0"
+                            allowfullscreen
                             allow="autoplay; encrypted-media"
                             title="video"
                         />

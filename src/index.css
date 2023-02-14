@@ -77,7 +77,6 @@
         @apply font-otf-semiBold not-italic  text-c_blue-deepDark
         md:text-[18px] md:leading-[21.6px]
         text-[15px] leading-[18px] xs:w-[500px] w-[320px] 
-        /* md:h-[100px] h-[50px] */
     }
     .iconMedia {
         @apply flex justify-center items-center
@@ -163,9 +162,6 @@
     }
     .photoCardRadius {
         border-radius: 2px 14px;
-    }
-    .customTouch {
-        -webkit-overflow-scrolling: touch;
     }
     .last_letter::after {
         content: "→" ;
