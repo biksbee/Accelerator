@@ -38,7 +38,7 @@ const ChapterNew = ({i}) => {
                                     : i.index === 2 ? 'md:h-[112px] md:w-[256px] h-[63px] w-[142px] md:top-[-45px] top-[-22px] left-[-15px]' : '',
                             )} 
                         >
-                            <img src={content.style[i.index]} alt="" />
+                            <img src={content.style[i.index]} alt="iconForChapter" />
                         </div>
                     </div>    
                     <div className='xl:w-[520px] xs:w-[390px] ms:w-[340px] w-[90vw] pt-[20px]'>

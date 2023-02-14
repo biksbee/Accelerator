@@ -12,7 +12,7 @@ const Demhack = () => {
             <div className="xl:w-[1280px] w-full md:pt-[100px] pt-[70px] pb-[111px] md:px-[40px] px-[15px]">
                 <div className="ms:flex justify-between">
                     <div className="md:w-[539px] s:w-[290px] md:h-[112px] h-[60px]">
-                        <img src={demhack} alt="" />
+                        <img src={demhack} alt="demhack" />
                     </div>
                     <div className='ms:text-right ms:pb-0 pb-[25px]'>
                         <div className='md:text-[24px] text-[15px] md:leading-[23px] leading-[14px] text-c_gray-primary'>
@@ -21,7 +21,7 @@ const Demhack = () => {
                         <a href={content.deamhackRu} target={"_blank"} >
                             <div className='w-max flex md:text-[18px] text-[15px] md:leading-[25px] leading-[21px] font-otf-normal not-italic text-c_orange-regular duration-500 hover:text-c_orange-hover border-b-[1px] border-c_orange-link_op'>
                                 {t('deamhack.href')}
-                                <img src={arrow} className='ml-[10px]' />
+                                <img src={arrow} alt="arrow" className='ml-[10px]' />
                             </div>
                         </a>    
                     </div>

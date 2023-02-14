@@ -12,9 +12,9 @@ const Next = ({direction, onClickHandler}) => {
             >
                 {
                     direction === 'left' ? 
-                        <img src={turnLeft} />
+                        <img src={turnLeft}  alt="left" />
                     : direction === 'right' ?
-                        <img src={turnRight} />
+                        <img src={turnRight} alt="right" />
                     : null 
                 } 
             </div>
