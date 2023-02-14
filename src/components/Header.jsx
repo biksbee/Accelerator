@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import cn from 'classnames'
 import { Link } from "react-scroll"
 import LiHeaderModule from './modules/LiHeaderModule'
@@ -20,8 +20,6 @@ const Header = () => {
     const [show, setShow] = useState(true)
     const [open, setOpen] = useState(false)
 
-    useEffect(() => {
-    }, [])
 
     const changeLan = () => {
         if(i18n.use(LanguageDetector).language.split('-')[0] === 'en')
