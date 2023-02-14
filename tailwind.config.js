@@ -21,7 +21,7 @@ module.exports = {
     }, 
     extend: {
       backgroundImage: {
-        'startProjects': "url(./assets/image/startProjects.png)",
+        'startProjects': "url(./assets/image/startProjects.webp)",
         'startPageTheLoop': "url(./assets/icon/TheLoopStartPage.svg)",
         'ourProjectsTheLoop': "url(./assets/icon/TheLoopOurProjects.svg)",
         'moreAcceleratorLoop': "url(./assets/icon/MoreAccelerator.svg)",
