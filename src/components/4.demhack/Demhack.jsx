@@ -1,15 +1,13 @@
-import { useRef } from 'react'
 import { deamhackHak } from '../content'
 import demhack from '../../assets/icon/Deamhack.svg'
 import arrow from '../../assets/icon/deamhackArrow.svg'
 import { useTranslation} from 'react-i18next'
 
+import Player from './Player'
+
 const Demhack = () => {
     const { t } = useTranslation()
     const content = deamhackHak
-    const refVideo = useRef()
-
-    window.addEventListener('scroll', refVideo, {passive: true})
 
     return (
         <div className="w-full flex justify-center bg-c_black-dark">
@@ -53,13 +51,8 @@ const Demhack = () => {
                             </div>
                         </div>
                     </div>
-                    <div ref={refVideo} className='flex justify-center pt-[51px]'>
-                        <iframe
-                            className='xl:w-[1200px] w-[90vw] xl:h-[600px] ms:h-[500px] md:h-[400px] h-[300px]'
-                            src={content.youtube}
-                            allow="autoplay; encrypted-media"
-                            title="video"
-                        />
+                    <div className='flex justify-center pt-[51px]'>
+                        <Player />                       
                     </div>
                 </div>
             </div>

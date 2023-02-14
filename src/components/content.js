@@ -49,7 +49,7 @@ export const workContent = {
 export const deamhackHak = {
     deamhackRu: `https://Demhack.ru`,
     roskomSvoboda: `https://roskomsvoboda.org/`,
-    youtube: `https://www.youtube.com/embed/fcpE89HuQ8Q`
+    youtube: `https://www.youtube.com/embed/fcpE89HuQ8Q`,
 }
 
 export const house = {
