@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.49e6be14.css",
-    "main.js": "/Accelerator/static/js/main.f5fd8917.js",
-    "static/js/787.d266ab58.chunk.js": "/Accelerator/static/js/787.d266ab58.chunk.js",
-    "static/media/startProjects.png": "/Accelerator/static/media/startProjects.a5e9bba99d88f1833aa7.png",
+    "main.css": "/Accelerator/static/css/main.1b795e73.css",
+    "main.js": "/Accelerator/static/js/main.36a94e62.js",
+    "static/js/496.cb406bf0.chunk.js": "/Accelerator/static/js/496.cb406bf0.chunk.js",
     "static/media/SuisseIntl-Bold.otf": "/Accelerator/static/media/SuisseIntl-Bold.24fe64545382e1378933.otf",
     "static/media/SuisseIntl-SemiBold.otf": "/Accelerator/static/media/SuisseIntl-SemiBold.bc8a07fd3d909616d31a.otf",
     "static/media/SuisseIntl-Regular.otf": "/Accelerator/static/media/SuisseIntl-Regular.b248914e0a53493d03f0.otf",
@@ -20,6 +19,7 @@
     "static/media/KO.svg": "/Accelerator/static/media/KO.981acf5946969db3f5658471479f43b4.svg",
     "static/media/SelfPrivacy.webp": "/Accelerator/static/media/SelfPrivacy.c8d6806da0595b0def3a.webp",
     "static/media/tracking.webp": "/Accelerator/static/media/tracking.77354d1932d955574655.webp",
+    "static/media/startProjects.webp": "/Accelerator/static/media/startProjects.c89d418df2c3d2b82490.webp",
     "static/media/Алексей Шевелёв.webp": "/Accelerator/static/media/Алексей Шевелёв.ca7f6de9a703cf83cd1c.webp",
     "static/media/Наталья Малышева.webp": "/Accelerator/static/media/Наталья Малышева.07de5c8af9091d247f03.webp",
     "static/media/accessToTheMarket.webp": "/Accelerator/static/media/accessToTheMarket.00d13aa98953a62f69b1.webp",
@@ -30,7 +30,6 @@
     "static/media/Михайлов Иван.webp": "/Accelerator/static/media/Михайлов Иван.f311394cef50e0baa795.webp",
     "static/media/Дарбинян Саркис.webp": "/Accelerator/static/media/Дарбинян Саркис.56dca89a6376d748c001.webp",
     "static/media/Владимир Ожерельев.webp": "/Accelerator/static/media/Владимир Ожерельев.1e8cdccbcbfd3a564146.webp",
-    "static/media/infocult.png": "/Accelerator/static/media/infocult.2624fee7eee30c4cda3f.png",
     "static/media/securno.webp": "/Accelerator/static/media/securno.e9fdadddcef3f7fd62ca.webp",
     "static/media/Бегтин Иван.webp": "/Accelerator/static/media/Бегтин Иван.699b329d379f52a71067.webp",
     "static/media/Мисбах-Соловьев Вадим.webp": "/Accelerator/static/media/Мисбах-Соловьев Вадим.5989b7bec86190c95a1d.webp",
@@ -44,6 +43,7 @@
     "static/media/LogoPrivacyAccelerator.svg": "/Accelerator/static/media/LogoPrivacyAccelerator.b66ba3b97d46171de22fdbe099bc8652.svg",
     "static/media/lantern.svg": "/Accelerator/static/media/lantern.54b2a3ef851ea7c135ff3fa69a94a762.svg",
     "static/media/Habr.svg": "/Accelerator/static/media/Habr.6727fe765200e751b9a1e6adf4088456.svg",
+    "static/media/infocult.webp": "/Accelerator/static/media/infocult.6fce59b21baff6a58f41.webp",
     "static/media/tor.svg": "/Accelerator/static/media/tor.4b194c27f9bd75331fddd6463e3a5b5a.svg",
     "static/media/RbRu.svg": "/Accelerator/static/media/RbRu.feb2b40d7191b688458b8da81ad844c7.svg",
     "static/media/Proton.svg": "/Accelerator/static/media/Proton.7fdbe9ca582eca03ea98bc9a06c0fe36.svg",
@@ -80,12 +80,12 @@
     "static/media/turnRight.svg": "/Accelerator/static/media/turnRight.2191525b4e5edaa3d548b82d98d7c585.svg",
     "static/media/closePopWhite.svg": "/Accelerator/static/media/closePopWhite.d916c148e860f4be1cce76913efae27c.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "main.49e6be14.css.map": "/Accelerator/static/css/main.49e6be14.css.map",
-    "main.f5fd8917.js.map": "/Accelerator/static/js/main.f5fd8917.js.map",
-    "787.d266ab58.chunk.js.map": "/Accelerator/static/js/787.d266ab58.chunk.js.map"
+    "main.1b795e73.css.map": "/Accelerator/static/css/main.1b795e73.css.map",
+    "main.36a94e62.js.map": "/Accelerator/static/js/main.36a94e62.js.map",
+    "496.cb406bf0.chunk.js.map": "/Accelerator/static/js/496.cb406bf0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49e6be14.css",
-    "static/js/main.f5fd8917.js"
+    "static/css/main.1b795e73.css",
+    "static/js/main.36a94e62.js"
   ]
 }
