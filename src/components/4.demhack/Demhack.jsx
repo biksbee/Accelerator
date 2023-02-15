@@ -58,7 +58,7 @@ const Demhack = () => {
                         className='flex justify-center pt-[51px] cursor-pointer ' 
                         onClick={() => setShow(true)}
                     >
-                        {/* {
+                        {
                             !show ? 
                                 <div className={cn(
                                     'xl:w-[1200px] w-[90vw] xl:h-[600px] ms:h-[500px] md:h-[400px] h-[300px]',
@@ -72,12 +72,7 @@ const Demhack = () => {
                                 </div> 
                             : 
                                 <Player />                       
-                        } */}
-                        <iframe 
-                            src={content.youtube}
-                            loading="lazy"
-                            className='xl:w-[1200px] w-[90vw] xl:h-[600px] ms:h-[500px] md:h-[400px] h-[300px]' 
-                        />
+                        }
                     </div>
                 </div>
             </div>
