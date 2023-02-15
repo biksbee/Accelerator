@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.1b795e73.css",
-    "main.js": "/Accelerator/static/js/main.703fe032.js",
+    "main.css": "/Accelerator/static/css/main.99a90c14.css",
+    "main.js": "/Accelerator/static/js/main.41dc4193.js",
     "reactPlayerYouTube.js": "/Accelerator/static/js/reactPlayerYouTube.e9bc5bcb.chunk.js",
     "reactPlayerSoundCloud.js": "/Accelerator/static/js/reactPlayerSoundCloud.832e6968.chunk.js",
     "reactPlayerVimeo.js": "/Accelerator/static/js/reactPlayerVimeo.1e631bd1.chunk.js",
@@ -27,6 +27,7 @@
     "static/media/amnezia.webp": "/Accelerator/static/media/amnezia.3ab9788fca3471e98e1b.webp",
     "static/media/getSiteCopy.webp": "/Accelerator/static/media/getSiteCopy.9607e67df2fbf6774db5.webp",
     "static/media/VC.svg": "/Accelerator/static/media/VC.e1e604971743953c64f91289f6035b30.svg",
+    "static/media/poster.webp": "/Accelerator/static/media/poster.70bd481fa5fcde0e35ef.webp",
     "static/media/lecture.webp": "/Accelerator/static/media/lecture.b73f67c6788d8436cbc7.webp",
     "static/media/KO.svg": "/Accelerator/static/media/KO.981acf5946969db3f5658471479f43b4.svg",
     "static/media/SelfPrivacy.webp": "/Accelerator/static/media/SelfPrivacy.c8d6806da0595b0def3a.webp",
@@ -63,6 +64,7 @@
     "static/media/Access.svg": "/Accelerator/static/media/Access.d2728e199cdde3e1cf3f24b51262b685.svg",
     "index.html": "/Accelerator/index.html",
     "static/media/TheBell.svg": "/Accelerator/static/media/TheBell.b5be3390fa22af893270923a7e957f57.svg",
+    "static/media/youtube.svg": "/Accelerator/static/media/youtube.d3960f6407bc583fe35b.svg",
     "static/media/RBK.svg": "/Accelerator/static/media/RBK.82a7b5136213f231ffc175c4058e140c.svg",
     "static/media/LegalTech.svg": "/Accelerator/static/media/LegalTech.b2425f1c79c0941713d0eb0d9de427ae.svg",
     "static/media/Privacy.svg": "/Accelerator/static/media/Privacy.0a4a56989050bab05d87fb2c7acf1803.svg",
@@ -93,8 +95,8 @@
     "static/media/turnRight.svg": "/Accelerator/static/media/turnRight.2191525b4e5edaa3d548b82d98d7c585.svg",
     "static/media/closePopWhite.svg": "/Accelerator/static/media/closePopWhite.d916c148e860f4be1cce76913efae27c.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "main.1b795e73.css.map": "/Accelerator/static/css/main.1b795e73.css.map",
-    "main.703fe032.js.map": "/Accelerator/static/js/main.703fe032.js.map",
+    "main.99a90c14.css.map": "/Accelerator/static/css/main.99a90c14.css.map",
+    "main.41dc4193.js.map": "/Accelerator/static/js/main.41dc4193.js.map",
     "reactPlayerYouTube.e9bc5bcb.chunk.js.map": "/Accelerator/static/js/reactPlayerYouTube.e9bc5bcb.chunk.js.map",
     "reactPlayerSoundCloud.832e6968.chunk.js.map": "/Accelerator/static/js/reactPlayerSoundCloud.832e6968.chunk.js.map",
     "reactPlayerVimeo.1e631bd1.chunk.js.map": "/Accelerator/static/js/reactPlayerVimeo.1e631bd1.chunk.js.map",
@@ -111,7 +113,7 @@
     "496.7a3981d7.chunk.js.map": "/Accelerator/static/js/496.7a3981d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b795e73.css",
-    "static/js/main.703fe032.js"
+    "static/css/main.99a90c14.css",
+    "static/js/main.41dc4193.js"
   ]
 }
