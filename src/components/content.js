@@ -100,11 +100,11 @@ export const house = {
                 networkingIcons: Tor,
                 networkingLinks: `https://www.torproject.org/`,
             },
-            8: {
-                networkingIcons: Lantern,
-                networkingLinks: `https://lantern.io/ru`
-            },
-            length: 9
+            // 8: {
+            //     networkingIcons: Lantern,
+            //     networkingLinks: `https://lantern.io/ru`
+            // },
+            length: 8
         },
         networkingStepsPhoto: [
             `bg-helpFinance`,
