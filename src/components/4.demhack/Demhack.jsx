@@ -1,12 +1,15 @@
+import cn from 'classnames'
 import { deamhackHak } from '../content'
 import demhack from '../../assets/icon/Deamhack.svg'
 import arrow from '../../assets/icon/deamhackArrow.svg'
 import { useTranslation} from 'react-i18next'
+import { useState } from 'react'
 
 import Player from './Player'
 
 const Demhack = () => {
     const { t } = useTranslation()
+    const [show ,setShow] = useState(false)
     const content = deamhackHak
 
     return (
@@ -51,8 +54,25 @@ const Demhack = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex justify-center pt-[51px]'>
-                        <Player />                       
+                    <div 
+                        className='flex justify-center pt-[51px] cursor-pointer ' 
+                        onClick={() => setShow(true)}
+                    >
+                        {
+                            !show ? 
+                                <div className={cn(
+                                    'xl:w-[1200px] w-[90vw] xl:h-[600px] ms:h-[500px] md:h-[400px] h-[300px]',
+                                    `bg-poster bg-cover bg-no-repeat bg-bottom`,
+                                    'relative duration-500 flex items-center justify-center'
+                                )} >
+                                    <div className={cn(
+                                        'absolute bg-youtube w-full h-full bg-no-repeat bg-center',
+                                        'hover:opacity-[1] opacity-[0.9] duration-500'
+                                    )} />
+                                </div> 
+                            : 
+                                <Player />                       
+                        }
                     </div>
                 </div>
             </div>

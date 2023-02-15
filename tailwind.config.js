@@ -27,6 +27,8 @@ module.exports = {
         'moreAcceleratorLoop': "url(./assets/icon/MoreAccelerator.svg)",
         'curveLineConsultation': "url(./assets/icon/CurveLineConsultation.svg)",
         'orangeArrow': "url(./assets/icon/OrangeArrow.svg)",
+        'youtube': "url(./assets/icon/youtube.svg)",
+        'poster': "url(./assets/image/poster.webp)",
         //projects
         'slideAmnezia': "url(./assets/image/amnezia.webp)",
         'slideGetSiteCopy': "url(./assets/image/getSiteCopy.webp)",
