@@ -471,7 +471,7 @@ i18n
                     },
                     exampleText: {
                         0: `Платформа на хостинге пользователя для разворачивания приватных сервисов, управляемых мобильным приложением.`,
-                        1: `Platform on user's hosting provider for deploying private services, managed via mobile application.`,
+                        1: `Облачное файлохранилище с p2p-шифрованием.`,
                         2: `Бесплатное программное обеспечение с открытым исходным кодом для создания личного VPN на своём сервере.`,
                         length: 3
                     },
@@ -507,7 +507,7 @@ i18n
                     },
                     exampleText: {
                         0: `Проверка соглашений о персональных данных`,
-                        1: `Platform on user's hosting provider for deploying private services, managed via mobile application.`,
+                        1: `WEB-сервис, извлекающий массивы данных по судебным решениям судов РФ`,
                         length: 2
                     },
                   },
