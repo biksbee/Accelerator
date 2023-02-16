@@ -33,7 +33,7 @@ export const workContent = {
         link: [
             [
                 `https://selfprivacy.org/`,
-                ``,
+                `https://go-kt.com/`,
                 `https://ru.amnezia.org/`
             ],
             [

@@ -59,7 +59,7 @@ const ChapterNew = ({i}) => {
                 <div className='ms:pl-0 md:pl-[40px] pl-[15px] xl:w-[396px] ms:w-[266px] w-full  ms:block md:flex hidden justify-between'>
                     {
                         Converter(t(`workContent.page${i.index}.exampleTitle.length`)).map((item, index) => (
-                            <a key={index} href={content.link[i.index][index]} className='ms:pr-0 pr-[20px]'>
+                            <a key={index} href={content.link[i.index][index]} className='ms:pr-0 pr-[20px]' target={"_blank"}>
                                 <div  className='pb-[25px] xl:w-[396px] ms:w-[300px]'>
                                     <div key={index} className='not-italic font-otf-bold text-[15px] leading-[18px] text-c_blue-deepDark pb-[7px]'>
                                         {t(`workContent.page${i.index}.exampleTitle.${index}`)}
