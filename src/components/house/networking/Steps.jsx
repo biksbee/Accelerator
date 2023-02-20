@@ -24,16 +24,17 @@ const Steps = () => {
                     <div className='xs:mr-[50px]'>
                         <div>
                             <div className="xm:mb-[100px] mb-[70px] xl:w-[472px] xs:w-[40vw] w-full border-t-[2px] pt-[31px] border-t-c_gray-regular">
-                                <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
+                                <div className="mb-[17px] s:w-[330px] w-[90vw]">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[43px] text-[22px] leading-[22px]",
-                                        "font-otf-semiBold not-italic"
+                                        "font-otf-semiBold not-italic",
+                                        "relative"
                                     )}>
                                         {t('house.networkingStepsTitle1')}
-                                    </div>
-                                    <div className="absolute md:h-max md:top-[15px] top-0 md:left-[-20px] left-[-10px]">
-                                        <img className='md:block hidden' src={parenthesis} alt="parenthesis" />
-                                        <img className='md:hidden block' src={parenthesisMini} alt="parenthesis" />
+                                        <div className="absolute md:h-max md:top-[15px] s:top-0 top-[10px] md:left-[-20px] left-[-10px]">
+                                            <img className='md:block hidden' src={parenthesis} alt="parenthesis" />
+                                            <img className='md:hidden block' src={parenthesisMini} alt="parenthesis" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className='mb-[31px]'>
@@ -52,17 +53,19 @@ const Steps = () => {
                         </div>
                         <div>
                             <div className="xl:mt-[50px] xl:mb-0 mb-[70px] xl:w-[472px] xs:w-[40vw] w-full border-t-[2px] pt-[31px] border-t-c_gray-regular">
-                                <div className="relative mb-[17px] s:w-[330px] w-[90vw]">
+                                <div className="mb-[17px] w-max">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[43px] text-[22px] leading-[22px]",
-                                        "font-otf font-otf-semiBold not-italic"
+                                        "font-otf font-otf-semiBold not-italic",
+                                        "relative"
                                     )}>
                                         {t('house.networkingStepsTitle3')}
+                                        <div className="absolute md:top-[20px] top-0 right-[-40px]">
+                                            <img className='md:block hidden' src={checkMark} alt="checkMark" />
+                                            <img className='md:hidden' src={checkMarkMini} alt="checkMark" />
+                                        </div>
                                     </div>
-                                    <div className="absolute md:top-[20px] top-0 md:right-[120px] right-[200px]">
-                                        <img className='md:block hidden' src={checkMark} alt="checkMark" />
-                                        <img className='md:hidden' src={checkMarkMini} alt="checkMark" />
-                                    </div>
+                                    
                                 </div>
                                 <div className='mb-[31px]'>
                                     <div className='md:text-[22px] md:leading-[30px] text-[15px] leading-[21px] font-otfNormal not-italic font-otf-book text-c_gray-regular'>
@@ -82,20 +85,21 @@ const Steps = () => {
                     <div> 
                         <div>
                             <div className="xl:mb-0 mb-[70px] xl:w-[570px] xs:w-[48vw] w-full border-t-[2px] pt-[31px] border-t-c_gray-regular">
-                                <div className="relative mb-[17px] md:w-[430px] s:w-[330px] w-[90vw]">
+                                <div className="mb-[17px] w-max">
                                     <div className={cn(
                                         "text-c_gray-regular md:text-[45px] md:leading-[43px] text-[22px] leading-[22px]",
-                                        "font-otf font-otf-semiBold not-italic"
+                                        "font-otf font-otf-semiBold not-italic",
+                                        "relative"
                                     )}>
                                         {t('house.networkingStepsTitle2')}
-                                    </div>
-                                    <div className="absolute md:top-[-10px] top-[-10px] md:left-[-15px] left-[-10px]">
-                                        <img className='md:block hidden' src={cornerUp} alt="cornerUp" />
-                                        <img className='md:hidden block' src={cornerUpMini} alt="cornerUp" />
-                                    </div>
-                                    <div className="absolute md:bottom-[-10px] bottom-[-5px] md:right-[50px] right-[140px]">
-                                        <img className='md:block hidden' src={cornerDown} alt="cornerDown" />
-                                        <img className='md:hidden block' src={cornerDownMini} alt="cornerDown" />
+                                        <div className="absolute top-[-10px] left-[-10px]">
+                                            <img className='md:block hidden' src={cornerUp} alt="cornerUp" />
+                                            <img className='md:hidden block' src={cornerUpMini} alt="cornerUp" />
+                                        </div>
+                                        <div className="absolute bottom-[-10px] right-[-10px]">
+                                            <img className='md:block hidden' src={cornerDown} alt="cornerDown" />
+                                            <img className='md:hidden block' src={cornerDownMini} alt="cornerDown" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className='mb-[31px]'>

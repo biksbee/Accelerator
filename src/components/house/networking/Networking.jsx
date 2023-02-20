@@ -38,7 +38,7 @@ const Networking = () => {
                                     <img 
                                         src={content.networking[index].networkingIcons} 
                                         alt={`${content.networking[index].networkingIcons}`} 
-                                        className={`${index === 4 ? 'md:w-[286px] w-[260px] h-max' : index === 5 ? 'ds:w-[120px] w-[64px]' : null}`} 
+                                        className={`${index === 4 ? 'md:w-[286px] w-[260px]' : index === 5 ? 'ds:w-[120px] w-[64px]' : null}`} 
                                     />
                                 </a>    
                             </div>
