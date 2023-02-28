@@ -22,7 +22,7 @@ i18n
                 lan: 'eng',
                 button: 'Подать заявку',
                 li: "Проекты, Как мы работаем, Команда, Контакты",
-                startPageTitle: 'Помогаем запускать, качественные продукты, в сфере, приватности, и свободы интернета',
+                startPageTitle: 'Помогаем запускать, качественные продукты, в сфере,  приватности, и свободы интернета',
                 ourProjects: {
                   mainTitle: "Наши проекты",
                   projects: {
@@ -118,7 +118,7 @@ i18n
                   page0: {
                     title: 'Приватность',
                     text: {
-                      0: 'Проекты, отстаивающие право на конфиденциальность и направленные на  защиту персональных данных пользователя, защиту информации, переписок, логи посещения сайтов',
+                      0: 'Проекты, отстаивающие право на конфиденциальность и направленные на защиту персональных данных пользователя, защиту информации, переписок, логи посещения сайтов',
                       1: 'Мы хотим создать технические решения по защите права на конфиденциальность.',
                       2: 'То есть тут блок скорее про свободу, отсутствие конфиденциальности в сети значит наличие контроля за твоими данными сторонних организаций или отдельных лиц',    
                       length: 3
@@ -139,7 +139,7 @@ i18n
                   page1: {
                     title: 'Доступ, к информации',
                     text: {
-                      0: 'Противодействие блокировок (амнезия), защита свободы слова (get site copy) или же содействие улучшению качества распространения информации (секьюрно)',    
+                      0: 'Противодействие блокировкам (Амнезия), защита свободы слова (Get Site Copy) или же содействие улучшению качества распространения информации (Cекьюрно)',    
                       length: 1
                     },
                     exampleTitle: {
@@ -182,7 +182,7 @@ i18n
                     2: 'Таким образом мы выстраиваем цепочку создания и развития проектов в области свободы интернета и приватности от момента инициации идеи до выхода проекта на рынок.', 
                     3: 'С 2020 года Privacy Accelerator и ',
                     4: 'Роскомсвобода', 
-                    5: ' проводят хакатон Demhack дважды в год.',
+                    5: 'проводят хакатон Demhack дважды в год.',
                     length: 6
                   },
                 },
@@ -204,7 +204,7 @@ i18n
                     }, 
                     2: {
                       title: 'Инкубатор',
-                      context: 'Подойдет проектам на стадии масштабирования, а также командам, которые  не готовы к акселерации из-за временных ограничений. Вы сможете пользоваться нашим нетворкингом, прицельно проконсультироваться с экспертами и получить помощь в своем проекте по нашим сферам компетенций.',
+                      context: 'Подойдет проектам на стадии масштабирования, а также командам, которые не готовы к акселерации из-за временных ограничений. Вы сможете пользоваться нашим нетворкингом, прицельно проконсультироваться с экспертами и получить помощь в своем проекте по нашим сферам компетенций.',
                       needed: 'Проект в сфере приватности, свободы информации или legaltech. Есть оцифрованные результаты развития проекта.',
                     },
                     length: 3
@@ -225,15 +225,15 @@ i18n
                   experts: {
                     0: {
                       name: 'Станислав Шакиров',
-                      description: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы. Эксперт в продвижении IT-продуктов, кибербезопасности и интернет-предпринимательства.', 
+                      description: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы. Эксперт в продвижении IT-продуктов, кибербезопасности и интернет-предпринимательстве.', 
                       photo: 'bg-StanislavShakirov',
-                      allDescription: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы. Эксперт в продвижении IT-продуктов, кибербезопасности и интернет-предпринимательства.',
+                      allDescription: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы. Эксперт в продвижении IT-продуктов, кибербезопасности и интернет-предпринимательстве.',
                     },
                     1: {
                       name: 'Иван Михайлов',
-                      description: 'CEO компании ADWIST, экс-заместитель исполнительного директора Hearst Shkulev Media. Эксперт по маркетингу для b2b и b2c продуктов, развитие и запуск проектов на международных рынках', 
+                      description: 'CEO компании ADWIST, экс-заместитель исполнительного директора Hearst Shkulev Media. Эксперт по маркетингу для b2b и b2c продуктов, развитии и запуске проектов на международных рынках.', 
                       photo: 'bg-IvanMikhailov',
-                      allDescription: 'CEO компании ADWIST, экс-заместитель исполнительного директора Hearst Shkulev Media. Эксперт по маркетингу для b2b и b2c продуктов, развитие и запуск проектов на международных рынках',
+                      allDescription: 'CEO компании ADWIST, экс-заместитель исполнительного директора Hearst Shkulev Media. Эксперт по маркетингу для b2b и b2c продуктов, развитии и запуске проектов на международных рынках.',
                     },
                     2: {
                       name: 'Наталья Малышева',
@@ -243,72 +243,85 @@ i18n
                     },
                     3: {
                       name: 'Дарья Горбачева',
-                      description: 'Координатор Privacy Accelerator. Опыт в области коммьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.', 
+                      description: 'Координатор Privacy Accelerator. Опыт в области комьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.', 
                       photo: 'bg-DariaGorbacheva',
-                      allDescription: 'Координатор Privacy Accelerator. Опыт в области коммьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.',
+                      allDescription: 'Координатор Privacy Accelerator. Опыт в области комьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.',
                     },
                     4: {
                       name: 'Артем Игнатенко',
-                      description: 'Agile Coach X5 Retail, ex-Product Owner Альфа-Банк, экс-директор департамента разработки группы IT-компаний, предприниматель.', 
+                      description: 'Agile Coach в X5 Retail, ex-Product Owner в Альфа-Банке, экс-директор департамента разработки группы IT-компаний, предприниматель.', 
                       photo: 'bg-ArtemIgnatenko',
-                      allDescription: 'Agile Coach X5 Retail, ex-Product Owner Альфа-Банк, экс-директор департамента разработки группы IT-компаний, предприниматель. Эксперт в организации быстрой проверки продуктовых гипотез и организации процессов разработки продуктов',
+                      allDescription: 'Agile Coach в X5 Retail, ex-Product Owner в Альфа-Банке, экс-директор департамента разработки группы IT-компаний, предприниматель. Эксперт в организации быстрой проверки продуктовых гипотез и организации процессов разработки продуктов.',
                     },
                     5: {
                       name: 'Екатерина Абашина',
-                      description: 'Адвокат, медиаюрист. Эксперт в сфере медиа, электронной коммерции и защиты частной жизни', 
+                      description: 'Адвокат, медиаюрист. Эксперт в сфере медиа, электронной коммерции и защиты частной жизни.', 
                       photo: 'bg-EkaterinaAbashina',
-                      allDescription: 'Адвокат, медиаюрист. Эксперт в сфере медиа, электронной коммерции и защиты частной жизни',
+                      allDescription: 'Адвокат, медиаюрист. Эксперт в сфере медиа, электронной коммерции и защиты частной жизни.',
                     },
                     6: {
                       name: 'Вадим Мисбах-Соловьев',
-                      description: 'Системный администратор и технический консультант РосКомСвободы, интернет-предприниматель, эксперт по вопросам внедрения IT-технологий, криптографии и opensource-энтузиаст', 
+                      description: 'Системный администратор и технический консультант РосКомСвободы, интернет-предприниматель, эксперт по вопросам внедрения IT-технологий, криптографии и opensource-энтузиаст.', 
                       photo: 'bg-MisbahSoloviev',
-                      allDescription: 'Системный администратор и технический консультант РосКомСвободы, интернет-предприниматель, эксперт по вопросам внедрения IT-технологий, криптографии и opensource-энтузиаст',
+                      allDescription: 'Системный администратор и технический консультант РосКомСвободы, интернет-предприниматель, эксперт по вопросам внедрения IT-технологий, криптографии и opensource-энтузиаст.',
                     },
                     7: {
                       name: 'Саркис Дарбинян',
-                      description: 'Адвокат, глава юридической практики РосКомСвободы, управляющий в Цифровая коллегия адвокатов "DBA & Partners", эксперт в сфере защиты приватности и законодательства в сфере IT и IP', 
+                      description: 'Адвокат, глава юридической практики РосКомСвободы, управляющий в Цифровая коллегия адвокатов "DBA & Partners", эксперт в сфере защиты приватности и законодательства в сфере IT и IP.', 
                       photo: 'bg-SarkisDabrinyn',
-                      allDescription: 'Адвокат, глава юридической практики РосКомСвободы, управляющий в Цифровая коллегия адвокатов "DBA & Partners", эксперт в сфере защиты приватности и законодательства в сфере IT и IP',
+                      allDescription: 'Адвокат, глава юридической практики РосКомСвободы, управляющий в Цифровая коллегия адвокатов "DBA & Partners", эксперт в сфере защиты приватности и законодательства в сфере IT и IP.',
                     },
                     8: {
-                      name: 'Иван Бегтин ',
-                      description: 'Директор АНО Информационная культура, ведущий российский. Эксперт в области открытых данных, цифрового государства, госзакупок, госфинансов, приватности', 
+                      name: 'Иван Бегтин',
+                      description: 'Директор АНО Информационная культура, ведущий российский эксперт в области открытых данных, цифрового государства, госзакупок, госфинансов, приватности.', 
                       photo: 'bg-BegtinIvan',
-                      allDescription: 'Директор АНО Информационная культура, ведущий российский. Эксперт в области открытых данных, цифрового государства, госзакупок, госфинансов, приватности',
+                      allDescription: 'Директор АНО Информационная культура, ведущий российский эксперт в области открытых данных, цифрового государства, госзакупок, госфинансов, приватности.',
                     },
                     9: {
                       name: 'Владимир Ожерельев',
-                      description: 'Юрист Центра цифровых прав. Эксперт в области персональных данных, интеллектуальной собственности, защиты деловой репутации и налогов', 
+                      description: 'Юрист Центра цифровых прав. Эксперт в области персональных данных, интеллектуальной собственности, защиты деловой репутации и налогов.', 
                       photo: 'bg-VladimirOjereliev',
-                      allDescription: 'Юрист Центра цифровых прав. Эксперт в области персональных данных, интеллектуальной собственности, защиты деловой репутации и налогов',
+                      allDescription: 'Юрист Центра цифровых прав. Эксперт в области персональных данных, интеллектуальной собственности, защиты деловой репутации и налогов.',
                     },
                     10: {
                       name: 'Даниил Пленин',
-                      description: 'Основатель Telegram-канала о венчурном бизнесе и стартапах "Русский венчур", пиар-директор международного образовательного стартапа "Алгоритмика"', 
+                      description: 'Основатель Telegram-канала о венчурном бизнесе и стартапах «Русский венчур», пиар-директор международного образовательного стартапа «Алгоритмика».', 
                       photo: 'bg-PleninDaniil',
-                      allDescription: 'Основатель Telegram-канала о венчурном бизнесе и стартапах "Русский венчур", пиар-директор международного образовательного стартапа "Алгоритмика"',
+                      allDescription: 'Основатель Telegram-канала о венчурном бизнесе и стартапах «Русский венчур», пиар-директор международного образовательного стартапа «Алгоритмика».',
                     },
                     11: {
                       name: 'Алексей Шевелёв',
-                      description: 'Руководитель отдела по работе с пользователями Хабр', 
+                      description: 'Руководитель отдела по работе с пользователями Хабр.', 
                       photo: 'bg-AlexShevelev',
-                      allDescription: 'Руководитель отдела по работе с пользователями Хабр',
+                      allDescription: 'Руководитель отдела по работе с пользователями Хабр.',
                     },
                     12: {
-                      name: 'Николай Дмитрик ',
-                      description: 'Заведующий лабораторией правовой информатики и кибернетики Юридического факультета МГУ имени М.В. Ломоносова. Эксперт в области электронного управления и цифровой трансформации государства и права', 
+                      name: 'Николай Дмитрик',
+                      description: 'Заведующий лабораторией правовой информатики и кибернетики Юридического факультета МГУ имени М.В. Ломоносова. Эксперт в области электронного управления и цифровой трансформации государства и права.', 
                       photo: 'bg-DmitrikNikolay',
-                      allDescription: 'Заведующий лабораторией правовой информатики и кибернетики Юридического факультета МГУ имени М.В. Ломоносова. Эксперт в области электронного управления и цифровой трансформации государства и права',
+                      allDescription: 'Заведующий лабораторией правовой информатики и кибернетики Юридического факультета МГУ имени М.В. Ломоносова. Эксперт в области электронного управления и цифровой трансформации государства и права.',
                     },
+                    13: {
+                      name: 'Ольга Немировская',
+                      description: 'Product manager Privacy accelerator. Эксперт в продуктовом подходе, в продажах и маркетинге.', 
+                      photo: '',
+                      allDescription: 'Product manager Privacy accelerator. Эксперт в продуктовом подходе, в продажах и маркетинге.',
+                    },
+                    14: {
+                      name: 'Андрей Черватюк',
+                      description: 'UX/UI-дизайнер. Эксперт по проектированию интерфейсов и юзабилити.', 
+                      photo: '',
+                      allDescription: 'UX/UI-дизайнер. Эксперт по проектированию интерфейсов и юзабилити.',
+                    },
+                    length: 15,
                   },
                   networking: "Нетворкинг",
-                  networkingDescription: "Обширные партнерские связи и нетворкинг с русскоязычными медиа и компаниями, а также  международными проектами и фондами.",
+                  networkingDescription: "Обширные партнерские связи и нетворкинг с русскоязычными медиа и компаниями, а также международными проектами и фондами.",
                   networkingStepsTitle1: "Помощь с финансированием",
                   networkingStepsTitle2: "Выход на рынок",
                   networkingStepsTitle3: "Трекинг",
                   networkingStepsTitle4: "Лекции и воркшопы",
-                  networkingStepsDescription1: "Бизнес-ангелы, венчурные и некоммерческие фонды.",
+                  networkingStepsDescription1: "Бизнес-ангелы, венчурные и некоммерческие фонд",
                   networkingStepsDescription2: "Аудитория для Customer Development, первые последователи, масштабирование",
                   networkingStepsDescription3: "Целеполагание, четкий road map, развитие навыков, опыт и инструменты, чтобы бежать быстрее и эффективнее",
                   networkingStepsDescription4: "Практические занятия и материалы о Product Management, Customer Development, Fundraising",
@@ -319,18 +332,18 @@ i18n
                   experts: {
                     0: {
                       name: 'Станислав Шакиров',
-                      description: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы.',
-                      photo: 'bg-StanislavShakirov'
+                      description: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы. Эксперт в продвижении IT-продуктов, кибербезопасности и интернет-предпринимательстве.', 
+                      photo: 'bg-StanislavShakirov',
                     },
                     1: {
                       name: 'Наталья Малышева',
-                      description: 'Руководитель по связям с общественностью РосКомСвободы, журналист и экоактивист. Эксперт в области СМИ, коммуникаций и продвижения, организации общественных кампаний. ',
-                      photo: 'bg-NataliyMalishova'
+                      description: 'Руководитель по связям с общественностью РосКомСвободы, журналист и экоактивист. Эксперт в области СМИ, коммуникаций и продвижения, организации общественных кампаний.', 
+                      photo: 'bg-NataliyMalishova',
                     },
                     2: {
                       name: 'Дарья Горбачева',
-                      description: 'Координатор Privacy Accelerator. Опыт в области коммьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.',
-                      photo: 'bg-DariaGorbacheva'
+                      description: 'Координатор Privacy Accelerator. Опыт в области комьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.', 
+                      photo: 'bg-DariaGorbacheva',
                     },
                     length: 3
                   },
@@ -361,15 +374,15 @@ i18n
         en: {
             translation: {
                 lan: 'рус',
-                button: 'Send',
+                button: 'Apply',
                 li: 'Projects, Our work, Team, Contacts',
-                startPageTitle: 'We help launch, quality products, in the field, privacy, and internet freedom',
+                startPageTitle: 'We help to launch, hidh-quality products, in the sphere, of privacy, and Internet freedom',
                 ourProjects: {
                   mainTitle: "Our projects",
                   projects: {
                     0: {
                       title: 'Amnezia',
-                      subtitle: 'помогает получать доступ к заблокированному контенту, не раскрывая конфиденциальность даже провайдерам VPN.',
+                      subtitle: 'helps you access blocked content without revealing your privacy, even to VPN-providers.',
                       description: {
                         0:'Amnezia VPN помогает получать доступ к заблокированному контенту, не раскрывая конфиденциальность даже провайдерам VPN. Проект стал победителем первого хакатона Demhack ( https://demhack.ru) и получил финансирование на развитие open-source разработки от двух НКО-фондов. Сервис отличают простота установки и использования, безопасность и отсутствие платы за пользование VPN, которые помогают противостоять цензуре и блокировке сайтов и онлайн-сервисов.',
                         1:'На текущий момент Amnezia использует широкий стек протоколов (OpenVPN, WireGuard, Shadowsocks, Cloak, Pluggable Transport) и как следствие ее сложнее заблокировать. Основываясь на проверенных технологиях с открытым исходным кодом и аудиту, Amnezia VPN можно ответственно использовать в репрессивных, нестабильных или затронутых конфликтами средах и с группами риска, уязвимыми группами населения, в том числе независимыми медиа и правозащитниками. C марта по ноябрь 2022 года аудитория проекта увеличилась в 5 раз, а с введением бесплатного сервиса по доступу к заблокированным соцсетям и медиа в России Amnezia Free, удалось увеличить активную аудиторию проекта более 150К, а общее количество загрузок Amnezia VPN для десктопов достигло 60К. Без анонсирования мобильной версии число скачиваний приложения для Android оказалось более 10К.',
@@ -458,9 +471,9 @@ i18n
                   page0: {
                     title: 'Privacy',
                     text: {
-                      0: 'Проекты, отстаивающие право на конфиденциальность и направленные на  защиту персональных данных пользователя, защиту информации, переписок, логи посещения сайтов',
-                      1: 'Мы хотим создать технические решения по защите права на конфиденциальность.',
-                      2: 'То есть тут блок скорее про свободу, отсутствие конфиденциальности в сети значит наличие контроля за твоими данными сторонних организаций или отдельных лиц',    
+                      0: 'Projects that defend the right to privacy and are aimed at protecting the personal data of users, protecting information, correspondence, and logs of sites visiting.',
+                      1: 'We want to create technical solutions to defend the right to privacy.',
+                      2: 'So here the block is more about freedom, no privacy on the net means that there is a control of your data by a third party or an individual',    
                       length: 3
                     },
                     exampleTitle: {
@@ -470,44 +483,44 @@ i18n
                         length: 3
                     },
                     exampleText: {
-                        0: `Платформа на хостинге пользователя для разворачивания приватных сервисов, управляемых мобильным приложением.`,
-                        1: `Облачное файлохранилище с p2p-шифрованием.`,
-                        2: `Бесплатное программное обеспечение с открытым исходным кодом для создания личного VPN на своём сервере.`,
+                        0: `A platform on a user’s hosting to deploy private services managed by a mobile app.`,
+                        1: `Cloud file storage with p2p encryption.`,
+                        2: `Free open source software for creating a personal VPN on your own server.`,
                         length: 3
                     },
                   },
                   page1: {
                     title: 'Access, to information',
                     text: {
-                      0: 'Противодействие блокировок (амнезия), защита свободы слова (get site copy) или же содействие улучшению качества распространения информации (секьюрно)',    
+                      0: 'Countermeasures against blockages (Amnezia), protecting freedom of speech (Get Site Copy), or assisting in improving the quality of information dissemination (Securno)',    
                       length: 1
                     },
                     exampleTitle: {
                         0: 'get site copy', 
-                        1: 'Секьюрно',
+                        1: 'Securno',
                         length: 2
                     },
                     exampleText: {
-                        0: `Телеграм-бот, позволяющий читать материалы заблокированных медиа без использования VPN`,
-                        1: `Трекер привычек и персональный ассистент безопасности`,
+                        0: `Telegram bot that allows to read content from blocked media without using a VPN`,
+                        1: `Habit tracker and personal security assistant`,
                         length: 2
                     },
                   },
                   page2: {
                     title: 'LegalTech',
                     text: {
-                      0: 'Проекты для автоматизации и цифровизации юридической работы',    
+                      0: 'Projects for automation and digitalization of legal work',    
                       length: 1
                     },
                     exampleTitle: {
-                      0: 'Персоналка', 
+                      0: 'Personalka', 
                       1: 'Nabu',
                       length: 2
 
                     },
                     exampleText: {
-                        0: `Проверка соглашений о персональных данных`,
-                        1: `WEB-сервис, извлекающий массивы данных по судебным решениям судов РФ`,
+                        0: `Verification of personal data agreements`,
+                        1: `WEB-service that retrieves data sets of judicial decisions of courts of Russian Federation`,
                         length: 2
                     },
                   },
@@ -517,12 +530,12 @@ i18n
                   hackathon: 'Hackathon',
                   href: 'demhack.ru',
                   text: {
-                    0: 'Goal hackathon — поддержка духа сообщества, создание площадки для взаимодействия и сотрудничества специалистов из разных стран, возможность реализовать свои идеи для блага людей по всему миру и, защитить права на приватность и доступ к информации.', 
-                    1: 'Мы собираем интересные идеи в формате заявок и задач на хакатон, а после хакатона поддерживаем команды, которые хотят продолжать работать над проектом. Основываясь на экспертных оценках и наблюдениях за работой команд на хакатоне, мы принимаем решение о продолжении работы с проектом в рамках акселератора.',
-                    2: 'Таким образом мы выстраиваем цепочку создания и развития проектов в области свободы интернета и приватности от момента инициации идеи до выхода проекта на рынок.', 
-                    3: 'С 2020 года Privacy Accelerator и ',
-                    4: 'Роскомсвобода', 
-                    5: ' проводят хакатон Demhack дважды в год.',
+                    0: 'The purpose of the hackathon is to support community spirit, create a platform for interaction and cooperation between specialists from different countries, the possibility to implement your ideas for the benefit of people around the world and to protect the rights for privacy and access to information.', 
+                    1: 'We accumulate interesting ideas in the form of applications and tasks for the hackathon, and after the hackathon we support teams that want to continue their work on the project. Based on expert evaluations and observations of the teams\' work at the hackathon, we decide to continue working with the project within the acceleration program.',
+                    2: 'This is how we build a chain for the development and creation of projects in the sphere of Internet freedom and privacy, from the moment the idea is initiated until the project enters the market.', 
+                    3: 'Since 2020 Privacy Accelerator and',
+                    4: 'Roskomskvoboda', 
+                    5: 'hold a Demhack hackathon twice a year.',
                     length: 6
                   },
                 },
@@ -533,26 +546,26 @@ i18n
                   },
                   projects: {
                     0: {
-                      title: 'Преакселератор',
-                      context: 'В преакселераторе мы помогаем командам провести исследование рынка и анализ конкурентов, изучить аудиторию. Вы сможете развить свою идею и определиться с продуктом, который будет полезен для аудитории и востребован на рынке.',
-                      needed: 'Наличие идеи и первоначальной разработки. Команда готова тратить на проект как минимум 20 часов в неделю.', 
+                      title: 'Pre-accelerator',
+                      context: 'At the preaccelerator level, we help teams conduct market research and competitor analysis and study the target audience. We help to develop the idea and decide on the product, which will be useful for the audience and demanded in the market.',
+                      needed: 'Have an idea and initial development. The team is ready to spend at least 20 hours a week on the project.', 
                     },
                     1: {
-                      title: 'Акселератор',
-                      context: 'В акселераторе мы обеспечиваем менторскую поддержку или сопровождение проектов в областях cusdev, маркетинг, ui/ux, управление проектами, право и т.д. Кроме того иногда мы привлекаем экспертов в области кибербезопасности, devops и разработки, но сама разработка всех остается на стороне команд. Программа акселератора рассчитана на 3 месяца.',
-                      needed: 'Наличие MVP и необходимой команды, готовых тратить на проект как минимум 20 часов в неделю. Для коммерческих проектов обязателен менеджер по продукту.',
+                      title: 'Accelerator',
+                      context: 'In the accelerator we provide mentorship or support for projects in the spheres of cusdev, marketing, ui/ux, project management, law, etc. We also involve experts in cybersecurity, devops and development spheres, but the development itself remains on the side of the teams. The acceleration program is designed for 3 months.',
+                      needed: 'MVP and the necessary team ready to spend at least 20 hours per week for the project. A product manager is mandatory for commercial projects.',
                     }, 
                     2: {
-                      title: 'Инкубатор',
-                      context: 'Подойдет проектам на стадии масштабирования, а также командам, которые  не готовы к акселерации из-за временных ограничений. Вы сможете пользоваться нашим нетворкингом, прицельно проконсультироваться с экспертами и получить помощь в своем проекте по нашим сферам компетенций.',
-                      needed: 'Проект в сфере приватности, свободы информации или legaltech. Есть оцифрованные результаты развития проекта.',
+                      title: 'Incubator',
+                      context: 'Suitable for projects in the scaling stage, as well as for teams that are not ready for acceleration due to time constraints. You will benefit from our networking, targeted consultations with experts and assistance with your project in our areas of expertise.',
+                      needed: 'A project in the sphere of privacy, freedom of information or legaltech. Got digitized results of project development.',
                     },
                     length: 3
                   },
                   requirements: "requirements",
                   price: '0$',
                   subtitle: 'Cost of participation',
-                  pretitle: 'Как для некоммерческих, так и для коммерческих проектов участие бесплатно.',
+                  pretitle: 'Participation is free for both non-profit and for-profit projects.',
                 },
                 house: {
                   mainTitle: {
@@ -564,95 +577,107 @@ i18n
                   show: "View all experts",
                   experts: {
                     0: {
-                      name: 'Станислав Шакиров',
-                      description: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы. Эксперт в продвижении IT-продуктов, кибербезопасности и интернет-предпринимательства.', 
+                      name: 'Stanislav Shakirov',
+                      description: 'Founder of Privacy Accelerator, co-founder of Cyberlaw School and Digital Rights Center, CTO and co-founder of Roskomsvoboda. Expert in the promotion of IT products, cyber-security and internet-entrepreneurship.', 
                       photo: 'bg-StanislavShakirov',
-                      allDescription: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы. Эксперт в продвижении IT-продуктов, кибербезопасности и интернет-предпринимательства.',
+                      allDescription: 'Founder of Privacy Accelerator, co-founder of Cyberlaw School and Digital Rights Center, CTO and co-founder of Roskomsvoboda. Expert in the promotion of IT products, cyber-security and internet-entrepreneurship.',
                     },
                     1: {
-                      name: 'Иван Михайлов',
-                      description: 'CEO компании ADWIST, экс-заместитель исполнительного директора Hearst Shkulev Media. Эксперт по маркетингу для b2b и b2c продуктов, развитие и запуск проектов на международных рынках', 
+                      name: 'Ivan Mikhailov',
+                      description: 'CEO of ADWIST, former deputy executive director of Hearst Shkulev Media. Expert in marketing for b2b and b2c products, development and launch of projects in international markets.', 
                       photo: 'bg-IvanMikhailov',
-                      allDescription: 'CEO компании ADWIST, экс-заместитель исполнительного директора Hearst Shkulev Media. Эксперт по маркетингу для b2b и b2c продуктов, развитие и запуск проектов на международных рынках',
+                      allDescription: 'CEO of ADWIST, former deputy executive director of Hearst Shkulev Media. Expert in marketing for b2b and b2c products, development and launch of projects in international markets.',
                     },
                     2: {
-                      name: 'Наталья Малышева',
-                      description: 'Руководитель по связям с общественностью РосКомСвободы, журналист и экоактивист. Эксперт в области СМИ, коммуникаций и продвижения, организации общественных кампаний.', 
+                      name: 'Natalya Malysheva',
+                      description: 'Head of communications for Roskomsvoboda, journalist and eco-activist. Expert in the sphere of mass media, communications and promotion, organizing public campaigns.', 
                       photo: 'bg-NataliyMalishova',
-                      allDescription: 'Руководитель по связям с общественностью РосКомСвободы, журналист и экоактивист. Эксперт в области СМИ, коммуникаций и продвижения, организации общественных кампаний.',
+                      allDescription: 'Head of communications for Roskomsvoboda, journalist and eco-activist. Expert in the sphere of mass media, communications and promotion, organizing public campaigns.',
                     },
                     3: {
-                      name: 'Дарья Горбачева',
-                      description: 'Координатор Privacy Accelerator. Опыт в области коммьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.', 
+                      name: 'Daria Gorbacheva',
+                      description: 'Coordinator of Privacy Accelerator. Experienced in community management and the organization of online and offline events.', 
                       photo: 'bg-DariaGorbacheva',
-                      allDescription: 'Координатор Privacy Accelerator. Опыт в области коммьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.',
+                      allDescription: 'Coordinator of Privacy Accelerator. Experienced in community management and the organization of online and offline events.',
                     },
                     4: {
-                      name: 'Артем Игнатенко',
-                      description: 'Agile Coach X5 Retail, ex-Product Owner Альфа-Банк, экс-директор департамента разработки группы IT-компаний, предприниматель.', 
+                      name: 'Artem Ignatenko',
+                      description: 'Agile Coach at X5 Retail, ex Product Owner at Alfa Bank, ex-Director of Development department of the group of IT companies, entrepreneur.', 
                       photo: 'bg-ArtemIgnatenko',
-                      allDescription: 'Agile Coach X5 Retail, ex-Product Owner Альфа-Банк, экс-директор департамента разработки группы IT-компаний, предприниматель. Эксперт в организации быстрой проверки продуктовых гипотез и организации процессов разработки продуктов',
+                      allDescription: 'Agile Coach at X5 Retail, ex Product Owner at Alfa Bank, ex-Director of Development department of the group of IT companies, entrepreneur. Expert in quick methods of hypothesis testing and arrangement of product development processes.',
                     },
                     5: {
-                      name: 'Екатерина Абашина',
-                      description: 'Адвокат, медиаюрист. Эксперт в сфере медиа, электронной коммерции и защиты частной жизни', 
+                      name: 'Ekaterina Abashina.',
+                      description: 'Attorney and media lawyer. Expert in media, e-commerce and privacy protection.', 
                       photo: 'bg-EkaterinaAbashina',
-                      allDescription: 'Адвокат, медиаюрист. Эксперт в сфере медиа, электронной коммерции и защиты частной жизни',
+                      allDescription: 'Attorney and media lawyer. Expert in media, e-commerce and privacy protection.',
                     },
                     6: {
-                      name: 'Вадим Мисбах-Соловьев',
-                      description: 'Системный администратор и технический консультант РосКомСвободы, интернет-предприниматель, эксперт по вопросам внедрения IT-технологий, криптографии и opensource-энтузиаст', 
+                      name: 'Vadim Misbach-Soloviev.',
+                      description: 'System administrator and technical advisor for Roskomsvoboda, Internet entrepreneur, expert in implementation of IT technologies, cryptography and opensource-enthusiast.', 
                       photo: 'bg-MisbahSoloviev',
-                      allDescription: 'Системный администратор и технический консультант РосКомСвободы, интернет-предприниматель, эксперт по вопросам внедрения IT-технологий, криптографии и opensource-энтузиаст',
+                      allDescription: 'System administrator and technical advisor for Roskomsvoboda, Internet entrepreneur, expert in implementation of IT technologies, cryptography and opensource-enthusiast.',
                     },
                     7: {
-                      name: 'Саркис Дарбинян',
-                      description: 'Адвокат, глава юридической практики РосКомСвободы, управляющий в Цифровая коллегия адвокатов "DBA & Partners", эксперт в сфере защиты приватности и законодательства в сфере IT и IP', 
+                      name: 'Sarkis Darbinyan',
+                      description: 'Attorney at law, head of Roskomsvoboda legal department, managing partner at Digital Bar Association “DBA & Partners", expert in the protection of privacy and legislation in the sphere of IT and IP.', 
                       photo: 'bg-SarkisDabrinyn',
-                      allDescription: 'Адвокат, глава юридической практики РосКомСвободы, управляющий в Цифровая коллегия адвокатов "DBA & Partners", эксперт в сфере защиты приватности и законодательства в сфере IT и IP',
+                      allDescription: 'Attorney at law, head of Roskomsvoboda legal department, managing partner at Digital Bar Association “DBA & Partners", expert in the protection of privacy and legislation in the sphere of IT and IP.',
                     },
                     8: {
-                      name: 'Иван Бегтин ',
-                      description: 'Директор АНО Информационная культура, ведущий российский. Эксперт в области открытых данных, цифрового государства, госзакупок, госфинансов, приватности', 
+                      name: 'Ivan Begtin',
+                      description: 'Director of ANO InfoCulture, the leading Russian expert in the field of open data, digital government, public procurement, public finance, privacy.', 
                       photo: 'bg-BegtinIvan',
-                      allDescription: 'Директор АНО Информационная культура, ведущий российский. Эксперт в области открытых данных, цифрового государства, госзакупок, госфинансов, приватности',
+                      allDescription: 'Director of ANO InfoCulture, the leading Russian expert in the field of open data, digital government, public procurement, public finance, privacy.',
                     },
                     9: {
-                      name: 'Владимир Ожерельев',
-                      description: 'Юрист Центра цифровых прав. Эксперт в области персональных данных, интеллектуальной собственности, защиты деловой репутации и налогов', 
+                      name: 'Vladimir Ozherelyev',
+                      description: 'Lawyer of Digital Rights Centre. Expert in the sphere of personal data, IP, protection of business reputation and taxes.', 
                       photo: 'bg-VladimirOjereliev',
-                      allDescription: 'Юрист Центра цифровых прав. Эксперт в области персональных данных, интеллектуальной собственности, защиты деловой репутации и налогов',
+                      allDescription: 'Lawyer of Digital Rights Centre. Expert in the sphere of personal data, IP, protection of business reputation and taxes.',
                     },
                     10: {
-                      name: 'Даниил Пленин',
-                      description: 'Основатель Telegram-канала о венчурном бизнесе и стартапах "Русский венчур", пиар-директор международного образовательного стартапа "Алгоритмика"', 
+                      name: 'Daniil Plenin',
+                      description: 'Daniel is founder of the Russian Venture Telegram channel about venture business and startups; PR-director of the international educational startup «Algoritmika».', 
                       photo: 'bg-PleninDaniil',
-                      allDescription: 'Основатель Telegram-канала о венчурном бизнесе и стартапах "Русский венчур", пиар-директор международного образовательного стартапа "Алгоритмика"',
+                      allDescription: 'Daniel is founder of the Russian Venture Telegram channel about venture business and startups; PR-director of the international educational startup «Algoritmika».',
                     },
                     11: {
-                      name: 'Алексей Шевелёв',
-                      description: 'Руководитель отдела по работе с пользователями Хабр', 
+                      name: 'Alexey Shevelev',
+                      description: 'Head of user relations at Habr.', 
                       photo: 'bg-AlexShevelev',
-                      allDescription: 'Руководитель отдела по работе с пользователями Хабр',
+                      allDescription: 'Head of user relations at Habr.',
                     },
                     12: {
-                      name: 'Николай Дмитрик ',
-                      description: 'Заведующий лабораторией правовой информатики и кибернетики Юридического факультета МГУ имени М.В. Ломоносова. Эксперт в области электронного управления и цифровой трансформации государства и права', 
+                      name: 'Nikolay Dmitrik',
+                      description: 'Head of Legal Informatics and Cybernetics Laboratory of the Faculty of Law of Lomonosov Moscow State University. Expert in the sphere of electronic governance and digital transformation of the state and law.', 
                       photo: 'bg-DmitrikNikolay',
-                      allDescription: 'Заведующий лабораторией правовой информатики и кибернетики Юридического факультета МГУ имени М.В. Ломоносова. Эксперт в области электронного управления и цифровой трансформации государства и права',
+                      allDescription: 'Head of Legal Informatics and Cybernetics Laboratory of the Faculty of Law of Lomonosov Moscow State University. Expert in the sphere of electronic governance and digital transformation of the state and law.',
                     },
-                    length: 13
+                    13: {
+                      name: 'Olga Nemirovskaya',
+                      description: 'Product manager Privacy accelerator. An expert in product approach, sales and marketing.',
+                      photo: '',
+                      allDescription: 'Product manager Privacy accelerator. An expert in product approach, sales and marketing.'
+                    },
+                    14: {
+                      name: 'Andrei Chervatyuk',
+                      description: 'UX/UI designer. Expert in designing interfaces and usability.',
+                      photo: '',
+                      allDescription: 'UX/UI designer. Expert in designing interfaces and usability.',
+                    },
+                    length: 15
                   },
                   networking: "Networking",
-                  networkingDescription: "Обширные партнерские связи и нетворкинг с русскоязычными медиа и компаниями, а также  международными проектами и фондами.",
+                  networkingDescription: "Extensive partnerships and networking with Russian-language media and companies as well as international projects and foundations.",
                   networkingStepsTitle1: "Assistance with financing",
                   networkingStepsTitle2: "Access to the market",
                   networkingStepsTitle3: "Tracking",
                   networkingStepsTitle4: "Lectures and workshops",
-                  networkingStepsDescription1: "Бизнес-ангелы, венчурные и некоммерческие фонды.",
-                  networkingStepsDescription2: "Аудитория для Customer Development, первые последователи, масштабирование",
-                  networkingStepsDescription3: "Целеполагание, четкий road map, развитие навыков, опыт и инструменты, чтобы бежать быстрее и эффективнее",
-                  networkingStepsDescription4: "Практические занятия и материалы о Product Management, Customer Development, Fundraising",
+                  networkingStepsDescription1: "Business angels, venture capital and nonprofit foundations",
+                  networkingStepsDescription2: "Customer Development Audiences, First Followers, Scaling Up",
+                  networkingStepsDescription3: "Goal setting, a clear road map, skill development, experience and tools to run faster and more efficiently",
+                  networkingStepsDescription4: "Hands-on sessions and materials on Product Management, Customer Development, Fundraising",
                   popUpTitle: 'Experts'
                 },
                 team: {
@@ -660,26 +685,26 @@ i18n
                   experts: {
                     0: {
                       name: 'Stanislav Shakirov', 
-                      description: 'Основатель Privacy Accelerator, сооснователь Школы киберправа и Digital Rights Center, технический директор и сооснователь Роскомсвободы.',
+                      description: 'Founder of Privacy Accelerator, co-founder of Cyberlaw School and Digital Rights Center, CTO and co-founder of Roskomsvoboda. Expert in the promotion of IT products, cyber-security and internet-entrepreneurship.',
                       photo: 'bg-StanislavShakirov'
                     },
                     1: {
-                      name: 'Natalia Malysheva', 
-                      description: 'Руководитель по связям с общественностью РосКомСвободы, журналист и экоактивист. Эксперт в области СМИ, коммуникаций и продвижения, организации общественных кампаний.',
+                      name: 'Natalya Malysheva', 
+                      description: 'Head of communications for Roskomsvoboda, journalist and eco-activist. Expert in the sphere of mass media, communications and promotion, organizing public campaigns.',
                       photo: 'bg-NataliyMalishova'
                     },
                     2: {
                       name: 'Daria Gorbacheva', 
-                      description: 'Координатор Privacy Accelerator. Опыт в области коммьюнити-менеджмента, организации онлайн- и оффлайн-мероприятий.',
+                      description: 'Coordinator of Privacy Accelerator. Experienced in community management and the organization of online and offline events.',
                       photo: 'bg-DariaGorbacheva'
                     },
                     length: 3
                   },
-                  title: 'In 2020 year',
+                  title: 'In 2020',
                   about: {
-                    0: 'команда Роскомсвободы запустила акселератор для поддержки инициатив в сферах приватности и анонимности, доступа к информации и свободы слова, электронного участия, развития ценностей цифрового гражданства, защиту прав и реализацию интересов граждан в цифровой среде. Политическая и интернет-цензура в Российской Федерации неуклонно усиливается с 2012 года, достигнув пика в 2022 году. В ответ мы видим все больший запрос в обществе на сервисы для защиты данных и свободы интернета.',
-                    1: 'Так например в 2022 году Россия переместилась с 15 места в мире по скачиванию VPN-сервисов на 2-е (с 2-3 млн до 12 млн. скачиваний). В Privacy Accelerator мы стремимся решить эти проблемы, запуская большее количество качественных проектов в сфере приватности и свободы интернета, а также повышая значимость проблем защиты данных, развивая интерес к теме среди разработчиков и предпринимателей.', 
-                    2: 'История Рунета за 10 лет:',
+                    0: 'Roskomsvoboda launched an Accelerator to support projects in the spheres of privacy and anonymity, access to information and freedom of speech, e-participation, development of digital citizenship values, protection of rights and protection of citizens\' interests in the digital environment. Political and Internet censorship in the Russian Federation has been steadily increasing since 2012, peaking in 2022. As a response, we see a growing demand in society for services that protect data and freedom of the Internet.',
+                    1: 'For example, in 2022, Russia moved from the 15th place in the world to the 2nd (from 2-3 million to 12 million downloads) in downloading VPN services. Privacy Accelerator is meant to solve these problems by launching more high-quality projects in the sphere of privacy and Internet freedom, as well as increasing the importance of data protection issues, developing interest to the topic among developers and entrepreneurs.', 
+                    2: 'History of Runet in 10 years:',
                   },
                   href: 'https://x.roskomsvoboda.org'
                 },
