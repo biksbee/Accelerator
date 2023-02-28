@@ -8,7 +8,7 @@ const PopUpExperts = ({i, fade, setFade}) => {
 
     return (
         <div 
-            className="flex flex-col justify-between border-t-c_gray-regular border-t-[2px] pt-[20px] md:w-[286px] w-[80vw] md:pb-0 pb-[60px] md:mb-[80px] last:mb-[40px]"
+            className="flex flex-col justify-between border-t-c_gray-regular border-t-[2px] pt-[20px] md:w-[286px] w-[80vw] md:pb-0 pb-[60px] md:mb-[80px]"
             onMouseEnter={() => setFade(true)}
             onMouseLeave={() => setFade(false)}
         >    

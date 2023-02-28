@@ -50,6 +50,7 @@ module.exports = {
         'VladimirOjereliev': "url(./assets/image/Владимир Ожерельев.webp)",
         'PleninDaniil': "url(./assets/image/Пленин Даниил.webp)",
         'BegtinIvan': "url(./assets/image/Бегтин Иван.webp)",
+        'AndreyChevartuk': "url(./assets/image/Андрей Черватюк.webp)",
 
         //networking part2
         'helpFinance': "url(./assets/image/helpFinance.webp)",

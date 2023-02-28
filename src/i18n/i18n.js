@@ -304,7 +304,7 @@ i18n
                     13: {
                       name: 'Андрей Черватюк',
                       description: 'UX/UI-дизайнер. Эксперт по проектированию интерфейсов и юзабилити.', 
-                      photo: '',
+                      photo: 'bg-AndreyChevartuk',
                       allDescription: 'UX/UI-дизайнер. Эксперт по проектированию интерфейсов и юзабилити.',
                     },
                     length: 14,
@@ -651,7 +651,7 @@ i18n
                     13: {
                       name: 'Andrei Chervatyuk',
                       description: 'UX/UI designer. Expert in designing interfaces and usability.',
-                      photo: '',
+                      photo: 'bg-AndreyChevartuk',
                       allDescription: 'UX/UI designer. Expert in designing interfaces and usability.',
                     },
                     length: 14
