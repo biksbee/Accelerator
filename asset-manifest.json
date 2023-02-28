@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Accelerator/static/css/main.b1a67f2f.css",
-    "main.js": "/Accelerator/static/js/main.8dad2fd8.js",
+    "main.css": "/Accelerator/static/css/main.92b474dc.css",
+    "main.js": "/Accelerator/static/js/main.23870f48.js",
     "reactPlayerYouTube.js": "/Accelerator/static/js/reactPlayerYouTube.e9bc5bcb.chunk.js",
     "reactPlayerSoundCloud.js": "/Accelerator/static/js/reactPlayerSoundCloud.832e6968.chunk.js",
     "reactPlayerVimeo.js": "/Accelerator/static/js/reactPlayerVimeo.1e631bd1.chunk.js",
@@ -23,6 +23,7 @@
     "static/media/SuisseIntl-Book.otf": "/Accelerator/static/media/SuisseIntl-Book.30ad3a64be8c976d9a31.otf",
     "static/media/Footer.svg": "/Accelerator/static/media/Footer.a40c7c1c156e82025b432eb097350d53.svg",
     "static/media/eppie.webp": "/Accelerator/static/media/eppie.fa21e8835503d8ab074f.webp",
+    "static/media/Андрей Черватюк.webp": "/Accelerator/static/media/Андрей Черватюк.e65efd8afb69a402606a.webp",
     "static/media/helpFinance.webp": "/Accelerator/static/media/helpFinance.f55044d9d83c1830ec23.webp",
     "static/media/amnezia.webp": "/Accelerator/static/media/amnezia.3ab9788fca3471e98e1b.webp",
     "static/media/getSiteCopy.webp": "/Accelerator/static/media/getSiteCopy.9607e67df2fbf6774db5.webp",
@@ -95,8 +96,8 @@
     "static/media/turnRight.svg": "/Accelerator/static/media/turnRight.2191525b4e5edaa3d548b82d98d7c585.svg",
     "static/media/closePopWhite.svg": "/Accelerator/static/media/closePopWhite.d916c148e860f4be1cce76913efae27c.svg",
     "static/media/close.svg": "/Accelerator/static/media/close.e1323900d96ae5892c230cc3d39a5782.svg",
-    "main.b1a67f2f.css.map": "/Accelerator/static/css/main.b1a67f2f.css.map",
-    "main.8dad2fd8.js.map": "/Accelerator/static/js/main.8dad2fd8.js.map",
+    "main.92b474dc.css.map": "/Accelerator/static/css/main.92b474dc.css.map",
+    "main.23870f48.js.map": "/Accelerator/static/js/main.23870f48.js.map",
     "reactPlayerYouTube.e9bc5bcb.chunk.js.map": "/Accelerator/static/js/reactPlayerYouTube.e9bc5bcb.chunk.js.map",
     "reactPlayerSoundCloud.832e6968.chunk.js.map": "/Accelerator/static/js/reactPlayerSoundCloud.832e6968.chunk.js.map",
     "reactPlayerVimeo.1e631bd1.chunk.js.map": "/Accelerator/static/js/reactPlayerVimeo.1e631bd1.chunk.js.map",
@@ -113,7 +114,7 @@
     "496.7a3981d7.chunk.js.map": "/Accelerator/static/js/496.7a3981d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1a67f2f.css",
-    "static/js/main.8dad2fd8.js"
+    "static/css/main.92b474dc.css",
+    "static/js/main.23870f48.js"
   ]
 }
