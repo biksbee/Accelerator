@@ -302,18 +302,12 @@ i18n
                       allDescription: 'Заведующий лабораторией правовой информатики и кибернетики Юридического факультета МГУ имени М.В. Ломоносова. Эксперт в области электронного управления и цифровой трансформации государства и права.',
                     },
                     13: {
-                      name: 'Ольга Немировская',
-                      description: 'Product manager Privacy accelerator. Эксперт в продуктовом подходе, в продажах и маркетинге.', 
-                      photo: '',
-                      allDescription: 'Product manager Privacy accelerator. Эксперт в продуктовом подходе, в продажах и маркетинге.',
-                    },
-                    14: {
                       name: 'Андрей Черватюк',
                       description: 'UX/UI-дизайнер. Эксперт по проектированию интерфейсов и юзабилити.', 
                       photo: '',
                       allDescription: 'UX/UI-дизайнер. Эксперт по проектированию интерфейсов и юзабилити.',
                     },
-                    length: 15,
+                    length: 14,
                   },
                   networking: "Нетворкинг",
                   networkingDescription: "Обширные партнерские связи и нетворкинг с русскоязычными медиа и компаниями, а также международными проектами и фондами.",
@@ -655,18 +649,12 @@ i18n
                       allDescription: 'Head of Legal Informatics and Cybernetics Laboratory of the Faculty of Law of Lomonosov Moscow State University. Expert in the sphere of electronic governance and digital transformation of the state and law.',
                     },
                     13: {
-                      name: 'Olga Nemirovskaya',
-                      description: 'Product manager Privacy accelerator. An expert in product approach, sales and marketing.',
-                      photo: '',
-                      allDescription: 'Product manager Privacy accelerator. An expert in product approach, sales and marketing.'
-                    },
-                    14: {
                       name: 'Andrei Chervatyuk',
                       description: 'UX/UI designer. Expert in designing interfaces and usability.',
                       photo: '',
                       allDescription: 'UX/UI designer. Expert in designing interfaces and usability.',
                     },
-                    length: 15
+                    length: 14
                   },
                   networking: "Networking",
                   networkingDescription: "Extensive partnerships and networking with Russian-language media and companies as well as international projects and foundations.",
